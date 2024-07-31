@@ -40,6 +40,10 @@ public class HexcraftBlocks {
     public static final RegistryObject <Block> FERTILIZED_DIRT = registerBlock("fertilized_dirt",
             () -> new FertilizedDirtBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(0.6F).sound(SoundType.GRAVEL)));
 
+    public static final RegistryObject <Block> BLACK_OBSIDIAN = registerBlock("black_obsidian",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()
+                    .strength(50.0F, 1200.0F).sound(SoundType.STONE)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

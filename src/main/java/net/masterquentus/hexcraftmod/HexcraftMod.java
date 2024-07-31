@@ -99,12 +99,13 @@ public class HexcraftMod {
                 event.accept(HexcraftItems.ATTUNED_STONE);
                 event.accept(HexcraftItems.ATTUNED_STONE_CHARGED);
 
-            if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
                 event.accept(HexcraftBlocks.VILE_GRASS_BLOCK);
                 event.accept(HexcraftBlocks.VILE_DIRT);
                 event.accept(HexcraftBlocks.CURSED_SOIL);
                 event.accept(HexcraftBlocks.CURED_SOIL);
                 event.accept(HexcraftBlocks.FERTILIZED_DIRT);
+                event.accept(HexcraftBlocks.BLACK_OBSIDIAN);
             }
         }
     }

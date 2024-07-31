@@ -78,6 +78,7 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.CURSED_SOIL.get());
                         output.accept(HexcraftBlocks.CURED_SOIL.get());
                         output.accept(HexcraftBlocks.FERTILIZED_DIRT.get());
+                        output.accept(HexcraftBlocks.BLACK_OBSIDIAN.get());
                     })
                     .build());
 
