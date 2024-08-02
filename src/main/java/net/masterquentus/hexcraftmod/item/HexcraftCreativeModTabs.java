@@ -79,6 +79,33 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.CURED_SOIL.get());
                         output.accept(HexcraftBlocks.FERTILIZED_DIRT.get());
                         output.accept(HexcraftBlocks.BLACK_OBSIDIAN.get());
+
+                        //Foods
+                        output.accept(HexcraftItems.JUNIPER_BERRIES.get());
+
+                        //Building Blocks
+                        output.accept(HexcraftBlocks.AMETHYST_CHIMES.get());
+                        output.accept(HexcraftBlocks.MOONSTONE_BLOCK.get());
+                        output.accept(HexcraftBlocks.SILVER_BLOCK.get());
+                        output.accept(HexcraftBlocks.VAMPIRIC_BLOCK.get());
+
+                        //Ores
+                        output.accept(HexcraftBlocks.MOONSTONE_ORE.get());
+                        output.accept(HexcraftBlocks.END_MOONSTONE_ORE.get());
+                        output.accept(HexcraftBlocks.NETHER_MOONSTONE_ORE.get());
+                        output.accept(HexcraftBlocks.DEEPSLATE_MOONSTONE_ORE.get());
+                        output.accept(HexcraftBlocks.SILVER_ORE.get());
+                        output.accept(HexcraftBlocks.END_SILVER_ORE.get());
+                        output.accept(HexcraftBlocks.NETHER_SILVER_ORE.get());
+                        output.accept(HexcraftBlocks.DEEPSLATE_SILVER_ORE.get());
+                        output.accept(HexcraftBlocks.VAMPIRIC_ORE.get());
+                        output.accept(HexcraftBlocks.END_VAMPIRIC_ORE.get());
+                        output.accept(HexcraftBlocks.NETHER_VAMPIRIC_ORE.get());
+                        output.accept(HexcraftBlocks.DEEPSLATE_VAMPIRIC_ORE.get());
+                        output.accept(HexcraftBlocks.NYKIUM_ORE.get());
+                        output.accept(HexcraftBlocks.TRENOGEN_ORE.get());
+                        output.accept(HexcraftBlocks.DEEPSLATE_TRENOGEN_ORE.get());
+                        output.accept(HexcraftBlocks.JORMUIM_ORE.get());
                     })
                     .build());
 

@@ -116,6 +116,10 @@ public class HexcraftItems {
     public static final RegistryObject<Item> ATTUNED_STONE_CHARGED = ITEMS.register("attuned_stone_charged",
             () -> new Item(new Item.Properties()));
 
+    //Foods
+    public static final RegistryObject<Item> JUNIPER_BERRIES = ITEMS.register("juniper_berries",
+            () -> new Item(new Item.Properties().food(HexcraftFoods.JUNIPER_BERRIES)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

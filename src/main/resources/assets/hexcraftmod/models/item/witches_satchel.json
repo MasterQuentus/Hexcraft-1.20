@@ -1,9 +1,0 @@
-{
-    "parent": "minecraft:item/generated",
-    "textures": {
-        "layer0": "hexcraft:item/witches_satchel"
-    },
-    "overrides": [
-        { "predicate": { "hexcraft:filled": 0.0000001 }, "model": "hexcraft:item/witches_satchel_filled" }
-    ]
-}

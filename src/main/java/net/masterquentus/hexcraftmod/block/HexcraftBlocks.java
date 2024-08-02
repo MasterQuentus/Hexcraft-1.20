@@ -1,16 +1,15 @@
 package net.masterquentus.hexcraftmod.block;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
+import net.masterquentus.hexcraftmod.block.custom.AmethysChimesBlock;
 import net.masterquentus.hexcraftmod.block.custom.CuredSoilBlock;
 import net.masterquentus.hexcraftmod.block.custom.CursedSoilBlock;
 import net.masterquentus.hexcraftmod.block.custom.FertilizedDirtBlock;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.GrassBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -43,6 +42,90 @@ public class HexcraftBlocks {
     public static final RegistryObject <Block> BLACK_OBSIDIAN = registerBlock("black_obsidian",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()
                     .strength(50.0F, 1200.0F).sound(SoundType.STONE)));
+
+    public static final RegistryObject <Block> AMETHYST_CHIMES = registerBlock("amethyst_chimes",
+            () -> new AmethysChimesBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .strength(1.7F).requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST).noOcclusion()));
+
+    //Ores
+    public static final RegistryObject <Block> MOONSTONE_ORE = registerBlock("moonstone_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> END_MOONSTONE_ORE = registerBlock("end_moonstone_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> NETHER_MOONSTONE_ORE = registerBlock("nether_moonstone_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.NETHER_ORE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> DEEPSLATE_MOONSTONE_ORE = registerBlock("deepslate_moonstone_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> SILVER_ORE = registerBlock("silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> END_SILVER_ORE = registerBlock("end_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> NETHER_SILVER_ORE = registerBlock("nether_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.NETHER_ORE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> VAMPIRIC_ORE = registerBlock("vampiric_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> END_VAMPIRIC_ORE = registerBlock("end_vampiric_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> NETHER_VAMPIRIC_ORE = registerBlock("nether_vampiric_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.NETHER_ORE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> DEEPSLATE_VAMPIRIC_ORE = registerBlock("deepslate_vampiric_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> NYKIUM_ORE = registerBlock("nykium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.NETHER_ORE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> TRENOGEN_ORE = registerBlock("trenogen_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> DEEPSLATE_TRENOGEN_ORE = registerBlock("deepslate_trenogen_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
+
+    public static final RegistryObject <Block> JORMUIM_ORE = registerBlock("jormuim_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+
+
+    //Ore Blocks
+    public static final RegistryObject <Block> MOONSTONE_BLOCK = registerBlock("moonstone_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_BLOCK).requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject <Block> SILVER_BLOCK = registerBlock("silver_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject <Block> VAMPIRIC_BLOCK = registerBlock("vampiric_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_BLOCK).requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

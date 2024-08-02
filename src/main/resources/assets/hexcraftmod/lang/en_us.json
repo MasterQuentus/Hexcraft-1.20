@@ -25,7 +25,7 @@
   "item.hexcraftmod.yellow_rune": "Yellow Rune",
   "item.hexcraftmod.rope": "Rope",
   "item.hexcraftmod.moonstone": "Moonstone",
-  "item.hexcraftmod.raw_silver": "raw_silver",
+  "item.hexcraftmod.raw_silver": "Raw silver",
   "item.hexcraftmod.silver_ingot": "Silver Ingot",
   "item.hexcraftmod.silver_nugget": "Silver Nugget",
   "item.hexcraftmod.vampiric_gem": "Vampiric Gem",
@@ -50,7 +50,7 @@
   "item.hexcraftmod.white_oak_ash": "White Oak Ash",
   "item.hexcraftmod.salt": "Salt",
   "item.hexcraftmod.necromantic_stone": "Necromantic Stone",
-  "item.attuned_stone.salt": "Attuned Stone",
+  "item.hexcraftmod.attuned_stone": "Attuned Stone",
   "item.hexcraftmod.attuned_stone_charged": "Attuned Stone Charged",
 
   //Blocks
@@ -60,6 +60,34 @@
   "block.hexcraftmod.cured_soil": "Cured Soil",
   "block.hexcraftmod.fertilized_dirt": "Fertilized Dirt",
   "block.hexcraftmod.black_obsidian": "Black Obsidian",
+  "block.hexcraftmod.amethyst_chimes": "Amethyst Chimes",
+
+  "block.hexcraftmod.moonstone_ore": "Moonstone Ore",
+  "block.hexcraftmod.end_moonstone_ore": "End Moonstone Ore",
+  "block.hexcraftmod.nether_moonstone_ore": "Nether Moonstone Ore",
+  "block.hexcraftmod.deepslate_moonstone_ore": "Deepslate Moonstone Ore",
+  "block.hexcraftmod.silver_ore": "Silver Ore",
+  "block.hexcraftmod.end_silver_ore": "End Silver Ore",
+  "block.hexcraftmod.nether_silver_ore": "Nether Silver Ore",
+  "block.hexcraftmod.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.hexcraftmod.vampiric_ore": "Vampiric Ore",
+  "block.hexcraftmod.end_vampiric_ore": "End Vampiric Ore",
+  "block.hexcraftmod.nether_vampiric_ore": "Nether Vampiric Ore",
+  "block.hexcraftmod.deepslate_vampiric_ore": "Amethyst Chimes",
+  "block.hexcraftmod.nykium_ore": "Nykium Ore",
+  "block.hexcraftmod.trenogen_ore": "Trenogen Ore",
+  "block.hexcraftmod.deepslate_trenogen_ore": "Deepslate Trenogen Ore",
+  "block.hexcraftmod.jormuim_ore": "Jormuim Ore",
+
+  "block.hexcraftmod.moonstone_block": "Moonstone Block",
+  "block.hexcraftmod.silver_block": "Silver Blocks",
+  "block.hexcraftmod.vampiric_block": "Vampiric Block",
+
+  //Foods
+  "item.hexcraftmod.juniper_berries": "Juniper Berries",
+
+  //Tooltips
+  "tooltip.hexcraftmod.amethyst_chimes.tooltip": "Shows Nearby Hostile Mobs",
 
   //Creative Mod Tab
   "creativetab.hexcraft_tab": "Hexcraft Tab"
