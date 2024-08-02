@@ -79,6 +79,12 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.CURED_SOIL.get());
                         output.accept(HexcraftBlocks.FERTILIZED_DIRT.get());
                         output.accept(HexcraftBlocks.BLACK_OBSIDIAN.get());
+                        output.accept(HexcraftBlocks.PEARL_STONE.get());
+                        output.accept(HexcraftBlocks.CRIMSON_STONE.get());
+                        output.accept(HexcraftBlocks.UNDER_WORLD_STONE.get());
+                        output.accept(HexcraftBlocks.CHARSTONE.get());
+
+
 
                         //Foods
                         output.accept(HexcraftItems.JUNIPER_BERRIES.get());
@@ -88,6 +94,26 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.MOONSTONE_BLOCK.get());
                         output.accept(HexcraftBlocks.SILVER_BLOCK.get());
                         output.accept(HexcraftBlocks.VAMPIRIC_BLOCK.get());
+                        output.accept(HexcraftBlocks.PEARL_COBBLESTONE.get());
+                        output.accept(HexcraftBlocks.PEARL_STONE_BRICKS.get());
+                        output.accept(HexcraftBlocks.POLISHED_PEARL_STONE.get());
+                        output.accept(HexcraftBlocks.CHISELED_PEARL_STONE.get());
+                        output.accept(HexcraftBlocks.CRACKED_PEARL_STONE.get());
+                        output.accept(HexcraftBlocks.CRIMSON_COBBLESTONE.get());
+                        output.accept(HexcraftBlocks.CRIMSON_STONE_BRICKS.get());
+                        output.accept(HexcraftBlocks.POLISHED_CRIMSON_STONE.get());
+                        output.accept(HexcraftBlocks.CHISELED_CRIMSON_STONE.get());
+                        output.accept(HexcraftBlocks.CRACKED_CRIMSON_STONE.get());
+                        output.accept(HexcraftBlocks.UNDER_WORLD_COBBLESTONE.get());
+                        output.accept(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS.get());
+                        output.accept(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE.get());
+                        output.accept(HexcraftBlocks.CHISELED_UNDER_WORLD_STONE.get());
+                        output.accept(HexcraftBlocks.CRACKED_UNDER_WORLD_STONE.get());
+                        output.accept(HexcraftBlocks.CHARSTONE_COBBLESTONE.get());
+                        output.accept(HexcraftBlocks.CHARSTONE_BRICKS.get());
+                        output.accept(HexcraftBlocks.POLISHED_CHARSTONE.get());
+                        output.accept(HexcraftBlocks.CHISELED_CHARSTONE.get());
+                        output.accept(HexcraftBlocks.CRACKED_CHARSTONE.get());
 
                         //Ores
                         output.accept(HexcraftBlocks.MOONSTONE_ORE.get());

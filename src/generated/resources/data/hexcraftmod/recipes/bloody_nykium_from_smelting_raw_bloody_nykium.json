@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "bloody_nykium",
+  "ingredient": {
+    "item": "hexcraftmod:raw_bloody_nykium"
+  },
+  "result": "hexcraftmod:bloody_nykium"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "jormium_ingot",
+  "ingredient": {
+    "item": "hexcraftmod:raw_jormium"
+  },
+  "result": "hexcraftmod:jormium_ingot"
+}

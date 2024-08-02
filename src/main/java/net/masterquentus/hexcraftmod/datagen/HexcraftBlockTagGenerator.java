@@ -5,7 +5,6 @@ import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -44,7 +43,31 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
                         HexcraftBlocks.END_VAMPIRIC_ORE.get(),
                         HexcraftBlocks.NETHER_VAMPIRIC_ORE.get(),
                         HexcraftBlocks.DEEPSLATE_VAMPIRIC_ORE.get(),
-                        HexcraftBlocks.VAMPIRIC_BLOCK.get());
+                        HexcraftBlocks.VAMPIRIC_BLOCK.get(),
+                        HexcraftBlocks.PEARL_STONE.get(),
+                        HexcraftBlocks.PEARL_COBBLESTONE.get(),
+                        HexcraftBlocks.PEARL_STONE_BRICKS.get(),
+                        HexcraftBlocks.POLISHED_PEARL_STONE.get(),
+                        HexcraftBlocks.CHISELED_PEARL_STONE.get(),
+                        HexcraftBlocks.CRACKED_PEARL_STONE.get(),
+                        HexcraftBlocks.CRIMSON_STONE.get(),
+                        HexcraftBlocks.CRIMSON_COBBLESTONE.get(),
+                        HexcraftBlocks.CRIMSON_STONE_BRICKS.get(),
+                        HexcraftBlocks.POLISHED_CRIMSON_STONE.get(),
+                        HexcraftBlocks.CHISELED_CRIMSON_STONE.get(),
+                        HexcraftBlocks.CRACKED_CRIMSON_STONE.get(),
+                        HexcraftBlocks.UNDER_WORLD_STONE.get(),
+                        HexcraftBlocks.UNDER_WORLD_COBBLESTONE.get(),
+                        HexcraftBlocks.UNDER_WORLD_STONE_BRICKS.get(),
+                        HexcraftBlocks.POLISHED_UNDER_WORLD_STONE.get(),
+                        HexcraftBlocks.CHISELED_UNDER_WORLD_STONE.get(),
+                        HexcraftBlocks.CRACKED_UNDER_WORLD_STONE.get(),
+                        HexcraftBlocks.CHARSTONE.get(),
+                        HexcraftBlocks.CHARSTONE_COBBLESTONE.get(),
+                        HexcraftBlocks.CHARSTONE_BRICKS.get(),
+                        HexcraftBlocks.POLISHED_CHARSTONE.get(),
+                        HexcraftBlocks.CHISELED_CHARSTONE.get(),
+                        HexcraftBlocks.CRACKED_CHARSTONE.get());
 
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)

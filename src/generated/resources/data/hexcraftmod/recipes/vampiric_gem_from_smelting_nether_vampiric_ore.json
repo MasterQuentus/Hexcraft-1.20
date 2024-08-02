@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "vampiric_gem",
+  "ingredient": {
+    "item": "hexcraftmod:nether_vampiric_ore"
+  },
+  "result": "hexcraftmod:vampiric_gem"
+}

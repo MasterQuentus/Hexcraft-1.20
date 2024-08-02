@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_jormium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hexcraftmod:raw_jormium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hexcraftmod:jormium_ingot_from_blasting_raw_jormium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_jormium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hexcraftmod:jormium_ingot_from_blasting_raw_jormium"
+    ]
+  },
+  "sends_telemetry_event": false
+}

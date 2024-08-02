@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_end_vampiric_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hexcraftmod:end_vampiric_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hexcraftmod:vampiric_gem_from_blasting_end_vampiric_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_end_vampiric_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hexcraftmod:vampiric_gem_from_blasting_end_vampiric_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

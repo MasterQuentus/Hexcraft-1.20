@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "clay_pot",
+  "ingredient": {
+    "item": "hexcraftmod:unfired_clay_pot"
+  },
+  "result": "hexcraftmod:clay_pot"
+}

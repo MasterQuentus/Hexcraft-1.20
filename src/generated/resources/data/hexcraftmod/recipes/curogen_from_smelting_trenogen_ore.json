@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "curogen",
+  "ingredient": {
+    "item": "hexcraftmod:trenogen_ore"
+  },
+  "result": "hexcraftmod:curogen"
+}

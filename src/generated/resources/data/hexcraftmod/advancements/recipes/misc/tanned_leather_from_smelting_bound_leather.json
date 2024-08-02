@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bound_leather": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hexcraftmod:bound_leather"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hexcraftmod:tanned_leather_from_smelting_bound_leather"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bound_leather",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hexcraftmod:tanned_leather_from_smelting_bound_leather"
+    ]
+  },
+  "sends_telemetry_event": false
+}

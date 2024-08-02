@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "LSL",
+    "SSS"
+  ],
+  "result": {
+    "item": "hexcraftmod:bound_leather"
+  },
+  "show_notification": true
+}

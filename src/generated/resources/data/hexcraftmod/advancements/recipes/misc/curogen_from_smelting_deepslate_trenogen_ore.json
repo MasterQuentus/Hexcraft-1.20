@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_trenogen_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hexcraftmod:deepslate_trenogen_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hexcraftmod:curogen_from_smelting_deepslate_trenogen_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_deepslate_trenogen_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hexcraftmod:curogen_from_smelting_deepslate_trenogen_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hexcraftmod:curogen_from_blasting_trenogen_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_trenogen_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hexcraftmod:trenogen_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_trenogen_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hexcraftmod:curogen_from_blasting_trenogen_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

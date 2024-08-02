@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:bloody_nykium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "hexcraftmod:bloody_nykium_nugget"
+  }
+}

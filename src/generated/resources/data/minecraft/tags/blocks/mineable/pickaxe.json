@@ -1,0 +1,33 @@
+{
+  "values": [
+    "hexcraftmod:vampiric_ore",
+    "hexcraftmod:end_vampiric_ore",
+    "hexcraftmod:nether_vampiric_ore",
+    "hexcraftmod:deepslate_vampiric_ore",
+    "hexcraftmod:vampiric_block",
+    "hexcraftmod:pearl_stone",
+    "hexcraftmod:pearl_cobblestone",
+    "hexcraftmod:pearl_stone_bricks",
+    "hexcraftmod:polished_pearl_stone",
+    "hexcraftmod:chiseled_pearl_stone",
+    "hexcraftmod:cracked_pearl_stone",
+    "hexcraftmod:crimson_stone",
+    "hexcraftmod:crimson_cobblestone",
+    "hexcraftmod:crimson_stone_bricks",
+    "hexcraftmod:polished_crimson_stone",
+    "hexcraftmod:chiseled_crimson_stone",
+    "hexcraftmod:cracked_crimson_stone",
+    "hexcraftmod:under_world_stone",
+    "hexcraftmod:under_world_cobblestone",
+    "hexcraftmod:under_world_stone_bricks",
+    "hexcraftmod:polished_under_world_stone",
+    "hexcraftmod:chiseled_under_world_stone",
+    "hexcraftmod:cracked_under_world_stone",
+    "hexcraftmod:charstone",
+    "hexcraftmod:charstone_cobblestone",
+    "hexcraftmod:charstone_bricks",
+    "hexcraftmod:polished_charstone",
+    "hexcraftmod:chiseled_charstone",
+    "hexcraftmod:cracked_charstone"
+  ]
+}

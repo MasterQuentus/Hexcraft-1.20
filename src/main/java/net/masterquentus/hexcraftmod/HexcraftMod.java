@@ -107,6 +107,26 @@ public class HexcraftMod {
                         event.accept(HexcraftBlocks.MOONSTONE_BLOCK);
                         event.accept(HexcraftBlocks.SILVER_BLOCK);
                         event.accept(HexcraftBlocks.VAMPIRIC_BLOCK);
+                        event.accept(HexcraftBlocks.PEARL_COBBLESTONE);
+                        event.accept(HexcraftBlocks.PEARL_STONE_BRICKS);
+                        event.accept(HexcraftBlocks.POLISHED_PEARL_STONE);
+                        event.accept(HexcraftBlocks.CHISELED_PEARL_STONE);
+                        event.accept(HexcraftBlocks.CRACKED_PEARL_STONE);
+                        event.accept(HexcraftBlocks.CRIMSON_COBBLESTONE);
+                        event.accept(HexcraftBlocks.CRIMSON_STONE_BRICKS);
+                        event.accept(HexcraftBlocks.POLISHED_CRIMSON_STONE);
+                        event.accept(HexcraftBlocks.CHISELED_CRIMSON_STONE);
+                        event.accept(HexcraftBlocks.CRACKED_CRIMSON_STONE);
+                        event.accept(HexcraftBlocks.UNDER_WORLD_COBBLESTONE);
+                        event.accept(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS);
+                        event.accept(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE);
+                        event.accept(HexcraftBlocks.CHISELED_UNDER_WORLD_STONE);
+                        event.accept(HexcraftBlocks.CRACKED_UNDER_WORLD_STONE);
+                        event.accept(HexcraftBlocks.CHARSTONE_COBBLESTONE);
+                        event.accept(HexcraftBlocks.CHARSTONE_BRICKS);
+                        event.accept(HexcraftBlocks.POLISHED_CHARSTONE);
+                        event.accept(HexcraftBlocks.CHISELED_CHARSTONE);
+                        event.accept(HexcraftBlocks.CRACKED_CHARSTONE);
 
 
                     if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -116,7 +136,11 @@ public class HexcraftMod {
                         event.accept(HexcraftBlocks.CURED_SOIL);
                         event.accept(HexcraftBlocks.FERTILIZED_DIRT);
                         event.accept(HexcraftBlocks.BLACK_OBSIDIAN);
-
+                        event.accept(HexcraftBlocks.PEARL_STONE);
+                        event.accept(HexcraftBlocks.CRIMSON_STONE);
+                        event.accept(HexcraftBlocks.UNDER_WORLD_STONE);
+                        event.accept(HexcraftBlocks.CHARSTONE);
+                        event.accept(HexcraftBlocks.CRACKED_CHARSTONE);
                         event.accept(HexcraftBlocks.MOONSTONE_ORE);
                         event.accept(HexcraftBlocks.END_MOONSTONE_ORE);
                         event.accept(HexcraftBlocks.NETHER_MOONSTONE_ORE);

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:blank_rune"
+    },
+    "V": {
+      "item": "minecraft:vine"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BVB",
+    "BBB"
+  ],
+  "result": {
+    "item": "hexcraftmod:earth_rune"
+  },
+  "show_notification": true
+}

@@ -7,7 +7,7 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:string"
+            "item": "minecraft:chain"
         },
         "_": {
             "tag": "minecraft:slabs"
@@ -17,7 +17,7 @@
         }
     },
     "result": {
-        "item": "hexcraft:amethyst_chimes",
+        "item": "hexcraftmod:amethyst_chimes",
         "count": 1
     }
 }

@@ -1,0 +1,19 @@
+{
+  "values": [
+    "hexcraftmod:amethyst_chimes",
+    "hexcraftmod:moonstone_ore",
+    "hexcraftmod:end_moonstone_ore",
+    "hexcraftmod:nether_moonstone_ore",
+    "hexcraftmod:deepslate_moonstone_ore",
+    "hexcraftmod:silver_ore",
+    "hexcraftmod:end_silver_ore",
+    "hexcraftmod:nether_silver_ore",
+    "hexcraftmod:deepslate_silver_ore",
+    "hexcraftmod:nykium_ore",
+    "hexcraftmod:trenogen_ore",
+    "hexcraftmod:deepslate_trenogen_ore",
+    "hexcraftmod:jormuim_ore",
+    "hexcraftmod:moonstone_block",
+    "hexcraftmod:silver_block"
+  ]
+}

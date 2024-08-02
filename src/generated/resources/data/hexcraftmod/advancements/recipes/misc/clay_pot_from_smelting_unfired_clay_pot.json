@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hexcraftmod:clay_pot_from_smelting_unfired_clay_pot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_unfired_clay_pot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hexcraftmod:unfired_clay_pot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_unfired_clay_pot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hexcraftmod:clay_pot_from_smelting_unfired_clay_pot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

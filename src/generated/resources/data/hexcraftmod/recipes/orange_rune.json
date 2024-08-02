@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:blank_rune"
+    },
+    "O": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BOB",
+    "BBB"
+  ],
+  "result": {
+    "item": "hexcraftmod:orange_rune"
+  },
+  "show_notification": true
+}
