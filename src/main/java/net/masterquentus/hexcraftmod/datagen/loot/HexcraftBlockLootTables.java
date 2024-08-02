@@ -83,21 +83,6 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(HexcraftBlocks.CRACKED_CHARSTONE.get());
 
-        this.add(HexcraftBlocks.VILE_GRASS_BLOCK.get(),
-                block -> createCopperLikeOreDrops(HexcraftBlocks.VILE_GRASS_BLOCK.get(), Item.byBlock(HexcraftBlocks.VILE_DIRT.get())));
-
-        this.add(HexcraftBlocks.PEARL_STONE.get(),
-                block -> createCopperLikeOreDrops(HexcraftBlocks.PEARL_STONE.get(), Item.byBlock(HexcraftBlocks.PEARL_COBBLESTONE.get())));
-
-        this.add(HexcraftBlocks.CRIMSON_STONE.get(),
-                block -> createCopperLikeOreDrops(HexcraftBlocks.CRIMSON_STONE.get(), Item.byBlock(HexcraftBlocks.CRIMSON_COBBLESTONE.get())));
-
-        this.add(HexcraftBlocks.UNDER_WORLD_STONE.get(),
-                block -> createCopperLikeOreDrops(HexcraftBlocks.UNDER_WORLD_STONE.get(), Item.byBlock(HexcraftBlocks.UNDER_WORLD_COBBLESTONE.get())));
-
-        this.add(HexcraftBlocks.CHARSTONE.get(),
-                block -> createCopperLikeOreDrops(HexcraftBlocks.CHARSTONE.get(), Item.byBlock(HexcraftBlocks.CHARSTONE_COBBLESTONE.get())));
-
         this.add(HexcraftBlocks.MOONSTONE_ORE.get(),
                 block -> createCopperLikeOreDrops(HexcraftBlocks.MOONSTONE_ORE.get(), HexcraftItems.MOONSTONE.get()));
 
