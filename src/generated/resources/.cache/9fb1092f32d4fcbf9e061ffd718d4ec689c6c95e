@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-04T02:10:46.8929509	Recipes
+// 1.20.1	2024-08-04T14:37:47.9781706	Recipes
 ffe4f009b05d16f71e57d406735e532e8e10f505 data/hexcraftmod/advancements/recipes/building_blocks/charstone_bricks.json
 748c979083c8a471171977c26f05398ede3a0ad3 data/hexcraftmod/advancements/recipes/building_blocks/chiseled_charstone.json
 a844a9f1cdfdafaba19de7c9e0ffcae075afdf79 data/hexcraftmod/advancements/recipes/building_blocks/chiseled_crimson_stone.json
@@ -267,3 +267,7 @@ f82a218d931f62b9a3b7cc21cff808171fe73a11 data/hexcraftmod/recipes/vampiric_gem_f
 6589224d22dcfc9affdb43cd3ca6d588c705be1d data/hexcraftmod/recipes/white_rune.json
 4493e891c1d50ef7603d4080f380c6cf15d62a88 data/hexcraftmod/recipes/witches_oven.json
 a827ecd1117a6cd22ddbf0631615e3e030a0a6b5 data/hexcraftmod/recipes/yellow_rune.json
+35eedd28baa842c0d13ea40a86013f52cc837d09 data/minecraft/advancements/recipes/misc/pink_dye.json
+eedb6fd88e39291e490cba22c44ed8eb2b509bff data/minecraft/advancements/recipes/misc/red_dye.json
+24d243d781241e5c3e0537781ea197d7bcff3852 data/minecraft/recipes/pink_dye.json
+5be3714143dc97d54a73797d099497fff66e4e00 data/minecraft/recipes/red_dye.json

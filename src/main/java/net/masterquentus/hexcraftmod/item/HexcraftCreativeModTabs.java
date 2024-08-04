@@ -76,6 +76,7 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.VILE_GRASS_BLOCK.get());
                         output.accept(HexcraftBlocks.VILE_DIRT.get());
                         output.accept(HexcraftBlocks.VAMPIRE_ORCHID.get());
+                        output.accept(HexcraftBlocks.BLOODY_ROSE.get());
                         output.accept(HexcraftBlocks.CURSED_SOIL.get());
                         output.accept(HexcraftBlocks.CURED_SOIL.get());
                         output.accept(HexcraftBlocks.FERTILIZED_DIRT.get());

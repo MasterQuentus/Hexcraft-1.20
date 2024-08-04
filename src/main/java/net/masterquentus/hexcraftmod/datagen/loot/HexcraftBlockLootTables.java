@@ -50,6 +50,11 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
         this.add(HexcraftBlocks.POTTED_VAMPIRE_ORCHID.get(),
                 createPotFlowerItemTable(HexcraftBlocks.POTTED_VAMPIRE_ORCHID.get()));
 
+        this.dropSelf(HexcraftBlocks.BLOODY_ROSE.get());
+
+        this.add(HexcraftBlocks.POTTED_BLOODY_ROSE.get(),
+                createPotFlowerItemTable(HexcraftBlocks.POTTED_BLOODY_ROSE.get()));
+
         this.dropSelf(HexcraftBlocks.PEARL_COBBLESTONE.get());
 
         this.dropSelf(HexcraftBlocks.PEARL_STONE_BRICKS.get());

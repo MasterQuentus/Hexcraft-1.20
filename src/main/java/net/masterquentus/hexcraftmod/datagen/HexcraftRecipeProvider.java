@@ -695,6 +695,16 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
                 .unlockedBy(getHasName(Items.GLASS_BOTTLE), has(Items.GLASS_BOTTLE))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.PINK_DYE)
+                .requires(HexcraftBlocks.VAMPIRE_ORCHID.get())
+                .unlockedBy(getHasName(HexcraftBlocks.VAMPIRE_ORCHID.get()), has(HexcraftBlocks.VAMPIRE_ORCHID.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.RED_DYE)
+                .requires(HexcraftBlocks.BLOODY_ROSE.get())
+                .unlockedBy(getHasName(HexcraftBlocks.BLOODY_ROSE.get()), has(HexcraftBlocks.BLOODY_ROSE.get()))
+                .save(pWriter);
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

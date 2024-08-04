@@ -25,6 +25,7 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
         simpleItem(HexcraftItems.TANNED_LEATHER);
         simpleItem(HexcraftItems.BONE_NEEDLE);
         simpleItem(HexcraftItems.TAGLOCK_KIT);
+        simpleItem(HexcraftItems.TAGLOCK_KIT_FULL);
         simpleItem(HexcraftItems.UNFIRED_CLAY_POT);
         simpleItem(HexcraftItems.CLAY_POT);
         simpleItem(HexcraftItems.LILITH_CONTRACT);
@@ -74,6 +75,8 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
         simpleItem(HexcraftItems.ATTUNED_STONE_CHARGED);
         simpleItem(HexcraftItems.JUNIPER_BERRIES);
         simpleItem(HexcraftItems.BLOOD_APPLE);
+        evenSimplerBlockItem(HexcraftBlocks.VAMPIRE_ORCHID);
+        evenSimplerBlockItem(HexcraftBlocks.BLOODY_ROSE);
         evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_STAIRS);
         evenSimplerBlockItem(HexcraftBlocks.PEARL_COBBLESTONE_STAIRS);
         evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_BRICKS_STAIRS);

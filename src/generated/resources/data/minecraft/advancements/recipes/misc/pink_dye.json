@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:pink_dye"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vampire_orchid": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hexcraftmod:vampire_orchid"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_vampire_orchid",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:pink_dye"
+    ]
+  },
+  "sends_telemetry_event": false
+}

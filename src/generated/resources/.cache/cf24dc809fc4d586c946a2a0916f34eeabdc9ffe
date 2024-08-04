@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-03T19:19:17.010716	Item Models: hexcraftmod
+// 1.20.1	2024-08-04T14:27:54.5394613	Item Models: hexcraftmod
 424491fc87e0fdf222fd40f43302af0b96667b38 assets/hexcraftmod/models/item/air_rune.json
 d8b5654e6b81ed85c37f37580861f525898835f0 assets/hexcraftmod/models/item/attuned_stone.json
 9bce6c2d6b265dad9e5f020922a1c50c27cfcb71 assets/hexcraftmod/models/item/attuned_stone_charged.json
@@ -6,6 +6,7 @@ baffc130eef8415470a55626c9b04124ae29698c assets/hexcraftmod/models/item/black_ru
 8d8ee357e80f43feb94eb70e9468c037f9bb1730 assets/hexcraftmod/models/item/blank_rune.json
 cd79370ead3d74a3c136a52d296a857ca55c0b99 assets/hexcraftmod/models/item/bloody_nykium.json
 36e8c0516fa8002762ef187f14db05a543284d93 assets/hexcraftmod/models/item/bloody_nykium_nugget.json
+a8db1e03edacb7917218b80cab43c7f68612e7a9 assets/hexcraftmod/models/item/bloody_rose.json
 c925f47e7eb45574b4113ea370dceb89a68bd7a6 assets/hexcraftmod/models/item/blood_apple.json
 036491dbc207fb62be3972d29c70d61170a3d5da assets/hexcraftmod/models/item/blue_rune.json
 c3891e32bf6903ee9b05f21acbe77dcb722e8e85 assets/hexcraftmod/models/item/bone_needle.json
@@ -72,6 +73,7 @@ f6556d38a71c4608a5ded87a2bfaea54898e0cdc assets/hexcraftmod/models/item/red_rune
 cead644986acaddf979ef9ec36d9c79320567d74 assets/hexcraftmod/models/item/steel_ingot.json
 42697e933c5c2f238d51f9ce48ec3afd913249c6 assets/hexcraftmod/models/item/steel_powder.json
 ea41561ea6ca8c338982c649639e4b336e42fec4 assets/hexcraftmod/models/item/taglock_kit.json
+2a90315c34fb70554f5aa97497ed06df4561b1a2 assets/hexcraftmod/models/item/taglock_kit_full.json
 ca94c649c8e70d705e4871d2f4c18b29733134ca assets/hexcraftmod/models/item/tanned_leather.json
 ba5320e1786e42585e3caae7a0f8c4cf4b343596 assets/hexcraftmod/models/item/under_world_cobblestone_slab.json
 7b75bb2bd94e627a0ae63ec4e097cea0e7c6cd3d assets/hexcraftmod/models/item/under_world_cobblestone_stairs.json
@@ -80,6 +82,7 @@ ba5320e1786e42585e3caae7a0f8c4cf4b343596 assets/hexcraftmod/models/item/under_wo
 e7ea4358b756a8993417754ff75a447024de12fb assets/hexcraftmod/models/item/under_world_stone_slab.json
 4484c45f620c1a7085d0b06cb7367a0d53cf3e0f assets/hexcraftmod/models/item/under_world_stone_stairs.json
 55f33d85b399e94f3d90e57d0b6264608860711f assets/hexcraftmod/models/item/unfired_clay_pot.json
+e376f628925cb92e96e5668566e030102ac0d8ac assets/hexcraftmod/models/item/vampire_orchid.json
 0394c25b3b398daa6171577de8d8c5b18011031b assets/hexcraftmod/models/item/vampiric_gem.json
 5e531537a7a4c13ffc25b5cb485fcdf905dbe41c assets/hexcraftmod/models/item/water_rune.json
 800a1fc4468ca329939495de19a8be5e92c3cd8d assets/hexcraftmod/models/item/white_oak_ash.json

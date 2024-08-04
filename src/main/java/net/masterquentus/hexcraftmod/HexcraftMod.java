@@ -8,9 +8,11 @@ import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.masterquentus.hexcraftmod.recipe.HexcraftRecipes;
 import net.masterquentus.hexcraftmod.screen.HexcraftMenuTypes;
 import net.masterquentus.hexcraftmod.screen.WitchesOvenScreen;
-import net.masterquentus.hexcraftmod.worldgen.biome.HexcraftTerrablenderAPI;
-import net.masterquentus.hexcraftmod.worldgen.biome.suface.HexcraftSurfaceRules;
+//import net.masterquentus.hexcraftmod.worldgen.biome.HexcraftTerrablenderAPI;
+//import net.masterquentus.hexcraftmod.worldgen.biome.suface.HexcraftSurfaceRules;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -26,13 +28,19 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-import terrablender.api.SurfaceRuleManager;
+
+import java.util.Random;
+//import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(HexcraftMod.MOD_ID)
+@Mod.EventBusSubscriber(modid=HexcraftMod.MOD_ID, bus= Mod.EventBusSubscriber.Bus.MOD)
 public class HexcraftMod {
     public static final String MOD_ID = "hexcraftmod";
     public static final Logger LOGGER = LogUtils.getLogger();
+    public static final Random RANDOM = new Random();
+    public static final RandomSource RANDOMSOURCE = RandomSource.create();
+
 
     public HexcraftMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -45,11 +53,19 @@ public class HexcraftMod {
         HexcraftMenuTypes.register(modEventBus);
         HexcraftRecipes.register(modEventBus);
 
-        HexcraftTerrablenderAPI.registerRegions();
+        //HexcraftTerrablenderAPI.registerRegions();
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+    }
+
+    public static ResourceLocation id(String path) {
+        return new ResourceLocation(MOD_ID, path);
+    }
+
+    public static String translationKey(String prefix, String suffix) {
+        return String.format("%s.%s.%s", prefix, MOD_ID, suffix);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -58,8 +74,9 @@ public class HexcraftMod {
             ComposterBlock.COMPOSTABLES.put(HexcraftItems.JUNIPER_BERRIES.get(), 0.3F);
 
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.VAMPIRE_ORCHID.getId(), HexcraftBlocks.POTTED_VAMPIRE_ORCHID);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.BLOODY_ROSE.getId(), HexcraftBlocks.POTTED_BLOODY_ROSE);
 
-            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, HexcraftSurfaceRules.makeRules());
+            //SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, HexcraftSurfaceRules.makeRules());
         });
 
 

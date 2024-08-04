@@ -70,6 +70,7 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
                         HexcraftBlocks.LARGE_MAGIC_CRYSTAL_BUD.get(),
                         HexcraftBlocks.MEDIUM_MAGIC_CRYSTAL_BUD.get(),
                         HexcraftBlocks.SMALL_MAGIC_CRYSTAL_BUD.get(),
+                        HexcraftBlocks.BLACK_OBSIDIAN.get(),
                         HexcraftBlocks.VAMPIRIC_ORE.get(),
                         HexcraftBlocks.END_VAMPIRIC_ORE.get(),
                         HexcraftBlocks.NETHER_VAMPIRIC_ORE.get(),

@@ -55,6 +55,12 @@ public class HexcraftBlocks {
     public static final RegistryObject <Block> POTTED_VAMPIRE_ORCHID = BLOCKS.register("potted_vampire_orchid",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), VAMPIRE_ORCHID, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
 
+    public static final RegistryObject <Block> BLOODY_ROSE = registerBlock("bloody_rose",
+            () -> new FlowerBlock(() -> MobEffects.HEAL, 4, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
+
+    public static final RegistryObject <Block> POTTED_BLOODY_ROSE = BLOCKS.register("potted_bloody_rose",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), BLOODY_ROSE, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+
     public static final RegistryObject <Block> BLACK_OBSIDIAN = registerBlock("black_obsidian",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()
                     .strength(50.0F, 1200.0F).sound(SoundType.STONE)));
@@ -205,7 +211,7 @@ public class HexcraftBlocks {
 
     public static final RegistryObject <Block> WITCHES_OVEN = registerBlock("witches_oven",
             () -> new WitchesOven(BlockBehaviour.Properties.copy(Blocks.FURNACE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
-                    .strength(3.5F).lightLevel(litBlockEmission(13))));
+                    .strength(3.5F).lightLevel(litBlockEmission(13)).noOcclusion()));
 
     //Slabs
     public static final RegistryObject<Block> PEARL_STONE_SLAB = registerBlock("pearl_stone_slab",
@@ -333,7 +339,7 @@ public class HexcraftBlocks {
 
     public static final RegistryObject <Block> MAGIC_CRYSTAL_CLUSTER = registerBlock("magic_crystal_cluster",
             () -> new AmethystClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
-                    .randomTicks().strength(1.5F).requiresCorrectToolForDrops()
+                    .randomTicks().strength(1.5F).requiresCorrectToolForDrops().randomTicks()
                     .sound(SoundType.AMETHYST).lightLevel((state) -> 5)));
 
     public static final RegistryObject <Block> LARGE_MAGIC_CRYSTAL_BUD = registerBlock("large_magic_crystal_bud",

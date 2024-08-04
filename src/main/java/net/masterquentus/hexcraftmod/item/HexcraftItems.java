@@ -21,6 +21,8 @@ public class HexcraftItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TAGLOCK_KIT = ITEMS.register("taglock_kit",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TAGLOCK_KIT_FULL = ITEMS.register("taglock_kit_full",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> UNFIRED_CLAY_POT = ITEMS.register("unfired_clay_pot",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CLAY_POT = ITEMS.register("clay_pot",

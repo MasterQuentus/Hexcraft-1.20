@@ -1,5 +1,6 @@
-// 1.20.1	2024-08-04T00:16:12.917369	Block States: hexcraftmod
+// 1.20.1	2024-08-04T14:27:54.5424618	Block States: hexcraftmod
 8bb4608086cdeee2bdd76ac754e15abad00c8ec7 assets/hexcraftmod/blockstates/black_obsidian.json
+d90d8301d22887b1a10ad29dcc426dc53431f715 assets/hexcraftmod/blockstates/bloody_rose.json
 577a70f7ee85800cfc4814cb2ce3e8995e5993a8 assets/hexcraftmod/blockstates/budding_magic_crystal.json
 0813a44a421d6a8cf93fb0fd877a4f648463c1f2 assets/hexcraftmod/blockstates/charstone.json
 5d2bcec91e8df8bac93af88217cc3173eff07d81 assets/hexcraftmod/blockstates/charstone_bricks.json
@@ -87,6 +88,7 @@ b37282d4ee2aab7d4a7415e46781496133bbfb9f assets/hexcraftmod/blockstates/vampiric
 5f2f0bd25a314bf3c7b3bce02949dff6502e39b7 assets/hexcraftmod/blockstates/vampiric_ore.json
 fe0915b3e5d17cbafb0408d5ec3275c5ecab230e assets/hexcraftmod/blockstates/vile_dirt.json
 401424c2ff372e24bcfba6854a37ed306ce14276 assets/hexcraftmod/models/block/black_obsidian.json
+61d855571397567f0a576369a35e47aee95b9efd assets/hexcraftmod/models/block/bloody_rose.json
 30888df5153b6ef6546579af05ab23f189923400 assets/hexcraftmod/models/block/budding_magic_crystal.json
 ee4c54dfb99f311768bd4f1b765637653309de38 assets/hexcraftmod/models/block/charstone.json
 fb914bd405f8386bc594b99f1c6236652bf1830e assets/hexcraftmod/models/block/charstone_bricks.json
@@ -222,6 +224,7 @@ eebb7468eb2f655f07ddda361bdfbdbc33e0c9d2 assets/hexcraftmod/models/block/under_w
 601fb719802ef7f37c12a444a957bb572815df69 assets/hexcraftmod/models/block/vampiric_ore.json
 3df5c20a177bc733c3da61aab9609b1d656234ae assets/hexcraftmod/models/block/vile_dirt.json
 1197ff6898a8f9d6a436b779ee40cad1fd5723a3 assets/hexcraftmod/models/item/black_obsidian.json
+a8db1e03edacb7917218b80cab43c7f68612e7a9 assets/hexcraftmod/models/item/bloody_rose.json
 601d473f5f4c0d1f77cd461118152270092d077e assets/hexcraftmod/models/item/budding_magic_crystal.json
 59c51e50ba239012bfbceb713b5f767fc9671e6d assets/hexcraftmod/models/item/charstone.json
 14db93321f994e57ce2c61fe9bc5bc15a56d63c5 assets/hexcraftmod/models/item/charstone_bricks.json

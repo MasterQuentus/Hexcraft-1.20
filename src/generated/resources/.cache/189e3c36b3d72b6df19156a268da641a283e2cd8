@@ -1,5 +1,5 @@
-// 1.20.1	2024-08-04T00:04:28.6683835	Tags for minecraft:block mod id hexcraftmod
-ac51e9759743524410f54d6cfeb6b2690b209efb data/minecraft/tags/blocks/mineable/pickaxe.json
+// 1.20.1	2024-08-04T03:55:01.8793537	Tags for minecraft:block mod id hexcraftmod
+d86ec9d83ac3544bf8471a1cda5a12093044e7c8 data/minecraft/tags/blocks/mineable/pickaxe.json
 1a3aca18825cf1e6c86f6967db0b70bb455f7031 data/minecraft/tags/blocks/mineable/shovel.json
 fb39f443bcdf9663f1ba6e07177f5ad80b37f526 data/minecraft/tags/blocks/needs_diamond_tool.json
 e03c4ca520d090c9320d48f57414ca818c581a30 data/minecraft/tags/blocks/needs_iron_tool.json

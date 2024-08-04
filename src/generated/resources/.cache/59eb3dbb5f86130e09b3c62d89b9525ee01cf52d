@@ -1,6 +1,7 @@
-// 1.20.1	2024-08-04T01:55:53.1551385	Loot Tables
+// 1.20.1	2024-08-04T14:33:15.7068648	Loot Tables
 c2b8294f68b393ea3aea5522889c8f0c14748417 data/hexcraftmod/loot_tables/blocks/amethyst_chimes.json
 ad7ebc49e405f3e4b0617f8386c418bfee15abe6 data/hexcraftmod/loot_tables/blocks/black_obsidian.json
+785ce81aaa672e22e213df0b25e273ad7d3897a2 data/hexcraftmod/loot_tables/blocks/bloody_rose.json
 702f9278854c8236e9bc12d3037b10cd4023b155 data/hexcraftmod/loot_tables/blocks/charstone.json
 a19f334cd2d2a1a529651cc0a5d8d9bba620fe3b data/hexcraftmod/loot_tables/blocks/charstone_bricks.json
 74e9add9f73858d77319fda8c78b1787e1d3097d data/hexcraftmod/loot_tables/blocks/charstone_bricks_slab.json
@@ -68,6 +69,7 @@ d48e03f4c44ab3d928eda13c1c1badd5ab8e6630 data/hexcraftmod/loot_tables/blocks/pol
 f1d360c30b5abd633d2f780892e39062a4983da3 data/hexcraftmod/loot_tables/blocks/polished_under_world_stone.json
 a9118e689767693b38d2212dc538aad3880a51fe data/hexcraftmod/loot_tables/blocks/polished_under_world_stone_slab.json
 99003aff00ffd30e92056d6210926b624e7cfb89 data/hexcraftmod/loot_tables/blocks/polished_under_world_stone_stairs.json
+95299e3d7545eab8e6ca40b3b9fa4f891fb6390d data/hexcraftmod/loot_tables/blocks/potted_bloody_rose.json
 23f855c923dda8c785fbd2dc9ff986617f0baae5 data/hexcraftmod/loot_tables/blocks/potted_vampire_orchid.json
 43865f52f0a517cb448cb7b03ac5656b8d31a76e data/hexcraftmod/loot_tables/blocks/silver_block.json
 38f61f15c1c2c2a4565c6129a361c3bc8a502e5d data/hexcraftmod/loot_tables/blocks/silver_ore.json

@@ -38,7 +38,9 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(),
                 new HexcraftItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
 
-        generator.addProvider(event.includeServer(),
-                new HexcraftWorldGenProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new EntityTypeTagProvider(packOutput, lookupProvider, existingFileHelper));
+
+        //generator.addProvider(event.includeServer(),
+                //new HexcraftWorldGenProvider(packOutput, lookupProvider));
     }
 }
