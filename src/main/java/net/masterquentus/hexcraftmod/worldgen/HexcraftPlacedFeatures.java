@@ -5,6 +5,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
@@ -31,6 +32,8 @@ public class HexcraftPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CHARSTONE_ORE_PLACED_KEY = registerKey("charstone_ore_placed");
 
     public static final ResourceKey<PlacedFeature> MAGIC_CRYSTAL_GEODE_PLACED_KEY = registerKey("magic_crystal_geode_placed");
+
+    public static final ResourceKey<PlacedFeature> VAMPIRE_ORCHID_PLACED_KEY = registerKey("vampire_orchid_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -81,6 +84,8 @@ public class HexcraftPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(24), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(30)),
                         BiomeFilter.biome()));
+        register(context, VAMPIRE_ORCHID_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.VAMPIRE_ORCHID_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
     }
 

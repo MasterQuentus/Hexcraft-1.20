@@ -4,6 +4,7 @@ import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -14,10 +15,7 @@ import net.minecraft.world.level.levelgen.GeodeCrackSettings;
 import net.minecraft.world.level.levelgen.GeodeLayerSettings;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.GeodeConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
@@ -44,6 +42,8 @@ public class HexcraftConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHARSTONE_ORE_KEY = registerKey("charstone_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> MAGIC_CRYSTAL_GEODE_KEY = registerKey("magic_crystal_geode");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> VAMPIRE_ORCHID_KEY = registerKey("vampire_orchid");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceabeles = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -111,6 +111,10 @@ public class HexcraftConfiguredFeatures {
                         new GeodeCrackSettings(0.95, 2.0, 2), 0.35, 0.083,
                         true, UniformInt.of(4, 6), UniformInt.of(3, 4),
                         UniformInt.of(1, 2), -16, 16, 0.05, 1));
+
+        register(context, VAMPIRE_ORCHID_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(HexcraftBlocks.VAMPIRE_ORCHID.get())))));
 
 
     }

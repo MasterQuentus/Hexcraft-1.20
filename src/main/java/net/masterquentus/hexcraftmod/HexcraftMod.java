@@ -4,13 +4,13 @@ import com.mojang.logging.LogUtils;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
 import net.masterquentus.hexcraftmod.block.entity.HexcraftBlockEntities;
 import net.masterquentus.hexcraftmod.item.HexcraftCreativeModTabs;
-import net.masterquentus.hexcraftmod.item.HexcraftFoods;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.masterquentus.hexcraftmod.recipe.HexcraftRecipes;
 import net.masterquentus.hexcraftmod.screen.HexcraftMenuTypes;
 import net.masterquentus.hexcraftmod.screen.WitchesOvenScreen;
+import net.masterquentus.hexcraftmod.worldgen.biome.HexcraftTerrablenderAPI;
+import net.masterquentus.hexcraftmod.worldgen.biome.suface.HexcraftSurfaceRules;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -26,6 +26,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(HexcraftMod.MOD_ID)
@@ -44,6 +45,7 @@ public class HexcraftMod {
         HexcraftMenuTypes.register(modEventBus);
         HexcraftRecipes.register(modEventBus);
 
+        HexcraftTerrablenderAPI.registerRegions();
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -54,8 +56,12 @@ public class HexcraftMod {
         event.enqueueWork(() -> {
             ComposterBlock.COMPOSTABLES.put(HexcraftItems.BLOOD_APPLE.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(HexcraftItems.JUNIPER_BERRIES.get(), 0.3F);
+
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.VAMPIRE_ORCHID.getId(), HexcraftBlocks.POTTED_VAMPIRE_ORCHID);
+
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, HexcraftSurfaceRules.makeRules());
         });
-        ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.VAMPIRE_ORCHID.getId(), HexcraftBlocks.POTTED_VAMPIRE_ORCHID);
+
 
     }
 
