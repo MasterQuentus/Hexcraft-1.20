@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "cracked_pearl_stone",
+  "ingredient": {
+    "item": "hexcraftmod:pearl_stone_bricks"
+  },
+  "result": "hexcraftmod:cracked_pearl_stone"
+}

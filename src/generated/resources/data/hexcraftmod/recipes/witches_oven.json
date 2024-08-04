@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_bars"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    " B ",
+    "III",
+    "IBI"
+  ],
+  "result": {
+    "item": "hexcraftmod:witches_oven"
+  },
+  "show_notification": true
+}

@@ -9,16 +9,28 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 
 public class HexcraftBlocks {
+
+    private static ToIntFunction<BlockState> litBlockEmission(int pLightValue) {
+        return (p_50763_) -> {
+            return (Boolean) p_50763_.getValue(BlockStateProperties.LIT) ? pLightValue : 0;
+        };
+    }
+
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, HexcraftMod.MOD_ID);
+
 
     public static final RegistryObject<Block> VILE_GRASS_BLOCK = registerBlock("vile_grass_block",
             () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)
@@ -190,6 +202,10 @@ public class HexcraftBlocks {
             () -> new AmethysChimesBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
                     .strength(1.7F).requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST).noOcclusion()));
+
+    public static final RegistryObject <Block> WITCHES_OVEN = registerBlock("witches_oven",
+            () -> new WitchesOven(BlockBehaviour.Properties.copy(Blocks.FURNACE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
+                    .strength(3.5F).lightLevel(litBlockEmission(13))));
 
     //Slabs
     public static final RegistryObject<Block> PEARL_STONE_SLAB = registerBlock("pearl_stone_slab",

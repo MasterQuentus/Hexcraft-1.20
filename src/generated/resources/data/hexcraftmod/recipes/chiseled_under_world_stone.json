@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "U": {
+      "item": "hexcraftmod:under_world_stone"
+    }
+  },
+  "pattern": [
+    " U ",
+    " U "
+  ],
+  "result": {
+    "item": "hexcraftmod:chiseled_under_world_stone"
+  },
+  "show_notification": true
+}

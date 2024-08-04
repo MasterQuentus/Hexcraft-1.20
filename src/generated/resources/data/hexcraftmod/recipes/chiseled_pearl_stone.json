@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "hexcraftmod:pearl_stone_slab"
+    }
+  },
+  "pattern": [
+    " P ",
+    " P "
+  ],
+  "result": {
+    "item": "hexcraftmod:chiseled_pearl_stone"
+  },
+  "show_notification": true
+}

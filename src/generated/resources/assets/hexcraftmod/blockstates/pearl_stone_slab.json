@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/pearl_stone_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/pearl_stone"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/pearl_stone_slab_top"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "U": {
+      "item": "hexcraftmod:under_world_stone_bricks"
+    }
+  },
+  "pattern": [
+    "UU ",
+    "UU "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:polished_under_world_stone"
+  },
+  "show_notification": true
+}

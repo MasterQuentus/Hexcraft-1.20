@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/charstone_cobblestone_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/charstone_cobblestone"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/charstone_cobblestone_slab_top"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "U": {
+      "item": "hexcraftmod:under_world_stone"
+    }
+  },
+  "pattern": [
+    "U  ",
+    "UU ",
+    "UUU"
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:under_world_stone_stairs"
+  },
+  "show_notification": true
+}

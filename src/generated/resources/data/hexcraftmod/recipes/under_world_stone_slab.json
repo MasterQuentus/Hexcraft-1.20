@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "U": {
+      "item": "hexcraftmod:under_world_stone"
+    }
+  },
+  "pattern": [
+    "UUU"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:under_world_stone_slab"
+  },
+  "show_notification": true
+}

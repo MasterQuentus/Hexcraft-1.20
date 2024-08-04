@@ -2,9 +2,14 @@ package net.masterquentus.hexcraftmod;
 
 import com.mojang.logging.LogUtils;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
+import net.masterquentus.hexcraftmod.block.entity.HexcraftBlockEntities;
 import net.masterquentus.hexcraftmod.item.HexcraftCreativeModTabs;
 import net.masterquentus.hexcraftmod.item.HexcraftFoods;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
+import net.masterquentus.hexcraftmod.recipe.HexcraftRecipes;
+import net.masterquentus.hexcraftmod.screen.HexcraftMenuTypes;
+import net.masterquentus.hexcraftmod.screen.WitchesOvenScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -35,6 +40,9 @@ public class HexcraftMod {
 
         HexcraftItems.register(modEventBus);
         HexcraftBlocks.register(modEventBus);
+        HexcraftBlockEntities.register(modEventBus);
+        HexcraftMenuTypes.register(modEventBus);
+        HexcraftRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -221,6 +229,8 @@ public class HexcraftMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
+            MenuScreens.register(HexcraftMenuTypes.WITCHES_OVEN_MENU.get(), WitchesOvenScreen::new);
 
         }
     }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "hexcraftmod:block/charstone_bricks",
+    "side": "hexcraftmod:block/charstone_bricks",
+    "top": "hexcraftmod:block/charstone_bricks"
+  }
+}

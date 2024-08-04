@@ -35,6 +35,8 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(HexcraftBlocks.AMETHYST_CHIMES.get());
 
+        this.dropSelf(HexcraftBlocks.WITCHES_OVEN.get());
+
         this.dropSelf(HexcraftBlocks.CURSED_SOIL.get());
 
         this.dropSelf(HexcraftBlocks.CURED_SOIL.get());

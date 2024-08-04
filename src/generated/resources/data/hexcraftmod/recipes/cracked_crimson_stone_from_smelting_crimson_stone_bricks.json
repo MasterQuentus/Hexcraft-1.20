@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "cracked_crimson_stone",
+  "ingredient": {
+    "item": "hexcraftmod:crimson_stone_bricks"
+  },
+  "result": "hexcraftmod:cracked_crimson_stone"
+}

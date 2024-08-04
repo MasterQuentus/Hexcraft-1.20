@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:crimson_stone_slab"
+    }
+  },
+  "pattern": [
+    " C ",
+    " C "
+  ],
+  "result": {
+    "item": "hexcraftmod:chiseled_crimson_stone"
+  },
+  "show_notification": true
+}

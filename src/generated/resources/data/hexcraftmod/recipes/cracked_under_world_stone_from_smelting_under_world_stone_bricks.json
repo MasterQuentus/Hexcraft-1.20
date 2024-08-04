@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "cracked_under_world_stone",
+  "ingredient": {
+    "item": "hexcraftmod:under_world_stone_bricks"
+  },
+  "result": "hexcraftmod:cracked_under_world_stone"
+}

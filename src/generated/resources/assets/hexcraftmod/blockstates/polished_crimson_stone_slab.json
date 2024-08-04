@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/polished_crimson_stone_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/polished_crimson_stone"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/polished_crimson_stone_slab_top"
+    }
+  }
+}

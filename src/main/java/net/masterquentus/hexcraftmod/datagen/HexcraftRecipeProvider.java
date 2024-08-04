@@ -271,6 +271,15 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
                 .unlockedBy(getHasName(Items.CLAY_BALL), has(Items.CLAY_BALL))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCHES_OVEN.get())
+                .pattern(" B ")
+                .pattern("III")
+                .pattern("IBI")
+                .define('B', Items.IRON_BARS)
+                .define('I', Items.IRON_INGOT)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.MOONSTONE_BLOCK.get())
                 .pattern("MMM")
                 .pattern("MMM")
@@ -602,6 +611,13 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
                 .pattern("CCC")
                 .define('C', HexcraftBlocks.POLISHED_CHARSTONE.get())
                 .unlockedBy(getHasName(HexcraftBlocks.POLISHED_CHARSTONE.get()), has(HexcraftBlocks.POLISHED_CHARSTONE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.MAGIC_CRYSTAL_BLOCK.get(),4)
+                .pattern("MM ")
+                .pattern("MM ")
+                .define('M', HexcraftItems.MAGIC_CRYSTAL.get())
+                .unlockedBy(getHasName(HexcraftItems.MAGIC_CRYSTAL.get()), has(HexcraftItems.MAGIC_CRYSTAL.get()))
                 .save(pWriter);
 
 

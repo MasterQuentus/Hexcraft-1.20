@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:charstone_bricks"
+    }
+  },
+  "pattern": [
+    "CC ",
+    "CC "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:polished_charstone"
+  },
+  "show_notification": true
+}

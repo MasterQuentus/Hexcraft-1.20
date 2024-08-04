@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:charstone_slab"
+    }
+  },
+  "pattern": [
+    " C ",
+    " C "
+  ],
+  "result": {
+    "item": "hexcraftmod:chiseled_charstone"
+  },
+  "show_notification": true
+}

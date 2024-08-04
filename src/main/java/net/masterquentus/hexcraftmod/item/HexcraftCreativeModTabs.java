@@ -93,6 +93,7 @@ public class HexcraftCreativeModTabs {
 
                         //Building Blocks
                         output.accept(HexcraftBlocks.AMETHYST_CHIMES.get());
+                        output.accept(HexcraftBlocks.WITCHES_OVEN.get());
                         output.accept(HexcraftBlocks.MOONSTONE_BLOCK.get());
                         output.accept(HexcraftBlocks.SILVER_BLOCK.get());
                         output.accept(HexcraftBlocks.VAMPIRIC_BLOCK.get());

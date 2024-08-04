@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "hexcraftmod:block/pearl_stone",
+    "side": "hexcraftmod:block/pearl_stone",
+    "top": "hexcraftmod:block/pearl_stone"
+  }
+}

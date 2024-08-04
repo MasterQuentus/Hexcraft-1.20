@@ -17,7 +17,11 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider provider) {
+    protected void addTags(HolderLookup.Provider pProvider) {
+
+
+
+
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(HexcraftBlocks.AMETHYST_CHIMES.get(),
                         HexcraftBlocks.MOONSTONE_ORE.get(),
