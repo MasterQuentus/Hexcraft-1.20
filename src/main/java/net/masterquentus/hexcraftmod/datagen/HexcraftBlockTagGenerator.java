@@ -33,7 +33,13 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
                         HexcraftBlocks.DEEPSLATE_TRENOGEN_ORE.get(),
                         HexcraftBlocks.JORMUIM_ORE.get(),
                         HexcraftBlocks.MOONSTONE_BLOCK.get(),
-                        HexcraftBlocks.SILVER_BLOCK.get());
+                        HexcraftBlocks.SILVER_BLOCK.get(),
+                        HexcraftBlocks.MAGIC_CRYSTAL_BLOCK.get(),
+                        HexcraftBlocks.BUDDING_MAGIC_CRYSTAL.get(),
+                        HexcraftBlocks.MAGIC_CRYSTAL_CLUSTER.get(),
+                        HexcraftBlocks.LARGE_MAGIC_CRYSTAL_BUD.get(),
+                        HexcraftBlocks.MEDIUM_MAGIC_CRYSTAL_BUD.get(),
+                        HexcraftBlocks.SMALL_MAGIC_CRYSTAL_BUD.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(HexcraftBlocks.BLACK_OBSIDIAN.get());
@@ -67,7 +73,39 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
                         HexcraftBlocks.CHARSTONE_BRICKS.get(),
                         HexcraftBlocks.POLISHED_CHARSTONE.get(),
                         HexcraftBlocks.CHISELED_CHARSTONE.get(),
-                        HexcraftBlocks.CRACKED_CHARSTONE.get());
+                        HexcraftBlocks.CRACKED_CHARSTONE.get(),
+                        HexcraftBlocks.PEARL_STONE_STAIRS.get(),
+                        HexcraftBlocks.PEARL_COBBLESTONE_STAIRS.get(),
+                        HexcraftBlocks.PEARL_STONE_BRICKS_STAIRS.get(),
+                        HexcraftBlocks.POLISHED_PEARL_STONE_STAIRS.get(),
+                        HexcraftBlocks.CRIMSON_STONE_STAIRS.get(),
+                        HexcraftBlocks.CRIMSON_COBBLESTONE_STAIRS.get(),
+                        HexcraftBlocks.CRIMSON_STONE_BRICKS_STAIRS.get(),
+                        HexcraftBlocks.POLISHED_CRIMSON_STONE_STAIRS.get(),
+                        HexcraftBlocks.UNDER_WORLD_STONE_STAIRS.get(),
+                        HexcraftBlocks.UNDER_WORLD_COBBLESTONE_STAIRS.get(),
+                        HexcraftBlocks.UNDER_WORLD_STONE_BRICKS_STAIRS.get(),
+                        HexcraftBlocks.POLISHED_UNDER_WORLD_STONE_STAIRS.get(),
+                        HexcraftBlocks.CHARSTONE_STONE_STAIRS.get(),
+                        HexcraftBlocks.CHARSTONE_COBBLESTONE_STAIRS.get(),
+                        HexcraftBlocks.CHARSTONE_STONE_BRICKS_STAIRS.get(),
+                        HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS.get(),
+                        HexcraftBlocks.PEARL_STONE_SLAB.get(),
+                        HexcraftBlocks.PEARL_COBBLESTONE_SLAB.get(),
+                        HexcraftBlocks.PEARL_STONE_BRICKS_SLAB.get(),
+                        HexcraftBlocks.POLISHED_PEARL_STONE_SLAB.get(),
+                        HexcraftBlocks.CRIMSON_STONE_SLAB.get(),
+                        HexcraftBlocks.CRIMSON_COBBLESTONE_SLAB.get(),
+                        HexcraftBlocks.CRIMSON_STONE_BRICKS_SLAB.get(),
+                        HexcraftBlocks.POLISHED_CRIMSON_STONE_SLAB.get(),
+                        HexcraftBlocks.UNDER_WORLD_STONE_SLAB.get(),
+                        HexcraftBlocks.UNDER_WORLD_COBBLESTONE_SLAB.get(),
+                        HexcraftBlocks.UNDER_WORLD_STONE_BRICKS_SLAB.get(),
+                        HexcraftBlocks.POLISHED_UNDER_WORLD_STONE_SLAB.get(),
+                        HexcraftBlocks.CHARSTONE_SLAB.get(),
+                        HexcraftBlocks.CHARSTONE_COBBLESTONE_SLAB.get(),
+                        HexcraftBlocks.CHARSTONE_BRICKS_SLAB.get(),
+                        HexcraftBlocks.POLISHED_CHARSTONE_SLAB.get());
 
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)

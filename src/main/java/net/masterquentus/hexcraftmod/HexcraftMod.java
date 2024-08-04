@@ -3,9 +3,13 @@ package net.masterquentus.hexcraftmod;
 import com.mojang.logging.LogUtils;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
 import net.masterquentus.hexcraftmod.item.HexcraftCreativeModTabs;
+import net.masterquentus.hexcraftmod.item.HexcraftFoods;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -39,6 +43,11 @@ public class HexcraftMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ComposterBlock.COMPOSTABLES.put(HexcraftItems.BLOOD_APPLE.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(HexcraftItems.JUNIPER_BERRIES.get(), 0.3F);
+        });
+        ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.VAMPIRE_ORCHID.getId(), HexcraftBlocks.POTTED_VAMPIRE_ORCHID);
 
     }
 
@@ -101,6 +110,7 @@ public class HexcraftMod {
 
                     if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
                         event.accept(HexcraftItems.JUNIPER_BERRIES);
+                        event.accept(HexcraftItems.BLOOD_APPLE);
 
                     if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
                         event.accept(HexcraftBlocks.AMETHYST_CHIMES);
@@ -127,11 +137,44 @@ public class HexcraftMod {
                         event.accept(HexcraftBlocks.POLISHED_CHARSTONE);
                         event.accept(HexcraftBlocks.CHISELED_CHARSTONE);
                         event.accept(HexcraftBlocks.CRACKED_CHARSTONE);
+                        event.accept(HexcraftBlocks.PEARL_STONE_STAIRS);
+                        event.accept(HexcraftBlocks.PEARL_COBBLESTONE_STAIRS);
+                        event.accept(HexcraftBlocks.PEARL_STONE_BRICKS_STAIRS);
+                        event.accept(HexcraftBlocks.POLISHED_PEARL_STONE_STAIRS);
+                        event.accept(HexcraftBlocks.CRIMSON_STONE_STAIRS);
+                        event.accept(HexcraftBlocks.CRIMSON_COBBLESTONE_STAIRS);
+                        event.accept(HexcraftBlocks.CRIMSON_STONE_BRICKS_STAIRS);
+                        event.accept(HexcraftBlocks.POLISHED_CRIMSON_STONE_STAIRS);
+                        event.accept(HexcraftBlocks.UNDER_WORLD_STONE_STAIRS);
+                        event.accept(HexcraftBlocks.UNDER_WORLD_COBBLESTONE_STAIRS);
+                        event.accept(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS_STAIRS);
+                        event.accept(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE_STAIRS);
+                        event.accept(HexcraftBlocks.CHARSTONE_STONE_STAIRS);
+                        event.accept(HexcraftBlocks.CHARSTONE_COBBLESTONE_STAIRS);
+                        event.accept(HexcraftBlocks.CHARSTONE_STONE_BRICKS_STAIRS);
+                        event.accept(HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS);
+                        event.accept(HexcraftBlocks.PEARL_STONE_SLAB);
+                        event.accept(HexcraftBlocks.PEARL_COBBLESTONE_SLAB);
+                        event.accept(HexcraftBlocks.PEARL_STONE_BRICKS_SLAB);
+                        event.accept(HexcraftBlocks.POLISHED_PEARL_STONE_SLAB);
+                        event.accept(HexcraftBlocks.CRIMSON_STONE_SLAB);
+                        event.accept(HexcraftBlocks.CRIMSON_COBBLESTONE_SLAB);
+                        event.accept(HexcraftBlocks.CRIMSON_STONE_BRICKS_SLAB);
+                        event.accept(HexcraftBlocks.POLISHED_CRIMSON_STONE_SLAB);
+                        event.accept(HexcraftBlocks.UNDER_WORLD_STONE_SLAB);
+                        event.accept(HexcraftBlocks.UNDER_WORLD_COBBLESTONE_SLAB);
+                        event.accept(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS_SLAB);
+                        event.accept(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE_SLAB);
+                        event.accept(HexcraftBlocks.CHARSTONE_SLAB);
+                        event.accept(HexcraftBlocks.CHARSTONE_COBBLESTONE_SLAB);
+                        event.accept(HexcraftBlocks.CHARSTONE_BRICKS_SLAB);
+                        event.accept(HexcraftBlocks.POLISHED_CHARSTONE_SLAB);
 
 
                     if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
                         event.accept(HexcraftBlocks.VILE_GRASS_BLOCK);
                         event.accept(HexcraftBlocks.VILE_DIRT);
+                        event.accept(HexcraftBlocks.VAMPIRE_ORCHID);
                         event.accept(HexcraftBlocks.CURSED_SOIL);
                         event.accept(HexcraftBlocks.CURED_SOIL);
                         event.accept(HexcraftBlocks.FERTILIZED_DIRT);
@@ -157,6 +200,9 @@ public class HexcraftMod {
                         event.accept(HexcraftBlocks.TRENOGEN_ORE);
                         event.accept(HexcraftBlocks.DEEPSLATE_TRENOGEN_ORE);
                         event.accept(HexcraftBlocks.JORMUIM_ORE);
+                        event.accept(HexcraftBlocks.MAGIC_CRYSTAL_CLUSTER);
+                        event.accept(HexcraftBlocks.BUDDING_MAGIC_CRYSTAL);
+                        event.accept(HexcraftBlocks.MAGIC_CRYSTAL_BLOCK);
 
                     }
                 }

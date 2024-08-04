@@ -20,16 +20,25 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeServer(), new HexcraftRecipeProvider(packOutput));
-        generator.addProvider(event.includeServer(), HexcraftLootTableProvider.create(packOutput));
+        generator.addProvider(event.includeServer(),
+                new HexcraftRecipeProvider(packOutput));
 
-        generator.addProvider(event.includeClient(), new HexcraftBlockStateProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeClient(), new HexcraftItemModelProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeServer(),
+                HexcraftLootTableProvider.create(packOutput));
+
+        generator.addProvider(event.includeClient(),
+                new HexcraftBlockStateProvider(packOutput, existingFileHelper));
+
+        generator.addProvider(event.includeClient(),
+                new HexcraftItemModelProvider(packOutput, existingFileHelper));
 
         HexcraftBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                 new HexcraftBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
-        generator.addProvider(event.includeServer(), new HexcraftItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
 
-        //generator.addProvider(event.includeServer(), new HexcraftGlobalLootModifiersProvider(packOutput));
+        generator.addProvider(event.includeServer(),
+                new HexcraftItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+
+        generator.addProvider(event.includeServer(),
+                new HexcraftWorldGenProvider(packOutput, lookupProvider));
     }
 }

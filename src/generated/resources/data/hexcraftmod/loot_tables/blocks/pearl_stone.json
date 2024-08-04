@@ -2,15 +2,13 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
-              "name": "hexcraftmod:pearl_stone",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -25,20 +23,36 @@
                     ]
                   }
                 }
-              ]
+              ],
+              "name": "hexcraftmod:pearl_stone"
             },
             {
               "type": "minecraft:item",
-              "name": "hexcraftmod:pearl_cobblestone",
-              "conditions": [
+              "functions": [
                 {
-                  "condition": "minecraft:survives_explosion"
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 5.0,
+                    "min": 2.0
+                  },
+                  "function": "minecraft:set_count"
+                },
+                {
+                  "enchantment": "minecraft:silk_touch",
+                  "formula": "minecraft:ore_drops",
+                  "function": "minecraft:apply_bonus"
+                },
+                {
+                  "function": "minecraft:explosion_decay"
                 }
-              ]
+              ],
+              "name": "hexcraftmod:pearl_cobblestone"
             }
           ]
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "hexcraftmod:blocks/pearl_stone"

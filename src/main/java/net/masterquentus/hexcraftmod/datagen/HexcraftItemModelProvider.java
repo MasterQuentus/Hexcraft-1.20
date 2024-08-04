@@ -1,13 +1,16 @@
 package net.masterquentus.hexcraftmod.datagen;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
+import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class HexcraftItemModelProvider extends ItemModelProvider {
@@ -70,12 +73,71 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
         simpleItem(HexcraftItems.ATTUNED_STONE);
         simpleItem(HexcraftItems.ATTUNED_STONE_CHARGED);
         simpleItem(HexcraftItems.JUNIPER_BERRIES);
+        simpleItem(HexcraftItems.BLOOD_APPLE);
+        evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.PEARL_COBBLESTONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_BRICKS_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.POLISHED_PEARL_STONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.CRIMSON_STONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.CRIMSON_COBBLESTONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.CRIMSON_STONE_BRICKS_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.POLISHED_CRIMSON_STONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.UNDER_WORLD_STONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.UNDER_WORLD_COBBLESTONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.CHARSTONE_STONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.CHARSTONE_COBBLESTONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.CHARSTONE_STONE_BRICKS_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS);
+        evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.PEARL_COBBLESTONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_BRICKS_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.POLISHED_PEARL_STONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.CRIMSON_STONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.CRIMSON_COBBLESTONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.CRIMSON_STONE_BRICKS_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.POLISHED_CRIMSON_STONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.UNDER_WORLD_STONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.UNDER_WORLD_COBBLESTONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.CHARSTONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.CHARSTONE_COBBLESTONE_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.CHARSTONE_BRICKS_SLAB);
+        evenSimplerBlockItem(HexcraftBlocks.POLISHED_CHARSTONE_SLAB);
 
+    }
+
+    public void evenSimplerBlockItem(RegistryObject<Block> block) {
+        this.withExistingParent(HexcraftMod.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(HexcraftMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  new ResourceLocation(HexcraftMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
+                .texture("texture",  new ResourceLocation(HexcraftMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation(HexcraftMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(HexcraftMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

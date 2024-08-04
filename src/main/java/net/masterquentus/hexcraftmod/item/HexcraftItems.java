@@ -120,6 +120,9 @@ public class HexcraftItems {
     public static final RegistryObject<Item> JUNIPER_BERRIES = ITEMS.register("juniper_berries",
             () -> new Item(new Item.Properties().food(HexcraftFoods.JUNIPER_BERRIES)));
 
+    public static final RegistryObject<Item> BLOOD_APPLE = ITEMS.register("blood_apple",
+            () -> new Item(new Item.Properties().food(HexcraftFoods.BLOOD_APPLE)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "hexcraftmod:vile_dirt",
+              "name": "hexcraftmod:vile_grass_block",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",

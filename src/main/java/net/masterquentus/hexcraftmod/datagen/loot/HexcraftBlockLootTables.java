@@ -43,6 +43,11 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(HexcraftBlocks.VILE_DIRT.get());
 
+        this.dropSelf(HexcraftBlocks.VAMPIRE_ORCHID.get());
+
+        this.add(HexcraftBlocks.POTTED_VAMPIRE_ORCHID.get(),
+                createPotFlowerItemTable(HexcraftBlocks.POTTED_VAMPIRE_ORCHID.get()));
+
         this.dropSelf(HexcraftBlocks.PEARL_COBBLESTONE.get());
 
         this.dropSelf(HexcraftBlocks.PEARL_STONE_BRICKS.get());
@@ -82,6 +87,92 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(HexcraftBlocks.CHISELED_CHARSTONE.get());
 
         this.dropSelf(HexcraftBlocks.CRACKED_CHARSTONE.get());
+
+        this.dropSelf(HexcraftBlocks.PEARL_STONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.PEARL_COBBLESTONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.PEARL_STONE_BRICKS_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.POLISHED_PEARL_STONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.CRIMSON_STONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.CRIMSON_COBBLESTONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.CRIMSON_STONE_BRICKS_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.POLISHED_CRIMSON_STONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.UNDER_WORLD_STONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.UNDER_WORLD_COBBLESTONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.CHARSTONE_STONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.CHARSTONE_COBBLESTONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.CHARSTONE_STONE_BRICKS_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS.get());
+
+        this.dropSelf(HexcraftBlocks.PEARL_STONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.PEARL_COBBLESTONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.PEARL_STONE_BRICKS_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.POLISHED_PEARL_STONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.CRIMSON_STONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.CRIMSON_COBBLESTONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.CRIMSON_STONE_BRICKS_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.POLISHED_CRIMSON_STONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.UNDER_WORLD_STONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.UNDER_WORLD_COBBLESTONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.CHARSTONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.CHARSTONE_COBBLESTONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.CHARSTONE_BRICKS_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.POLISHED_CHARSTONE_SLAB.get());
+
+        this.dropSelf(HexcraftBlocks.MAGIC_CRYSTAL_BLOCK.get());
+        
+        this.dropOther(HexcraftBlocks.MAGIC_CRYSTAL_CLUSTER.get(), HexcraftItems.MAGIC_CRYSTAL.get());
+
+        this.dropOther(HexcraftBlocks.LARGE_MAGIC_CRYSTAL_BUD.get(), HexcraftItems.MAGIC_CRYSTAL.get());
+
+
+        this.add(HexcraftBlocks.VILE_GRASS_BLOCK.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.VILE_GRASS_BLOCK.get(), Item.byBlock(HexcraftBlocks.VILE_DIRT.get())));
+
+        this.add(HexcraftBlocks.PEARL_STONE.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.PEARL_STONE.get(), Item.byBlock(HexcraftBlocks.PEARL_COBBLESTONE.get())));
+
+        this.add(HexcraftBlocks.CRIMSON_STONE.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.CRIMSON_STONE.get(), Item.byBlock(HexcraftBlocks.CRIMSON_COBBLESTONE.get())));
+
+        this.add(HexcraftBlocks.UNDER_WORLD_STONE.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.UNDER_WORLD_STONE.get(), Item.byBlock(HexcraftBlocks.UNDER_WORLD_COBBLESTONE.get())));
+
+        this.add(HexcraftBlocks.CHARSTONE.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.CHARSTONE.get(), Item.byBlock(HexcraftBlocks.CHARSTONE_COBBLESTONE.get())));
 
         this.add(HexcraftBlocks.MOONSTONE_ORE.get(),
                 block -> createCopperLikeOreDrops(HexcraftBlocks.MOONSTONE_ORE.get(), HexcraftItems.MOONSTONE.get()));
@@ -133,6 +224,9 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 
 
+    }
+
+    private void dropOther(Item item) {
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

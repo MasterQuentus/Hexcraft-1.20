@@ -75,6 +75,7 @@ public class HexcraftCreativeModTabs {
                         //Blocks
                         output.accept(HexcraftBlocks.VILE_GRASS_BLOCK.get());
                         output.accept(HexcraftBlocks.VILE_DIRT.get());
+                        output.accept(HexcraftBlocks.VAMPIRE_ORCHID.get());
                         output.accept(HexcraftBlocks.CURSED_SOIL.get());
                         output.accept(HexcraftBlocks.CURED_SOIL.get());
                         output.accept(HexcraftBlocks.FERTILIZED_DIRT.get());
@@ -88,6 +89,7 @@ public class HexcraftCreativeModTabs {
 
                         //Foods
                         output.accept(HexcraftItems.JUNIPER_BERRIES.get());
+                        output.accept(HexcraftItems.BLOOD_APPLE.get());
 
                         //Building Blocks
                         output.accept(HexcraftBlocks.AMETHYST_CHIMES.get());
@@ -114,6 +116,38 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.POLISHED_CHARSTONE.get());
                         output.accept(HexcraftBlocks.CHISELED_CHARSTONE.get());
                         output.accept(HexcraftBlocks.CRACKED_CHARSTONE.get());
+                        output.accept(HexcraftBlocks.PEARL_STONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.PEARL_COBBLESTONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.PEARL_STONE_BRICKS_STAIRS.get());
+                        output.accept(HexcraftBlocks.POLISHED_PEARL_STONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.CRIMSON_STONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.CRIMSON_COBBLESTONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.CRIMSON_STONE_BRICKS_STAIRS.get());
+                        output.accept(HexcraftBlocks.POLISHED_CRIMSON_STONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.UNDER_WORLD_STONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.UNDER_WORLD_COBBLESTONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS_STAIRS.get());
+                        output.accept(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.CHARSTONE_STONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.CHARSTONE_COBBLESTONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.CHARSTONE_STONE_BRICKS_STAIRS.get());
+                        output.accept(HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS.get());
+                        output.accept(HexcraftBlocks.PEARL_STONE_SLAB.get());
+                        output.accept(HexcraftBlocks.PEARL_COBBLESTONE_SLAB.get());
+                        output.accept(HexcraftBlocks.PEARL_STONE_BRICKS_SLAB.get());
+                        output.accept(HexcraftBlocks.POLISHED_PEARL_STONE_SLAB.get());
+                        output.accept(HexcraftBlocks.CRIMSON_STONE_SLAB.get());
+                        output.accept(HexcraftBlocks.CRIMSON_COBBLESTONE_SLAB.get());
+                        output.accept(HexcraftBlocks.CRIMSON_STONE_BRICKS_SLAB.get());
+                        output.accept(HexcraftBlocks.POLISHED_CRIMSON_STONE_SLAB.get());
+                        output.accept(HexcraftBlocks.UNDER_WORLD_STONE_SLAB.get());
+                        output.accept(HexcraftBlocks.UNDER_WORLD_COBBLESTONE_SLAB.get());
+                        output.accept(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS_SLAB.get());
+                        output.accept(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE_SLAB.get());
+                        output.accept(HexcraftBlocks.CHARSTONE_SLAB.get());
+                        output.accept(HexcraftBlocks.CHARSTONE_COBBLESTONE_SLAB.get());
+                        output.accept(HexcraftBlocks.CHARSTONE_BRICKS_SLAB.get());
+                        output.accept(HexcraftBlocks.POLISHED_CHARSTONE_SLAB.get());
 
                         //Ores
                         output.accept(HexcraftBlocks.MOONSTONE_ORE.get());
@@ -132,6 +166,9 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.TRENOGEN_ORE.get());
                         output.accept(HexcraftBlocks.DEEPSLATE_TRENOGEN_ORE.get());
                         output.accept(HexcraftBlocks.JORMUIM_ORE.get());
+                        output.accept(HexcraftBlocks.MAGIC_CRYSTAL_CLUSTER.get());
+                        output.accept(HexcraftBlocks.BUDDING_MAGIC_CRYSTAL.get());
+                        output.accept(HexcraftBlocks.MAGIC_CRYSTAL_BLOCK.get());
                     })
                     .build());
 

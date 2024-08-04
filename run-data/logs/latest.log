@@ -1,29 +1,33 @@
-[02Aug2024 13:02:37.100] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\MasterQuentus\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.0.19, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, hexcraftmod, --all, --output, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\generated\resources, --existing, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\main\resources]
-[02Aug2024 13:02:37.104] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
-[02Aug2024 13:02:37.226] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[02Aug2024 13:02:37.266] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/MasterQuentus/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[02Aug2024 13:02:37.519] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.0.19\11325ab7cc62ad123c202b63216724c0a9af1a21\javafmllanguage-1.20.1-47.0.19.jar is missing mods.toml file
-[02Aug2024 13:02:37.521] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.0.19\43bcf9e8002338c09b0f793771f6471e5fb74dd7\lowcodelanguage-1.20.1-47.0.19.jar is missing mods.toml file
-[02Aug2024 13:02:37.522] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.0.19\9ad401a1888591fa336b5685d1572aa4387cf31d\mclanguage-1.20.1-47.0.19.jar is missing mods.toml file
-[02Aug2024 13:02:37.524] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.0.19\fb98a8fe718272b2822fb1798215d25e97ce84e6\fmlcore-1.20.1-47.0.19.jar is missing mods.toml file
-[02Aug2024 13:02:37.592] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[02Aug2024 13:02:38.683] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\MasterQuentus\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, hexcraftmod, --all, --output, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\generated\resources, --existing, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\main\resources]
-[02Aug2024 13:02:39.057] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [hexcraftmod]
-[02Aug2024 13:02:42.339] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.0.19, for MC 1.20.1 with MCP 20230612.114412
-[02Aug2024 13:02:42.342] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.0.19 Initialized
-[02Aug2024 13:02:42.697] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MasterQuentus/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.0.19_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.0.19_mapped_parchment_2023.06.26-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[02Aug2024 13:02:42.697] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MasterQuentus/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.0.19_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.0.19_mapped_parchment_2023.06.26-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[02Aug2024 13:02:42.835] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[02Aug2024 13:02:42.902] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 66 ms
-[02Aug2024 13:02:42.902] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[02Aug2024 13:02:42.976] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 73 ms
-[02Aug2024 13:02:42.976] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: hexcraftmod
-[02Aug2024 13:02:43.080] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: hexcraftmod finished after 103 ms
-[02Aug2024 13:02:43.080] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: hexcraftmod
-[02Aug2024 13:02:43.087] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: hexcraftmod finished after 7 ms
-[02Aug2024 13:02:43.087] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id hexcraftmod
-[02Aug2024 13:02:43.103] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id hexcraftmod finished after 15 ms
-[02Aug2024 13:02:43.103] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id hexcraftmod
-[02Aug2024 13:02:43.104] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id hexcraftmod finished after 0 ms
-[02Aug2024 13:02:43.104] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 269 ms
-[02Aug2024 13:02:43.119] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 414, old count: 411, new count: 412, removed stale: 3, written: 5
+[04Aug2024 00:16:06.779] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\MasterQuentus\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.0.19, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, hexcraftmod, --all, --output, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\generated\resources, --existing, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\main\resources]
+[04Aug2024 00:16:06.782] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
+[04Aug2024 00:16:06.977] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[04Aug2024 00:16:07.033] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/MasterQuentus/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[04Aug2024 00:16:07.284] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.0.19\11325ab7cc62ad123c202b63216724c0a9af1a21\javafmllanguage-1.20.1-47.0.19.jar is missing mods.toml file
+[04Aug2024 00:16:07.286] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.0.19\43bcf9e8002338c09b0f793771f6471e5fb74dd7\lowcodelanguage-1.20.1-47.0.19.jar is missing mods.toml file
+[04Aug2024 00:16:07.288] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.0.19\9ad401a1888591fa336b5685d1572aa4387cf31d\mclanguage-1.20.1-47.0.19.jar is missing mods.toml file
+[04Aug2024 00:16:07.290] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.0.19\fb98a8fe718272b2822fb1798215d25e97ce84e6\fmlcore-1.20.1-47.0.19.jar is missing mods.toml file
+[04Aug2024 00:16:07.355] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[04Aug2024 00:16:08.485] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\MasterQuentus\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, hexcraftmod, --all, --output, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\generated\resources, --existing, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\main\resources]
+[04Aug2024 00:16:08.861] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [hexcraftmod]
+[04Aug2024 00:16:11.943] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.0.19, for MC 1.20.1 with MCP 20230612.114412
+[04Aug2024 00:16:11.943] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.0.19 Initialized
+[04Aug2024 00:16:12.164] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[04Aug2024 00:16:12.170] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.289 ms
+[04Aug2024 00:16:12.424] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MasterQuentus/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.0.19_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.0.19_mapped_parchment_2023.06.26-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[04Aug2024 00:16:12.428] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MasterQuentus/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.0.19_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.0.19_mapped_parchment_2023.06.26-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[04Aug2024 00:16:12.572] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[04Aug2024 00:16:12.645] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 71 ms
+[04Aug2024 00:16:12.645] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[04Aug2024 00:16:12.730] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 84 ms
+[04Aug2024 00:16:12.730] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: hexcraftmod
+[04Aug2024 00:16:12.854] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: hexcraftmod finished after 123 ms
+[04Aug2024 00:16:12.854] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: hexcraftmod
+[04Aug2024 00:16:12.861] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: hexcraftmod finished after 7 ms
+[04Aug2024 00:16:12.861] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id hexcraftmod
+[04Aug2024 00:16:12.888] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id hexcraftmod finished after 26 ms
+[04Aug2024 00:16:12.888] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id hexcraftmod
+[04Aug2024 00:16:12.889] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id hexcraftmod finished after 1 ms
+[04Aug2024 00:16:12.889] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[04Aug2024 00:16:12.915] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 25 ms
+[04Aug2024 00:16:12.915] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 343 ms
+[04Aug2024 00:16:12.943] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 763, old count: 763, new count: 764, removed stale: 0, written: 8

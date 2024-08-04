@@ -1,12 +1,10 @@
 package net.masterquentus.hexcraftmod.block;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
-import net.masterquentus.hexcraftmod.block.custom.AmethysChimesBlock;
-import net.masterquentus.hexcraftmod.block.custom.CuredSoilBlock;
-import net.masterquentus.hexcraftmod.block.custom.CursedSoilBlock;
-import net.masterquentus.hexcraftmod.block.custom.FertilizedDirtBlock;
+import net.masterquentus.hexcraftmod.block.custom.*;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -38,6 +36,12 @@ public class HexcraftBlocks {
 
     public static final RegistryObject <Block> FERTILIZED_DIRT = registerBlock("fertilized_dirt",
             () -> new FertilizedDirtBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(0.6F).sound(SoundType.GRAVEL)));
+
+    public static final RegistryObject <Block> VAMPIRE_ORCHID = registerBlock("vampire_orchid",
+            () -> new FlowerBlock(() -> MobEffects.HEALTH_BOOST, 4, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
+
+    public static final RegistryObject <Block> POTTED_VAMPIRE_ORCHID = BLOCKS.register("potted_vampire_orchid",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), VAMPIRE_ORCHID, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
 
     public static final RegistryObject <Block> BLACK_OBSIDIAN = registerBlock("black_obsidian",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()
@@ -117,10 +121,125 @@ public class HexcraftBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(1.5F, 6.0F)));
 
+    //Stairs
+    public static final RegistryObject<Block> PEARL_STONE_STAIRS = registerBlock("pearl_stone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.PEARL_STONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> PEARL_COBBLESTONE_STAIRS = registerBlock("pearl_cobblestone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.PEARL_STONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> PEARL_STONE_BRICKS_STAIRS = registerBlock("pearl_stone_bricks_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.PEARL_STONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> POLISHED_PEARL_STONE_STAIRS = registerBlock("polished_pearl_stone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.POLISHED_PEARL_STONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> CRIMSON_STONE_STAIRS = registerBlock("crimson_stone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.CRIMSON_STONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> CRIMSON_COBBLESTONE_STAIRS = registerBlock("crimson_cobblestone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.CRIMSON_COBBLESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> CRIMSON_STONE_BRICKS_STAIRS = registerBlock("crimson_stone_bricks_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.CRIMSON_STONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> POLISHED_CRIMSON_STONE_STAIRS = registerBlock("polished_crimson_stone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.POLISHED_CRIMSON_STONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> UNDER_WORLD_STONE_STAIRS = registerBlock("under_world_stone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.UNDER_WORLD_STONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> UNDER_WORLD_COBBLESTONE_STAIRS = registerBlock("under_world_cobblestone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.UNDER_WORLD_COBBLESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> UNDER_WORLD_STONE_BRICKS_STAIRS = registerBlock("under_world_stone_bricks_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.UNDER_WORLD_STONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> POLISHED_UNDER_WORLD_STONE_STAIRS = registerBlock("polished_under_world_stone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.POLISHED_UNDER_WORLD_STONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> CHARSTONE_STONE_STAIRS = registerBlock("charstone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.CHARSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> CHARSTONE_COBBLESTONE_STAIRS = registerBlock("charstone_cobblestone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.CHARSTONE_COBBLESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> CHARSTONE_STONE_BRICKS_STAIRS = registerBlock("charstone_bricks_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.CHARSTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> POLISHED_CHARSTONE_STONE_STAIRS = registerBlock("polished_charstone_stairs",
+            () -> new StairBlock(() -> HexcraftBlocks.POLISHED_CHARSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
     public static final RegistryObject <Block> AMETHYST_CHIMES = registerBlock("amethyst_chimes",
             () -> new AmethysChimesBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
                     .strength(1.7F).requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST).noOcclusion()));
+
+    //Slabs
+    public static final RegistryObject<Block> PEARL_STONE_SLAB = registerBlock("pearl_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> PEARL_COBBLESTONE_SLAB = registerBlock("pearl_cobblestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(2.0F, 6.0F)));
+
+    public static final RegistryObject<Block> PEARL_STONE_BRICKS_SLAB = registerBlock("pearl_stone_bricks_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> POLISHED_PEARL_STONE_SLAB = registerBlock("polished_pearl_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> CRIMSON_STONE_SLAB = registerBlock("crimson_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> CRIMSON_COBBLESTONE_SLAB = registerBlock("crimson_cobblestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(2.0F, 6.0F)));
+
+    public static final RegistryObject<Block> CRIMSON_STONE_BRICKS_SLAB = registerBlock("crimson_stone_bricks_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> POLISHED_CRIMSON_STONE_SLAB = registerBlock("polished_crimson_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> UNDER_WORLD_STONE_SLAB = registerBlock("under_world_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> UNDER_WORLD_COBBLESTONE_SLAB = registerBlock("under_world_cobblestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(2.0F, 6.0F)));
+
+    public static final RegistryObject<Block> UNDER_WORLD_STONE_BRICKS_SLAB = registerBlock("under_world_stone_bricks_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> POLISHED_UNDER_WORLD_STONE_SLAB = registerBlock("polished_under_world_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> CHARSTONE_SLAB = registerBlock("charstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> CHARSTONE_COBBLESTONE_SLAB = registerBlock("charstone_cobblestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(2.0F, 6.0F)));
+
+    public static final RegistryObject<Block> CHARSTONE_BRICKS_SLAB = registerBlock("charstone_bricks_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+    public static final RegistryObject<Block> POLISHED_CHARSTONE_SLAB = registerBlock("polished_charstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
 
     //Ores
     public static final RegistryObject <Block> MOONSTONE_ORE = registerBlock("moonstone_ore",
@@ -186,6 +305,36 @@ public class HexcraftBlocks {
     public static final RegistryObject <Block> JORMUIM_ORE = registerBlock("jormuim_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).requiresCorrectToolForDrops()
                     .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+
+    //Geodes
+    public static final RegistryObject <Block> MAGIC_CRYSTAL_BLOCK = registerBlock("magic_crystal_block",
+            () -> new AmethystBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).strength(1.5F).requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject <Block> BUDDING_MAGIC_CRYSTAL = registerBlock("budding_magic_crystal",
+            () -> new BuddingMagicalCrystalBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).randomTicks().strength(1.5F).requiresCorrectToolForDrops().noLootTable()
+                    .sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject <Block> MAGIC_CRYSTAL_CLUSTER = registerBlock("magic_crystal_cluster",
+            () -> new AmethystClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
+                    .randomTicks().strength(1.5F).requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST).lightLevel((state) -> 5)));
+
+    public static final RegistryObject <Block> LARGE_MAGIC_CRYSTAL_BUD = registerBlock("large_magic_crystal_bud",
+            () -> new AmethystClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
+                    .randomTicks().strength(1.5F).requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST).lightLevel((state) -> 4)));
+
+    public static final RegistryObject <Block> MEDIUM_MAGIC_CRYSTAL_BUD = registerBlock("medium_magic_crystal_bud",
+            () -> new AmethystClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
+                    .randomTicks().strength(1.5F).requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST).lightLevel((state) -> 2).noLootTable()));
+
+    public static final RegistryObject <Block> SMALL_MAGIC_CRYSTAL_BUD = registerBlock("small_magic_crystal_bud",
+            () -> new AmethystClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
+                    .randomTicks().strength(1.5F).requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST).lightLevel((state) -> 1).noLootTable()));
+
 
 
     //Ore Blocks
