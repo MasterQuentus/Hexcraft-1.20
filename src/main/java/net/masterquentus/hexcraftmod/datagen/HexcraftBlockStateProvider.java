@@ -70,15 +70,6 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         blockWithItem(HexcraftBlocks.SILVER_BLOCK);
         blockWithItem(HexcraftBlocks.VAMPIRIC_BLOCK);
         blockWithItem(HexcraftBlocks.MAGIC_CRYSTAL_BLOCK);
-        blockWithItem(HexcraftBlocks.BUDDING_MAGIC_CRYSTAL);
-        simpleBlockWithItem(HexcraftBlocks.MAGIC_CRYSTAL_CLUSTER.get(),
-                models().cross(blockTexture(HexcraftBlocks.MAGIC_CRYSTAL_CLUSTER.get()).getPath(),blockTexture(HexcraftBlocks.MAGIC_CRYSTAL_CLUSTER.get())).renderType("cutout"));
-        simpleBlockWithItem(HexcraftBlocks.LARGE_MAGIC_CRYSTAL_BUD.get(),
-                models().cross(blockTexture(HexcraftBlocks.LARGE_MAGIC_CRYSTAL_BUD.get()).getPath(),blockTexture(HexcraftBlocks.LARGE_MAGIC_CRYSTAL_BUD.get())).renderType("cutout"));
-        simpleBlockWithItem(HexcraftBlocks.MEDIUM_MAGIC_CRYSTAL_BUD.get(),
-                models().cross(blockTexture(HexcraftBlocks.MEDIUM_MAGIC_CRYSTAL_BUD.get()).getPath(),blockTexture(HexcraftBlocks.MEDIUM_MAGIC_CRYSTAL_BUD.get())).renderType("cutout"));
-        simpleBlockWithItem(HexcraftBlocks.SMALL_MAGIC_CRYSTAL_BUD.get(),
-                models().cross(blockTexture(HexcraftBlocks.SMALL_MAGIC_CRYSTAL_BUD.get()).getPath(),blockTexture(HexcraftBlocks.SMALL_MAGIC_CRYSTAL_BUD.get())).renderType("cutout"));
         stairsBlock(((StairBlock) HexcraftBlocks.PEARL_STONE_STAIRS.get()), blockTexture(HexcraftBlocks.PEARL_STONE.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.PEARL_COBBLESTONE_STAIRS.get()), blockTexture(HexcraftBlocks.PEARL_COBBLESTONE.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.PEARL_STONE_BRICKS_STAIRS.get()), blockTexture(HexcraftBlocks.PEARL_STONE_BRICKS.get()));

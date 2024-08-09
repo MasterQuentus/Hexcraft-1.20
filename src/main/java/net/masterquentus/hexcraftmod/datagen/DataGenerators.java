@@ -42,7 +42,7 @@ public class DataGenerators {
 
         generator.addProvider(event.includeServer(), new HexcraftGlobalLootModifiersProvider(packOutput));
 
-        //generator.addProvider(event.includeServer(),
-                //new HexcraftWorldGenProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(),
+                new HexcraftWorldGenProvider(packOutput, lookupProvider));
     }
 }

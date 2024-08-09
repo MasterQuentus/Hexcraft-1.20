@@ -78,8 +78,6 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
         simpleItem(HexcraftItems.BLOOD_BERRIES);
         simpleItem(HexcraftItems.WITCHES_LADDER_ITEM);
         simpleItem(HexcraftItems.WITCHES_SATCHEL);
-        evenSimplerBlockItem(HexcraftBlocks.VAMPIRE_ORCHID);
-        evenSimplerBlockItem(HexcraftBlocks.BLOODY_ROSE);
         evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_STAIRS);
         evenSimplerBlockItem(HexcraftBlocks.PEARL_COBBLESTONE_STAIRS);
         evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_BRICKS_STAIRS);

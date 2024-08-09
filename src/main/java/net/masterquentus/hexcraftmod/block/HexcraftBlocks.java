@@ -356,22 +356,22 @@ public class HexcraftBlocks {
                     .sound(SoundType.AMETHYST)));
 
     public static final RegistryObject <Block> MAGIC_CRYSTAL_CLUSTER = registerBlock("magic_crystal_cluster",
-            () -> new AmethystClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
+            () -> new MagicCrystalClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
                     .randomTicks().strength(1.5F).requiresCorrectToolForDrops().randomTicks()
                     .sound(SoundType.AMETHYST).lightLevel((state) -> 5)));
 
     public static final RegistryObject <Block> LARGE_MAGIC_CRYSTAL_BUD = registerBlock("large_magic_crystal_bud",
-            () -> new AmethystClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
+            () -> new MagicCrystalClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
                     .randomTicks().strength(1.5F).requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST).lightLevel((state) -> 4)));
 
     public static final RegistryObject <Block> MEDIUM_MAGIC_CRYSTAL_BUD = registerBlock("medium_magic_crystal_bud",
-            () -> new AmethystClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
+            () -> new MagicCrystalClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
                     .randomTicks().strength(1.5F).requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST).lightLevel((state) -> 2).noLootTable()));
 
     public static final RegistryObject <Block> SMALL_MAGIC_CRYSTAL_BUD = registerBlock("small_magic_crystal_bud",
-            () -> new AmethystClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
+            () -> new MagicCrystalClusterBlock(7, 3, BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).noOcclusion()
                     .randomTicks().strength(1.5F).requiresCorrectToolForDrops()
                     .sound(SoundType.AMETHYST).lightLevel((state) -> 1).noLootTable()));
 

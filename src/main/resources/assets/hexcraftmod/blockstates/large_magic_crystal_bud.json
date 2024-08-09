@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "hexcraftmod:block/large_magic_crystal_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "hexcraftmod:block/large_magic_crystal_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "hexcraftmod:block/large_magic_crystal_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "hexcraftmod:block/large_magic_crystal_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "hexcraftmod:block/large_magic_crystal_bud"
+    },
+    "facing=west": {
+      "model": "hexcraftmod:block/large_magic_crystal_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
