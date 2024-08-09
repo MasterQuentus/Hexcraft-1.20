@@ -5,7 +5,8 @@
   "item.hexcraftmod.tanned_leather": "Tanned Leather",
   "item.hexcraftmod.bone_needle": "Bone Needle",
   "item.hexcraftmod.taglock_kit": "Taglock Kit",
-  "item.hexcraftmod.taglock_kit_fUll": "Taglock Kit",
+  "item.hexcraftmod.taglock_kit_full": "Taglock Kit",
+  "item.hexcraftmod.witches_satchel": "Witches Satchel",
   "item.hexcraftmod.unfired_clay_pot": "Unfired Clay Pot",
   "item.hexcraftmod.clay_pot": "Clay Pot",
   "item.hexcraftmod.lilith_contract": "Lilith Contract",
@@ -67,6 +68,7 @@
   "block.hexcraftmod.black_obsidian": "Black Obsidian",
   "block.hexcraftmod.amethyst_chimes": "Amethyst Chimes",
   "block.hexcraftmod.witches_oven": "Witches Oven",
+  "block.hexcraftmod.witches_cauldron": "Witches Cauldron",
   "block.hexcraftmod.moonstone_ore": "Moonstone Ore",
   "block.hexcraftmod.end_moonstone_ore": "End Moonstone Ore",
   "block.hexcraftmod.nether_moonstone_ore": "Nether Moonstone Ore",
@@ -165,6 +167,12 @@
   //Foods
   "item.hexcraftmod.juniper_berries": "Juniper Berries",
   "item.hexcraftmod.blood_apple": "Blood Apple",
+  "item.hexcraftmod.blood_berries": "Blood Berries",
+
+  //plants
+  "item.hexcraftmod.witches_ladder": "Witches Ladder",
+  "block.hexcraftmod.witches_ladder": "Witches Ladder",
+  "block.hexcraftmod.witches_ladder_plant": "Witches Ladder",
 
   //Tooltips
   "tooltip.hexcraftmod.amethyst_chimes.tooltip": "Shows Nearby Hostile Mobs",

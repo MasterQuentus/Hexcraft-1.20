@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-04T14:27:54.5394613	Item Models: hexcraftmod
+// 1.20.1	2024-08-06T02:47:18.6306421	Item Models: hexcraftmod
 424491fc87e0fdf222fd40f43302af0b96667b38 assets/hexcraftmod/models/item/air_rune.json
 d8b5654e6b81ed85c37f37580861f525898835f0 assets/hexcraftmod/models/item/attuned_stone.json
 9bce6c2d6b265dad9e5f020922a1c50c27cfcb71 assets/hexcraftmod/models/item/attuned_stone_charged.json
@@ -8,6 +8,7 @@ cd79370ead3d74a3c136a52d296a857ca55c0b99 assets/hexcraftmod/models/item/bloody_n
 36e8c0516fa8002762ef187f14db05a543284d93 assets/hexcraftmod/models/item/bloody_nykium_nugget.json
 a8db1e03edacb7917218b80cab43c7f68612e7a9 assets/hexcraftmod/models/item/bloody_rose.json
 c925f47e7eb45574b4113ea370dceb89a68bd7a6 assets/hexcraftmod/models/item/blood_apple.json
+dd5bc89a10e2c64fcc1e4a7c827a432f46d7eddc assets/hexcraftmod/models/item/blood_berries.json
 036491dbc207fb62be3972d29c70d61170a3d5da assets/hexcraftmod/models/item/blue_rune.json
 c3891e32bf6903ee9b05f21acbe77dcb722e8e85 assets/hexcraftmod/models/item/bone_needle.json
 e96ea4a8fb35839e7f85f2943104a76819fffab7 assets/hexcraftmod/models/item/bound_leather.json
@@ -87,4 +88,6 @@ e376f628925cb92e96e5668566e030102ac0d8ac assets/hexcraftmod/models/item/vampire_
 5e531537a7a4c13ffc25b5cb485fcdf905dbe41c assets/hexcraftmod/models/item/water_rune.json
 800a1fc4468ca329939495de19a8be5e92c3cd8d assets/hexcraftmod/models/item/white_oak_ash.json
 82350a29255d5cd414fc3ff8bf7e5b0b18727605 assets/hexcraftmod/models/item/white_rune.json
+c1788694affa198d50d566952561a6836dc861e2 assets/hexcraftmod/models/item/witches_ladder_item.json
+a38ca616a15e02844aaf545e8759a3dc753f56f5 assets/hexcraftmod/models/item/witches_satchel.json
 2ee5895b802fd5c87e2966894c3c69b68ffa016e assets/hexcraftmod/models/item/yellow_rune.json

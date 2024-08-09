@@ -4,7 +4,7 @@ import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.api.BedTaglockSavedData;
 import net.masterquentus.hexcraftmod.api.IBedTaglock;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
-import net.masterquentus.hexcraftmod.block.custom.BloodyRoseBlock;
+import net.masterquentus.hexcraftmod.block.custom.plants.BloodyRoseBlock;
 import net.masterquentus.hexcraftmod.block.entity.BloodyRoseBlockEntity;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.masterquentus.hexcraftmod.util.HexcraftTags;
@@ -38,7 +38,7 @@ import java.util.UUID;
 
 public class TagLockKitItem extends Item {
 
-    public TagLockKitItem() {
+    public TagLockKitItem(Properties properties) {
         super(new Properties());
     }
 

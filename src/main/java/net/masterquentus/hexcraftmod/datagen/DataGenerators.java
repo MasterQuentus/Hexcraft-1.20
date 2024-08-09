@@ -40,6 +40,8 @@ public class DataGenerators {
 
         generator.addProvider(true, new EntityTypeTagProvider(packOutput, lookupProvider, existingFileHelper));
 
+        generator.addProvider(event.includeServer(), new HexcraftGlobalLootModifiersProvider(packOutput));
+
         //generator.addProvider(event.includeServer(),
                 //new HexcraftWorldGenProvider(packOutput, lookupProvider));
     }

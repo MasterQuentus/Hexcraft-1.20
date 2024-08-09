@@ -165,6 +165,7 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
         this.dropOther(HexcraftBlocks.LARGE_MAGIC_CRYSTAL_BUD.get(), HexcraftItems.MAGIC_CRYSTAL.get());
 
+        this.dropOther(HexcraftBlocks.WITCHES_LADDER.get(), HexcraftItems.WITCHES_LADDER_ITEM.get());
 
         this.add(HexcraftBlocks.VILE_GRASS_BLOCK.get(),
                 block -> createCopperLikeOreDrops(HexcraftBlocks.VILE_GRASS_BLOCK.get(), Item.byBlock(HexcraftBlocks.VILE_DIRT.get())));

@@ -23,6 +23,7 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.TANNED_LEATHER.get());
                         output.accept(HexcraftItems.BONE_NEEDLE.get());
                         output.accept(HexcraftItems.TAGLOCK_KIT.get());
+                        output.accept(HexcraftItems.WITCHES_SATCHEL.get());
                         output.accept(HexcraftItems.UNFIRED_CLAY_POT.get());
                         output.accept(HexcraftItems.CLAY_POT.get());
                         output.accept(HexcraftItems.LILITH_CONTRACT.get());
@@ -87,9 +88,13 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.CHARSTONE.get());
 
 
+                        //Plants
+                        output.accept(HexcraftItems.WITCHES_LADDER_ITEM.get());
+
 
                         //Foods
                         output.accept(HexcraftItems.JUNIPER_BERRIES.get());
+                        output.accept(HexcraftItems.BLOOD_BERRIES.get());
                         output.accept(HexcraftItems.BLOOD_APPLE.get());
 
                         //Building Blocks

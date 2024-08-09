@@ -7,6 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import org.apache.commons.codec.binary.Hex;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -138,6 +139,31 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
                 .add(HexcraftBlocks.VILE_GRASS_BLOCK.get(), HexcraftBlocks.VILE_DIRT.get(),
                      HexcraftBlocks.CURSED_SOIL.get(), HexcraftBlocks.CURED_SOIL.get(),
                      HexcraftBlocks.FERTILIZED_DIRT.get());
+
+
+        this.tag(BlockTags.DIRT)
+                .add(HexcraftBlocks.VILE_GRASS_BLOCK.get(), HexcraftBlocks.VILE_DIRT.get(),
+                        HexcraftBlocks.CURSED_SOIL.get(), HexcraftBlocks.CURED_SOIL.get(),
+                        HexcraftBlocks.FERTILIZED_DIRT.get());
+
+        this.tag(BlockTags.BASE_STONE_OVERWORLD)
+                .add(HexcraftBlocks.PEARL_STONE.get(), HexcraftBlocks.CRIMSON_STONE.get(),
+                        HexcraftBlocks.UNDER_WORLD_STONE.get(), HexcraftBlocks.CHARSTONE.get());
+
+        this.tag(BlockTags.STONE_BRICKS)
+                .add(HexcraftBlocks.PEARL_STONE_BRICKS.get(), HexcraftBlocks.CRIMSON_STONE_BRICKS.get(),
+                        HexcraftBlocks.UNDER_WORLD_STONE_BRICKS.get(), HexcraftBlocks.CHARSTONE_BRICKS.get());
+
+        this.tag(BlockTags.FLOWERS)
+                .add(HexcraftBlocks.VAMPIRE_ORCHID.get(), HexcraftBlocks.BLOODY_ROSE.get());
+
+        this.tag(BlockTags.ANIMALS_SPAWNABLE_ON)
+                .add(HexcraftBlocks.VILE_GRASS_BLOCK.get());
+
+        this.tag(BlockTags.ENDERMAN_HOLDABLE)
+                .add(HexcraftBlocks.VILE_GRASS_BLOCK.get(), HexcraftBlocks.VILE_DIRT.get(),
+                        HexcraftBlocks.PEARL_STONE.get(), HexcraftBlocks.CRIMSON_STONE_BRICKS.get(),
+                        HexcraftBlocks.UNDER_WORLD_STONE_BRICKS.get(), HexcraftBlocks.CHARSTONE_BRICKS.get());
     }
 
 }

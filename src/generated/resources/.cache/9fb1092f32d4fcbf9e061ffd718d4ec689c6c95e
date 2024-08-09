@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-04T14:37:47.9781706	Recipes
+// 1.20.1	2024-08-06T01:58:55.4002794	Recipes
 ffe4f009b05d16f71e57d406735e532e8e10f505 data/hexcraftmod/advancements/recipes/building_blocks/charstone_bricks.json
 748c979083c8a471171977c26f05398ede3a0ad3 data/hexcraftmod/advancements/recipes/building_blocks/chiseled_charstone.json
 a844a9f1cdfdafaba19de7c9e0ffcae075afdf79 data/hexcraftmod/advancements/recipes/building_blocks/chiseled_crimson_stone.json
@@ -18,6 +18,7 @@ fca2a7992c1f4b41e2ac088a71a3ddc8f87c7ad4 data/hexcraftmod/advancements/recipes/b
 a308e9a790c51b3c91ba54210090f35310cd0e84 data/hexcraftmod/advancements/recipes/building_blocks/polished_pearl_stone.json
 ca4701d48af999f733408e48a7b7b4a8f6feffb6 data/hexcraftmod/advancements/recipes/building_blocks/polished_under_world_stone.json
 9b06604cbbb4f186f0339fbfc0be9b6310262b72 data/hexcraftmod/advancements/recipes/building_blocks/under_world_stone_bricks.json
+07b76da877a1507f20c7f51c793f1be9a45fe310 data/hexcraftmod/advancements/recipes/building_blocks/witches_ladder_item.json
 5a4d0d7847cccc4c6e9d7169d3dfed462198a58c data/hexcraftmod/advancements/recipes/misc/air_rune.json
 cf4c3cbd495a9e178014de6714ff40790777e48a data/hexcraftmod/advancements/recipes/misc/black_rune.json
 0f96b2d5364a8ebfb5cf60bfc663af95d6913457 data/hexcraftmod/advancements/recipes/misc/blank_rune.json
@@ -265,6 +266,7 @@ f82a218d931f62b9a3b7cc21cff808171fe73a11 data/hexcraftmod/recipes/vampiric_gem_f
 6825787ebcb0c104c83162e4c29965cbbffcdcbe data/hexcraftmod/recipes/vampiric_gem_from_smelting_vampiric_ore.json
 80782402ea1fe1a18e00fb2958e59c51d9f26a85 data/hexcraftmod/recipes/water_rune.json
 6589224d22dcfc9affdb43cd3ca6d588c705be1d data/hexcraftmod/recipes/white_rune.json
+d0f349edb68936f6a04536ba1629b1c58c120f57 data/hexcraftmod/recipes/witches_ladder_item.json
 4493e891c1d50ef7603d4080f380c6cf15d62a88 data/hexcraftmod/recipes/witches_oven.json
 a827ecd1117a6cd22ddbf0631615e3e030a0a6b5 data/hexcraftmod/recipes/yellow_rune.json
 35eedd28baa842c0d13ea40a86013f52cc837d09 data/minecraft/advancements/recipes/misc/pink_dye.json

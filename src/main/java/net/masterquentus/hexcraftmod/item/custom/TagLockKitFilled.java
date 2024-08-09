@@ -13,7 +13,7 @@ import java.util.UUID;
 
 public class TagLockKitFilled extends Item {
 
-    public TagLockKitFilled() {
+    public TagLockKitFilled(Properties properties) {
         super(new Properties());
     }
 

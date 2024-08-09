@@ -34,6 +34,7 @@ public class EntityTypeTagProvider extends IntrinsicHolderTagsProvider<EntityTyp
                         EntityType.SKELETON, EntityType.SLIME, EntityType.SPIDER, EntityType.STRAY, EntityType.VEX,
                         EntityType.WITCH, EntityType.WITHER_SKELETON, EntityType.ZOMBIE, EntityType.ZOMBIE_VILLAGER,
                         EntityType.ZOMBIFIED_PIGLIN, EntityType.ZOGLIN, EntityType.WARDEN);
+
         tag(HexcraftTags.EntityTypes.TAGLOCK_BLACKLIST)
                 .add(EntityType.ENDER_DRAGON, EntityType.WITHER, EntityType.WARDEN);
     }

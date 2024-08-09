@@ -1,4 +1,4 @@
-package net.masterquentus.hexcraftmod.block.custom;
+package net.masterquentus.hexcraftmod.block.custom.plants;
 
 import net.masterquentus.hexcraftmod.block.entity.BloodyRoseBlockEntity;
 import net.minecraft.core.BlockPos;

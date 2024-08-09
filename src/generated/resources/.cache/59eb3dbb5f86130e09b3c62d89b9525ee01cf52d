@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-04T14:33:15.7068648	Loot Tables
+// 1.20.1	2024-08-06T01:39:17.1648369	Loot Tables
 c2b8294f68b393ea3aea5522889c8f0c14748417 data/hexcraftmod/loot_tables/blocks/amethyst_chimes.json
 ad7ebc49e405f3e4b0617f8386c418bfee15abe6 data/hexcraftmod/loot_tables/blocks/black_obsidian.json
 785ce81aaa672e22e213df0b25e273ad7d3897a2 data/hexcraftmod/loot_tables/blocks/bloody_rose.json
@@ -88,4 +88,5 @@ f4eba56f208e51f3fd5ed59a323e05f58541afc4 data/hexcraftmod/loot_tables/blocks/und
 c5706af6233e56262dcb9902ae069b76c55079bd data/hexcraftmod/loot_tables/blocks/vampiric_ore.json
 1e4e14912d6dffa8969daa121a43078695ca957c data/hexcraftmod/loot_tables/blocks/vile_dirt.json
 06d68b2ae5b8830a1e5d2294650cabcd676516dc data/hexcraftmod/loot_tables/blocks/vile_grass_block.json
+8dbe06db6450754b93b0c0e4025c54d851da9f44 data/hexcraftmod/loot_tables/blocks/witches_ladder.json
 2895ad765d046973654a7e6d8720826eb57a6a57 data/hexcraftmod/loot_tables/blocks/witches_oven.json

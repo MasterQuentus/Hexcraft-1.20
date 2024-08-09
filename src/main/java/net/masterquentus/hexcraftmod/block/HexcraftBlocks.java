@@ -2,6 +2,9 @@ package net.masterquentus.hexcraftmod.block;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.custom.*;
+import net.masterquentus.hexcraftmod.block.custom.plants.BloodBerryBush;
+import net.masterquentus.hexcraftmod.block.custom.plants.WitchesLadderBlock;
+import net.masterquentus.hexcraftmod.block.custom.plants.WitchesLadderPlant;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -33,7 +36,7 @@ public class HexcraftBlocks {
 
 
     public static final RegistryObject<Block> VILE_GRASS_BLOCK = registerBlock("vile_grass_block",
-            () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)
+            () -> new VileGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)
                     .strength(0.6F).randomTicks().sound(SoundType.GRASS)));
 
     public static final RegistryObject<Block> VILE_DIRT = registerBlock("vile_dirt",
@@ -58,8 +61,19 @@ public class HexcraftBlocks {
     public static final RegistryObject <Block> BLOODY_ROSE = registerBlock("bloody_rose",
             () -> new FlowerBlock(() -> MobEffects.HEAL, 4, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
 
+    public static final RegistryObject<Block> WITCHES_LADDER = BLOCKS.register("witches_ladder",
+            () -> new WitchesLadderBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
+                    .instabreak().noOcclusion().randomTicks()));
+
+    public static final RegistryObject<Block> WITCHES_LADDER_PLANT = BLOCKS.register("witches_ladder_plant",
+            () -> new WitchesLadderPlant(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
+                    .instabreak().noOcclusion().noLootTable()));
+
     public static final RegistryObject <Block> POTTED_BLOODY_ROSE = BLOCKS.register("potted_bloody_rose",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), BLOODY_ROSE, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+
+    public static final RegistryObject<Block> BLOOD_BERRIES_PLANT = registerBlockWithoutBlockItem("blood_berries_plant",
+            () -> new BloodBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion().randomTicks().noLootTable()));
 
     public static final RegistryObject <Block> BLACK_OBSIDIAN = registerBlock("black_obsidian",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()
@@ -212,6 +226,10 @@ public class HexcraftBlocks {
     public static final RegistryObject <Block> WITCHES_OVEN = registerBlock("witches_oven",
             () -> new WitchesOven(BlockBehaviour.Properties.copy(Blocks.FURNACE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
                     .strength(3.5F).lightLevel(litBlockEmission(13)).noOcclusion()));
+
+    public static final RegistryObject <Block> WITCHES_CAULDRON = registerBlock("witches_cauldron",
+            () -> new WitchesCauldron(BlockBehaviour.Properties.copy(Blocks.CAULDRON).requiresCorrectToolForDrops()
+                    .strength(3.5F).noOcclusion()));
 
     //Slabs
     public static final RegistryObject<Block> PEARL_STONE_SLAB = registerBlock("pearl_stone_slab",
@@ -380,6 +398,10 @@ public class HexcraftBlocks {
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return HexcraftItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
     }
 
     public static void register(IEventBus eventBus) {

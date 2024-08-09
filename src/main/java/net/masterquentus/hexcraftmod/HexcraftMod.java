@@ -5,6 +5,7 @@ import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
 import net.masterquentus.hexcraftmod.block.entity.HexcraftBlockEntities;
 import net.masterquentus.hexcraftmod.item.HexcraftCreativeModTabs;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
+import net.masterquentus.hexcraftmod.loot.HexcraftLootModifier;
 import net.masterquentus.hexcraftmod.recipe.HexcraftRecipes;
 import net.masterquentus.hexcraftmod.screen.HexcraftMenuTypes;
 import net.masterquentus.hexcraftmod.screen.WitchesOvenScreen;
@@ -52,6 +53,7 @@ public class HexcraftMod {
         HexcraftBlockEntities.register(modEventBus);
         HexcraftMenuTypes.register(modEventBus);
         HexcraftRecipes.register(modEventBus);
+        HexcraftLootModifier.register(modEventBus);
 
         //HexcraftTerrablenderAPI.registerRegions();
         modEventBus.addListener(this::commonSetup);
@@ -72,6 +74,7 @@ public class HexcraftMod {
         event.enqueueWork(() -> {
             ComposterBlock.COMPOSTABLES.put(HexcraftItems.BLOOD_APPLE.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(HexcraftItems.JUNIPER_BERRIES.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(HexcraftItems.BLOOD_BERRIES.get(), 0.3F);
 
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.VAMPIRE_ORCHID.getId(), HexcraftBlocks.POTTED_VAMPIRE_ORCHID);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.BLOODY_ROSE.getId(), HexcraftBlocks.POTTED_BLOODY_ROSE);
@@ -90,6 +93,7 @@ public class HexcraftMod {
             event.accept(HexcraftItems.TANNED_LEATHER);
             event.accept(HexcraftItems.BONE_NEEDLE);
             event.accept(HexcraftItems.TAGLOCK_KIT);
+            event.accept(HexcraftItems.WITCHES_SATCHEL);
             event.accept(HexcraftItems.UNFIRED_CLAY_POT);
             event.accept(HexcraftItems.CLAY_POT);
             event.accept(HexcraftItems.LILITH_CONTRACT);
@@ -141,7 +145,9 @@ public class HexcraftMod {
 
                     if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
                         event.accept(HexcraftItems.JUNIPER_BERRIES);
+                        event.accept(HexcraftItems.BLOOD_BERRIES);
                         event.accept(HexcraftItems.BLOOD_APPLE);
+
 
                     if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
                         event.accept(HexcraftBlocks.AMETHYST_CHIMES);
@@ -234,6 +240,7 @@ public class HexcraftMod {
                         event.accept(HexcraftBlocks.MAGIC_CRYSTAL_CLUSTER);
                         event.accept(HexcraftBlocks.BUDDING_MAGIC_CRYSTAL);
                         event.accept(HexcraftBlocks.MAGIC_CRYSTAL_BLOCK);
+                        event.accept(HexcraftItems.WITCHES_LADDER_ITEM);
 
                     }
                 }

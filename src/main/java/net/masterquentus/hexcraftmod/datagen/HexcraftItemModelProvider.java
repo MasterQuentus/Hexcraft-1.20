@@ -75,6 +75,9 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
         simpleItem(HexcraftItems.ATTUNED_STONE_CHARGED);
         simpleItem(HexcraftItems.JUNIPER_BERRIES);
         simpleItem(HexcraftItems.BLOOD_APPLE);
+        simpleItem(HexcraftItems.BLOOD_BERRIES);
+        simpleItem(HexcraftItems.WITCHES_LADDER_ITEM);
+        simpleItem(HexcraftItems.WITCHES_SATCHEL);
         evenSimplerBlockItem(HexcraftBlocks.VAMPIRE_ORCHID);
         evenSimplerBlockItem(HexcraftBlocks.BLOODY_ROSE);
         evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_STAIRS);

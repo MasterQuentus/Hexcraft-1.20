@@ -620,6 +620,15 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
                 .unlockedBy(getHasName(HexcraftItems.MAGIC_CRYSTAL.get()), has(HexcraftItems.MAGIC_CRYSTAL.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.WITCHES_LADDER_ITEM.get(),4)
+                .pattern("FRF")
+                .pattern("FRF")
+                .pattern("FRF")
+                .define('R', HexcraftItems.ROPE.get())
+                .define('F', Items.FEATHER)
+                .unlockedBy(getHasName(HexcraftItems.ROPE.get()), has(HexcraftItems.ROPE.get()))
+                .save(pWriter);
+
 
 
 
