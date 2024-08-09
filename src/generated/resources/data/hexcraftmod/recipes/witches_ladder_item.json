@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "R": {
+      "item": "hexcraftmod:rope"
+    }
+  },
+  "pattern": [
+    "FRF",
+    "FRF",
+    "FRF"
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:witches_ladder_item"
+  },
+  "show_notification": true
+}
