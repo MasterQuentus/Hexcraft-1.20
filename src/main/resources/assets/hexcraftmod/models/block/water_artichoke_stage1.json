@@ -1,0 +1,7 @@
+{
+  "render_type": "cutout",
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "hexcraftmod:block/water_artichoke_stage1"
+  }
+}
