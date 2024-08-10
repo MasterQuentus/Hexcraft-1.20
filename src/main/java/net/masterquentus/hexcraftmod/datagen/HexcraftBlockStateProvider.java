@@ -18,10 +18,6 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(HexcraftBlocks.VILE_DIRT);
-        simpleBlockWithItem(HexcraftBlocks.VAMPIRE_ORCHID.get(),
-                models().cross(blockTexture(HexcraftBlocks.VAMPIRE_ORCHID.get()).getPath(),blockTexture(HexcraftBlocks.VAMPIRE_ORCHID.get())).renderType("cutout"));
-        simpleBlockWithItem(HexcraftBlocks.BLOODY_ROSE.get(),
-                models().cross(blockTexture(HexcraftBlocks.BLOODY_ROSE.get()).getPath(),blockTexture(HexcraftBlocks.BLOODY_ROSE.get())).renderType("cutout"));
         blockWithItem(HexcraftBlocks.CURSED_SOIL);
         blockWithItem(HexcraftBlocks.CURED_SOIL);
         blockWithItem(HexcraftBlocks.FERTILIZED_DIRT);

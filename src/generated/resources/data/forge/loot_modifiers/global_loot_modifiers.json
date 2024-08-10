@@ -1,6 +1,21 @@
 {
   "entries": [
-    "hexcraftmod:salt_from_suspicious_sand"
+    "hexcraftmod:mandrake_seeds_from_grass",
+    "hexcraftmod:hellebore_seeds_from_grass",
+    "hexcraftmod:garlic_from_grass",
+    "hexcraftmod:water_artichoke_seeds_from_grass",
+    "hexcraftmod:salt_from_suspicious_sand",
+    "hexcraftmod:belladonna_seeds_from_grass",
+    "hexcraftmod:irenial_seeds_from_grass",
+    "hexcraftmod:vervain_seeds_from_grass",
+    "hexcraftmod:sage_seeds_from_grass",
+    "hexcraftmod:mira_seeds_from_grass",
+    "hexcraftmod:senia_seeds_from_grass",
+    "hexcraftmod:wormwood_seeds_from_grass",
+    "hexcraftmod:xerifae_seeds_from_grass",
+    "hexcraftmod:aerpine_seeds_from_grass",
+    "hexcraftmod:wolfsbane_seeds_from_grass",
+    "hexcraftmod:perennia_seeds_from_grass"
   ],
   "replace": false
 }

@@ -72,6 +72,9 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.NECROMANTIC_STONE.get());
                         output.accept(HexcraftItems.ATTUNED_STONE.get());
                         output.accept(HexcraftItems.ATTUNED_STONE_CHARGED.get());
+                        output.accept(HexcraftItems.ANOINTING_PASTE.get());
+                        output.accept(HexcraftItems.MUTANDIS.get());
+                        output.accept(HexcraftItems.MUTANDIS_EXTREMIS.get());
 
                         //Blocks
                         output.accept(HexcraftBlocks.VILE_GRASS_BLOCK.get());
@@ -90,6 +93,38 @@ public class HexcraftCreativeModTabs {
 
                         //Plants
                         output.accept(HexcraftItems.WITCHES_LADDER_ITEM.get());
+                        output.accept(HexcraftBlocks.GLINT_WEED.get());
+                        output.accept(HexcraftBlocks.SPANISH_MOSS.get());
+                        output.accept(HexcraftItems.AERPINE.get());
+                        output.accept(HexcraftItems.XERIFAE.get());
+                        output.accept(HexcraftItems.BELLADONNA.get());
+                        output.accept(HexcraftItems.GARLIC.get());
+                        output.accept(HexcraftItems.HELLEBORE.get());
+                        output.accept(HexcraftItems.IRENIAL.get());
+                        output.accept(HexcraftItems.MANDRAKE_ROOT.get());
+                        output.accept(HexcraftItems.MIRA.get());
+                        output.accept(HexcraftItems.PERENNIA.get());
+                        output.accept(HexcraftItems.SAGE.get());
+                        output.accept(HexcraftItems.SENIA.get());
+                        output.accept(HexcraftItems.VERVAIN.get());
+                        output.accept(HexcraftItems.WATER_ARTICHOKE.get());
+                        output.accept(HexcraftItems.WOLFSBANE.get());
+                        output.accept(HexcraftItems.WORMWOOD.get());
+                        output.accept(HexcraftItems.AERPINE_SEEDS.get());
+                        output.accept(HexcraftItems.BELLADONNA_SEEDS.get());
+                        output.accept(HexcraftItems.HELLEBORE_SEEDS.get());
+                        output.accept(HexcraftItems.IRENIAL_SEEDS.get());
+                        output.accept(HexcraftItems.MANDRAKE_SEEDS.get());
+                        output.accept(HexcraftItems.MIRA_SEEDS.get());
+                        output.accept(HexcraftItems.PERENNIA_SEEDS.get());
+                        output.accept(HexcraftItems.SAGE_SEEDS.get());
+                        output.accept(HexcraftItems.SENIA_SEEDS.get());
+                        output.accept(HexcraftItems.VERVAIN_SEEDS.get());
+                        output.accept(HexcraftItems.WATER_ARTICHOKE_SEEDS.get());
+                        output.accept(HexcraftItems.WOLFSBANE_SEEDS.get());
+                        output.accept(HexcraftItems.WORMWOOD_SEEDS.get());
+                        output.accept(HexcraftItems.XERIFAE_SEEDS.get());
+
 
 
                         //Foods
@@ -100,6 +135,7 @@ public class HexcraftCreativeModTabs {
                         //Building Blocks
                         output.accept(HexcraftBlocks.AMETHYST_CHIMES.get());
                         output.accept(HexcraftBlocks.WITCHES_OVEN.get());
+                        output.accept(HexcraftBlocks.WITCHES_CAULDRON.get());
                         output.accept(HexcraftBlocks.MOONSTONE_BLOCK.get());
                         output.accept(HexcraftBlocks.SILVER_BLOCK.get());
                         output.accept(HexcraftBlocks.VAMPIRIC_BLOCK.get());

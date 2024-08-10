@@ -1,4 +1,9 @@
-// 1.20.1	2024-08-08T03:01:25.9257994	Tags for minecraft:block mod id hexcraftmod
+// 1.20.1	2024-08-09T23:56:51.8872853	Tags for minecraft:block mod id hexcraftmod
+947ead941650896e9f11e05f155cf43ff90efc59 data/hexcraftmod/tags/blocks/blight_decayable_plants.json
+05d15f92ba6dcd89533c1466fae5008bfd580360 data/hexcraftmod/tags/blocks/crops.json
+2c15ff666f9512e78d5142860eb8a5aa9e74913b data/hexcraftmod/tags/blocks/mutandis_blacklist_plants.json
+7d346011c98bd20bcb2b7ccbf55b39918058b9f2 data/hexcraftmod/tags/blocks/mutandis_extremis_plants.json
+4f7fd1f3fa7e2a134c80c58ad1821da393b2890c data/hexcraftmod/tags/blocks/mutandis_plants.json
 5bca032e35ad065be9d79f9f8d5e9db17ad0dde8 data/minecraft/tags/blocks/animals_spawnable_on.json
 82ebb999d3a42b10061a7684fedf94b878a935c4 data/minecraft/tags/blocks/base_stone_overworld.json
 1a3aca18825cf1e6c86f6967db0b70bb455f7031 data/minecraft/tags/blocks/dirt.json

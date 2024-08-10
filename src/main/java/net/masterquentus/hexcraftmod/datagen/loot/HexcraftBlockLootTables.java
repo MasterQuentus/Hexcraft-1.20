@@ -1,7 +1,10 @@
 package net.masterquentus.hexcraftmod.datagen.loot;
 
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
+import net.masterquentus.hexcraftmod.block.custom.plants.AerpinePlantBlock;
+import net.masterquentus.hexcraftmod.block.custom.plants.MandrakePlantBlock;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
@@ -13,6 +16,8 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -56,6 +61,10 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
         this.add(HexcraftBlocks.POTTED_BLOODY_ROSE.get(),
                 createPotFlowerItemTable(HexcraftBlocks.POTTED_BLOODY_ROSE.get()));
+
+        this.dropSelf(HexcraftBlocks.GLINT_WEED.get());
+
+        this.dropSelf(HexcraftBlocks.SPANISH_MOSS.get());
 
         this.dropSelf(HexcraftBlocks.PEARL_COBBLESTONE.get());
 
@@ -233,6 +242,157 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(HexcraftBlocks.JORMUIM_ORE.get(), HexcraftItems.RAW_JORMIUM.get()));
 
 
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.AERPINE_FLOWER.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.AERPINE_FLOWER.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.BELLADONNA_PLANT.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.BELLADONNA_PLANT.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder3 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.GARLIC_PLANT.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 2))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.GARLIC_PLANT.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 2)));
+
+        LootItemCondition.Builder lootitemcondition$builder4 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.HELLEBORE_PLANT.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.HELLEBORE_PLANT.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder5 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.IRENIAL_FLOWER.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.IRENIAL_FLOWER.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder6 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.MANDRAKE_FLOWER.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.MANDRAKE_FLOWER.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder7 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.MIRA_FLOWER.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.MIRA_FLOWER.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder8 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.PERENNIA_FLOWER.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.PERENNIA_FLOWER.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder9 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.SAGE_PLANT.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.SAGE_PLANT.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder10 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.SENIA_FLOWER.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.SENIA_FLOWER.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder11 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.VERVAIN_FLOWER.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.VERVAIN_FLOWER.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder12 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.WATER_ARTICHOKE_PLANT.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.WATER_ARTICHOKE_PLANT.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder13 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.WOLFSBANE_FLOWER.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.WOLFSBANE_FLOWER.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder14 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.WORMWOOD_PLANT.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.WORMWOOD_PLANT.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+        LootItemCondition.Builder lootitemcondition$builder15 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HexcraftBlocks.XERIFAE_FLOWER.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(HexcraftBlocks.XERIFAE_FLOWER.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
+
+
+
+        this.add(HexcraftBlocks.AERPINE_FLOWER.get(), createCropDrops(HexcraftBlocks.AERPINE_FLOWER.get(), HexcraftItems.AERPINE.get(),
+                HexcraftItems.AERPINE_SEEDS.get(), lootitemcondition$builder));
+
+        this.add(HexcraftBlocks.BELLADONNA_PLANT.get(), createCropDrops(HexcraftBlocks.BELLADONNA_PLANT.get(), HexcraftItems.BELLADONNA.get(),
+                HexcraftItems.BELLADONNA_SEEDS.get(), lootitemcondition$builder2));
+
+        this.add(HexcraftBlocks.GARLIC_PLANT.get(), createCropDrops(HexcraftBlocks.GARLIC_PLANT.get(), HexcraftItems.GARLIC.get(),
+                HexcraftItems.GARLIC.get(), lootitemcondition$builder3));
+
+        this.add(HexcraftBlocks.HELLEBORE_PLANT.get(), createCropDrops(HexcraftBlocks.HELLEBORE_PLANT.get(), HexcraftItems.HELLEBORE.get(),
+                HexcraftItems.HELLEBORE_SEEDS.get(), lootitemcondition$builder4));
+
+        this.add(HexcraftBlocks.IRENIAL_FLOWER.get(), createCropDrops(HexcraftBlocks.IRENIAL_FLOWER.get(), HexcraftItems.IRENIAL.get(),
+                HexcraftItems.IRENIAL_SEEDS.get(), lootitemcondition$builder5));
+
+        this.add(HexcraftBlocks.MANDRAKE_FLOWER.get(), createCropDrops(HexcraftBlocks.MANDRAKE_FLOWER.get(), HexcraftItems.MANDRAKE_ROOT.get(),
+                HexcraftItems.MANDRAKE_SEEDS.get(), lootitemcondition$builder6));
+
+        this.add(HexcraftBlocks.MIRA_FLOWER.get(), createCropDrops(HexcraftBlocks.MIRA_FLOWER.get(), HexcraftItems.MIRA.get(),
+                HexcraftItems.MIRA_SEEDS.get(), lootitemcondition$builder7));
+
+        this.add(HexcraftBlocks.PERENNIA_FLOWER.get(), createCropDrops(HexcraftBlocks.PERENNIA_FLOWER.get(), HexcraftItems.PERENNIA.get(),
+                HexcraftItems.PERENNIA_SEEDS.get(), lootitemcondition$builder8));
+
+        this.add(HexcraftBlocks.SAGE_PLANT.get(), createCropDrops(HexcraftBlocks.SAGE_PLANT.get(), HexcraftItems.SAGE.get(),
+                HexcraftItems.SAGE_SEEDS.get(), lootitemcondition$builder9));
+
+        this.add(HexcraftBlocks.SENIA_FLOWER.get(), createCropDrops(HexcraftBlocks.SENIA_FLOWER.get(), HexcraftItems.SENIA.get(),
+                HexcraftItems.SENIA_SEEDS.get(), lootitemcondition$builder10));
+
+        this.add(HexcraftBlocks.VERVAIN_FLOWER.get(), createCropDrops(HexcraftBlocks.VERVAIN_FLOWER.get(), HexcraftItems.VERVAIN.get(),
+                HexcraftItems.VERVAIN_SEEDS.get(), lootitemcondition$builder11));
+
+        this.add(HexcraftBlocks.WATER_ARTICHOKE_PLANT.get(), createCropDrops(HexcraftBlocks.WATER_ARTICHOKE_PLANT.get(), HexcraftItems.WATER_ARTICHOKE.get(),
+                HexcraftItems.WATER_ARTICHOKE_SEEDS.get(), lootitemcondition$builder12));
+
+        this.add(HexcraftBlocks.WOLFSBANE_FLOWER.get(), createCropDrops(HexcraftBlocks.WOLFSBANE_FLOWER.get(), HexcraftItems.WOLFSBANE.get(),
+                HexcraftItems.WOLFSBANE_SEEDS.get(), lootitemcondition$builder13));
+
+        this.add(HexcraftBlocks.WORMWOOD_PLANT.get(), createCropDrops(HexcraftBlocks.WORMWOOD_PLANT.get(), HexcraftItems.WORMWOOD.get(),
+                HexcraftItems.WORMWOOD_SEEDS.get(), lootitemcondition$builder14));
+
+        this.add(HexcraftBlocks.XERIFAE_FLOWER.get(), createCropDrops(HexcraftBlocks.XERIFAE_FLOWER.get(), HexcraftItems.XERIFAE.get(),
+                HexcraftItems.XERIFAE_SEEDS.get(), lootitemcondition$builder15));
 
     }
 

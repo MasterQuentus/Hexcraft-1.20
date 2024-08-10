@@ -19,6 +19,13 @@ public class HexcraftTags {
 
         public static final TagKey<Block> DIRT_BLOCKS = tag("dirt_blocks");
 
+        public static final TagKey<Block> MUTANDIS_BLACKLIST = createBlockTag(HexcraftMod.id("mutandis_blacklist_plants"));
+        public static final TagKey<Block> MUTANDIS_EXTREMIS_BLACKLIST = createBlockTag(HexcraftMod.id("mutandis_extremis_blacklist"));
+        public static final TagKey<Block> MUTANDIS_EXTREMIS_PLANTS = createBlockTag(HexcraftMod.id("mutandis_extremis_plants"));
+        public static final TagKey<Block> MUTANDIS_PLANTS = createBlockTag(HexcraftMod.id("mutandis_plants"));
+        public static final TagKey<Block> CROPS = createBlockTag(HexcraftMod.id("crops"));
+        public static final TagKey<Block> BLIGHT_DECAYABLE_PLANTS = createBlockTag(HexcraftMod.id("blight_decayable_plants"));
+
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(HexcraftMod.MOD_ID, name));
 
@@ -26,6 +33,7 @@ public class HexcraftTags {
 
         private static TagKey<Item> forgeTag(String name) {
             return ItemTags.create(new ResourceLocation("forge", name));
+
         }
 
     }
@@ -34,6 +42,8 @@ public class HexcraftTags {
         public static final TagKey<Item> VOODOO_POPPETS = createItemTag(HexcraftMod.id("voodoo_poppets"));
 
         public static final TagKey<Item> FIT_IN_WITCHES_SATCHEL = tag("fits_in_witches_satchel");
+
+        public static final TagKey<Item> WITCHES_OVEN_BLACKLIST = createItemTag(HexcraftMod.id("witches_oven_blacklist"));
 
     }
 

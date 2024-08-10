@@ -2,9 +2,11 @@ package net.masterquentus.hexcraftmod.datagen;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
+import net.masterquentus.hexcraftmod.util.HexcraftTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.apache.commons.codec.binary.Hex;
@@ -20,7 +22,34 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
 
+        this.tag(HexcraftTags.Blocks.CROPS)
+                .add(HexcraftBlocks.BELLADONNA_PLANT.get(), HexcraftBlocks.VERVAIN_FLOWER.get(), HexcraftBlocks.MANDRAKE_FLOWER.get(),
+                        HexcraftBlocks.GARLIC_PLANT.get(), HexcraftBlocks.WOLFSBANE_FLOWER.get(), HexcraftBlocks.IRENIAL_FLOWER.get(),
+                        HexcraftBlocks.MIRA_FLOWER.get(), HexcraftBlocks.XERIFAE_FLOWER.get(), HexcraftBlocks.SENIA_FLOWER.get(),
+                        HexcraftBlocks.AERPINE_FLOWER.get(), HexcraftBlocks.PERENNIA_FLOWER.get(), HexcraftBlocks.HELLEBORE_PLANT.get(),
+                        HexcraftBlocks.SAGE_PLANT.get(), HexcraftBlocks.WORMWOOD_PLANT.get());
 
+        this.tag(HexcraftTags.Blocks.MUTANDIS_BLACKLIST)
+                .add(Blocks.WITHER_ROSE)
+                .add(HexcraftBlocks.BLOODY_ROSE.get());
+        this.tag(HexcraftTags.Blocks.MUTANDIS_EXTREMIS_PLANTS)
+                .addTag(HexcraftTags.Blocks.MUTANDIS_PLANTS)
+                .addTag(HexcraftTags.Blocks.CROPS)
+                .addTag(BlockTags.CROPS)
+                .add(Blocks.SUGAR_CANE, Blocks.CACTUS)
+                .add(HexcraftBlocks.BLOODY_ROSE.get());
+        this.tag(HexcraftTags.Blocks.MUTANDIS_PLANTS)
+                .addTag(BlockTags.SAPLINGS)
+                .addTag(BlockTags.SMALL_FLOWERS)
+                .add(Blocks.GRASS, Blocks.BROWN_MUSHROOM, Blocks.RED_MUSHROOM)
+                .add(HexcraftBlocks.WITCHES_LADDER.get(), HexcraftBlocks.GLINT_WEED.get(),
+                        HexcraftBlocks.SPANISH_MOSS.get());
+
+        this.tag(HexcraftTags.Blocks.BLIGHT_DECAYABLE_PLANTS)
+                    .addTag(BlockTags.SAPLINGS)
+                    .addTag(BlockTags.SMALL_FLOWERS)
+                    .add(Blocks.GRASS, Blocks.FERN, Blocks.SWEET_BERRY_BUSH)
+                    .add(HexcraftBlocks.GLINT_WEED.get());
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)

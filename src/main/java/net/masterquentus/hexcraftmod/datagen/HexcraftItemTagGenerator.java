@@ -4,10 +4,11 @@ import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.masterquentus.hexcraftmod.util.HexcraftTags;
-import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
@@ -25,6 +26,10 @@ public class HexcraftItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(HexcraftTags.Items.FIT_IN_WITCHES_SATCHEL)
                 .addTags(ItemTags.SAPLINGS, ItemTags.FLOWERS, ItemTags.TALL_FLOWERS);
+
+        tag(HexcraftTags.Items.WITCHES_OVEN_BLACKLIST)
+                .addOptionalTag(new ResourceLocation("forge", "ores"))
+                .addOptionalTag(new ResourceLocation("c", "ores"));
 
 
     }

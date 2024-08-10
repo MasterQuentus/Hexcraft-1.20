@@ -2,13 +2,13 @@ package net.masterquentus.hexcraftmod.item;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
-import net.masterquentus.hexcraftmod.item.custom.TagLockKitFilled;
-import net.masterquentus.hexcraftmod.item.custom.TagLockKitItem;
-import net.masterquentus.hexcraftmod.item.custom.WitchesSatchelItem;
+import net.masterquentus.hexcraftmod.item.custom.*;
+import net.masterquentus.hexcraftmod.util.HexcraftTags;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.SimpleFoiledItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -178,12 +178,123 @@ public class HexcraftItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ATTUNED_STONE_CHARGED = ITEMS.register("attuned_stone_charged",
-            () -> new Item(new Item.Properties()));
+            () -> new SimpleFoiledItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> ANOINTING_PASTE = ITEMS.register("anointing_paste",
+            () -> new AnointingPasteItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> MUTANDIS = ITEMS.register("mutandis",
+            () -> new MutandisItem(HexcraftTags.Blocks.MUTANDIS_PLANTS));
+
+    public static final RegistryObject<Item> MUTANDIS_EXTREMIS = ITEMS.register("mutandis_extremis",
+            () -> new MutandisItem(HexcraftTags.Blocks.MUTANDIS_EXTREMIS_PLANTS));
 
     //Plants
     public static final RegistryObject<Item> WITCHES_LADDER_ITEM = ITEMS.register("witches_ladder_item",
             () -> new BlockItem(HexcraftBlocks.WITCHES_LADDER.get(),
                     new Item.Properties()));
+
+    public static final RegistryObject<Item> MANDRAKE_SEEDS = ITEMS.register("mandrake_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.MANDRAKE_FLOWER.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> MANDRAKE_ROOT = ITEMS.register("mandrake_root",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic",
+            () -> new ItemNameBlockItem(HexcraftBlocks.GARLIC_PLANT.get(),
+                    new Item.Properties().food(Foods.CARROT).food(Foods.CARROT)));
+
+    public static final RegistryObject<Item> VERVAIN_SEEDS = ITEMS.register("vervain_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.VERVAIN_FLOWER.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> VERVAIN = ITEMS.register("vervain",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> WOLFSBANE_SEEDS = ITEMS.register("wolfsbane_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.WOLFSBANE_FLOWER.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> WOLFSBANE = ITEMS.register("wolfsbane",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> IRENIAL_SEEDS = ITEMS.register("irenial_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.IRENIAL_FLOWER.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> IRENIAL = ITEMS.register("irenial",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MIRA_SEEDS = ITEMS.register("mira_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.MIRA_FLOWER.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> MIRA = ITEMS.register("mira",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> XERIFAE_SEEDS = ITEMS.register("xerifae_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.XERIFAE_FLOWER.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> XERIFAE = ITEMS.register("xerifae",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SENIA_SEEDS = ITEMS.register("senia_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.SENIA_FLOWER.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> SENIA = ITEMS.register("senia",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> AERPINE_SEEDS = ITEMS.register("aerpine_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.AERPINE_FLOWER.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> AERPINE = ITEMS.register("aerpine",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PERENNIA_SEEDS = ITEMS.register("perennia_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.PERENNIA_FLOWER.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> PERENNIA = ITEMS.register("perennia",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BELLADONNA_SEEDS = ITEMS.register("belladonna_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.BELLADONNA_PLANT.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> BELLADONNA = ITEMS.register("belladonna",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> HELLEBORE_SEEDS = ITEMS.register("hellebore_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.HELLEBORE_PLANT.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> HELLEBORE = ITEMS.register("hellebore",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SAGE_SEEDS = ITEMS.register("sage_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.SAGE_PLANT.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> SAGE = ITEMS.register("sage",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> WORMWOOD_SEEDS = ITEMS.register("wormwood_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.WORMWOOD_PLANT.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> WORMWOOD = ITEMS.register("wormwood",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> WATER_ARTICHOKE_SEEDS = ITEMS.register("water_artichoke_seeds",
+            () -> new ItemNameBlockItem(HexcraftBlocks.WATER_ARTICHOKE_PLANT.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> WATER_ARTICHOKE = ITEMS.register("water_artichoke",
+            () -> new Item(new Item.Properties()));
 
     //Foods
     public static final RegistryObject<Item> JUNIPER_BERRIES = ITEMS.register("juniper_berries",
