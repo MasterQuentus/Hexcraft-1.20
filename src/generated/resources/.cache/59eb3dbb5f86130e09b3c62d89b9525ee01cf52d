@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-10T01:47:22.7090275	Loot Tables
+// 1.20.1	2024-08-11T00:16:20.989419	Loot Tables
 3731d114dca2f6ff9a29a1b2da30a1b10b3ade14 data/hexcraftmod/loot_tables/blocks/aerpine_flower.json
 c2b8294f68b393ea3aea5522889c8f0c14748417 data/hexcraftmod/loot_tables/blocks/amethyst_chimes.json
 cedb73a17c38579f77cb632367cd7173caa9db98 data/hexcraftmod/loot_tables/blocks/belladonna_plant.json
@@ -36,6 +36,7 @@ f5a0c11eb4c4aaafb6a89b6f438e03952e80314d data/hexcraftmod/loot_tables/blocks/cri
 fba3a85429e25faf768409204a794ff5f8301c99 data/hexcraftmod/loot_tables/blocks/deepslate_silver_ore.json
 ae98021b979429e0b6174743915c749dc03e6869 data/hexcraftmod/loot_tables/blocks/deepslate_trenogen_ore.json
 e80d92baf2182125d3af81791fd9c498b9defc39 data/hexcraftmod/loot_tables/blocks/deepslate_vampiric_ore.json
+ff96bda2df478093b364284539f0e5416345fd4a data/hexcraftmod/loot_tables/blocks/demon_heart.json
 821313f5d27589acc0fbbd8cf59d288dc0734a13 data/hexcraftmod/loot_tables/blocks/end_moonstone_ore.json
 5482ae75cd87d64beac4a5971dedff53e9051246 data/hexcraftmod/loot_tables/blocks/end_silver_ore.json
 8b481c15e99ddc2c03fd63e5211d128f03e9a991 data/hexcraftmod/loot_tables/blocks/end_vampiric_ore.json

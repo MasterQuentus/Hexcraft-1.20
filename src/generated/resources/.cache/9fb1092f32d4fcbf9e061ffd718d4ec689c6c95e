@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-06T01:58:55.4002794	Recipes
+// 1.20.1	2024-08-10T03:43:20.5491593	Recipes
 ffe4f009b05d16f71e57d406735e532e8e10f505 data/hexcraftmod/advancements/recipes/building_blocks/charstone_bricks.json
 748c979083c8a471171977c26f05398ede3a0ad3 data/hexcraftmod/advancements/recipes/building_blocks/chiseled_charstone.json
 a844a9f1cdfdafaba19de7c9e0ffcae075afdf79 data/hexcraftmod/advancements/recipes/building_blocks/chiseled_crimson_stone.json
@@ -20,6 +20,7 @@ ca4701d48af999f733408e48a7b7b4a8f6feffb6 data/hexcraftmod/advancements/recipes/b
 9b06604cbbb4f186f0339fbfc0be9b6310262b72 data/hexcraftmod/advancements/recipes/building_blocks/under_world_stone_bricks.json
 07b76da877a1507f20c7f51c793f1be9a45fe310 data/hexcraftmod/advancements/recipes/building_blocks/witches_ladder_item.json
 5a4d0d7847cccc4c6e9d7169d3dfed462198a58c data/hexcraftmod/advancements/recipes/misc/air_rune.json
+377971d9f064d4181f8b67ed0ab85b0b4a573500 data/hexcraftmod/advancements/recipes/misc/anointing_paste.json
 cf4c3cbd495a9e178014de6714ff40790777e48a data/hexcraftmod/advancements/recipes/misc/black_rune.json
 0f96b2d5364a8ebfb5cf60bfc663af95d6913457 data/hexcraftmod/advancements/recipes/misc/blank_rune.json
 11bcfb1cf4e32b8651df3d629db0664bb9dafb61 data/hexcraftmod/advancements/recipes/misc/bloody_nykium.json
@@ -134,7 +135,10 @@ ac601ec8a0732be30e264feda0eedc1d47c4a124 data/hexcraftmod/advancements/recipes/m
 3de568c9072d7a26244968813aeb7b5d4c85bfc7 data/hexcraftmod/advancements/recipes/misc/white_rune.json
 1e0e37e6b66cf5fffc65955e1e55bdea8c8385a9 data/hexcraftmod/advancements/recipes/misc/witches_oven.json
 dca38af94578b7439ebdbc2e10f03c30a5981413 data/hexcraftmod/advancements/recipes/misc/yellow_rune.json
+6396bacd16a4ad43414e938ee0eba0c085913276 data/hexcraftmod/advancements/recipes/tools/arthana.json
 51b0404d913842b98e192374294d1ae1687448b7 data/hexcraftmod/recipes/air_rune.json
+13d0571ad2f17594c78c5d8e58b6894cb9b5d217 data/hexcraftmod/recipes/anointing_paste.json
+356f3a6afc5416d63805d4d54cc7037d97d11602 data/hexcraftmod/recipes/arthana.json
 254fb6fdbad31cb661437a99a5bb43c86f687494 data/hexcraftmod/recipes/black_rune.json
 0ffdce23c3e8f09038412da5d759a2d685b7a6cc data/hexcraftmod/recipes/blank_rune.json
 741d7a6bfcf9d50065e84d1d4783f93f9bf76bbe data/hexcraftmod/recipes/bloody_nykium.json

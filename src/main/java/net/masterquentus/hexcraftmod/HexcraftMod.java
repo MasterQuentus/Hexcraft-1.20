@@ -32,6 +32,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Random;
+
+import static net.masterquentus.hexcraftmod.block.HexcraftBlocks.*;
+import static net.masterquentus.hexcraftmod.item.HexcraftItems.*;
 //import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -77,6 +80,35 @@ public class HexcraftMod {
             ComposterBlock.COMPOSTABLES.put(HexcraftItems.BLOOD_APPLE.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(HexcraftItems.JUNIPER_BERRIES.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(HexcraftItems.BLOOD_BERRIES.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(WATER_ARTICHOKE_SEEDS.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(WATER_ARTICHOKE.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(BELLADONNA_SEEDS.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(BELLADONNA.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(MANDRAKE_SEEDS.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(MANDRAKE_ROOT.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(WOLFSBANE_SEEDS.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(WOLFSBANE_FLOWER.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(AERPINE.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(AERPINE_SEEDS.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(HELLEBORE.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(HELLEBORE_SEEDS.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(IRENIAL.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(IRENIAL_SEEDS.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(MIRA.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(MIRA_SEEDS.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(PERENNIA.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(PERENNIA_SEEDS.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(SAGE.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(SAGE_SEEDS.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(SENIA.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(SENIA_SEEDS.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(VERVAIN.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(VERVAIN_SEEDS.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(XERIFAE.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(XERIFAE_SEEDS.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(GARLIC.get(), 0.45F);
+            ComposterBlock.COMPOSTABLES.put(VAMPIRE_ORCHID.get(), 0.45F);
+            ComposterBlock.COMPOSTABLES.put(BLOODY_ROSE.get(), 0.45F);
 
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.VAMPIRE_ORCHID.getId(), HexcraftBlocks.POTTED_VAMPIRE_ORCHID);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.BLOODY_ROSE.getId(), HexcraftBlocks.POTTED_BLOODY_ROSE);

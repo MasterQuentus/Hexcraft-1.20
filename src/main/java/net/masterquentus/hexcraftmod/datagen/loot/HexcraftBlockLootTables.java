@@ -9,6 +9,7 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -65,6 +66,252 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(HexcraftBlocks.GLINT_WEED.get());
 
         this.dropSelf(HexcraftBlocks.SPANISH_MOSS.get());
+
+        this.dropSelf(HexcraftBlocks.DEMON_HEART.get());
+
+        this.dropSelf(HexcraftBlocks.EBONY_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.BLOOD_OAK_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.HELL_BARK_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.WHITE_OAK_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.ALDER_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.WITCH_HAZEL_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.WILLOW_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.HAWTHORN_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.CEDAR_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.DISTORTED_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.ELDER_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.JUNIPER_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.ROWAN_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.TWISTED_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.WITCH_WOOD_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.ECHO_WOOD_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.EBONY_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.BLOOD_OAK_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.HELL_BARK_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.WHITE_OAK_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.ALDER_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.WITCH_HAZEL_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.WILLOW_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.HAWTHORN_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.CEDAR_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.DISTORTED_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.ELDER_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.JUNIPER_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.ROWAN_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.TWISTED_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.WITCH_WOOD_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.ECHO_WOOD_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_EBONY_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_BLOOD_OAK_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_HELL_BARK_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_WHITE_OAK_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_ALDER_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_WITCH_HAZEL_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_WILLOW_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_HAWTHORN_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_CEDAR_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_DISTORTED_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_ELDER_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_JUNIPER_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_ROWAN_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_TWISTED_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_WITCH_WOOD_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_ECHO_WOOD_LOG.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_EBONY_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_BLOOD_OAK_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_HELL_BARK_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_WHITE_OAK_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_ALDER_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_WITCH_HAZEL_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_WILLOW_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_HAWTHORN_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_CEDAR_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_DISTORTED_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_ELDER_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_JUNIPER_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_ROWAN_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_TWISTED_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_WITCH_WOOD_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.STRIPPED_ECHO_WOOD_WOOD.get());
+
+        this.dropSelf(HexcraftBlocks.EBONY_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.BLOOD_OAK_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.HELL_BARK_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.WHITE_OAK_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.ALDER_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.WITCH_HAZEL_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.WILLOW_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.HAWTHORN_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.CEDAR_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.DISTORTED_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.ELDER_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.JUNIPER_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.ROWAN_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.TWISTED_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.WITCH_WOOD_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.ECHO_WOOD_PLANKS.get());
+
+        this.dropSelf(HexcraftBlocks.EBONY_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.BLOOD_OAK_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.HELL_BARK_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.WHITE_OAK_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.ALDER_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.WITCH_HAZEL_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.WILLOW_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.HAWTHORN_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.CEDAR_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.DISTORTED_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.ELDER_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.JUNIPER_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.ROWAN_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.TWISTED_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.WITCH_WOOD_SAPLING.get());
+
+        this.dropSelf(HexcraftBlocks.ECHO_WOOD_SAPLING.get());
+
+        this.add(HexcraftBlocks.EBONY_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.EBONY_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.BLOOD_OAK_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.BLOOD_OAK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.HELL_BARK_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.HELL_BARK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.WHITE_OAK_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.WHITE_OAK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.ALDER_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.ALDER_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.WITCH_HAZEL_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.WITCH_HAZEL_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.WILLOW_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.HAWTHORN_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.HAWTHORN_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.CEDAR_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.CEDAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.DISTORTED_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.DISTORTED_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.ELDER_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.ELDER_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.JUNIPER_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.JUNIPER_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.ROWAN_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.ROWAN_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.TWISTED_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.TWISTED_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.WITCH_WOOD_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.WITCH_WOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(HexcraftBlocks.ECHO_WOOD_LEAVES.get(), block ->
+                createLeavesDrops(block, HexcraftBlocks.ECHO_WOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.dropSelf(HexcraftBlocks.HELL_FUNGAL_LAMP.get());
+
+        this.dropSelf(HexcraftBlocks.ECHO_FUNGAL_LAMP.get());
 
         this.dropSelf(HexcraftBlocks.PEARL_COBBLESTONE.get());
 
@@ -180,6 +427,54 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
         this.add(HexcraftBlocks.VILE_GRASS_BLOCK.get(),
                 block -> createCopperLikeOreDrops(HexcraftBlocks.VILE_GRASS_BLOCK.get(), Item.byBlock(HexcraftBlocks.VILE_DIRT.get())));
+
+        this.add(HexcraftBlocks.EBONY_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.EBONY_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.EBONY_PLANKS.get())));
+
+        this.add(HexcraftBlocks.BLOOD_OAK_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.BLOOD_OAK_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.BLOOD_OAK_PLANKS.get())));
+
+        this.add(HexcraftBlocks.HELL_BARK_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.HELL_BARK_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.HELL_BARK_PLANKS.get())));
+
+        this.add(HexcraftBlocks.WHITE_OAK_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.WHITE_OAK_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.WHITE_OAK_PLANKS.get())));
+
+        this.add(HexcraftBlocks.ALDER_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.ALDER_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.ALDER_PLANKS.get())));
+
+        this.add(HexcraftBlocks.WITCH_HAZEL_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.WITCH_HAZEL_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.WITCH_HAZEL_PLANKS.get())));
+
+        this.add(HexcraftBlocks.WILLOW_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.WILLOW_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.WILLOW_PLANKS.get())));
+
+        this.add(HexcraftBlocks.HAWTHORN_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.HAWTHORN_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.HAWTHORN_PLANKS.get())));
+
+        this.add(HexcraftBlocks.CEDAR_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.CEDAR_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.CEDAR_PLANKS.get())));
+
+        this.add(HexcraftBlocks.DISTORTED_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.DISTORTED_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.DISTORTED_BOOKSHELF.get())));
+
+        this.add(HexcraftBlocks.ELDER_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.ELDER_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.ELDER_PLANKS.get())));
+
+        this.add(HexcraftBlocks.JUNIPER_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.JUNIPER_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.JUNIPER_PLANKS.get())));
+
+        this.add(HexcraftBlocks.ROWAN_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.ROWAN_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.ROWAN_PLANKS.get())));
+
+        this.add(HexcraftBlocks.TWISTED_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.TWISTED_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.TWISTED_PLANKS.get())));
+
+        this.add(HexcraftBlocks.WITCH_WOOD_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.WITCH_WOOD_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.WITCH_WOOD_PLANKS.get())));
+
+        this.add(HexcraftBlocks.ECHO_WOOD_BOOKSHELF.get(),
+                block -> createCopperLikeOreDrops(HexcraftBlocks.ECHO_WOOD_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.ECHO_WOOD_PLANKS.get())));
 
         this.add(HexcraftBlocks.PEARL_STONE.get(),
                 block -> createCopperLikeOreDrops(HexcraftBlocks.PEARL_STONE.get(), Item.byBlock(HexcraftBlocks.PEARL_COBBLESTONE.get())));

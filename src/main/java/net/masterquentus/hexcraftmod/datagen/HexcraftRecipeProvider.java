@@ -630,11 +630,21 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
                 .save(pWriter);
 
 
+        //ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftItems.ATTUNED_STONE.get())
+                //.pattern("w")
+                //.pattern("d")
+                //.pattern("l")
+                //.define('w', HexcraftItems.WHIFF_OF_MAGIC.get()).define('d', Items.DIAMOND)
+                //.define('l', Items.LAVA_BUCKET)
+                //.unlockedBy(getHasName(HexcraftItems.WHIFF_OF_MAGIC.get()), has(HexcraftItems.WHIFF_OF_MAGIC.get())).save(pWriter);
 
-
-
-
-
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, HexcraftItems.ARTHANA.get())
+                .pattern(" i ")
+                .pattern("nen")
+                .pattern(" s ")
+                .define('i', Items.GOLD_INGOT).define('n', Items.GOLD_NUGGET)
+                .define('e', Items.EMERALD).define('s', Items.STICK)
+                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT)).save(pWriter);
 
 
 
@@ -714,7 +724,56 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
                 .unlockedBy(getHasName(HexcraftBlocks.BLOODY_ROSE.get()), has(HexcraftBlocks.BLOODY_ROSE.get()))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.ANOINTING_PASTE.get())
+                .requires(HexcraftItems.WATER_ARTICHOKE_SEEDS.get()).requires(HexcraftItems.MANDRAKE_SEEDS.get())
+                .requires(HexcraftItems.BELLADONNA_SEEDS.get()).requires(HexcraftItems.AERPINE_SEEDS.get())
+                .unlockedBy(getHasName(HexcraftItems.BELLADONNA_SEEDS.get()), has(HexcraftItems.BELLADONNA_SEEDS.get())).save(pWriter);
+
     }
+
+    //protected void buildCauldronRecipes(Consumer<FinishedRecipe> consumer) {
+        //CauldronTypeRecipeBuilder.cauldron(stack(HexcraftItems.MUTANDIS.get(), 6), 0)
+                //.inputs(HexcraftItems.MANDRAKE_ROOT.get(), HexcraftItems.EXHALE_OF_THE_HORNED_ONE.get(), Items.EGG)
+                //.cookColor(26, 71, 35)
+                //.finalColor(62, 128, 78).save(consumer);
+        //CauldronTypeRecipeBuilder.cauldron(stack(HexcraftItems.MUTANDIS_EXTREMIS.get()), 7000)
+                //.inputs(HexcraftItems.MUTANDIS.get(), Items.NETHER_WART)
+                //.cookColor(84, 24, 24)
+                //.finalColor(128, 29, 29).save(consumer);
+
+
+    //CauldronTypeRecipeBuilder.kettle(stack(EnchantedItems.BREW_OF_SPROUTING.get(), 3), 0)
+            //.inputs(HexcraftItems.ROWAN_SAPLING.get(), HexcraftItems.TONGUE_OF_DOG.get(),
+            //HexcraftItems.ALDER_SAPLING.get(), HexcraftItems.MANDRAKE_ROOT.get(),
+            //HexcraftItems.HAWTHORN_SAPLING.get(), Items.POPPY)
+
+    //CauldronTypeRecipeBuilder.kettle(stack(HexcraftItems.BREW_OF_THE_DEPTHS.get(), 3), 0)
+            //.inputs(Items.LILY_PAD, Items.INK_SAC, HexcraftItems.MANDRAKE_ROOT.get(),
+						//HexcraftItems.TEAR_OF_THE_GODDESS.get(), HexcraftItems.WATER_ARTICHOKE.get(),
+                                //HexcraftItems.ODOUR_OF_PURITY.get())
+                                //.cookColor(24, 110, 168)
+				//.finalColor(84, 186, 214).save(consumer);
+
+
+    //CauldronTypeRecipeBuilder.kettle(stack(HexcraftItems.BREW_OF_THE_GROTESQUE.get(), 3), 750)
+            //.inputs(HexcraftItems.MUTANDIS_EXTREMIS.get(), HexcraftItems.MANDRAKE_ROOT.get(),
+            //HexcraftItems.WATER_ARTICHOKE.get(), Items.GOLDEN_APPLE, HexcraftItems.TONGUE_OF_DOG.get(),
+    //Items.POISONOUS_POTATO)
+            //.cookColor(54, 42, 33)
+				//.finalColor(128, 95, 70).save(consumer);
+
+    //DistillingRecipeBuilder.create(stack(HexcraftItems.CLAY_POT.get(), 3), stack(Items.DIAMOND), stack(HexcraftItems.OIL_OF_VITRIOL.get()))
+            //.results(stack(HexcraftItems.DIAMOND_VAPOUR.get(), 2))
+            //.results(HexcraftItems.ODOUR_OF_PURITY.get())
+            //.cookTime(300).save(consumer);
+
+    //CauldronTypeRecipeBuilder.cauldron(stack(HexcraftItems.DROP_OF_LUCK.get()), 7000)
+            //.inputs(HexcraftItems.MANDRAKE_ROOT.get(), Items.NETHER_WART, HexcraftItems.TEAR_OF_THE_GODDESS.get(),
+            //HexcraftItems.REFINED_EVIL.get(), HexcraftItems.MUTANDIS_EXTREMIS.get())
+            //.cookColor(0, 69, 23)
+				//.finalColor(0, 117, 39).save(consumer);
+
+    //}
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");

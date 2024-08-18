@@ -73,10 +73,35 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
         simpleItem(HexcraftItems.NECROMANTIC_STONE);
         simpleItem(HexcraftItems.ATTUNED_STONE);
         simpleItem(HexcraftItems.ATTUNED_STONE_CHARGED);
+        simpleToolItem(HexcraftItems.ARTHANA.get());
+        simpleItem(HexcraftItems.BLOODED_WAYSTONE);
+        simpleItem(HexcraftItems.BOUND_WAYSTONE);
+        simpleItem(HexcraftItems.BREATH_OF_THE_GODDESS);
+        //simpleItem(HexcraftItems.BREW_OF_LOVE);
+        simpleItem(HexcraftItems.BREW_OF_SPROUTING);
+        simpleItem(HexcraftItems.BREW_OF_THE_GROTESQUE);
+        simpleItem(HexcraftItems.CONDENSED_FEAR);
+        simpleItem(HexcraftItems.DIAMOND_VAPOUR);
         simpleItem(HexcraftItems.JUNIPER_BERRIES);
         simpleItem(HexcraftItems.ANOINTING_PASTE);
         simpleItem(HexcraftItems.MUTANDIS);
         simpleItem(HexcraftItems.MUTANDIS_EXTREMIS);
+        saplingItem(HexcraftBlocks.EBONY_SAPLING);
+        saplingItem(HexcraftBlocks.BLOOD_OAK_SAPLING);
+        saplingItem(HexcraftBlocks.HELL_BARK_SAPLING);
+        saplingItem(HexcraftBlocks.WHITE_OAK_SAPLING);
+        saplingItem(HexcraftBlocks.ALDER_SAPLING);
+        saplingItem(HexcraftBlocks.WITCH_HAZEL_SAPLING);
+        saplingItem(HexcraftBlocks.WILLOW_SAPLING);
+        saplingItem(HexcraftBlocks.HAWTHORN_SAPLING);
+        saplingItem(HexcraftBlocks.CEDAR_SAPLING);
+        saplingItem(HexcraftBlocks.DISTORTED_SAPLING);
+        saplingItem(HexcraftBlocks.ELDER_SAPLING);
+        saplingItem(HexcraftBlocks.JUNIPER_SAPLING);
+        saplingItem(HexcraftBlocks.ROWAN_SAPLING);
+        saplingItem(HexcraftBlocks.TWISTED_SAPLING);
+        saplingItem(HexcraftBlocks.WITCH_WOOD_SAPLING);
+        saplingItem(HexcraftBlocks.ECHO_WOOD_SAPLING);
         simpleItem(HexcraftItems.BLOOD_APPLE);
         simpleItem(HexcraftItems.BLOOD_BERRIES);
         simpleItem(HexcraftItems.WITCHES_LADDER_ITEM);
@@ -149,6 +174,12 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 
     }
 
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(HexcraftMod.MOD_ID,"block/" + item.getId().getPath()));
+    }
+
     public void evenSimplerBlockItem(RegistryObject<Block> block) {
         this.withExistingParent(HexcraftMod.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
@@ -179,5 +210,10 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(HexcraftMod.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    private void simpleToolItem(Item item) {
+        String name = ForgeRegistries.ITEMS.getKey(item).getPath();
+        withExistingParent(ITEM_FOLDER + "/" + name, mcLoc(ITEM_FOLDER + "/handheld")).texture("layer0", ITEM_FOLDER + "/" + name);
     }
 }

@@ -72,6 +72,15 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.NECROMANTIC_STONE.get());
                         output.accept(HexcraftItems.ATTUNED_STONE.get());
                         output.accept(HexcraftItems.ATTUNED_STONE_CHARGED.get());
+                        output.accept(HexcraftItems.ARTHANA.get());
+                        output.accept(HexcraftItems.BLOODED_WAYSTONE.get());
+                        output.accept(HexcraftItems.BOUND_WAYSTONE.get());
+                        output.accept(HexcraftItems.BREATH_OF_THE_GODDESS.get());
+                        //output.accept(HexcraftItems.BREW_OF_LOVE.get());
+                        output.accept(HexcraftItems.BREW_OF_SPROUTING.get());
+                        output.accept(HexcraftItems.BREW_OF_THE_GROTESQUE.get());
+                        output.accept(HexcraftItems.CONDENSED_FEAR.get());
+                        output.accept(HexcraftItems.DIAMOND_VAPOUR.get());
                         output.accept(HexcraftItems.ANOINTING_PASTE.get());
                         output.accept(HexcraftItems.MUTANDIS.get());
                         output.accept(HexcraftItems.MUTANDIS_EXTREMIS.get());
@@ -90,8 +99,170 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.UNDER_WORLD_STONE.get());
                         output.accept(HexcraftBlocks.CHARSTONE.get());
 
+                        //Saplings
+                        output.accept(HexcraftBlocks.EBONY_SAPLING.get());
+                        output.accept(HexcraftBlocks.BLOOD_OAK_SAPLING.get());
+                        output.accept(HexcraftBlocks.HELL_BARK_SAPLING.get());
+                        output.accept(HexcraftBlocks.WHITE_OAK_SAPLING.get());
+                        output.accept(HexcraftBlocks.ALDER_SAPLING.get());
+                        output.accept(HexcraftBlocks.WITCH_HAZEL_SAPLING.get());
+                        output.accept(HexcraftBlocks.WILLOW_SAPLING.get());
+                        output.accept(HexcraftBlocks.HAWTHORN_SAPLING.get());
+                        output.accept(HexcraftBlocks.CEDAR_SAPLING.get());
+                        output.accept(HexcraftBlocks.DISTORTED_SAPLING.get());
+                        output.accept(HexcraftBlocks.ELDER_SAPLING.get());
+                        output.accept(HexcraftBlocks.JUNIPER_SAPLING.get());
+                        output.accept(HexcraftBlocks.ROWAN_SAPLING.get());
+                        output.accept(HexcraftBlocks.TWISTED_SAPLING.get());
+                        output.accept(HexcraftBlocks.WITCH_WOOD_SAPLING.get());
+                        output.accept(HexcraftBlocks.ECHO_WOOD_SAPLING.get());
+
+                        //Leaves
+                        output.accept(HexcraftBlocks.EBONY_LEAVES.get());
+                        output.accept(HexcraftBlocks.BLOOD_OAK_LEAVES.get());
+                        output.accept(HexcraftBlocks.HELL_BARK_LEAVES.get());
+                        output.accept(HexcraftBlocks.WHITE_OAK_LEAVES.get());
+                        output.accept(HexcraftBlocks.ALDER_LEAVES.get());
+                        output.accept(HexcraftBlocks.WITCH_HAZEL_LEAVES.get());
+                        output.accept(HexcraftBlocks.WILLOW_LEAVES.get());
+                        output.accept(HexcraftBlocks.HAWTHORN_LEAVES.get());
+                        output.accept(HexcraftBlocks.CEDAR_LEAVES.get());
+                        output.accept(HexcraftBlocks.DISTORTED_LEAVES.get());
+                        output.accept(HexcraftBlocks.ELDER_LEAVES.get());
+                        output.accept(HexcraftBlocks.JUNIPER_LEAVES.get());
+                        output.accept(HexcraftBlocks.ROWAN_LEAVES.get());
+                        output.accept(HexcraftBlocks.TWISTED_LEAVES.get());
+                        output.accept(HexcraftBlocks.WITCH_WOOD_LEAVES.get());
+                        output.accept(HexcraftBlocks.ECHO_WOOD_LEAVES.get());
+
+                        //Leaves Pile
+                        output.accept(HexcraftBlocks.EBONY_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.BLOOD_OAK_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.HELL_BARK_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.WHITE_OAK_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.ALDER_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.WITCH_HAZEL_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.WILLOW_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.HAWTHORN_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.CEDAR_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.DISTORTED_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.ELDER_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.JUNIPER_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.ROWAN_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.TWISTED_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.WITCH_WOOD_LEAVES_PILE.get());
+                        output.accept(HexcraftBlocks.ECHO_WOOD_LEAVES_PILE.get());
+
+                        //Logs
+                        output.accept(HexcraftBlocks.EBONY_LOG.get());
+                        output.accept(HexcraftBlocks.BLOOD_OAK_LOG.get());
+                        output.accept(HexcraftBlocks.HELL_BARK_LOG.get());
+                        output.accept(HexcraftBlocks.WHITE_OAK_LOG.get());
+                        output.accept(HexcraftBlocks.ALDER_LOG.get());
+                        output.accept(HexcraftBlocks.WITCH_HAZEL_LOG.get());
+                        output.accept(HexcraftBlocks.WILLOW_LOG.get());
+                        output.accept(HexcraftBlocks.HAWTHORN_LOG.get());
+                        output.accept(HexcraftBlocks.CEDAR_LOG.get());
+                        output.accept(HexcraftBlocks.DISTORTED_LOG.get());
+                        output.accept(HexcraftBlocks.ELDER_LOG.get());
+                        output.accept(HexcraftBlocks.JUNIPER_LOG.get());
+                        output.accept(HexcraftBlocks.ROWAN_LOG.get());
+                        output.accept(HexcraftBlocks.TWISTED_LOG.get());
+                        output.accept(HexcraftBlocks.WITCH_WOOD_LOG.get());
+                        output.accept(HexcraftBlocks.ECHO_WOOD_LOG.get());
+
+                        //Striped Logs
+                        output.accept(HexcraftBlocks.STRIPPED_EBONY_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_BLOOD_OAK_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_HELL_BARK_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_WHITE_OAK_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_ALDER_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_WITCH_HAZEL_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_WILLOW_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_HAWTHORN_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_CEDAR_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_DISTORTED_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_ELDER_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_JUNIPER_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_ROWAN_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_TWISTED_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_WITCH_WOOD_LOG.get());
+                        output.accept(HexcraftBlocks.STRIPPED_ECHO_WOOD_LOG.get());
+
+                        //Woods
+                        output.accept(HexcraftBlocks.EBONY_WOOD.get());
+                        output.accept(HexcraftBlocks.BLOOD_OAK_WOOD.get());
+                        output.accept(HexcraftBlocks.HELL_BARK_WOOD.get());
+                        output.accept(HexcraftBlocks.WHITE_OAK_WOOD.get());
+                        output.accept(HexcraftBlocks.ALDER_WOOD.get());
+                        output.accept(HexcraftBlocks.WITCH_HAZEL_WOOD.get());
+                        output.accept(HexcraftBlocks.WILLOW_WOOD.get());
+                        output.accept(HexcraftBlocks.HAWTHORN_WOOD.get());
+                        output.accept(HexcraftBlocks.CEDAR_WOOD.get());
+                        output.accept(HexcraftBlocks.DISTORTED_WOOD.get());
+                        output.accept(HexcraftBlocks.ELDER_WOOD.get());
+                        output.accept(HexcraftBlocks.JUNIPER_WOOD.get());
+                        output.accept(HexcraftBlocks.ROWAN_WOOD.get());
+                        output.accept(HexcraftBlocks.TWISTED_WOOD.get());
+                        output.accept(HexcraftBlocks.WITCH_WOOD_WOOD.get());
+                        output.accept(HexcraftBlocks.ECHO_WOOD_WOOD.get());
+
+                        //Striped Woods
+                        output.accept(HexcraftBlocks.STRIPPED_EBONY_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_BLOOD_OAK_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_HELL_BARK_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_WHITE_OAK_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_ALDER_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_WITCH_HAZEL_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_WILLOW_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_HAWTHORN_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_CEDAR_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_DISTORTED_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_ELDER_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_JUNIPER_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_ROWAN_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_TWISTED_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_WITCH_WOOD_WOOD.get());
+                        output.accept(HexcraftBlocks.STRIPPED_ECHO_WOOD_WOOD.get());
+
+                        //Planks
+                        output.accept(HexcraftBlocks.EBONY_PLANKS.get());
+                        output.accept(HexcraftBlocks.BLOOD_OAK_PLANKS.get());
+                        output.accept(HexcraftBlocks.HELL_BARK_PLANKS.get());
+                        output.accept(HexcraftBlocks.WHITE_OAK_PLANKS.get());
+                        output.accept(HexcraftBlocks.ALDER_PLANKS.get());
+                        output.accept(HexcraftBlocks.WITCH_HAZEL_PLANKS.get());
+                        output.accept(HexcraftBlocks.WILLOW_PLANKS.get());
+                        output.accept(HexcraftBlocks.HAWTHORN_PLANKS.get());
+                        output.accept(HexcraftBlocks.CEDAR_PLANKS.get());
+                        output.accept(HexcraftBlocks.DISTORTED_PLANKS.get());
+                        output.accept(HexcraftBlocks.ELDER_PLANKS.get());
+                        output.accept(HexcraftBlocks.JUNIPER_PLANKS.get());
+                        output.accept(HexcraftBlocks.ROWAN_PLANKS.get());
+                        output.accept(HexcraftBlocks.TWISTED_PLANKS.get());
+                        output.accept(HexcraftBlocks.WITCH_WOOD_PLANKS.get());
+                        output.accept(HexcraftBlocks.ECHO_WOOD_PLANKS.get());
+
+                        //Bookshelves
+                        output.accept(HexcraftBlocks.EBONY_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.BLOOD_OAK_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.HELL_BARK_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.WHITE_OAK_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.ALDER_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.WITCH_HAZEL_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.WILLOW_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.HAWTHORN_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.CEDAR_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.DISTORTED_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.ELDER_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.JUNIPER_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.ROWAN_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.TWISTED_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.WITCH_WOOD_BOOKSHELF.get());
+                        output.accept(HexcraftBlocks.ECHO_WOOD_BOOKSHELF.get());
 
                         //Plants
+                        output.accept(HexcraftBlocks.DEMON_HEART.get());
                         output.accept(HexcraftItems.WITCHES_LADDER_ITEM.get());
                         output.accept(HexcraftBlocks.GLINT_WEED.get());
                         output.accept(HexcraftBlocks.SPANISH_MOSS.get());
