@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "up": "hexcraftmod:block/hell_fungal_lamp_top",
+    "side": "hexcraftmod:block/hell_fungal_lamp_side",
+	"down": "hexcraftmod:block/hell_fungal_lamp_bottom"
+  }
+}

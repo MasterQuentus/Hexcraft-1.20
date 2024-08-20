@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "hexcraftmod:block/elder_log_top",
+    "side": "hexcraftmod:block/elder_log"
+  }
+}

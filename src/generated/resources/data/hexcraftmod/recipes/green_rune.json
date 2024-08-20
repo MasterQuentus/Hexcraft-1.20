@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:blank_rune"
+    },
+    "G": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BGB",
+    "BBB"
+  ],
+  "result": {
+    "item": "hexcraftmod:green_rune"
+  },
+  "show_notification": true
+}

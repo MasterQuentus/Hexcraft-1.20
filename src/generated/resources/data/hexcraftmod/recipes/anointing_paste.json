@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:water_artichoke_seeds"
+    },
+    {
+      "item": "hexcraftmod:mandrake_seeds"
+    },
+    {
+      "item": "hexcraftmod:belladonna_seeds"
+    },
+    {
+      "item": "hexcraftmod:aerpine_seeds"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:anointing_paste"
+  }
+}

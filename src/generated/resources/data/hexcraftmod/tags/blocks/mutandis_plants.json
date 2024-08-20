@@ -7,6 +7,11 @@
     "minecraft:red_mushroom",
     "hexcraftmod:witches_ladder",
     "hexcraftmod:glint_weed",
-    "hexcraftmod:spanish_moss"
+    "hexcraftmod:spanish_moss",
+    "hexcraftmod:alder_sapling",
+    "hexcraftmod:elder_sapling",
+    "hexcraftmod:hawthorn_sapling",
+    "hexcraftmod:cedar_sapling",
+    "hexcraftmod:rowan_sapling"
   ]
 }

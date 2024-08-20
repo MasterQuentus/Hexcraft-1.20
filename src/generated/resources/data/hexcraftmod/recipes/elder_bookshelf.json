@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "E": {
+      "item": "hexcraftmod:elder_planks"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "BBB",
+    "EEE"
+  ],
+  "result": {
+    "item": "hexcraftmod:elder_bookshelf"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "W": {
+      "item": "hexcraftmod:witch_wood_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "BBB",
+    "WWW"
+  ],
+  "result": {
+    "item": "hexcraftmod:witch_wood_bookshelf"
+  },
+  "show_notification": true
+}

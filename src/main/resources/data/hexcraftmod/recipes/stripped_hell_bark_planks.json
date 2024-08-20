@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:stripped_hell_bark_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:hell_bark_planks"
+  }
+}

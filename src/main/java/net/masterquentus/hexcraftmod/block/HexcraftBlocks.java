@@ -1225,7 +1225,7 @@ public class HexcraftBlocks {
 
     public static final RegistryObject <Block> WITCHES_OVEN = registerBlock("witches_oven",
             () -> new WitchesOven(BlockBehaviour.Properties.copy(Blocks.FURNACE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
-                    .strength(3.5F).lightLevel(litBlockEmission(13)).noOcclusion()));
+                    .strength(3.5F).lightLevel(litBlockEmission(13)).noOcclusion().sound(SoundType.ANVIL)));
 
     public static final RegistryObject <Block> WITCHES_CAULDRON = registerBlock("witches_cauldron",
             () -> new WitchesCauldron(BlockBehaviour.Properties.copy(Blocks.CAULDRON).requiresCorrectToolForDrops()

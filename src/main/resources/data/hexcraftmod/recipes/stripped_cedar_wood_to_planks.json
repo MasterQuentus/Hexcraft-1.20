@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "hexcraftmod:stripped_cedar_wood"
+        }
+    ],
+    "result": {
+        "item": "hexcraftmod:cedar_planks",
+        "count": 4
+    }
+}

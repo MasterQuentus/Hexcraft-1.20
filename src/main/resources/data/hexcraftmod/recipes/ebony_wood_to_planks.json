@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "hexcraftmod:ebony_wood"
+        }
+    ],
+    "result": {
+        "item": "hexcraftmod:ebony_planks",
+        "count": 4
+    }
+}

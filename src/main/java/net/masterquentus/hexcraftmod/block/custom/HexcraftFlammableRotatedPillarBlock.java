@@ -94,6 +94,72 @@ public class HexcraftFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
             if(state.is(HexcraftBlocks.ECHO_WOOD_LOG.get())) {
                 return HexcraftBlocks.STRIPPED_ECHO_WOOD_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+
+            }
+
+            if(state.is(HexcraftBlocks.EBONY_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_EBONY_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.HELL_BARK_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_HELL_BARK_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.BLOOD_OAK_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_BLOOD_OAK_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+
+            }
+
+            if(state.is(HexcraftBlocks.WHITE_OAK_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_WHITE_OAK_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.ALDER_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_ALDER_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.WITCH_HAZEL_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_WITCH_HAZEL_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.WILLOW_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_WILLOW_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.HAWTHORN_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_HAWTHORN_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.CEDAR_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_CEDAR_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.DISTORTED_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_DISTORTED_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.EBONY_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_EBONY_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.JUNIPER_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_JUNIPER_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.ROWAN_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_ROWAN_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.TWISTED_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_TWISTED_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.WITCH_WOOD_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_WITCH_WOOD_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if(state.is(HexcraftBlocks.ECHO_WOOD_WOOD.get())) {
+                return HexcraftBlocks.STRIPPED_ECHO_WOOD_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
 

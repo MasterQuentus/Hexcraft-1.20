@@ -38,6 +38,8 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 
     private static final List<ItemLike> LEATHER_SMELTABLES = List.of(Items.ROTTEN_FLESH);
 
+    private static final List<ItemLike> STEEL_SMELTABLES = List.of(HexcraftItems.STEEL_POWDER.get());
+
     private static final List<ItemLike> CLAY_SMELTABLES = List.of(HexcraftItems.UNFIRED_CLAY_POT.get());
 
     private static final List<ItemLike> TANNED_LEATHER_SMELTABLES = List.of(HexcraftItems.BOUND_LEATHER.get());
@@ -80,6 +82,8 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
         oreBlasting(pWriter, TRENOGEN_SMELTABLES, RecipeCategory.MISC, HexcraftItems.CUROGEN.get(), 0.7f, 100, "curogen");
         oreSmelting(pWriter, JORMUIM_SMELTABLES, RecipeCategory.MISC, HexcraftItems.JORMIUM_INGOT.get(), 0.7f, 200, "jormium_ingot");
         oreBlasting(pWriter, JORMUIM_SMELTABLES, RecipeCategory.MISC, HexcraftItems.JORMIUM_INGOT.get(), 0.7f, 100, "jormium_ingot");
+        oreSmelting(pWriter, STEEL_SMELTABLES, RecipeCategory.MISC, HexcraftItems.STEEL_INGOT.get(), 0.7f, 200, "steel_ingot");
+        oreBlasting(pWriter, STEEL_SMELTABLES, RecipeCategory.MISC, HexcraftItems.STEEL_INGOT.get(), 0.7f, 100, "steel_ingot");
         oreSmelting(pWriter, LEATHER_SMELTABLES, RecipeCategory.MISC, Items.LEATHER, 0.7f, 200, "leather");
         oreBlasting(pWriter, LEATHER_SMELTABLES, RecipeCategory.MISC, Items.LEATHER, 0.7f, 100, "leather");
         oreSmelting(pWriter, CLAY_SMELTABLES, RecipeCategory.MISC, HexcraftItems.CLAY_POT.get(), 0.2f, 200, "clay_pot");
@@ -129,6 +133,15 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
                 .pattern("BBB")
                 .define('B', HexcraftItems.BLANK_RUNE.get())
                 .define('D', Items.BLUE_DYE)
+                .unlockedBy(getHasName(HexcraftItems.BLANK_RUNE.get()), has(HexcraftItems.BLANK_RUNE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftItems.GREEN_RUNE.get())
+                .pattern("BBB")
+                .pattern("BGB")
+                .pattern("BBB")
+                .define('B', HexcraftItems.BLANK_RUNE.get())
+                .define('G', Items.GREEN_DYE)
                 .unlockedBy(getHasName(HexcraftItems.BLANK_RUNE.get()), has(HexcraftItems.BLANK_RUNE.get()))
                 .save(pWriter);
 
@@ -646,10 +659,249 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
                 .define('e', Items.EMERALD).define('s', Items.STICK)
                 .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT)).save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.EBONY_WOOD.get(), 4)
+                .pattern("EE ")
+                .pattern("EE ")
+                .pattern("   ")
+                .define('E', HexcraftBlocks.EBONY_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.EBONY_LOG.get()), has(HexcraftBlocks.EBONY_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.BLOOD_OAK_WOOD.get(), 4)
+                .pattern("BB ")
+                .pattern("BB ")
+                .pattern("   ")
+                .define('B', HexcraftBlocks.BLOOD_OAK_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.BLOOD_OAK_LOG.get()), has(HexcraftBlocks.BLOOD_OAK_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.HELL_BARK_WOOD.get(), 4)
+                .pattern("HH ")
+                .pattern("HH ")
+                .pattern("   ")
+                .define('H', HexcraftBlocks.HELL_BARK_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.HELL_BARK_LOG.get()), has(HexcraftBlocks.HELL_BARK_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WHITE_OAK_WOOD.get(), 4)
+                .pattern("WW ")
+                .pattern("WW ")
+                .pattern("   ")
+                .define('W', HexcraftBlocks.WHITE_OAK_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.WHITE_OAK_LOG.get()), has(HexcraftBlocks.WHITE_OAK_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ALDER_WOOD.get(), 4)
+                .pattern("AA ")
+                .pattern("AA ")
+                .pattern("   ")
+                .define('A', HexcraftBlocks.ALDER_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.ALDER_LOG.get()), has(HexcraftBlocks.ALDER_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_HAZEL_WOOD.get(), 4)
+                .pattern("WW ")
+                .pattern("WW ")
+                .pattern("   ")
+                .define('W', HexcraftBlocks.WITCH_HAZEL_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.WITCH_HAZEL_LOG.get()), has(HexcraftBlocks.WITCH_HAZEL_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WILLOW_WOOD.get(), 4)
+                .pattern("WW ")
+                .pattern("WW ")
+                .pattern("   ")
+                .define('W', HexcraftBlocks.WILLOW_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.WILLOW_LOG.get()), has(HexcraftBlocks.WILLOW_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.HAWTHORN_WOOD.get(), 4)
+                .pattern("HH ")
+                .pattern("HH ")
+                .pattern("   ")
+                .define('H', HexcraftBlocks.HAWTHORN_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.HAWTHORN_LOG.get()), has(HexcraftBlocks.HAWTHORN_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.CEDAR_WOOD.get(), 4)
+                .pattern("CC ")
+                .pattern("CC ")
+                .pattern("   ")
+                .define('C', HexcraftBlocks.CEDAR_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.CEDAR_LOG.get()), has(HexcraftBlocks.CEDAR_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.DISTORTED_WOOD.get(), 4)
+                .pattern("DD ")
+                .pattern("DD ")
+                .pattern("   ")
+                .define('D', HexcraftBlocks.DISTORTED_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.DISTORTED_LOG.get()), has(HexcraftBlocks.DISTORTED_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ELDER_WOOD.get(), 4)
+                .pattern("EE ")
+                .pattern("EE ")
+                .pattern("   ")
+                .define('E', HexcraftBlocks.ELDER_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.ELDER_LOG.get()), has(HexcraftBlocks.ELDER_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.JUNIPER_WOOD.get(), 4)
+                .pattern("JJ ")
+                .pattern("JJ ")
+                .pattern("   ")
+                .define('J', HexcraftBlocks.JUNIPER_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.JUNIPER_LOG.get()), has(HexcraftBlocks.JUNIPER_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ROWAN_WOOD.get(), 4)
+                .pattern("RR ")
+                .pattern("RR ")
+                .pattern("   ")
+                .define('R', HexcraftBlocks.ROWAN_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.ROWAN_LOG.get()), has(HexcraftBlocks.ROWAN_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.TWISTED_WOOD.get(), 4)
+                .pattern("TT ")
+                .pattern("TT ")
+                .pattern("   ")
+                .define('T', HexcraftBlocks.TWISTED_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.TWISTED_LOG.get()), has(HexcraftBlocks.TWISTED_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_WOOD_WOOD.get(), 4)
+                .pattern("WW ")
+                .pattern("WW ")
+                .pattern("   ")
+                .define('W', HexcraftBlocks.WITCH_WOOD_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.WITCH_WOOD_LOG.get()), has(HexcraftBlocks.WITCH_WOOD_LOG.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_WOOD.get(), 4)
+                .pattern("EE ")
+                .pattern("EE ")
+                .pattern("   ")
+                .define('E', HexcraftBlocks.ECHO_WOOD_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_LOG.get()), has(HexcraftBlocks.ECHO_WOOD_LOG.get())).save(pWriter);
 
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.EBONY_BOOKSHELF.get())
+                .pattern("EEE")
+                .pattern("BBB")
+                .pattern("EEE")
+                .define('E', HexcraftBlocks.EBONY_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.EBONY_PLANKS.get()), has(HexcraftBlocks.EBONY_PLANKS.get())).save(pWriter);
 
-//Shapeless
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.BLOOD_OAK_BOOKSHELF.get())
+                .pattern("EEE")
+                .pattern("BBB")
+                .pattern("EEE")
+                .define('E', HexcraftBlocks.BLOOD_OAK_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.BLOOD_OAK_PLANKS.get()), has(HexcraftBlocks.BLOOD_OAK_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.HELL_BARK_BOOKSHELF.get())
+                .pattern("HHH")
+                .pattern("BBB")
+                .pattern("HHH")
+                .define('H', HexcraftBlocks.HELL_BARK_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.HELL_BARK_PLANKS.get()), has(HexcraftBlocks.HELL_BARK_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WHITE_OAK_BOOKSHELF.get())
+                .pattern("WWW")
+                .pattern("BBB")
+                .pattern("WWW")
+                .define('W', HexcraftBlocks.WHITE_OAK_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.WHITE_OAK_PLANKS.get()), has(HexcraftBlocks.WHITE_OAK_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ALDER_BOOKSHELF.get())
+                .pattern("AAA")
+                .pattern("BBB")
+                .pattern("AAA")
+                .define('A', HexcraftBlocks.ALDER_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.ALDER_PLANKS.get()), has(HexcraftBlocks.ALDER_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_HAZEL_BOOKSHELF.get())
+                .pattern("WWW")
+                .pattern("BBB")
+                .pattern("WWW")
+                .define('W', HexcraftBlocks.WITCH_HAZEL_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()), has(HexcraftBlocks.WITCH_HAZEL_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WILLOW_BOOKSHELF.get())
+                .pattern("WWW")
+                .pattern("BBB")
+                .pattern("WWW")
+                .define('W', HexcraftBlocks.WILLOW_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.WILLOW_PLANKS.get()), has(HexcraftBlocks.WILLOW_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.HAWTHORN_BOOKSHELF.get())
+                .pattern("HHH")
+                .pattern("BBB")
+                .pattern("HHH")
+                .define('H', HexcraftBlocks.HAWTHORN_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.HAWTHORN_PLANKS.get()), has(HexcraftBlocks.HAWTHORN_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.CEDAR_BOOKSHELF.get())
+                .pattern("CCC")
+                .pattern("BBB")
+                .pattern("CCC")
+                .define('C', HexcraftBlocks.CEDAR_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.CEDAR_PLANKS.get()), has(HexcraftBlocks.CEDAR_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.DISTORTED_BOOKSHELF.get())
+                .pattern("DDD")
+                .pattern("BBB")
+                .pattern("DDD")
+                .define('D', HexcraftBlocks.DISTORTED_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.DISTORTED_PLANKS.get()), has(HexcraftBlocks.DISTORTED_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ELDER_BOOKSHELF.get())
+                .pattern("EEE")
+                .pattern("BBB")
+                .pattern("EEE")
+                .define('E', HexcraftBlocks.ELDER_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.ELDER_PLANKS.get()), has(HexcraftBlocks.ELDER_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.JUNIPER_BOOKSHELF.get())
+                .pattern("JJJ")
+                .pattern("BBB")
+                .pattern("JJJ")
+                .define('J', HexcraftBlocks.JUNIPER_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.JUNIPER_PLANKS.get()), has(HexcraftBlocks.JUNIPER_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ROWAN_BOOKSHELF.get())
+                .pattern("RRR")
+                .pattern("BBB")
+                .pattern("RRR")
+                .define('R', HexcraftBlocks.ROWAN_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.ROWAN_PLANKS.get()), has(HexcraftBlocks.ROWAN_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.TWISTED_BOOKSHELF.get())
+                .pattern("TTT")
+                .pattern("BBB")
+                .pattern("TTT")
+                .define('T', HexcraftBlocks.TWISTED_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.TWISTED_PLANKS.get()), has(HexcraftBlocks.TWISTED_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_WOOD_BOOKSHELF.get())
+                .pattern("WWW")
+                .pattern("BBB")
+                .pattern("WWW")
+                .define('W', HexcraftBlocks.WITCH_WOOD_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.WITCH_WOOD_PLANKS.get()), has(HexcraftBlocks.WITCH_WOOD_PLANKS.get())).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_BOOKSHELF.get())
+                .pattern("EEE")
+                .pattern("BBB")
+                .pattern("EEE")
+                .define('E', HexcraftBlocks.ECHO_WOOD_PLANKS.get())
+                .define('B', Items.BOOK)
+                .unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_PLANKS.get()), has(HexcraftBlocks.ECHO_WOOD_PLANKS.get())).save(pWriter);
+
+
+        //Shapeless
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.BLOODY_NYKIUM_NUGGET.get(), 9)
                 .requires(HexcraftItems.BLOODY_NYKIUM.get())
                 .unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get()))
@@ -711,7 +963,7 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
                 .requires(Items.IRON_NUGGET)
                 .requires(Items.COAL)
                 .requires(Items.IRON_NUGGET)
-                .unlockedBy(getHasName(Items.GLASS_BOTTLE), has(Items.GLASS_BOTTLE))
+                .unlockedBy(getHasName(Items.COAL), has(Items.COAL))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.PINK_DYE)
@@ -728,6 +980,70 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
                 .requires(HexcraftItems.WATER_ARTICHOKE_SEEDS.get()).requires(HexcraftItems.MANDRAKE_SEEDS.get())
                 .requires(HexcraftItems.BELLADONNA_SEEDS.get()).requires(HexcraftItems.AERPINE_SEEDS.get())
                 .unlockedBy(getHasName(HexcraftItems.BELLADONNA_SEEDS.get()), has(HexcraftItems.BELLADONNA_SEEDS.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.EBONY_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.EBONY_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.EBONY_LOG.get()), has(HexcraftBlocks.EBONY_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.BLOOD_OAK_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.BLOOD_OAK_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.BLOOD_OAK_LOG.get()), has(HexcraftBlocks.BLOOD_OAK_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.HELL_BARK_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.HELL_BARK_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.HELL_BARK_LOG.get()), has(HexcraftBlocks.HELL_BARK_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.WHITE_OAK_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.WHITE_OAK_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.WHITE_OAK_LOG.get()), has(HexcraftBlocks.WHITE_OAK_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.ALDER_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.ALDER_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.ALDER_LOG.get()), has(HexcraftBlocks.ALDER_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.WITCH_HAZEL_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.WITCH_HAZEL_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.WITCH_HAZEL_LOG.get()), has(HexcraftBlocks.WITCH_HAZEL_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.WILLOW_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.WILLOW_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.WILLOW_LOG.get()), has(HexcraftBlocks.WILLOW_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.HAWTHORN_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.HAWTHORN_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.HAWTHORN_LOG.get()), has(HexcraftBlocks.HAWTHORN_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.CEDAR_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.CEDAR_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.CEDAR_LOG.get()), has(HexcraftBlocks.CEDAR_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.DISTORTED_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.DISTORTED_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.DISTORTED_LOG.get()), has(HexcraftBlocks.DISTORTED_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.ELDER_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.ELDER_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.ELDER_LOG.get()), has(HexcraftBlocks.ELDER_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.JUNIPER_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.JUNIPER_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.JUNIPER_LOG.get()), has(HexcraftBlocks.JUNIPER_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.ROWAN_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.ROWAN_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.ROWAN_LOG.get()), has(HexcraftBlocks.ROWAN_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.TWISTED_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.TWISTED_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.TWISTED_LOG.get()), has(HexcraftBlocks.TWISTED_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.WITCH_WOOD_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.WITCH_WOOD_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.WITCH_WOOD_LOG.get()), has(HexcraftBlocks.WITCH_WOOD_LOG.get())).save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_PLANKS.get(), 4)
+                .requires(HexcraftBlocks.ECHO_WOOD_LOG.get())
+                .unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_LOG.get()), has(HexcraftBlocks.ECHO_WOOD_LOG.get())).save(pWriter);
 
     }
 

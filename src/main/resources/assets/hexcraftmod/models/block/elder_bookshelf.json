@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "hexcraftmod:block/elder_planks",
+    "side": "hexcraftmod:block/elder_bookshelf"
+  }
+}

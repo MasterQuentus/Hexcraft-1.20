@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "T": {
+      "item": "hexcraftmod:twisted_planks"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "BBB",
+    "TTT"
+  ],
+  "result": {
+    "item": "hexcraftmod:twisted_bookshelf"
+  },
+  "show_notification": true
+}

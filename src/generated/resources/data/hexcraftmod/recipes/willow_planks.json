@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:willow_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:willow_planks"
+  }
+}

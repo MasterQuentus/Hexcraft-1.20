@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "hexcraftmod:distorted_log"
+    }
+  },
+  "pattern": [
+    "DD ",
+    "DD ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:distorted_wood"
+  },
+  "show_notification": true
+}

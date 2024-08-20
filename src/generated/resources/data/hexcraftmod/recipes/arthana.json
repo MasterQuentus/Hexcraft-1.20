@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "e": {
+      "item": "minecraft:emerald"
+    },
+    "i": {
+      "item": "minecraft:gold_ingot"
+    },
+    "n": {
+      "item": "minecraft:gold_nugget"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " i ",
+    "nen",
+    " s "
+  ],
+  "result": {
+    "item": "hexcraftmod:arthana"
+  },
+  "show_notification": true
+}

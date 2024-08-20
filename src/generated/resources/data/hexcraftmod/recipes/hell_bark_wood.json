@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "hexcraftmod:hell_bark_log"
+    }
+  },
+  "pattern": [
+    "HH ",
+    "HH ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:hell_bark_wood"
+  },
+  "show_notification": true
+}

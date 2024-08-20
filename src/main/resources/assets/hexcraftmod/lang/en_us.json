@@ -66,6 +66,21 @@
   "item.hexcraftmod.anointing_paste": "Anointing Paste",
   "item.hexcraftmod.mutandis": "Mutandis",
   "item.hexcraftmod.mutandis_extremis": "Mutandis Extremis",
+  "item.hexcraftmod.poppet": "Poppet",
+  "item.hexcraftmod.voodoo_poppet": "Voodoo Poppet",
+  "item.hexcraftmod.voodoo_protection_poppet": "Voodoo Protection Poppet",
+  "item.hexcraftmod.fall_protection_poppet": "Fall Protection Poppet",
+  "item.hexcraftmod.explosion_protection_poppet": "Explosion Protection Poppet",
+  "item.hexcraftmod.projectile_protection_poppet": "Projectile Protection Poppet",
+  "item.hexcraftmod.hunger_protection_poppet": "Hunger Protection Poppet",
+  "item.hexcraftmod.potion_protection_poppet": "Potion Protection Poppet",
+  "item.hexcraftmod.void_protection_poppet": "Void Protection Poppet",
+  "item.hexcraftmod.curse_protection_poppet": "Curse Protection Poppet",
+  "item.hexcraftmod.vampiric_poppet": "Vampiric Poppet",
+  "item.hexcraftmod.death_protection_poppet": "Death Protection Poppet",
+  "item.hexcraftmod.fire_protection_poppet": "Fire Protection Poppet",
+  "item.hexcraftmod.water_protection_poppet": "Water Protection Poppet",
+  "item.hexcraftmod.wither_protection_poppet": "Wither Protection Poppet",
 
   //Plants
   "item.hexcraftmod.mandrake_seeds": "Mandrake Seeds",
@@ -381,6 +396,14 @@
   "block.hexcraftmod.crimson_sand_stone_slab": "Crimson Sandstone Slab",
   "block.hexcraftmod.cut_crimson_sand_stone_slab": "Cut Crimson Sandstone Slab",
   "block.hexcraftmod.smooth_crimson_sand_stone_slab": "Smooth Crimson Sandstone Slab",
+
+  //Lanterns
+  "block.hexcraftmod.fairy_lantern": "Fairy Lantern",
+  "block.hexcraftmod.pixie_lantern": "Pixie Lantern",
+  "block.hexcraftmod.echo_fungal_lamp": "Echo Fungal Lamp",
+  "block.hexcraftmod.hell_fungal_lamp": "Hell Fungal Lamp",
+  "block.hexcraftmod.vileshroom_lamp": "Vileshroom Lamp",
+  "block.hexcraftmod.ghostshroom_lamp": "Ghostshroom Lamp",
 
   //Foods
   "item.hexcraftmod.juniper_berries": "Juniper Berries",

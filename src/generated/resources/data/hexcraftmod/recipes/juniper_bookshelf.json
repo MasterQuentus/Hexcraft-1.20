@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "J": {
+      "item": "hexcraftmod:juniper_planks"
+    }
+  },
+  "pattern": [
+    "JJJ",
+    "BBB",
+    "JJJ"
+  ],
+  "result": {
+    "item": "hexcraftmod:juniper_bookshelf"
+  },
+  "show_notification": true
+}

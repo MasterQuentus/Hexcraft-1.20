@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glass_bottle": {
+    "has_coal": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:glass_bottle"
+              "minecraft:coal"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_glass_bottle",
+      "has_coal",
       "has_the_recipe"
     ]
   ],

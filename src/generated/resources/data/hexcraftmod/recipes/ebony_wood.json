@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:ebony_log"
+    }
+  },
+  "pattern": [
+    "EE ",
+    "EE ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:ebony_wood"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "hexcraftmod:stripped_hell_bark_wood"
+        }
+    ],
+    "result": {
+        "item": "hexcraftmod:hell_bark_planks",
+        "count": 4
+    }
+}

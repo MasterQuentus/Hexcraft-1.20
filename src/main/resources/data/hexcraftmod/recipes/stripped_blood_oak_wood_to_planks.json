@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "hexcraftmod:stripped_blood_oak_wood"
+        }
+    ],
+    "result": {
+        "item": "hexcraftmod:blood_oak_planks",
+        "count": 4
+    }
+}

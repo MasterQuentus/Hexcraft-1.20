@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "hexcraftmod:juniper_log"
+    }
+  },
+  "pattern": [
+    "JJ ",
+    "JJ ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:juniper_wood"
+  },
+  "show_notification": true
+}

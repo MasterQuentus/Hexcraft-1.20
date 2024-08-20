@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "hexcraftmod:block/stripped_blood_oak_log_top",
+    "side": "hexcraftmod:block/stripped_blood_oak_log"
+  }
+}

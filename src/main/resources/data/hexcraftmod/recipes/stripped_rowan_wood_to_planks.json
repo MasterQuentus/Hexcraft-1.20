@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "hexcraftmod:stripped_rowan_wood"
+        }
+    ],
+    "result": {
+        "item": "hexcraftmod:rowan_planks",
+        "count": 4
+    }
+}

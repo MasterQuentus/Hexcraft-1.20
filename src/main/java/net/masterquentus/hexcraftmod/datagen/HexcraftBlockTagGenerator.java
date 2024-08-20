@@ -43,13 +43,15 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
                 .addTag(BlockTags.SMALL_FLOWERS)
                 .add(Blocks.GRASS, Blocks.BROWN_MUSHROOM, Blocks.RED_MUSHROOM)
                 .add(HexcraftBlocks.WITCHES_LADDER.get(), HexcraftBlocks.GLINT_WEED.get(),
-                        HexcraftBlocks.SPANISH_MOSS.get());
+                        HexcraftBlocks.SPANISH_MOSS.get(),HexcraftBlocks.ALDER_SAPLING.get(),
+                        HexcraftBlocks.ELDER_SAPLING.get(), HexcraftBlocks.HAWTHORN_SAPLING.get(),
+                        HexcraftBlocks.CEDAR_SAPLING.get(),HexcraftBlocks.ROWAN_SAPLING.get());
 
         this.tag(HexcraftTags.Blocks.BLIGHT_DECAYABLE_PLANTS)
                     .addTag(BlockTags.SAPLINGS)
                     .addTag(BlockTags.SMALL_FLOWERS)
                     .add(Blocks.GRASS, Blocks.FERN, Blocks.SWEET_BERRY_BUSH)
-                    .add(HexcraftBlocks.GLINT_WEED.get());
+                    .add(HexcraftBlocks.GLINT_WEED.get(), HexcraftBlocks.BLOOD_BERRIES_PLANT.get());
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)

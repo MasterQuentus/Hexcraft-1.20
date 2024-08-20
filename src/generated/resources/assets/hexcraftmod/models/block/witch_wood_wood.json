@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "hexcraftmod:block/witch_wood_log",
+    "side": "hexcraftmod:block/witch_wood_log"
+  }
+}

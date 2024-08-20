@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "C": {
+      "item": "hexcraftmod:cedar_planks"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "BBB",
+    "CCC"
+  ],
+  "result": {
+    "item": "hexcraftmod:cedar_bookshelf"
+  },
+  "show_notification": true
+}

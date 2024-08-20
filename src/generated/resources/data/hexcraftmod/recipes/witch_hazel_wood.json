@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "hexcraftmod:witch_hazel_log"
+    }
+  },
+  "pattern": [
+    "WW ",
+    "WW ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:witch_hazel_wood"
+  },
+  "show_notification": true
+}

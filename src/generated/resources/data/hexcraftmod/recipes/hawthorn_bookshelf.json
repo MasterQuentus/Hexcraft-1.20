@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "H": {
+      "item": "hexcraftmod:hawthorn_planks"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "BBB",
+    "HHH"
+  ],
+  "result": {
+    "item": "hexcraftmod:hawthorn_bookshelf"
+  },
+  "show_notification": true
+}

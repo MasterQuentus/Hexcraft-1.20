@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "hexcraftmod:hawthorn_wood"
+        }
+    ],
+    "result": {
+        "item": "hexcraftmod:hawthorn_planks",
+        "count": 4
+    }
+}

@@ -1,16 +1,18 @@
-// 1.20.1	2024-08-09T23:56:51.8872853	Tags for minecraft:block mod id hexcraftmod
-947ead941650896e9f11e05f155cf43ff90efc59 data/hexcraftmod/tags/blocks/blight_decayable_plants.json
+// 1.20.1	2024-08-19T00:29:58.1259429	Tags for minecraft:block mod id hexcraftmod
+332c5583c3b8e256908386ab02b7976c0aea8d36 data/hexcraftmod/tags/blocks/blight_decayable_plants.json
 05d15f92ba6dcd89533c1466fae5008bfd580360 data/hexcraftmod/tags/blocks/crops.json
 2c15ff666f9512e78d5142860eb8a5aa9e74913b data/hexcraftmod/tags/blocks/mutandis_blacklist_plants.json
 7d346011c98bd20bcb2b7ccbf55b39918058b9f2 data/hexcraftmod/tags/blocks/mutandis_extremis_plants.json
-4f7fd1f3fa7e2a134c80c58ad1821da393b2890c data/hexcraftmod/tags/blocks/mutandis_plants.json
+13086ee8ec476109b1f4df63d06b5dd08a2b32a7 data/hexcraftmod/tags/blocks/mutandis_plants.json
 5bca032e35ad065be9d79f9f8d5e9db17ad0dde8 data/minecraft/tags/blocks/animals_spawnable_on.json
 82ebb999d3a42b10061a7684fedf94b878a935c4 data/minecraft/tags/blocks/base_stone_overworld.json
 1a3aca18825cf1e6c86f6967db0b70bb455f7031 data/minecraft/tags/blocks/dirt.json
 a329f36fcd9efc009ce075f110db7546e7fbca8f data/minecraft/tags/blocks/enderman_holdable.json
 bebfb75716f2303d2149abcf9f6392a351cc4c40 data/minecraft/tags/blocks/flowers.json
+cda701b2e0548c81589b022eeeebe63a1b7c93ba data/minecraft/tags/blocks/logs_that_burn.json
 d86ec9d83ac3544bf8471a1cda5a12093044e7c8 data/minecraft/tags/blocks/mineable/pickaxe.json
 1a3aca18825cf1e6c86f6967db0b70bb455f7031 data/minecraft/tags/blocks/mineable/shovel.json
 fb39f443bcdf9663f1ba6e07177f5ad80b37f526 data/minecraft/tags/blocks/needs_diamond_tool.json
 e03c4ca520d090c9320d48f57414ca818c581a30 data/minecraft/tags/blocks/needs_iron_tool.json
+305461604e810a351d978b77301c04bfbdc03f3a data/minecraft/tags/blocks/planks.json
 c4b4daf894fac59b7babadff44824827f4a00336 data/minecraft/tags/blocks/stone_bricks.json

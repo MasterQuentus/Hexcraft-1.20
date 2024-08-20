@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "hexcraftmod:stripped_echo_wood_wood"
+        }
+    ],
+    "result": {
+        "item": "hexcraftmod:echo_wood_planks",
+        "count": 4
+    }
+}

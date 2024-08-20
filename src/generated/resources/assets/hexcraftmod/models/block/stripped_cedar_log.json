@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "hexcraftmod:block/stripped_cedar_log_top",
+    "side": "hexcraftmod:block/stripped_cedar_log"
+  }
+}

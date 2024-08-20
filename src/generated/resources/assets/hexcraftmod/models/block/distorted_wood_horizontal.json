@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "hexcraftmod:block/distorted_log",
+    "side": "hexcraftmod:block/distorted_log"
+  }
+}

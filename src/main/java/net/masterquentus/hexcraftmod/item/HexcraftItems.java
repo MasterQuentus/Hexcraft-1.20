@@ -225,6 +225,51 @@ public class HexcraftItems {
     public static final RegistryObject<Item> MUTANDIS_EXTREMIS = ITEMS.register("mutandis_extremis",
             () -> new MutandisItem(HexcraftTags.Blocks.MUTANDIS_EXTREMIS_PLANTS));
 
+    public static final RegistryObject<Item> POPPET = ITEMS.register("poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> VOODOO_POPPET = ITEMS.register("voodoo_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> VOODOO_PROTECTION_POPPET = ITEMS.register("voodoo_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FALL_PROTECTION_POPPET = ITEMS.register("fall_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> EXPLOSION_PROTECTION_POPPET = ITEMS.register("explosion_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PROJECTILE_PROTECTION_POPPET = ITEMS.register("projectile_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> HUNGER_PROTECTION_POPPET = ITEMS.register("hunger_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> POTION_PROTECTION_POPPET = ITEMS.register("potion_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> VOID_PROTECTION_POPPET = ITEMS.register("void_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CURSE_PROTECTION_POPPET = ITEMS.register("curse_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_POPPET = ITEMS.register("vampiric_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> DEATH_PROTECTION_POPPET = ITEMS.register("death_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FIRE_PROTECTION_POPPET = ITEMS.register("fire_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> WATER_PROTECTION_POPPET = ITEMS.register("water_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> WITHER_PROTECTION_POPPET = ITEMS.register("wither_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
     //Plants
     public static final RegistryObject<Item> WITCHES_LADDER_ITEM = ITEMS.register("witches_ladder_item",
             () -> new BlockItem(HexcraftBlocks.WITCHES_LADDER.get(),

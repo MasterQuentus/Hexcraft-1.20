@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "hexcraftmod:twisted_log"
+    }
+  },
+  "pattern": [
+    "TT ",
+    "TT ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:twisted_wood"
+  },
+  "show_notification": true
+}

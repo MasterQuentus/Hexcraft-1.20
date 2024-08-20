@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "hexcraftmod:white_oak_log"
+    }
+  },
+  "pattern": [
+    "WW ",
+    "WW ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:white_oak_wood"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "hexcraftmod:block/rowan_log",
+    "side": "hexcraftmod:block/rowan_log"
+  }
+}

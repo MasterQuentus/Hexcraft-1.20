@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "H": {
+      "item": "hexcraftmod:hell_bark_planks"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "BBB",
+    "HHH"
+  ],
+  "result": {
+    "item": "hexcraftmod:hell_bark_bookshelf"
+  },
+  "show_notification": true
+}

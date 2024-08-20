@@ -84,6 +84,21 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.ANOINTING_PASTE.get());
                         output.accept(HexcraftItems.MUTANDIS.get());
                         output.accept(HexcraftItems.MUTANDIS_EXTREMIS.get());
+                        output.accept(HexcraftItems.POPPET.get());
+                        output.accept(HexcraftItems.VOODOO_POPPET.get());
+                        output.accept(HexcraftItems.VOODOO_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.FALL_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.EXPLOSION_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.PROJECTILE_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.HUNGER_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.POTION_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.VOID_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.CURSE_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.VAMPIRIC_POPPET.get());
+                        output.accept(HexcraftItems.DEATH_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.FIRE_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.WATER_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.WITHER_PROTECTION_POPPET.get());
 
                         //Blocks
                         output.accept(HexcraftBlocks.VILE_GRASS_BLOCK.get());
@@ -304,6 +319,8 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.BLOOD_APPLE.get());
 
                         //Building Blocks
+                        output.accept(HexcraftBlocks.HELL_FUNGAL_LAMP.get());
+                        output.accept(HexcraftBlocks.ECHO_FUNGAL_LAMP.get());
                         output.accept(HexcraftBlocks.AMETHYST_CHIMES.get());
                         output.accept(HexcraftBlocks.WITCHES_OVEN.get());
                         output.accept(HexcraftBlocks.WITCHES_CAULDRON.get());

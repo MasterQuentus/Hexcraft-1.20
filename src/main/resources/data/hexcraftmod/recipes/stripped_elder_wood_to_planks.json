@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "hexcraftmod:stripped_elder_wood"
+        }
+    ],
+    "result": {
+        "item": "hexcraftmod:elder_planks",
+        "count": 4
+    }
+}
