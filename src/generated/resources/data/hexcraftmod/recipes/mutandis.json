@@ -1,0 +1,19 @@
+{
+  "type": "hexcraftmod:witches_cauldron",
+  "brewTime": 100,
+  "ingredients": [
+    {
+      "item": "hexcraftmod:exhale_of_the_horned_one"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "hexcraftmod:mandrake_root"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:mutandis"
+  }
+}
