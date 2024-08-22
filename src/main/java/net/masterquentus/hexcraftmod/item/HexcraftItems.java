@@ -270,6 +270,13 @@ public class HexcraftItems {
     public static final RegistryObject<Item> WITHER_PROTECTION_POPPET = ITEMS.register("wither_protection_poppet",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ARMOR_PROTECTION_POPPET = ITEMS.register("armor_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TOOL_PROTECTION_POPPET = ITEMS.register("tool_protection_poppet",
+            () -> new Item(new Item.Properties()));
+
+
     //Plants
     public static final RegistryObject<Item> WITCHES_LADDER_ITEM = ITEMS.register("witches_ladder_item",
             () -> new BlockItem(HexcraftBlocks.WITCHES_LADDER.get(),

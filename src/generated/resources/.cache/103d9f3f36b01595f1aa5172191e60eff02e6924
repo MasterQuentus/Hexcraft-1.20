@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-19T00:17:19.2508752	Registries
+// 1.20.1	2024-08-22T13:21:00.5806449	Registries
 d9e570942e0c4639d4f8c2b3d3c0974c97ccb035 data/hexcraftmod/forge/biome_modifier/add_alexandrite_geode.json
 6689969868f1c1f2be5e7377a5b602bab3088edf data/hexcraftmod/forge/biome_modifier/add_charstone_ore.json
 e95123582ef7dae6a268991bee53899aeab3cf62 data/hexcraftmod/forge/biome_modifier/add_crimson_stone_ore.json
@@ -27,7 +27,7 @@ d47f58e6e1b03016aae6a049f0f55dbf2863fe20 data/hexcraftmod/worldgen/configured_fe
 fdf4a604eb698d4b51209e5a4407d0ec88ea79fe data/hexcraftmod/worldgen/configured_feature/end_silver_ore.json
 d44bfc66bb2e18181dc33fd3349cdb944d77f988 data/hexcraftmod/worldgen/configured_feature/end_vampiric_ore.json
 84a197fb0679ac1f2437336acf8a3344cb5c19c0 data/hexcraftmod/worldgen/configured_feature/hawthorn.json
-b5eadbe231a5b15e4fe01a3b4231923bf2b0ac77 data/hexcraftmod/worldgen/configured_feature/hell_bak.json
+b5eadbe231a5b15e4fe01a3b4231923bf2b0ac77 data/hexcraftmod/worldgen/configured_feature/hell_bark.json
 754edc12a9c7b5ddf6e5ea1607cb2f69f7d31411 data/hexcraftmod/worldgen/configured_feature/jormuim_ore.json
 2fc3ac96782bde3fcd5671013a4142fc12a11265 data/hexcraftmod/worldgen/configured_feature/juniper.json
 49fcccbfc75909c8736144eced603bc55c675cf3 data/hexcraftmod/worldgen/configured_feature/magic_crystal_geode.json

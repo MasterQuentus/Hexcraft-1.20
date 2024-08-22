@@ -163,7 +163,9 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
 						HexcraftBlocks.CHARSTONE_SLAB.get(),
 						HexcraftBlocks.CHARSTONE_COBBLESTONE_SLAB.get(),
 						HexcraftBlocks.CHARSTONE_BRICKS_SLAB.get(),
-						HexcraftBlocks.POLISHED_CHARSTONE_SLAB.get());
+						HexcraftBlocks.POLISHED_CHARSTONE_SLAB.get(),
+						HexcraftBlocks.WITCHES_OVEN.get(),
+						HexcraftBlocks.WITCHES_CAULDRON.get());
 
 
 		this.tag(BlockTags.MINEABLE_WITH_SHOVEL)

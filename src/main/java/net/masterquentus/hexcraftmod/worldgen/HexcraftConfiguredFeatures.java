@@ -75,7 +75,7 @@ public class HexcraftConfiguredFeatures {
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> BLOOD_OAK_KEY = registerKey("blood_oak");
 
-	public static final ResourceKey<ConfiguredFeature<?, ?>> HELL_BARK_KEY = registerKey("hell_bak");
+	public static final ResourceKey<ConfiguredFeature<?, ?>> HELL_BARK_KEY = registerKey("hell_bark");
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_OAK_KEY = registerKey("white_oak");
 

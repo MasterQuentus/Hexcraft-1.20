@@ -83,6 +83,8 @@
   "item.hexcraftmod.fire_protection_poppet": "Fire Protection Poppet",
   "item.hexcraftmod.water_protection_poppet": "Water Protection Poppet",
   "item.hexcraftmod.wither_protection_poppet": "Wither Protection Poppet",
+  "item.hexcraftmod.armor_protection_poppet": "Armor Protection Poppet",
+  "item.hexcraftmod.tool_protection_poppet": "Tool Protection Poppet",
 
   //Plants
   "item.hexcraftmod.mandrake_seeds": "Mandrake Seeds",

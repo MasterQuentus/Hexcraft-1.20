@@ -101,6 +101,8 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.FIRE_PROTECTION_POPPET.get());
                         output.accept(HexcraftItems.WATER_PROTECTION_POPPET.get());
                         output.accept(HexcraftItems.WITHER_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.ARMOR_PROTECTION_POPPET.get());
+                        output.accept(HexcraftItems.TOOL_PROTECTION_POPPET.get());
 
                         //Blocks
                         output.accept(HexcraftBlocks.VILE_GRASS_BLOCK.get());

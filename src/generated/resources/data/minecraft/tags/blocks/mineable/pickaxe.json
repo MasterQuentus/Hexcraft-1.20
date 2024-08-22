@@ -82,6 +82,8 @@
     "hexcraftmod:charstone_slab",
     "hexcraftmod:charstone_cobblestone_slab",
     "hexcraftmod:charstone_bricks_slab",
-    "hexcraftmod:polished_charstone_slab"
+    "hexcraftmod:polished_charstone_slab",
+    "hexcraftmod:witches_oven",
+    "hexcraftmod:witches_cauldron"
   ]
 }

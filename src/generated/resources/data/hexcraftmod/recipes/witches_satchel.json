@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "hexcraftmod:infused_fabric"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "I I",
+    "III"
+  ],
+  "result": {
+    "item": "hexcraftmod:witches_satchel"
+  },
+  "show_notification": true
+}

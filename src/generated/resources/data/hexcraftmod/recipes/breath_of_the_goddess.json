@@ -1,0 +1,19 @@
+{
+  "type": "hexcraftmod:witches_oven",
+  "bakeTime": 200,
+  "excessResult": {
+    "item": "hexcraftmod:wood_ash"
+  },
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "minecraft:oak_sapling"
+    },
+    {
+      "item": "hexcraftmod:clay_pot"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:breath_of_the_goddess"
+  }
+}
