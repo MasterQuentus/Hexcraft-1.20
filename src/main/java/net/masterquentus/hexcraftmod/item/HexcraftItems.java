@@ -2,20 +2,14 @@ package net.masterquentus.hexcraftmod.item;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
-import net.masterquentus.hexcraftmod.item.brews.SimpleEffectBrewItem;
 import net.masterquentus.hexcraftmod.item.custom.*;
 import net.masterquentus.hexcraftmod.util.HexcraftTags;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.minecraft.world.item.Item.Properties;
-
-import java.util.function.Supplier;
 
 public class HexcraftItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -189,17 +183,23 @@ public class HexcraftItems {
     public static final RegistryObject<Item> BOUND_WAYSTONE = ITEMS.register("bound_waystone",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> WOOD_ASH = ITEMS.register("wood_ash",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> BREATH_OF_THE_GODDESS = ITEMS.register("breath_of_the_goddess",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> EXHALE_OF_THE_HORNED_ONE = ITEMS.register("exhale_of_the_horned_one",
+            () -> new Item(new Item.Properties()));
+
     //public static final RegistryObject<Item> BREW_OF_LOVE = ITEMS.register("brew_of_love",
-            //() -> new BrewOfLoveItem(new Item.Properties()));
+    //() -> new BrewOfLoveItem(new Item.Properties()));
 
     public static final RegistryObject<Item> BREW_OF_SPROUTING = ITEMS.register("brew_of_sprouting",
             () -> new Item(new Item.Properties()));
 
     //public static final Supplier<SimpleEffectBrewItem> BREW_OF_THE_DEPTHS = registerBrew("brew_of_the_depths",
-            //MobEffects.WATER_BREATHING, 6000, 0);
+    //MobEffects.WATER_BREATHING, 6000, 0);
 
     public static final RegistryObject<Item> BREW_OF_THE_GROTESQUE = ITEMS.register("brew_of_the_grotesque",
             () -> new Item(new Item.Properties()));
@@ -387,10 +387,10 @@ public class HexcraftItems {
 
     public static final RegistryObject<Item> BLOOD_APPLE = ITEMS.register("blood_apple",
             () -> new Item(new Item.Properties().food(HexcraftFoods.BLOOD_APPLE)));
-    
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
-    
+
 }

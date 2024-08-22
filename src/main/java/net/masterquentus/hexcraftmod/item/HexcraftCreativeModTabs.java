@@ -75,7 +75,9 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.ARTHANA.get());
                         output.accept(HexcraftItems.BLOODED_WAYSTONE.get());
                         output.accept(HexcraftItems.BOUND_WAYSTONE.get());
+                        output.accept(HexcraftItems.WOOD_ASH.get());
                         output.accept(HexcraftItems.BREATH_OF_THE_GODDESS.get());
+                        output.accept(HexcraftItems.EXHALE_OF_THE_HORNED_ONE.get());
                         //output.accept(HexcraftItems.BREW_OF_LOVE.get());
                         output.accept(HexcraftItems.BREW_OF_SPROUTING.get());
                         output.accept(HexcraftItems.BREW_OF_THE_GROTESQUE.get());

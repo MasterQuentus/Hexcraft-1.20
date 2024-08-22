@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-19T00:57:13.5045629	Item Models: hexcraftmod
+// 1.20.1	2024-08-22T01:09:17.193954	Item Models: hexcraftmod
 160560169bde8b9f291dac27ebe1acb35356e7dc assets/hexcraftmod/models/item/aerpine.json
 6151765f657d939571e60a8d06b660c885dfb9f9 assets/hexcraftmod/models/item/aerpine_seeds.json
 424491fc87e0fdf222fd40f43302af0b96667b38 assets/hexcraftmod/models/item/air_rune.json
@@ -55,6 +55,7 @@ bf1630892551d35275afa4291f00f3c396727a52 assets/hexcraftmod/models/item/distorte
 aa95242371ec24be17d41c846ea20af10977f7e9 assets/hexcraftmod/models/item/echo_sapling.json
 683ef7dc52be4d1ad3a0530d64a8e768e1d2a23a assets/hexcraftmod/models/item/elder_sapling.json
 8e9614fa9605d69b869c901b2a48ff4f17dbd1e5 assets/hexcraftmod/models/item/enhanced_jormium_ingot.json
+87c618e61fb00ee08bbe1751118ab5a1b06b0776 assets/hexcraftmod/models/item/exhale_of_the_horned_one.json
 33913aeeeee89de17ce3b879ee737956004a9a42 assets/hexcraftmod/models/item/fire_protection_poppet.json
 804e3afbfb9b1410a8b6068d81eaa84b06d861eb assets/hexcraftmod/models/item/fire_rune.json
 8077fbbf677cd4e94b8e2d1e268f88ed7ebc2fee assets/hexcraftmod/models/item/garlic.json
@@ -145,6 +146,7 @@ a38ca616a15e02844aaf545e8759a3dc753f56f5 assets/hexcraftmod/models/item/witches_
 bfa42e22c924f34bcdf7a2146caae5ed9c8e91b4 assets/hexcraftmod/models/item/wither_protection_poppet.json
 fc5d73c4deca33b707fa52caacdc3780c901b206 assets/hexcraftmod/models/item/wolfsbane.json
 ccbf97ce3943a1dc7892c04f24b3459722d83d76 assets/hexcraftmod/models/item/wolfsbane_seeds.json
+76e8bc26e2d5614c750cea6964e611590ef952db assets/hexcraftmod/models/item/wood_ash.json
 70c8cdf2be1aa0e570a4960c8c9fcc0e79aa7553 assets/hexcraftmod/models/item/wormwood.json
 3b1e733b3ec88fdf2cb9f2c8e1346c5c45eb9ab5 assets/hexcraftmod/models/item/wormwood_seeds.json
 7a3ced3bfa0f9bd2bf0ddd7c6bb52c5d157ee58d assets/hexcraftmod/models/item/xerifae.json

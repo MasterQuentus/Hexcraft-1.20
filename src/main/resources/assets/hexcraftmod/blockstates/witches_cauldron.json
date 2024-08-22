@@ -1,7 +1,76 @@
 {
-  "variants": {
-    "": {
-      "model": "hexcraftmod:block/witches_cauldron"
-    }
-  }
+	"variants": {
+		"bubbling=false,level=0,water_color=default": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron"
+		},
+		"bubbling=false,level=1,water_color=default": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_1"
+		},
+		"bubbling=false,level=2,water_color=default": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_2"
+		},
+		"bubbling=false,level=3,water_color=default": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_full"
+		},
+		"bubbling=false,level=0,water_color=fail": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_fail"
+		},
+		"bubbling=false,level=1,water_color=fail": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_fail_1"
+		},
+		"bubbling=false,level=2,water_color=fail": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_fail_2"
+		},
+		"bubbling=false,level=3,water_color=fail": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_fail_full"
+		},
+		"bubbling=false,level=0,water_color=success": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_success"
+		},
+		"bubbling=false,level=1,water_color=success": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_success_1"
+		},
+		"bubbling=false,level=2,water_color=success": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_success_2"
+		},
+		"bubbling=false,level=3,water_color=success": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_success_full"
+		},
+		"bubbling=true,level=0,water_color=default": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling"
+		},
+		"bubbling=true,level=1,water_color=default": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_1"
+		},
+		"bubbling=true,level=2,water_color=default": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_2"
+		},
+		"bubbling=true,level=3,water_color=default": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_full"
+		},
+		"bubbling=true,level=0,water_color=fail": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_fail"
+		},
+		"bubbling=true,level=1,water_color=fail": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_fail_1"
+		},
+		"bubbling=true,level=2,water_color=fail": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_fail_2"
+		},
+		"bubbling=true,level=3,water_color=fail": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_fail_full"
+		},
+		"bubbling=true,level=0,water_color=success": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_success"
+		},
+		"bubbling=true,level=1,water_color=success": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_success_1"
+		},
+		"bubbling=true,level=2,water_color=success": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_success_2"
+		},
+		"bubbling=true,level=3,water_color=success": {
+			"model": "hexcraftmod:block/cauldron/witches_cauldron_bubbling_success_full"
+		}
+	}
 }
