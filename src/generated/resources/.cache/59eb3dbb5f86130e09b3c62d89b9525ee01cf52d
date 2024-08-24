@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-21T14:58:32.3331582	Loot Tables
+// 1.20.1	2024-08-24T00:11:33.2829765	Loot Tables
 3731d114dca2f6ff9a29a1b2da30a1b10b3ade14 data/hexcraftmod/loot_tables/blocks/aerpine_flower.json
 a9ef5912431cbcde6516da39f898b95c7e583b41 data/hexcraftmod/loot_tables/blocks/alder_bookshelf.json
 a3d12b9946be7da34bcf31223c6d1099adf62146 data/hexcraftmod/loot_tables/blocks/alder_leaves.json
@@ -143,6 +143,7 @@ a9118e689767693b38d2212dc538aad3880a51fe data/hexcraftmod/loot_tables/blocks/pol
 99003aff00ffd30e92056d6210926b624e7cfb89 data/hexcraftmod/loot_tables/blocks/polished_under_world_stone_stairs.json
 95299e3d7545eab8e6ca40b3b9fa4f891fb6390d data/hexcraftmod/loot_tables/blocks/potted_bloody_rose.json
 23f855c923dda8c785fbd2dc9ff986617f0baae5 data/hexcraftmod/loot_tables/blocks/potted_vampire_orchid.json
+d3d18060b0e8af8a8487cbc62318c4cbcb7dc429 data/hexcraftmod/loot_tables/blocks/pure_magic_crystal.json
 3e2161ef52126e393777c0c726888f48c509650f data/hexcraftmod/loot_tables/blocks/rowan_bookshelf.json
 8b34a4fb9bc4a17081d020b50a1e88e99c027aa1 data/hexcraftmod/loot_tables/blocks/rowan_leaves.json
 343b9993340b13e1917f9e251bf5b9f2003dedf9 data/hexcraftmod/loot_tables/blocks/rowan_log.json

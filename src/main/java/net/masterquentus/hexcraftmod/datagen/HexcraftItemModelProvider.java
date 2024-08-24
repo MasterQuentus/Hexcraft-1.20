@@ -45,6 +45,7 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 		simpleItem(HexcraftItems.WHITE_RUNE);
 		simpleItem(HexcraftItems.YELLOW_RUNE);
 		simpleItem(HexcraftItems.ROPE);
+		//simpleItem(HexcraftItems.BLOOD_DROP);
 		simpleItem(HexcraftItems.MOONSTONE);
 		simpleItem(HexcraftItems.RAW_SILVER);
 		simpleItem(HexcraftItems.SILVER_INGOT);

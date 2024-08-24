@@ -1223,6 +1223,11 @@ public class HexcraftBlocks {
 					.strength(1.7F).requiresCorrectToolForDrops()
 					.sound(SoundType.AMETHYST).noOcclusion()));
 
+	public static final RegistryObject <Block> PURE_MAGIC_CRYSTAL = registerBlock("pure_magic_crystal",
+			() -> new PureMagicCrystalBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+					.strength(1.7F).requiresCorrectToolForDrops()
+					.sound(SoundType.AMETHYST).noOcclusion()));
+
 	public static final RegistryObject <Block> WITCHES_OVEN = registerBlock("witches_oven",
 			() -> new WitchesOven(BlockBehaviour.Properties.copy(Blocks.FURNACE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
 					.strength(3.5F).lightLevel(litBlockEmission(13)).noOcclusion().sound(SoundType.ANVIL)));

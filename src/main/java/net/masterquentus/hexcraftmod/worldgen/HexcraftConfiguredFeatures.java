@@ -8,6 +8,7 @@ import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.features.TreeFeatures;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -24,10 +25,7 @@ import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.HugeFungusConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.GeodeConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer;
@@ -103,6 +101,9 @@ public class HexcraftConfiguredFeatures {
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> ECHO_KEY = registerKey("echo");
 
+	public static final ResourceKey<ConfiguredFeature<?, ?>> VAMPIRE_ORCHID_KEY = registerKey("vampire_orchid");
+
+
 
 	public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -172,6 +173,10 @@ public class HexcraftConfiguredFeatures {
 		register(context, CRIMSON_STONE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCrimsonStoneOres, 64));
 
 		register(context, CHARSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCharstoneOres, 64));
+
+		register(context, VAMPIRE_ORCHID_KEY, Feature.FLOWER,
+				new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+						new SimpleBlockConfiguration(BlockStateProvider.simple(HexcraftBlocks.VAMPIRE_ORCHID.get())))));
 
 		register(context, MAGIC_CRYSTAL_GEODE_KEY, Feature.GEODE,
 				new GeodeConfiguration(new GeodeBlockSettings(BlockStateProvider.simple(Blocks.AIR),

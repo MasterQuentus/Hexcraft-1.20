@@ -43,6 +43,7 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.WHITE_RUNE.get());
                         output.accept(HexcraftItems.YELLOW_RUNE.get());
                         output.accept(HexcraftItems.ROPE.get());
+                        output.accept(HexcraftItems.BLOOD_DROP.get());
                         output.accept(HexcraftItems.MOONSTONE.get());
                         output.accept(HexcraftItems.RAW_SILVER.get());
                         output.accept(HexcraftItems.SILVER_INGOT.get());
@@ -326,6 +327,7 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.HELL_FUNGAL_LAMP.get());
                         output.accept(HexcraftBlocks.ECHO_FUNGAL_LAMP.get());
                         output.accept(HexcraftBlocks.AMETHYST_CHIMES.get());
+                        output.accept(HexcraftBlocks.PURE_MAGIC_CRYSTAL.get());
                         output.accept(HexcraftBlocks.WITCHES_OVEN.get());
                         output.accept(HexcraftBlocks.WITCHES_CAULDRON.get());
                         output.accept(HexcraftBlocks.MOONSTONE_BLOCK.get());

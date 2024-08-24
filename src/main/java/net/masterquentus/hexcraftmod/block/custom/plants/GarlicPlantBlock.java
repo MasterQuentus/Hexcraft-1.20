@@ -7,14 +7,14 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 public class GarlicPlantBlock extends CropBlock {
-    public static final IntegerProperty AGE = BlockStateProperties.AGE_2;
+    public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
     public GarlicPlantBlock(Properties properties) {
         super(properties);
     }
 
     @Override
     public int getMaxAge() {
-        return 2;
+        return 3;
     }
 
     @Override

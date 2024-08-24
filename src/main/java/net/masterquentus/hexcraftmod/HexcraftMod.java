@@ -3,6 +3,8 @@ package net.masterquentus.hexcraftmod;
 import java.util.Random;
 
 import net.masterquentus.hexcraftmod.entity.HexcraftEntityTypes;
+import net.masterquentus.hexcraftmod.worldgen.biome.HexcraftTerrablenderAPI;
+import net.masterquentus.hexcraftmod.worldgen.biome.suface.HexcraftSurfaceRules;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -39,6 +41,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import terrablender.api.SurfaceRuleManager;
 //import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -65,7 +68,7 @@ public class HexcraftMod {
 		HexcraftLootModifier.register(modEventBus);
 		HexcraftEntityTypes.register(modEventBus);
 
-		// HexcraftTerrablenderAPI.registerRegions();
+		HexcraftTerrablenderAPI.registerRegions();
 		modEventBus.addListener(this::commonSetup);
 
 		MinecraftForge.EVENT_BUS.register(this);
@@ -92,8 +95,7 @@ public class HexcraftMod {
 			((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.BLOODY_ROSE.getId(),
 					HexcraftBlocks.POTTED_BLOODY_ROSE);
 
-			// SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD,
-			// MOD_ID, HexcraftSurfaceRules.makeRules());
+			SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, HexcraftSurfaceRules.makeRules());
 		});
 
 	}

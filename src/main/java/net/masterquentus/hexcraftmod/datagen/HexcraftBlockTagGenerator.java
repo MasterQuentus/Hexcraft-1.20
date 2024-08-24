@@ -56,6 +56,7 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
 
 		this.tag(BlockTags.NEEDS_IRON_TOOL)
 				.add(HexcraftBlocks.AMETHYST_CHIMES.get(),
+						HexcraftBlocks.PURE_MAGIC_CRYSTAL.get(),
 						HexcraftBlocks.MOONSTONE_ORE.get(),
 						HexcraftBlocks.END_MOONSTONE_ORE.get(),
 						HexcraftBlocks.NETHER_MOONSTONE_ORE.get(),
@@ -82,6 +83,7 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
 
 		this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
 				.add(HexcraftBlocks.AMETHYST_CHIMES.get(),
+						HexcraftBlocks.PURE_MAGIC_CRYSTAL.get(),
 						HexcraftBlocks.MOONSTONE_ORE.get(),
 						HexcraftBlocks.END_MOONSTONE_ORE.get(),
 						HexcraftBlocks.NETHER_MOONSTONE_ORE.get(),

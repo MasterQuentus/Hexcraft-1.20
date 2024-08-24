@@ -917,6 +917,98 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 				.define('I', HexcraftItems.INFUSED_FABRIC.get())
 				.unlockedBy(getHasName(HexcraftItems.INFUSED_FABRIC.get()), has(HexcraftItems.INFUSED_FABRIC.get())).save(pWriter);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.POPPET.get())
+				.pattern("ISI")
+				.pattern("BSL")
+				.pattern("I I")
+				.define('L', Items.STRING)
+				.define('B', HexcraftItems.BONE_NEEDLE.get())
+				.define('S', HexcraftBlocks.SPANISH_MOSS.get())
+				.define('I', HexcraftItems.INFUSED_FABRIC.get())
+				.unlockedBy(getHasName(HexcraftItems.INFUSED_FABRIC.get()), has(HexcraftItems.INFUSED_FABRIC.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.WATER_PROTECTION_POPPET.get())
+				.pattern(" W ")
+				.pattern("IPI")
+				.pattern(" W ")
+				.define('W', HexcraftItems.WATER_ARTICHOKE.get())
+				.define('P', HexcraftItems.POPPET.get())
+				.define('I', Items.INK_SAC)
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VOODOO_PROTECTION_POPPET.get())
+				.pattern("DMR")
+				.pattern("BPT")
+				.pattern("RJD")
+				.define('D', Items.DANDELION)
+				.define('M', Items.RED_MUSHROOM)
+				.define('R', HexcraftBlocks.BLOODY_ROSE.get())
+				.define('B', HexcraftItems.BELLADONNA.get())
+				.define('P', HexcraftItems.POPPET.get())
+				.define('T', HexcraftItems.MANDRAKE_ROOT.get())
+				.define('J', Items.BROWN_MUSHROOM)
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VOODOO_POPPET.get())
+				.pattern(" S ")
+				.pattern("BPM")
+				.pattern(" E ")
+				.define('S', Items.FERMENTED_SPIDER_EYE)
+				.define('B', HexcraftItems.BELLADONNA.get())
+				.define('P', HexcraftItems.POPPET.get())
+				.define('M', HexcraftItems.MANDRAKE_ROOT.get())
+				.define('E', HexcraftItems.EXHALE_OF_THE_HORNED_ONE.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.FALL_PROTECTION_POPPET.get())
+				.pattern(" C ")
+				.pattern("FPF")
+				.pattern(" D ")
+				.define('C', Items.CLAY_BALL)
+				.define('F', Items.FEATHER)
+				.define('P', HexcraftItems.POPPET.get())
+				.define('D', Items.DIRT)
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.EXPLOSION_PROTECTION_POPPET.get())
+				.pattern("OTO")
+				.pattern("WPW")
+				.pattern("I I")
+				.define('O', Items.OBSIDIAN)
+				.define('W', Items.WATER_BUCKET)
+				.define('T', Items.TNT)
+				.define('P', HexcraftItems.POPPET.get())
+				.define('I', HexcraftItems.INFUSED_FABRIC.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.PROJECTILE_PROTECTION_POPPET.get())
+				.pattern(" A ")
+				.pattern("FPF")
+				.pattern("IDI")
+				.define('A', Items.ARROW)
+				.define('F', Items.FEATHER)
+				.define('P', HexcraftItems.POPPET.get())
+				.define('D', Items.DANDELION)
+				.define('I', HexcraftItems.INFUSED_FABRIC.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.HUNGER_PROTECTION_POPPET.get())
+				.pattern(" R ")
+				.pattern("GPG")
+				.pattern(" R ")
+				.define('R', Items.ROTTEN_FLESH)
+				.define('G', Items.GLISTERING_MELON_SLICE)
+				.define('P', HexcraftItems.POPPET.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
 
 		//Shapeless
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.BLOODY_NYKIUM_NUGGET.get(), 9)
@@ -1063,27 +1155,24 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 				.unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_LOG.get()), has(HexcraftBlocks.ECHO_WOOD_LOG.get())).save(pWriter);
 
 		WitchesOvenRecipeBuilder
-				.buildOvenRecipe(HexcraftItems.WHITE_OAK_ASH.get(), HexcraftItems.WOOD_ASH.get(), 0.35f,
-						200)
+				.buildOvenRecipe(HexcraftItems.WHITE_OAK_ASH.get(), HexcraftItems.WOOD_ASH.get(), 0.35f, 200)
 				.requires(HexcraftBlocks.WHITE_OAK_SAPLING.get()).requires(HexcraftItems.CLAY_POT.get())
-				.unlockedBy("has_clay_pot", inventoryTrigger(ItemPredicate.Builder.item().of(Items.DIAMOND).build()))
-				.save(pWriter);
-
-		WitchesOvenRecipeBuilder.buildOvenRecipe(HexcraftItems.BREATH_OF_THE_GODDESS.get(), HexcraftItems.WOOD_ASH.get(), 0.35f, 200).requires(Items.OAK_SAPLING)
-				.requires(HexcraftItems.CLAY_POT.get())
 				.unlockedBy("has_clay_pot", inventoryTrigger(ItemPredicate.Builder.item().of(HexcraftItems.CLAY_POT.get()).build()))
 				.save(pWriter);
 
-		// EXAMPLE WITCHES CAULDRON RECIPE 1
+		WitchesOvenRecipeBuilder.buildOvenRecipe(HexcraftItems.BREATH_OF_THE_GODDESS.get(), HexcraftItems.WOOD_ASH.get(), 0.35f, 200)
+				.requires(Items.OAK_SAPLING).requires(HexcraftItems.CLAY_POT.get())
+				.unlockedBy("has_clay_pot", inventoryTrigger(ItemPredicate.Builder.item().of(HexcraftItems.CLAY_POT.get()).build()))
+				.save(pWriter);
+
 		WitchesCauldronRecipeBuilder.buildCauldronRecipe(HexcraftItems.MUTANDIS.get(), 6).requires(HexcraftItems.EXHALE_OF_THE_HORNED_ONE.get())
 				.requires(Items.EGG).requires(HexcraftItems.MANDRAKE_ROOT.get()).unlockedBy("has_cauldron",
 						inventoryTrigger(ItemPredicate.Builder.item().of(Items.CAULDRON).build()))
 				.save(pWriter);
 
-		// EXAMPLE WITCHES CAULDRON RECIPE 2
-		WitchesCauldronRecipeBuilder.buildCauldronRecipe(Blocks.CAULDRON).requires(Items.IRON_INGOT)
-				.requires(Items.GOLD_INGOT).requires(Items.REDSTONE)
-				.unlockedBy("has_cauldron", inventoryTrigger(ItemPredicate.Builder.item().of(Items.CAULDRON).build()))
+		WitchesCauldronRecipeBuilder.buildCauldronRecipe(HexcraftBlocks.PURE_MAGIC_CRYSTAL.get()).requires(HexcraftItems.SALT.get())
+				.requires(HexcraftItems.MAGIC_CRYSTAL.get()).requires(HexcraftItems.EARTH_RUNE.get()).unlockedBy("has_cauldron",
+						inventoryTrigger(ItemPredicate.Builder.item().of(Items.CAULDRON).build()))
 				.save(pWriter);
 	}
 

@@ -93,6 +93,9 @@ public class HexcraftItems {
     public static final RegistryObject<Item> ROPE = ITEMS.register("rope",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> BLOOD_DROP = ITEMS.register("blood_drop",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> MOONSTONE = ITEMS.register("moonstone",
             () -> new Item(new Item.Properties()));
 

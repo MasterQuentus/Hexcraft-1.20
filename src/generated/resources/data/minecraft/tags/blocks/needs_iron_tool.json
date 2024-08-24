@@ -1,6 +1,7 @@
 {
   "values": [
     "hexcraftmod:amethyst_chimes",
+    "hexcraftmod:pure_magic_crystal",
     "hexcraftmod:moonstone_ore",
     "hexcraftmod:end_moonstone_ore",
     "hexcraftmod:nether_moonstone_ore",
@@ -17,6 +18,9 @@
     "hexcraftmod:silver_block",
     "hexcraftmod:magic_crystal_block",
     "hexcraftmod:budding_magic_crystal",
-    "hexcraftmod:magic_crystal_cluster"
+    "hexcraftmod:magic_crystal_cluster",
+    "hexcraftmod:large_magic_crystal_bud",
+    "hexcraftmod:medium_magic_crystal_bud",
+    "hexcraftmod:small_magic_crystal_bud"
   ]
 }
