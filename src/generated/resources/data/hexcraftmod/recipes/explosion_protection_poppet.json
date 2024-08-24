@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "hexcraftmod:infused_fabric"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "T": {
+      "item": "minecraft:tnt"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "OTO",
+    "WPW",
+    "I I"
+  ],
+  "result": {
+    "item": "hexcraftmod:explosion_protection_poppet"
+  },
+  "show_notification": true
+}

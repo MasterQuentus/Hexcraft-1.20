@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:ink_sac"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "W": {
+      "item": "hexcraftmod:water_artichoke"
+    }
+  },
+  "pattern": [
+    " W ",
+    "IPI",
+    " W "
+  ],
+  "result": {
+    "item": "hexcraftmod:water_protection_poppet"
+  },
+  "show_notification": true
+}

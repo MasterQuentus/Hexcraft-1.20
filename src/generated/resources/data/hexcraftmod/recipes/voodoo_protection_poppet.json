@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:belladonna"
+    },
+    "D": {
+      "item": "minecraft:dandelion"
+    },
+    "J": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "M": {
+      "item": "minecraft:red_mushroom"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "R": {
+      "item": "hexcraftmod:bloody_rose"
+    },
+    "T": {
+      "item": "hexcraftmod:mandrake_root"
+    }
+  },
+  "pattern": [
+    "DMR",
+    "BPT",
+    "RJD"
+  ],
+  "result": {
+    "item": "hexcraftmod:voodoo_protection_poppet"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "R": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "pattern": [
+    " R ",
+    "GPG",
+    " R "
+  ],
+  "result": {
+    "item": "hexcraftmod:hunger_protection_poppet"
+  },
+  "show_notification": true
+}

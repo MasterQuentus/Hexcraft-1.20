@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "minecraft:arrow"
+    },
+    "D": {
+      "item": "minecraft:dandelion"
+    },
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "I": {
+      "item": "hexcraftmod:infused_fabric"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    }
+  },
+  "pattern": [
+    " A ",
+    "FPF",
+    "IDI"
+  ],
+  "result": {
+    "item": "hexcraftmod:projectile_protection_poppet"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,18 @@
+{
+  "type": "hexcraftmod:witches_cauldron",
+  "brewTime": 100,
+  "ingredients": [
+    {
+      "item": "hexcraftmod:salt"
+    },
+    {
+      "item": "hexcraftmod:magic_crystal"
+    },
+    {
+      "item": "hexcraftmod:earth_rune"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:pure_magic_crystal"
+  }
+}

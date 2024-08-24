@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:bone_needle"
+    },
+    "I": {
+      "item": "hexcraftmod:infused_fabric"
+    },
+    "L": {
+      "item": "minecraft:string"
+    },
+    "S": {
+      "item": "hexcraftmod:spanish_moss"
+    }
+  },
+  "pattern": [
+    "ISI",
+    "BSL",
+    "I I"
+  ],
+  "result": {
+    "item": "hexcraftmod:poppet"
+  },
+  "show_notification": true
+}

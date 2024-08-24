@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraft:clay_ball"
+    },
+    "D": {
+      "item": "minecraft:dirt"
+    },
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    }
+  },
+  "pattern": [
+    " C ",
+    "FPF",
+    " D "
+  ],
+  "result": {
+    "item": "hexcraftmod:fall_protection_poppet"
+  },
+  "show_notification": true
+}

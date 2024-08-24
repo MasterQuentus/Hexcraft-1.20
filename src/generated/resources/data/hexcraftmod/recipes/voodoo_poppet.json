@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:belladonna"
+    },
+    "E": {
+      "item": "hexcraftmod:exhale_of_the_horned_one"
+    },
+    "M": {
+      "item": "hexcraftmod:mandrake_root"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "S": {
+      "item": "minecraft:fermented_spider_eye"
+    }
+  },
+  "pattern": [
+    " S ",
+    "BPM",
+    " E "
+  ],
+  "result": {
+    "item": "hexcraftmod:voodoo_poppet"
+  },
+  "show_notification": true
+}
