@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-24T00:21:32.904206	Recipes
+// 1.20.1	2024-08-24T01:32:12.9635609	Recipes
 0a4df1090cdfcab2760236687eb2fe1bde663ccd data/hexcraftmod/advancements/recipes/breath_of_the_goddessbreath_of_the_goddess.json
 ffe4f009b05d16f71e57d406735e532e8e10f505 data/hexcraftmod/advancements/recipes/building_blocks/charstone_bricks.json
 748c979083c8a471171977c26f05398ede3a0ad3 data/hexcraftmod/advancements/recipes/building_blocks/chiseled_charstone.json
@@ -199,7 +199,7 @@ dca38af94578b7439ebdbc2e10f03c30a5981413 data/hexcraftmod/advancements/recipes/m
 9644dfdb95e74d6e10766748266ac2fb40255359 data/hexcraftmod/advancements/recipes/mutandismutandis.json
 d8d71eedab82564969caebcece4b52fdf3425e90 data/hexcraftmod/advancements/recipes/pure_magic_crystalpure_magic_crystal.json
 6396bacd16a4ad43414e938ee0eba0c085913276 data/hexcraftmod/advancements/recipes/tools/arthana.json
-017c773afaa36683884cb7a945f7f9a1ef87be0b data/hexcraftmod/advancements/recipes/white_oak_ashwhite_oak_ash.json
+c15a2d82ce60c1a0924a4b882d52778674669500 data/hexcraftmod/advancements/recipes/white_oak_ashwhite_oak_ash.json
 51b0404d913842b98e192374294d1ae1687448b7 data/hexcraftmod/recipes/air_rune.json
 c911a9bf6489024db6683d1b2828906497a9abef data/hexcraftmod/recipes/alder_bookshelf.json
 bcae818f8991c767a873a6f0843d2d479ea203a2 data/hexcraftmod/recipes/alder_planks.json
