@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-24T00:11:33.2829765	Loot Tables
+// 1.20.1	2024-08-24T23:20:52.2733084	Loot Tables
 3731d114dca2f6ff9a29a1b2da30a1b10b3ade14 data/hexcraftmod/loot_tables/blocks/aerpine_flower.json
 a9ef5912431cbcde6516da39f898b95c7e583b41 data/hexcraftmod/loot_tables/blocks/alder_bookshelf.json
 a3d12b9946be7da34bcf31223c6d1099adf62146 data/hexcraftmod/loot_tables/blocks/alder_leaves.json
@@ -207,6 +207,7 @@ f4eba56f208e51f3fd5ed59a323e05f58541afc4 data/hexcraftmod/loot_tables/blocks/und
 54b44a9d36ea191aca7dd9fa71081cedecbd816f data/hexcraftmod/loot_tables/blocks/vampiric_block.json
 c5706af6233e56262dcb9902ae069b76c55079bd data/hexcraftmod/loot_tables/blocks/vampiric_ore.json
 44befeb8de9822c0ec584a992090502a539dad27 data/hexcraftmod/loot_tables/blocks/vervain_flower.json
+5f24aa2799ad84024bf7a63b14e28465356af849 data/hexcraftmod/loot_tables/blocks/vilevine.json
 1e4e14912d6dffa8969daa121a43078695ca957c data/hexcraftmod/loot_tables/blocks/vile_dirt.json
 06d68b2ae5b8830a1e5d2294650cabcd676516dc data/hexcraftmod/loot_tables/blocks/vile_grass_block.json
 cf0d844efaa816a7cfcff4eec25b68727f512e78 data/hexcraftmod/loot_tables/blocks/water_artichoke_plant.json

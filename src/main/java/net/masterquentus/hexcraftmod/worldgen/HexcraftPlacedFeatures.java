@@ -45,49 +45,63 @@ public class HexcraftPlacedFeatures {
         register(context, VAMPIRIC_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.OVERWORLD_VAMPIRIC_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, NETHER_VAMPIRIC_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.NETHER_VAMPIRIC_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(9,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, END_VAMPIRIC_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.END_VAMPIRIC_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(7,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, SILVER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.OVERWORLD_SILVER_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, NETHER_SILVER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.NETHER_SILVER_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(9,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, END_SILVER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.END_SILVER_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(7,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, MOON_STONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.OVERWORLD_MOON_STONE_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, NETHER_MOON_STONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.NETHER_MOON_STONE_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(9,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, END_MOON_STONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.END_MOON_STONE_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(7,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, TRENOGEN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.OVERWORLD_TRENOGEN_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, JORMUIM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.JORMUIM_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(7,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, PEARL_STONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.PEARL_STONE_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, CRIMSON_STONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.CRIMSON_STONE_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
         register(context, CHARSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.CHARSTONE_ORE_KEY),
                 HexcraftOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
         register(context, MAGIC_CRYSTAL_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.MAGIC_CRYSTAL_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(24), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(30)),
                         BiomeFilter.biome()));
+
         register(context, VAMPIRE_ORCHID_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.VAMPIRE_ORCHID_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 

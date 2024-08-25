@@ -84,6 +84,10 @@ public class HexcraftBlocks {
 			() -> new WitchesLadderPlant(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
 					.instabreak().noOcclusion().noLootTable()));
 
+	public static final RegistryObject<Block> VILEVINE = BLOCKS.register("vilevine",
+			() -> new VileVineBlock(BlockBehaviour.Properties.copy(Blocks.VINE)
+					.instabreak().noOcclusion().randomTicks()));
+
 	public static final RegistryObject<Block> BLOOD_BERRIES_PLANT = registerBlockWithoutBlockItem("blood_berries_plant",
 			() -> new BloodBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion().randomTicks().noLootTable()));
 

@@ -216,7 +216,6 @@ public class HexcraftItemTagGenerator extends ItemTagsProvider {
 				.add(HexcraftBlocks.HELL_BARK_PLANKS.get().asItem());
 
 
-
 	}
 
 	public void addVanillaTags(Provider provider) {

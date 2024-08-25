@@ -6,6 +6,7 @@ import net.masterquentus.hexcraftmod.item.custom.*;
 import net.masterquentus.hexcraftmod.util.HexcraftTags;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -285,6 +286,10 @@ public class HexcraftItems {
             () -> new BlockItem(HexcraftBlocks.WITCHES_LADDER.get(),
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> VILEVINE_ITEM = ITEMS.register("vilevine_item",
+            () -> new BlockItem(HexcraftBlocks.VILEVINE.get(),
+                    new Item.Properties()));
+
     public static final RegistryObject<Item> MANDRAKE_SEEDS = ITEMS.register("mandrake_seeds",
             () -> new ItemNameBlockItem(HexcraftBlocks.MANDRAKE_FLOWER.get(),
                     new Item.Properties()));
@@ -401,6 +406,43 @@ public class HexcraftItems {
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
+    }
+
+    public static void registerCompostables() {
+        ComposterBlock.COMPOSTABLES.put(BLOOD_APPLE.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(JUNIPER_BERRIES.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(BLOOD_BERRIES.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(WATER_ARTICHOKE_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(WATER_ARTICHOKE.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(JUNIPER_BERRIES.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(WORMWOOD_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(WORMWOOD.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(SAGE_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(SAGE.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(HELLEBORE_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(HELLEBORE.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(PERENNIA_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(PERENNIA.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(AERPINE_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(AERPINE.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(SENIA_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(SENIA.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(XERIFAE_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(XERIFAE.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(MIRA_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(MIRA.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(IRENIAL_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(IRENIAL.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(VERVAIN_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(VERVAIN.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(BELLADONNA_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(BELLADONNA.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(MANDRAKE_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(MANDRAKE_ROOT.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(WOLFSBANE_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(WOLFSBANE.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(GARLIC.get(), 0.45F);
+        ComposterBlock.COMPOSTABLES.put(WITCHES_LADDER_ITEM.get(), 0.5F);
     }
 
 }

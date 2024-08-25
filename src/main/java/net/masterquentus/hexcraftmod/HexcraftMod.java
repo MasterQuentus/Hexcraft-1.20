@@ -3,7 +3,7 @@ package net.masterquentus.hexcraftmod;
 import java.util.Random;
 
 import net.masterquentus.hexcraftmod.entity.HexcraftEntityTypes;
-import net.masterquentus.hexcraftmod.worldgen.biome.HexcraftTerrablenderAPI;
+import net.masterquentus.hexcraftmod.worldgen.biome.HexcraftTerraBlenderAPI;
 import net.masterquentus.hexcraftmod.worldgen.biome.suface.HexcraftSurfaceRules;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,8 +20,6 @@ import net.masterquentus.hexcraftmod.recipe.HexcraftRecipes;
 import net.masterquentus.hexcraftmod.screen.HexcraftMenuTypes;
 import net.masterquentus.hexcraftmod.screen.WitchesOvenScreen;
 import net.masterquentus.hexcraftmod.util.HexcraftConfigs;
-//import net.masterquentus.hexcraftmod.worldgen.biome.HexcraftTerrablenderAPI;
-//import net.masterquentus.hexcraftmod.worldgen.biome.suface.HexcraftSurfaceRules;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
@@ -42,8 +40,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import terrablender.api.SurfaceRuleManager;
-//import terrablender.api.SurfaceRuleManager;
-
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(HexcraftMod.MOD_ID)
 @Mod.EventBusSubscriber(modid = HexcraftMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -68,7 +64,7 @@ public class HexcraftMod {
 		HexcraftLootModifier.register(modEventBus);
 		HexcraftEntityTypes.register(modEventBus);
 
-		HexcraftTerrablenderAPI.registerRegions();
+		//HexcraftTerraBlenderAPI.registerRegions();
 		modEventBus.addListener(this::commonSetup);
 
 		MinecraftForge.EVENT_BUS.register(this);
@@ -85,10 +81,8 @@ public class HexcraftMod {
 	}
 
 	private void commonSetup(final FMLCommonSetupEvent event) {
+		HexcraftItems.registerCompostables();
 		event.enqueueWork(() -> {
-			ComposterBlock.COMPOSTABLES.put(HexcraftItems.BLOOD_APPLE.get(), 0.65F);
-			ComposterBlock.COMPOSTABLES.put(HexcraftItems.JUNIPER_BERRIES.get(), 0.3F);
-			ComposterBlock.COMPOSTABLES.put(HexcraftItems.BLOOD_BERRIES.get(), 0.3F);
 
 			((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(HexcraftBlocks.VAMPIRE_ORCHID.getId(),
 					HexcraftBlocks.POTTED_VAMPIRE_ORCHID);

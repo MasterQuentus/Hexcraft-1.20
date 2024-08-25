@@ -2,12 +2,9 @@ package net.masterquentus.hexcraftmod.worldgen;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
-import net.minecraft.core.Direction;
 import net.minecraft.core.HolderGetter;
-import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
-import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -16,8 +13,6 @@ import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.MangrovePropaguleBlock;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.GeodeBlockSettings;
 import net.minecraft.world.level.levelgen.GeodeCrackSettings;
 import net.minecraft.world.level.levelgen.GeodeLayerSettings;
@@ -29,19 +24,11 @@ import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement;
-import net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement;
-import net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider;
-import net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLeavesDecorator;
-import net.minecraft.world.level.levelgen.feature.treedecorators.LeaveVineDecorator;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
@@ -52,19 +39,31 @@ import java.util.Optional;
 public class HexcraftConfiguredFeatures {
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_VAMPIRIC_ORE_KEY = registerKey("vampiric_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_VAMPIRIC_ORE_KEY = registerKey("nether_vampiric_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> END_VAMPIRIC_ORE_KEY = registerKey("end_vampiric_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILVER_ORE_KEY = registerKey("silver_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SILVER_ORE_KEY = registerKey("nether_silver_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> END_SILVER_ORE_KEY = registerKey("end_silver_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MOON_STONE_ORE_KEY = registerKey("moon_stone_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_MOON_STONE_ORE_KEY = registerKey("nether_moon_stone_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> END_MOON_STONE_ORE_KEY = registerKey("end_moon_stone_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_TRENOGEN_ORE_KEY = registerKey("trenogen_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> JORMUIM_ORE_KEY = registerKey("jormuim_ore");
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> PEARL_STONE_ORE_KEY = registerKey("pearl_stone_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_STONE_ORE_KEY = registerKey("crimson_stone_ore");
+
 	public static final ResourceKey<ConfiguredFeature<?, ?>> CHARSTONE_ORE_KEY = registerKey("charstone_ore");
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> MAGIC_CRYSTAL_GEODE_KEY = registerKey("magic_crystal_geode");
@@ -102,6 +101,7 @@ public class HexcraftConfiguredFeatures {
 	public static final ResourceKey<ConfiguredFeature<?, ?>> ECHO_KEY = registerKey("echo");
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> VAMPIRE_ORCHID_KEY = registerKey("vampire_orchid");
+
 
 
 

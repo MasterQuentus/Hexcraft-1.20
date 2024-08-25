@@ -189,7 +189,7 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
 				.add(HexcraftBlocks.PEARL_STONE_BRICKS.get(), HexcraftBlocks.CRIMSON_STONE_BRICKS.get(),
 						HexcraftBlocks.UNDER_WORLD_STONE_BRICKS.get(), HexcraftBlocks.CHARSTONE_BRICKS.get());
 
-		this.tag(BlockTags.FLOWERS)
+		this.tag(BlockTags.SMALL_FLOWERS)
 				.add(HexcraftBlocks.VAMPIRE_ORCHID.get(), HexcraftBlocks.BLOODY_ROSE.get());
 
 		this.tag(BlockTags.ANIMALS_SPAWNABLE_ON)
@@ -279,6 +279,8 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
 				.add(HexcraftBlocks.TWISTED_PLANKS.get())
 				.add(HexcraftBlocks.WITCH_WOOD_PLANKS.get())
 				.add(HexcraftBlocks.ECHO_WOOD_PLANKS.get());
+
+
 	}
 
 }

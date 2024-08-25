@@ -13,8 +13,8 @@ import terrablender.api.RegionType;
 
 import java.util.function.Consumer;
 
-public class HexcraftOverworldRegon extends Region {
-    public HexcraftOverworldRegon(ResourceLocation name,  int weight) {
+public class HexcraftOverworldRegion extends Region {
+    public HexcraftOverworldRegion(ResourceLocation name,  int weight) {
         super(name, RegionType.OVERWORLD, weight);
     }
 

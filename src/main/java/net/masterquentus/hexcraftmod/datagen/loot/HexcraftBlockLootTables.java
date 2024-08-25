@@ -69,6 +69,8 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropSelf(HexcraftBlocks.SPANISH_MOSS.get());
 
+		this.dropSelf(HexcraftBlocks.VILEVINE.get());
+
 		this.dropSelf(HexcraftBlocks.DEMON_HEART.get());
 
 		this.dropSelf(HexcraftBlocks.EBONY_LOG.get());

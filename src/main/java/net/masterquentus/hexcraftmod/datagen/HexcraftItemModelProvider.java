@@ -108,6 +108,7 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 		simpleItem(HexcraftItems.BLOOD_APPLE);
 		simpleItem(HexcraftItems.BLOOD_BERRIES);
 		simpleItem(HexcraftItems.WITCHES_LADDER_ITEM);
+		//simpleItem(HexcraftItems.VILEVINE_ITEM);
 		simpleItem(HexcraftItems.WITCHES_SATCHEL);
 		simpleItem(HexcraftItems.MUTANDIS);
 		simpleItem(HexcraftItems.MUTANDIS_EXTREMIS);

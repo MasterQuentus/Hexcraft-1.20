@@ -284,6 +284,7 @@ public class HexcraftCreativeModTabs {
                         //Plants
                         output.accept(HexcraftBlocks.DEMON_HEART.get());
                         output.accept(HexcraftItems.WITCHES_LADDER_ITEM.get());
+                        output.accept(HexcraftItems.VILEVINE_ITEM.get());
                         output.accept(HexcraftBlocks.GLINT_WEED.get());
                         output.accept(HexcraftBlocks.SPANISH_MOSS.get());
                         output.accept(HexcraftItems.AERPINE.get());

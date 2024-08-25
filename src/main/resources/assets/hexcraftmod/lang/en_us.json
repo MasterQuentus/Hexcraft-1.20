@@ -420,6 +420,8 @@
   "item.hexcraftmod.witches_ladder": "Witches Ladder",
   "block.hexcraftmod.witches_ladder": "Witches Ladder",
   "block.hexcraftmod.witches_ladder_plant": "Witches Ladder",
+  "item.hexcraftmod.vilevine": "Vilevine",
+  "block.hexcraftmod.vilevine": "Vilevine",
 
   //Tooltips
   "tooltip.hexcraftmod.amethyst_chimes.tooltip": "Shows Nearby Hostile Mobs",
