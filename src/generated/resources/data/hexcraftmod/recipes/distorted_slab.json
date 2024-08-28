@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "hexcraftmod:distorted_planks"
+    }
+  },
+  "pattern": [
+    "DDD"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:distorted_slab"
+  },
+  "show_notification": true
+}

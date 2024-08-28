@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:blood_oak_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SBS",
+    "SBS"
+  ],
+  "result": {
+    "item": "hexcraftmod:blood_oak_fence_gate"
+  },
+  "show_notification": true
+}

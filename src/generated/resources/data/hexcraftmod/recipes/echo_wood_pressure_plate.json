@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:echo_wood_planks"
+    }
+  },
+  "pattern": [
+    "EE "
+  ],
+  "result": {
+    "item": "hexcraftmod:echo_wood_pressure_plate"
+  },
+  "show_notification": true
+}

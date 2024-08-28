@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "H": {
+      "item": "hexcraftmod:hell_bark_planks"
+    }
+  },
+  "pattern": [
+    "HH "
+  ],
+  "result": {
+    "item": "hexcraftmod:hell_bark_pressure_plate"
+  },
+  "show_notification": true
+}

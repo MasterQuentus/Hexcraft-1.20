@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "hexcraftmod:hawthorn_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SHS",
+    "SHS"
+  ],
+  "result": {
+    "item": "hexcraftmod:hawthorn_fence_gate"
+  },
+  "show_notification": true
+}

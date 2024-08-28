@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "hexcraftmod:block/echo_wood_planks",
+    "side": "hexcraftmod:block/echo_wood_planks",
+    "top": "hexcraftmod:block/echo_wood_planks"
+  }
+}

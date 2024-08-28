@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "hexcraftmod:distorted_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "DSD",
+    "DSD"
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:distorted_fence"
+  },
+  "show_notification": true
+}

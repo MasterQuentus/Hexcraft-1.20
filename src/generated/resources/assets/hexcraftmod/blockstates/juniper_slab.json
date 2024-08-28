@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/juniper_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/juniper_planks"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/juniper_slab_top"
+    }
+  }
+}

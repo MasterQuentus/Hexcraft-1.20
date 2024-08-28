@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "hexcraftmod:twisted_planks"
+    }
+  },
+  "pattern": [
+    "TTT"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:twisted_slab"
+  },
+  "show_notification": true
+}

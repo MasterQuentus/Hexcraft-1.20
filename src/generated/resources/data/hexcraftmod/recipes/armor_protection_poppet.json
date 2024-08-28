@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "hexcraftmod:diamond_vapour"
+    },
+    "L": {
+      "item": "hexcraftmod:drop_of_luck"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "R": {
+      "item": "hexcraftmod:reek_of_misfortune"
+    }
+  },
+  "pattern": [
+    " R ",
+    "LPL",
+    " D "
+  ],
+  "result": {
+    "item": "hexcraftmod:armor_protection_poppet"
+  },
+  "show_notification": true
+}

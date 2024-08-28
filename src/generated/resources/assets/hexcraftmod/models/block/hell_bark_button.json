@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "hexcraftmod:block/hell_bark_planks"
+  }
+}

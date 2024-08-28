@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "hexcraftmod:block/twisted_planks",
+    "side": "hexcraftmod:block/twisted_planks",
+    "top": "hexcraftmod:block/twisted_planks"
+  }
+}

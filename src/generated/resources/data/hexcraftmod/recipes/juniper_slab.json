@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "hexcraftmod:juniper_planks"
+    }
+  },
+  "pattern": [
+    "JJJ"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:juniper_slab"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/twisted_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/twisted_planks"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/twisted_slab_top"
+    }
+  }
+}

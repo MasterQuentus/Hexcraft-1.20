@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:hell_bark_planks"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:hell_bark_button"
+  }
+}

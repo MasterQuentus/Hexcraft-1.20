@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "hexcraftmod:rowan_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SRS",
+    "SRS"
+  ],
+  "result": {
+    "item": "hexcraftmod:rowan_fence_gate"
+  },
+  "show_notification": true
+}

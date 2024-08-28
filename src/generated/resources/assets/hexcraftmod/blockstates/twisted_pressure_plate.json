@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "hexcraftmod:block/twisted_pressure_plate"
+    },
+    "powered=true": {
+      "model": "hexcraftmod:block/twisted_pressure_plate_down"
+    }
+  }
+}

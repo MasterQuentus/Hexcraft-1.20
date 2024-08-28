@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/alder_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/alder_planks"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/alder_slab_top"
+    }
+  }
+}

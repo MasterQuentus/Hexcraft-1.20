@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "H": {
+      "item": "hexcraftmod:hell_bark_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "HSH",
+    "HSH"
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:hell_bark_fence"
+  },
+  "show_notification": true
+}

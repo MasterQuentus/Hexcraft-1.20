@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "hexcraftmod:witch_hazel_planks"
+    }
+  },
+  "pattern": [
+    "SWS",
+    "SWS"
+  ],
+  "result": {
+    "item": "hexcraftmod:witch_hazel_fence_gate"
+  },
+  "show_notification": true
+}

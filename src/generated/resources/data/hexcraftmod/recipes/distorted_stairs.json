@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "hexcraftmod:distorted_planks"
+    }
+  },
+  "pattern": [
+    "D  ",
+    "DD ",
+    "DDD"
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:distorted_stairs"
+  },
+  "show_notification": true
+}

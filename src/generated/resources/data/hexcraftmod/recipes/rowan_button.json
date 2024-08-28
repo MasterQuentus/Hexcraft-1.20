@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:rowan_planks"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:rowan_button"
+  }
+}

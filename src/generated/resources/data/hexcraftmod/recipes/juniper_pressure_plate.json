@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "hexcraftmod:juniper_planks"
+    }
+  },
+  "pattern": [
+    "JJ "
+  ],
+  "result": {
+    "item": "hexcraftmod:juniper_pressure_plate"
+  },
+  "show_notification": true
+}

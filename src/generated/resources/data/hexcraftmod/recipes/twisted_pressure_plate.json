@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "hexcraftmod:twisted_planks"
+    }
+  },
+  "pattern": [
+    "TT "
+  ],
+  "result": {
+    "item": "hexcraftmod:twisted_pressure_plate"
+  },
+  "show_notification": true
+}

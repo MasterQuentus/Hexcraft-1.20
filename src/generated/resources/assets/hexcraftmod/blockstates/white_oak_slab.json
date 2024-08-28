@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/white_oak_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/white_oak_planks"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/white_oak_slab_top"
+    }
+  }
+}

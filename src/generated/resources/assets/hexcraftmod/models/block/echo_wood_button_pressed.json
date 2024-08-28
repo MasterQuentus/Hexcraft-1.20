@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "hexcraftmod:block/echo_wood_planks"
+  }
+}

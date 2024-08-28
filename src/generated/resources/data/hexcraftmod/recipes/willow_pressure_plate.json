@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "hexcraftmod:willow_planks"
+    }
+  },
+  "pattern": [
+    "WW "
+  ],
+  "result": {
+    "item": "hexcraftmod:willow_pressure_plate"
+  },
+  "show_notification": true
+}

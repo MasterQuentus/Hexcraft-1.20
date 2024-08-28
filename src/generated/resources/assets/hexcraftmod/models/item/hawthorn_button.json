@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "hexcraftmod:block/hawthorn_planks"
+  }
+}

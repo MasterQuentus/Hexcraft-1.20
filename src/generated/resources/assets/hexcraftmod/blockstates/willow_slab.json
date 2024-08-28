@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/willow_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/willow_planks"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/willow_slab_top"
+    }
+  }
+}

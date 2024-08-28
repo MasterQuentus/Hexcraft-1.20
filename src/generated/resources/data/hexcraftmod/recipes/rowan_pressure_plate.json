@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "hexcraftmod:rowan_planks"
+    }
+  },
+  "pattern": [
+    "RR "
+  ],
+  "result": {
+    "item": "hexcraftmod:rowan_pressure_plate"
+  },
+  "show_notification": true
+}

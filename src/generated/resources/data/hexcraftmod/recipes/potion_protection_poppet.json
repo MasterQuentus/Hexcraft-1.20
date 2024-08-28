@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "F": {
+      "item": "minecraft:pufferfish"
+    },
+    "G": {
+      "item": "minecraft:golden_carrot"
+    },
+    "M": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "S": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "pattern": [
+    " S ",
+    "FPG",
+    " M "
+  ],
+  "result": {
+    "item": "hexcraftmod:potion_protection_poppet"
+  },
+  "show_notification": true
+}

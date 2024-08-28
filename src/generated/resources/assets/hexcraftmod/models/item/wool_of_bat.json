@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hexcraftmod:item/wool_of_bat"
+  }
+}

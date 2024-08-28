@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "hexcraftmod:distorted_planks"
+    }
+  },
+  "pattern": [
+    "DD "
+  ],
+  "result": {
+    "item": "hexcraftmod:distorted_pressure_plate"
+  },
+  "show_notification": true
+}

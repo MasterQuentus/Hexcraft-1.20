@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:elder_planks"
+    }
+  },
+  "pattern": [
+    "EE "
+  ],
+  "result": {
+    "item": "hexcraftmod:elder_pressure_plate"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/hell_bark_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/hell_bark_planks"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/hell_bark_slab_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/distorted_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/distorted_planks"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/distorted_slab_top"
+    }
+  }
+}

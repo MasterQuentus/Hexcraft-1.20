@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "I": {
+      "item": "hexcraftmod:infused_fabric"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "T": {
+      "item": "minecraft:potion"
+    }
+  },
+  "pattern": [
+    " T ",
+    "IPI",
+    " B "
+  ],
+  "result": {
+    "item": "hexcraftmod:curse_protection_poppet"
+  },
+  "show_notification": true
+}

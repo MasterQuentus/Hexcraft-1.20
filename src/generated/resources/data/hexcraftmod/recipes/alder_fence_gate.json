@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "hexcraftmod:alder_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SAS",
+    "SAS"
+  ],
+  "result": {
+    "item": "hexcraftmod:alder_fence_gate"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:juniper_planks"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:juniper_button"
+  }
+}

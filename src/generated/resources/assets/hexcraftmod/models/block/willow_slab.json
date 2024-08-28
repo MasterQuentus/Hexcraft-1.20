@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "hexcraftmod:block/willow_planks",
+    "side": "hexcraftmod:block/willow_planks",
+    "top": "hexcraftmod:block/willow_planks"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:blood_bottle"
+    },
+    "G": {
+      "item": "minecraft:ghast_tear"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "S": {
+      "item": "hexcraftmod:spanish_moss"
+    },
+    "V": {
+      "item": "hexcraftmod:vampiric_gem"
+    }
+  },
+  "pattern": [
+    " S ",
+    "GPB",
+    " V "
+  ],
+  "result": {
+    "item": "hexcraftmod:vampiric_poppet"
+  },
+  "show_notification": true
+}

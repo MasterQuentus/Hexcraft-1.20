@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:wool_of_bat"
+    },
+    "I": {
+      "item": "hexcraftmod:infused_fabric"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "W": {
+      "item": "minecraft:wither_rose"
+    }
+  },
+  "pattern": [
+    " W ",
+    "IPI",
+    " B "
+  ],
+  "result": {
+    "item": "hexcraftmod:wither_protection_poppet"
+  },
+  "show_notification": true
+}

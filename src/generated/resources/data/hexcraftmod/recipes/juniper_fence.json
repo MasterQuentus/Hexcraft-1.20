@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "hexcraftmod:juniper_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "JSJ",
+    "JSJ"
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:juniper_fence"
+  },
+  "show_notification": true
+}

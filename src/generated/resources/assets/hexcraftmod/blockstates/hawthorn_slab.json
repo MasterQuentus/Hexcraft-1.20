@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/hawthorn_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/hawthorn_planks"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/hawthorn_slab_top"
+    }
+  }
+}

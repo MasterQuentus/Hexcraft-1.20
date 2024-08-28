@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:ebony_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SES",
+    "SES"
+  ],
+  "result": {
+    "item": "hexcraftmod:ebony_fence_gate"
+  },
+  "show_notification": true
+}

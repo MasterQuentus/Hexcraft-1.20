@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate_wall",
+  "textures": {
+    "texture": "hexcraftmod:block/blood_oak_planks"
+  }
+}

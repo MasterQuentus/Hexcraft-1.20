@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "L": {
+      "item": "hexcraftmod:drop_of_luck"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "R": {
+      "item": "hexcraftmod:reek_of_misfortune"
+    }
+  },
+  "pattern": [
+    " R ",
+    "LPL",
+    " R "
+  ],
+  "result": {
+    "item": "hexcraftmod:tool_protection_poppet"
+  },
+  "show_notification": true
+}

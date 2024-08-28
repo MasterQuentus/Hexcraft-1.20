@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:ember_moss"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    },
+    "W": {
+      "item": "hexcraftmod:wool_of_bat"
+    }
+  },
+  "pattern": [
+    " E ",
+    "WPW",
+    " E "
+  ],
+  "result": {
+    "item": "hexcraftmod:fire_protection_poppet"
+  },
+  "show_notification": true
+}

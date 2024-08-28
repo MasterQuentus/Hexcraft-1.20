@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "hexcraftmod:diamond_vapour"
+    },
+    "G": {
+      "item": "minecraft:gold_nugget"
+    },
+    "L": {
+      "item": "hexcraftmod:drop_of_luck"
+    },
+    "P": {
+      "item": "hexcraftmod:poppet"
+    }
+  },
+  "pattern": [
+    "LGD",
+    "GPG",
+    " G "
+  ],
+  "result": {
+    "item": "hexcraftmod:death_protection_poppet"
+  },
+  "show_notification": true
+}

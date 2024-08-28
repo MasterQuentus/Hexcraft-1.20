@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "hexcraftmod:twisted_planks"
+    }
+  },
+  "pattern": [
+    "STS",
+    "STS"
+  ],
+  "result": {
+    "item": "hexcraftmod:twisted_fence_gate"
+  },
+  "show_notification": true
+}

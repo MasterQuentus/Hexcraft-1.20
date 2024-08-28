@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:alder_planks"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:alder_button"
+  }
+}

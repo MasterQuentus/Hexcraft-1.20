@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:witch_wood_planks"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:witch_wood_button"
+  }
+}

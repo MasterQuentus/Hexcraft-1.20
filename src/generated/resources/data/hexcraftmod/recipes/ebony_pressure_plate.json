@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:ebony_planks"
+    }
+  },
+  "pattern": [
+    "EE "
+  ],
+  "result": {
+    "item": "hexcraftmod:ebony_pressure_plate"
+  },
+  "show_notification": true
+}

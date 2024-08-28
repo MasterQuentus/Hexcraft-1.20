@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:blood_oak_planks"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:blood_oak_button"
+  }
+}
