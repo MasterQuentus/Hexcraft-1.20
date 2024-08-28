@@ -1,4 +1,7 @@
-// 1.20.1	2024-08-24T02:01:19.6310704	Registries
+// 1.20.1	2024-08-26T23:59:06.7213766	Registries
+9c3472a382f8f636c2d33eb37607db77575314b0 data/hexcraftmod/damage_type/sacrifice.json
+8612625cd5512a6c69d3c0d14754ed3d837f1dae data/hexcraftmod/damage_type/sound.json
+9950a8984c5c79cf384017a7e02343c6a28f1d77 data/hexcraftmod/damage_type/voodoo.json
 d9e570942e0c4639d4f8c2b3d3c0974c97ccb035 data/hexcraftmod/forge/biome_modifier/add_alexandrite_geode.json
 6689969868f1c1f2be5e7377a5b602bab3088edf data/hexcraftmod/forge/biome_modifier/add_charstone_ore.json
 e95123582ef7dae6a268991bee53899aeab3cf62 data/hexcraftmod/forge/biome_modifier/add_crimson_stone_ore.json
@@ -14,7 +17,7 @@ cefabb904f3ad2ee7595103757eb77686394b121 data/hexcraftmod/forge/biome_modifier/a
 38fb0d3ee33f41a6a47287b6622a6dc31e6a58c4 data/hexcraftmod/forge/biome_modifier/add_silver_ore.json
 4b581b370bc3fd4dfab0300584bea25e99b5ec1b data/hexcraftmod/forge/biome_modifier/add_trenogen_ore.json
 19828e976dbaddca733339df36e398502944673d data/hexcraftmod/forge/biome_modifier/add_vampiric_ore.json
-2a0340c9f907d2089c6c29163e4e4d4af6e20fbc data/hexcraftmod/worldgen/biome/vampire_forest.json
+f0a060c12773e42099e3e099b5e4ced7044cc97a data/hexcraftmod/worldgen/biome/vampire_forest.json
 78a1f7639eb2e6b40a66e049421cf796ff5cb59b data/hexcraftmod/worldgen/configured_feature/alder.json
 50ab019049aff59d5df344adb6db94f636b3f563 data/hexcraftmod/worldgen/configured_feature/blood_oak.json
 e7729c57b33bf60fa87b801c650f0ab863abc588 data/hexcraftmod/worldgen/configured_feature/cedar.json

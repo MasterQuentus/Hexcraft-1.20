@@ -1,5 +1,6 @@
 package net.masterquentus.hexcraftmod.compat;
 
+import mezz.jei.api.helpers.IJeiHelpers;
 import org.jetbrains.annotations.Nullable;
 
 import mezz.jei.api.constants.VanillaTypes;

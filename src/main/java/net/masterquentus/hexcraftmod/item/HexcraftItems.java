@@ -2,6 +2,7 @@ package net.masterquentus.hexcraftmod.item;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
+import net.masterquentus.hexcraftmod.fluid.HexcraftFluids;
 import net.masterquentus.hexcraftmod.item.custom.*;
 import net.masterquentus.hexcraftmod.util.HexcraftTags;
 import net.minecraft.world.food.Foods;
@@ -42,6 +43,9 @@ public class HexcraftItems {
 
     public static final RegistryObject<Item> CLAY_POT = ITEMS.register("clay_pot",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOOD_BOTTLE = ITEMS.register("blood_bottle",
+            () -> new BloodBottleItem(new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> LILITH_CONTRACT = ITEMS.register("lilith_contract",
             () -> new Item(new Item.Properties()));
@@ -217,6 +221,12 @@ public class HexcraftItems {
     public static final RegistryObject<Item> DROP_OF_LUCK = ITEMS.register("drop_of_luck",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> REEK_OF_MISFORTUNE = ITEMS.register("reek_of_misfortune",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> WOOL_OF_BAT = ITEMS.register("wool_of_bat",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> ARTHANA = ITEMS.register("arthana",
             () -> new SwordItem(HexcraftToolTiers.ARTHANA , 3, -2.4F, new Item.Properties()));
 
@@ -239,22 +249,22 @@ public class HexcraftItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> FALL_PROTECTION_POPPET = ITEMS.register("fall_protection_poppet",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> EXPLOSION_PROTECTION_POPPET = ITEMS.register("explosion_protection_poppet",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().durability(256)));
 
-    public static final RegistryObject<Item> PROJECTILE_PROTECTION_POPPET = ITEMS.register("projectile_protection_poppet",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PROJECTILE_PROTECTION_POPPET = ITEMS
+            .register("projectile_protection_poppet", () -> new Item(new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> HUNGER_PROTECTION_POPPET = ITEMS.register("hunger_protection_poppet",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> POTION_PROTECTION_POPPET = ITEMS.register("potion_protection_poppet",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> VOID_PROTECTION_POPPET = ITEMS.register("void_protection_poppet",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> CURSE_PROTECTION_POPPET = ITEMS.register("curse_protection_poppet",
             () -> new Item(new Item.Properties()));
@@ -263,16 +273,16 @@ public class HexcraftItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> DEATH_PROTECTION_POPPET = ITEMS.register("death_protection_poppet",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> FIRE_PROTECTION_POPPET = ITEMS.register("fire_protection_poppet",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> WATER_PROTECTION_POPPET = ITEMS.register("water_protection_poppet",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> WITHER_PROTECTION_POPPET = ITEMS.register("wither_protection_poppet",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> ARMOR_PROTECTION_POPPET = ITEMS.register("armor_protection_poppet",
             () -> new Item(new Item.Properties()));
@@ -402,6 +412,9 @@ public class HexcraftItems {
 
     public static final RegistryObject<Item> BLOOD_APPLE = ITEMS.register("blood_apple",
             () -> new Item(new Item.Properties().food(HexcraftFoods.BLOOD_APPLE)));
+
+    public static final RegistryObject<Item> BLOOD_BUCKET = ITEMS.register("blood_bucket",
+            () -> new BucketItem(HexcraftFluids.SOURCE_BLOOD, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

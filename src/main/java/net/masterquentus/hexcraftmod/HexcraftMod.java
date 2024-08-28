@@ -3,8 +3,12 @@ package net.masterquentus.hexcraftmod;
 import java.util.Random;
 
 import net.masterquentus.hexcraftmod.entity.HexcraftEntityTypes;
+import net.masterquentus.hexcraftmod.fluid.HexcraftFluidTypes;
+import net.masterquentus.hexcraftmod.fluid.HexcraftFluids;
 import net.masterquentus.hexcraftmod.worldgen.biome.HexcraftTerraBlenderAPI;
 import net.masterquentus.hexcraftmod.worldgen.biome.suface.HexcraftSurfaceRules;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -63,10 +67,10 @@ public class HexcraftMod {
 		HexcraftRecipeTypes.register(modEventBus);
 		HexcraftLootModifier.register(modEventBus);
 		HexcraftEntityTypes.register(modEventBus);
-
-		//HexcraftTerraBlenderAPI.registerRegions();
+		HexcraftTerraBlenderAPI.registerRegions();
+		HexcraftFluidTypes.register(modEventBus);
+		HexcraftFluids.register(modEventBus);
 		modEventBus.addListener(this::commonSetup);
-
 		MinecraftForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::addCreative);
 		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, HexcraftConfigs.SPEC);
@@ -114,6 +118,8 @@ public class HexcraftMod {
 		@SubscribeEvent
 		public static void onClientSetup(FMLClientSetupEvent event) {
 			MenuScreens.register(HexcraftMenuTypes.WITCHES_OVEN_MENU.get(), WitchesOvenScreen::new);
+			ItemBlockRenderTypes.setRenderLayer(HexcraftFluids.SOURCE_BLOOD.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(HexcraftFluids.FLOWING_BLOOD.get(), RenderType.translucent());
 		}
 	}
 }

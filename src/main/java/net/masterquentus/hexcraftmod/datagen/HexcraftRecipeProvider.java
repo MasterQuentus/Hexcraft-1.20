@@ -538,6 +538,134 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 				.unlockedBy(getHasName(HexcraftBlocks.POLISHED_CHARSTONE.get()), has(HexcraftBlocks.POLISHED_CHARSTONE.get()))
 				.save(pWriter);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.EBONY_STAIRS.get(),4)
+				.pattern("E  ")
+				.pattern("EE ")
+				.pattern("EEE")
+				.define('E', HexcraftBlocks.EBONY_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.EBONY_PLANKS.get()), has(HexcraftBlocks.EBONY_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.BLOOD_OAK_STAIRS.get(),4)
+				.pattern("B  ")
+				.pattern("BB ")
+				.pattern("BBB")
+				.define('B', HexcraftBlocks.BLOOD_OAK_STAIRS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.BLOOD_OAK_STAIRS.get()), has(HexcraftBlocks.BLOOD_OAK_STAIRS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.HELL_BARK_STAIRS.get(),4)
+				.pattern("H  ")
+				.pattern("HH ")
+				.pattern("HHH")
+				.define('H', HexcraftBlocks.HELL_BARK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.HELL_BARK_PLANKS.get()), has(HexcraftBlocks.HELL_BARK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WHITE_OAK_STAIRS.get(),4)
+				.pattern("W  ")
+				.pattern("WW ")
+				.pattern("WWW")
+				.define('W', HexcraftBlocks.WHITE_OAK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WHITE_OAK_PLANKS.get()), has(HexcraftBlocks.WHITE_OAK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ALDER_STAIRS.get(),4)
+				.pattern("A  ")
+				.pattern("AA ")
+				.pattern("AAA")
+				.define('A', HexcraftBlocks.ALDER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ALDER_PLANKS.get()), has(HexcraftBlocks.ALDER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_HAZEL_STAIRS.get(),4)
+				.pattern("W  ")
+				.pattern("WW ")
+				.pattern("WWW")
+				.define('W', HexcraftBlocks.WITCH_HAZEL_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()), has(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WILLOW_STAIRS.get(),4)
+				.pattern("W  ")
+				.pattern("WW ")
+				.pattern("WWW")
+				.define('W', HexcraftBlocks.WILLOW_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WILLOW_PLANKS.get()), has(HexcraftBlocks.WILLOW_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.HAWTHORN_STAIRS.get(),4)
+				.pattern("H  ")
+				.pattern("HH ")
+				.pattern("HHH")
+				.define('H', HexcraftBlocks.HAWTHORN_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.HAWTHORN_PLANKS.get()), has(HexcraftBlocks.HAWTHORN_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.CEDAR_STAIRS.get(),4)
+				.pattern("C  ")
+				.pattern("CC ")
+				.pattern("CCC")
+				.define('C', HexcraftBlocks.CEDAR_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.CEDAR_PLANKS.get()), has(HexcraftBlocks.CEDAR_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.DISTORTED_STAIRS.get(),4)
+				.pattern("D  ")
+				.pattern("DD ")
+				.pattern("DDD")
+				.define('D', HexcraftBlocks.DISTORTED_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.DISTORTED_PLANKS.get()), has(HexcraftBlocks.DISTORTED_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ELDER_STAIRS.get(),4)
+				.pattern("E  ")
+				.pattern("EE ")
+				.pattern("EEE")
+				.define('E', HexcraftBlocks.ELDER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ELDER_PLANKS.get()), has(HexcraftBlocks.ELDER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.JUNIPER_STAIRS.get(),4)
+				.pattern("J  ")
+				.pattern("JJ ")
+				.pattern("JJJ")
+				.define('J', HexcraftBlocks.JUNIPER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.JUNIPER_PLANKS.get()), has(HexcraftBlocks.JUNIPER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ROWAN_STAIRS.get(),4)
+				.pattern("R  ")
+				.pattern("RR ")
+				.pattern("RRR")
+				.define('R', HexcraftBlocks.ROWAN_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ROWAN_PLANKS.get()), has(HexcraftBlocks.ROWAN_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.TWISTED_STAIRS.get(),4)
+				.pattern("T  ")
+				.pattern("TT ")
+				.pattern("TTT")
+				.define('T', HexcraftBlocks.TWISTED_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.TWISTED_PLANKS.get()), has(HexcraftBlocks.TWISTED_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_WOOD_STAIRS.get(),4)
+				.pattern("W  ")
+				.pattern("WW ")
+				.pattern("WWW")
+				.define('W', HexcraftBlocks.WITCH_WOOD_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_WOOD_PLANKS.get()), has(HexcraftBlocks.WITCH_WOOD_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_STAIRS.get(),4)
+				.pattern("E  ")
+				.pattern("EE ")
+				.pattern("EEE")
+				.define('E', HexcraftBlocks.ECHO_WOOD_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_PLANKS.get()), has(HexcraftBlocks.ECHO_WOOD_PLANKS.get()))
+				.save(pWriter);
+
 
 		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.PEARL_STONE_SLAB.get(),6)
 				.pattern("PPP")
@@ -633,6 +761,455 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 				.pattern("CCC")
 				.define('C', HexcraftBlocks.POLISHED_CHARSTONE.get())
 				.unlockedBy(getHasName(HexcraftBlocks.POLISHED_CHARSTONE.get()), has(HexcraftBlocks.POLISHED_CHARSTONE.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.EBONY_SLAB.get(),6)
+				.pattern("EEE")
+				.define('E', HexcraftBlocks.EBONY_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.EBONY_PLANKS.get()), has(HexcraftBlocks.EBONY_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.BLOOD_OAK_SLAB.get(),6)
+				.pattern("BBB")
+				.define('B', HexcraftBlocks.BLOOD_OAK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.BLOOD_OAK_PLANKS.get()), has(HexcraftBlocks.BLOOD_OAK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.HELL_BARK_SLAB.get(),6)
+				.pattern("HHH")
+				.define('H', HexcraftBlocks.HELL_BARK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.HELL_BARK_PLANKS.get()), has(HexcraftBlocks.HELL_BARK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WHITE_OAK_SLAB.get(),6)
+				.pattern("WWW")
+				.define('W', HexcraftBlocks.WHITE_OAK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WHITE_OAK_PLANKS.get()), has(HexcraftBlocks.WHITE_OAK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ALDER_SLAB.get(),6)
+				.pattern("AAA")
+				.define('A', HexcraftBlocks.ALDER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ALDER_PLANKS.get()), has(HexcraftBlocks.ALDER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_HAZEL_SLAB.get(),6)
+				.pattern("WWW")
+				.define('W', HexcraftBlocks.WITCH_HAZEL_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()), has(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WILLOW_SLAB.get(),6)
+				.pattern("WWW")
+				.define('W', HexcraftBlocks.WILLOW_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WILLOW_PLANKS.get()), has(HexcraftBlocks.WILLOW_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.HAWTHORN_SLAB.get(),6)
+				.pattern("HHH")
+				.define('H', HexcraftBlocks.HAWTHORN_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.HAWTHORN_PLANKS.get()), has(HexcraftBlocks.HAWTHORN_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.CEDAR_SLAB.get(),6)
+				.pattern("CCC")
+				.define('C', HexcraftBlocks.CEDAR_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.CEDAR_PLANKS.get()), has(HexcraftBlocks.CEDAR_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.DISTORTED_SLAB.get(),6)
+				.pattern("DDD")
+				.define('D', HexcraftBlocks.DISTORTED_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.DISTORTED_PLANKS.get()), has(HexcraftBlocks.DISTORTED_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ELDER_SLAB.get(),6)
+				.pattern("EEE")
+				.define('E', HexcraftBlocks.ELDER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ELDER_PLANKS.get()), has(HexcraftBlocks.ELDER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.JUNIPER_SLAB.get(),6)
+				.pattern("JJJ")
+				.define('J', HexcraftBlocks.JUNIPER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.JUNIPER_PLANKS.get()), has(HexcraftBlocks.JUNIPER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ROWAN_SLAB.get(), 6)
+				.pattern("RRR")
+				.define('R', HexcraftBlocks.ROWAN_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ROWAN_PLANKS.get()), has(HexcraftBlocks.ROWAN_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.TWISTED_SLAB.get(),6)
+				.pattern("TTT")
+				.define('T', HexcraftBlocks.TWISTED_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.TWISTED_PLANKS.get()), has(HexcraftBlocks.TWISTED_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_WOOD_SLAB.get(),6)
+				.pattern("WWW")
+				.define('W', HexcraftBlocks.WITCH_WOOD_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_WOOD_PLANKS.get()), has(HexcraftBlocks.WITCH_WOOD_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_SLAB.get(), 6)
+				.pattern("EEE")
+				.define('E', HexcraftBlocks.ECHO_WOOD_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_PLANKS.get()), has(HexcraftBlocks.ECHO_WOOD_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.EBONY_FENCE.get(),3)
+				.pattern("ESE")
+				.pattern("ESE")
+				.define('E', HexcraftBlocks.EBONY_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.EBONY_PLANKS.get()), has(HexcraftBlocks.EBONY_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.BLOOD_OAK_FENCE.get(),3)
+				.pattern("BSB")
+				.pattern("BSB")
+				.define('B', HexcraftBlocks.BLOOD_OAK_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.BLOOD_OAK_PLANKS.get()), has(HexcraftBlocks.BLOOD_OAK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.HELL_BARK_FENCE.get(),3)
+				.pattern("HSH")
+				.pattern("HSH")
+				.define('H', HexcraftBlocks.HELL_BARK_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.HELL_BARK_PLANKS.get()), has(HexcraftBlocks.HELL_BARK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WHITE_OAK_FENCE.get(),3)
+				.pattern("WSW")
+				.pattern("WSW")
+				.define('W', HexcraftBlocks.WHITE_OAK_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.WHITE_OAK_PLANKS.get()), has(HexcraftBlocks.WHITE_OAK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ALDER_FENCE.get(),3)
+				.pattern("ASA")
+				.pattern("ASA")
+				.define('A', HexcraftBlocks.ALDER_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.ALDER_PLANKS.get()), has(HexcraftBlocks.ALDER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_HAZEL_FENCE.get(),3)
+				.pattern("WSW")
+				.pattern("WSW")
+				.define('W', HexcraftBlocks.WITCH_HAZEL_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()), has(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WILLOW_FENCE.get(),3)
+				.pattern("WSW")
+				.pattern("WSW")
+				.define('W', HexcraftBlocks.WILLOW_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.WILLOW_PLANKS.get()), has(HexcraftBlocks.WILLOW_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.HAWTHORN_FENCE.get(),3)
+				.pattern("HSH")
+				.pattern("HSH")
+				.define('H', HexcraftBlocks.HAWTHORN_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.HAWTHORN_PLANKS.get()), has(HexcraftBlocks.HAWTHORN_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.CEDAR_FENCE.get(),3)
+				.pattern("CSC")
+				.pattern("CSC")
+				.define('C', HexcraftBlocks.CEDAR_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.CEDAR_PLANKS.get()), has(HexcraftBlocks.CEDAR_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.DISTORTED_FENCE.get(),3)
+				.pattern("DSD")
+				.pattern("DSD")
+				.define('D', HexcraftBlocks.DISTORTED_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.DISTORTED_PLANKS.get()), has(HexcraftBlocks.DISTORTED_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ELDER_FENCE.get(),3)
+				.pattern("ESE")
+				.pattern("ESE")
+				.define('E', HexcraftBlocks.ELDER_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.ELDER_PLANKS.get()), has(HexcraftBlocks.ELDER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.JUNIPER_FENCE.get(),3)
+				.pattern("JSJ")
+				.pattern("JSJ")
+				.define('J', HexcraftBlocks.JUNIPER_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.JUNIPER_PLANKS.get()), has(HexcraftBlocks.JUNIPER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ROWAN_FENCE.get(), 3)
+				.pattern("RSR")
+				.pattern("RSR")
+				.define('R', HexcraftBlocks.ROWAN_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.ROWAN_PLANKS.get()), has(HexcraftBlocks.ROWAN_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.TWISTED_FENCE.get(),3)
+				.pattern("TST")
+				.pattern("TST")
+				.define('T', HexcraftBlocks.TWISTED_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.TWISTED_PLANKS.get()), has(HexcraftBlocks.TWISTED_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_WOOD_FENCE.get(),3)
+				.pattern("WSW")
+				.pattern("WSW")
+				.define('W', HexcraftBlocks.WITCH_WOOD_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_WOOD_PLANKS.get()), has(HexcraftBlocks.WITCH_WOOD_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_FENCE.get(), 3)
+				.pattern("ESE")
+				.pattern("ESE")
+				.define('E', HexcraftBlocks.ECHO_WOOD_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_PLANKS.get()), has(HexcraftBlocks.ECHO_WOOD_PLANKS.get()))
+				.save(pWriter);
+
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.EBONY_FENCE_GATE.get())
+				.pattern("SES")
+				.pattern("SES")
+				.define('E', HexcraftBlocks.EBONY_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.EBONY_PLANKS.get()), has(HexcraftBlocks.EBONY_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.BLOOD_OAK_FENCE_GATE.get())
+				.pattern("SBS")
+				.pattern("SBS")
+				.define('B', HexcraftBlocks.BLOOD_OAK_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.BLOOD_OAK_PLANKS.get()), has(HexcraftBlocks.BLOOD_OAK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.HELL_BARK_FENCE_GATE.get())
+				.pattern("SHS")
+				.pattern("SHS")
+				.define('H', HexcraftBlocks.HELL_BARK_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.HELL_BARK_PLANKS.get()), has(HexcraftBlocks.HELL_BARK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WHITE_OAK_FENCE_GATE.get())
+				.pattern("SWS")
+				.pattern("SWS")
+				.define('W', HexcraftBlocks.WHITE_OAK_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.WHITE_OAK_PLANKS.get()), has(HexcraftBlocks.WHITE_OAK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ALDER_FENCE_GATE.get())
+				.pattern("SAS")
+				.pattern("SAS")
+				.define('A', HexcraftBlocks.ALDER_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.ALDER_PLANKS.get()), has(HexcraftBlocks.ALDER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_HAZEL_FENCE_GATE.get())
+				.pattern("SWS")
+				.pattern("SWS")
+				.define('W', HexcraftBlocks.WITCH_HAZEL_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()), has(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WILLOW_FENCE_GATE.get())
+				.pattern("SWS")
+				.pattern("SWS")
+				.define('W', HexcraftBlocks.WILLOW_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.WILLOW_PLANKS.get()), has(HexcraftBlocks.WILLOW_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.HAWTHORN_FENCE_GATE.get())
+				.pattern("SHS")
+				.pattern("SHS")
+				.define('H', HexcraftBlocks.HAWTHORN_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.HAWTHORN_PLANKS.get()), has(HexcraftBlocks.HAWTHORN_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.CEDAR_FENCE_GATE.get())
+				.pattern("SCS")
+				.pattern("SCS")
+				.define('C', HexcraftBlocks.CEDAR_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.CEDAR_PLANKS.get()), has(HexcraftBlocks.CEDAR_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.DISTORTED_FENCE_GATE.get())
+				.pattern("SDS")
+				.pattern("SDS")
+				.define('D', HexcraftBlocks.DISTORTED_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.DISTORTED_PLANKS.get()), has(HexcraftBlocks.DISTORTED_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ELDER_FENCE_GATE.get())
+				.pattern("SES")
+				.pattern("SES")
+				.define('E', HexcraftBlocks.ELDER_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.ELDER_PLANKS.get()), has(HexcraftBlocks.ELDER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.JUNIPER_FENCE_GATE.get())
+				.pattern("SJS")
+				.pattern("SJS")
+				.define('J', HexcraftBlocks.JUNIPER_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.JUNIPER_PLANKS.get()), has(HexcraftBlocks.JUNIPER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ROWAN_FENCE_GATE.get())
+				.pattern("SRS")
+				.pattern("SRS")
+				.define('R', HexcraftBlocks.ROWAN_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.ROWAN_PLANKS.get()), has(HexcraftBlocks.ROWAN_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.TWISTED_FENCE_GATE.get())
+				.pattern("STS")
+				.pattern("STS")
+				.define('T', HexcraftBlocks.TWISTED_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.TWISTED_PLANKS.get()), has(HexcraftBlocks.TWISTED_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_WOOD_FENCE_GATE.get())
+				.pattern("SWS")
+				.pattern("SWS")
+				.define('W', HexcraftBlocks.WITCH_WOOD_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_WOOD_PLANKS.get()), has(HexcraftBlocks.WITCH_WOOD_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_FENCE_GATE.get())
+				.pattern("SES")
+				.pattern("SES")
+				.define('E', HexcraftBlocks.ECHO_WOOD_PLANKS.get())
+				.define('S', Items.STICK)
+				.unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_PLANKS.get()), has(HexcraftBlocks.ECHO_WOOD_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.EBONY_PRESSURE_PLATE.get())
+				.pattern("EE ")
+				.define('E', HexcraftBlocks.EBONY_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.EBONY_PLANKS.get()), has(HexcraftBlocks.EBONY_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.BLOOD_OAK_PRESSURE_PLATE.get())
+				.pattern("BB ")
+				.define('B', HexcraftBlocks.BLOOD_OAK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.BLOOD_OAK_PLANKS.get()), has(HexcraftBlocks.BLOOD_OAK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.HELL_BARK_PRESSURE_PLATE.get())
+				.pattern("HH ")
+				.define('H', HexcraftBlocks.HELL_BARK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.HELL_BARK_PLANKS.get()), has(HexcraftBlocks.HELL_BARK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WHITE_OAK_PRESSURE_PLATE.get())
+				.pattern("WW ")
+				.define('W', HexcraftBlocks.WHITE_OAK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WHITE_OAK_PLANKS.get()), has(HexcraftBlocks.WHITE_OAK_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ALDER_PRESSURE_PLATE.get())
+				.pattern("AA ")
+				.define('A', HexcraftBlocks.ALDER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ALDER_PLANKS.get()), has(HexcraftBlocks.ALDER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_HAZEL_PRESSURE_PLATE.get())
+				.pattern("WW ")
+				.define('W', HexcraftBlocks.WITCH_HAZEL_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()), has(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WILLOW_PRESSURE_PLATE.get())
+				.pattern("WW ")
+				.define('W', HexcraftBlocks.WILLOW_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WILLOW_PLANKS.get()), has(HexcraftBlocks.WILLOW_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.HAWTHORN_PRESSURE_PLATE.get())
+				.pattern("HH ")
+				.define('H', HexcraftBlocks.HAWTHORN_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.HAWTHORN_PLANKS.get()), has(HexcraftBlocks.HAWTHORN_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.CEDAR_PRESSURE_PLATE.get())
+				.pattern("CC ")
+				.define('C', HexcraftBlocks.CEDAR_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.CEDAR_PLANKS.get()), has(HexcraftBlocks.CEDAR_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.DISTORTED_PRESSURE_PLATE.get())
+				.pattern("DD ")
+				.define('D', HexcraftBlocks.DISTORTED_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.DISTORTED_PLANKS.get()), has(HexcraftBlocks.DISTORTED_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ELDER_PRESSURE_PLATE.get())
+				.pattern("EE ")
+				.define('E', HexcraftBlocks.ELDER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ELDER_PLANKS.get()), has(HexcraftBlocks.ELDER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.JUNIPER_PRESSURE_PLATE.get())
+				.pattern("JJ ")
+				.define('J', HexcraftBlocks.JUNIPER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.JUNIPER_PLANKS.get()), has(HexcraftBlocks.JUNIPER_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ROWAN_PRESSURE_PLATE.get())
+				.pattern("RR ")
+				.define('R', HexcraftBlocks.ROWAN_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ROWAN_PLANKS.get()), has(HexcraftBlocks.ROWAN_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.TWISTED_PRESSURE_PLATE.get())
+				.pattern("TT ")
+				.define('T', HexcraftBlocks.TWISTED_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.TWISTED_PLANKS.get()), has(HexcraftBlocks.TWISTED_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.WITCH_WOOD_PRESSURE_PLATE.get())
+				.pattern("WW ")
+				.define('W', HexcraftBlocks.WITCH_WOOD_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_WOOD_PLANKS.get()), has(HexcraftBlocks.WITCH_WOOD_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_PRESSURE_PLATE.get())
+				.pattern("EE ")
+				.define('E', HexcraftBlocks.ECHO_WOOD_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_PLANKS.get()), has(HexcraftBlocks.ECHO_WOOD_PLANKS.get()))
 				.save(pWriter);
 
 		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.MAGIC_CRYSTAL_BLOCK.get(),4)
@@ -1009,6 +1586,105 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
 				.save(pWriter);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.POTION_PROTECTION_POPPET.get())
+				.pattern(" S ")
+				.pattern("FPG")
+				.pattern(" M ")
+				.define('S', Items.SPIDER_EYE)
+				.define('F', Items.PUFFERFISH)
+				.define('G', Items.GOLDEN_CARROT)
+				.define('M', Items.PHANTOM_MEMBRANE)
+				.define('P', HexcraftItems.POPPET.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VOID_PROTECTION_POPPET.get())
+				.pattern(" E ")
+				.pattern("IPI")
+				.pattern(" B ")
+				.define('E', Items.ENDER_PEARL)
+				.define('I', HexcraftItems.INFUSED_FABRIC.get())
+				.define('P', HexcraftItems.POPPET.get())
+				.define('B', HexcraftItems.BREATH_OF_THE_GODDESS.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CURSE_PROTECTION_POPPET.get())
+				.pattern(" T ")
+				.pattern("IPI")
+				.pattern(" B ")
+				.define('T', Items.POTION)
+				.define('I', HexcraftItems.INFUSED_FABRIC.get())
+				.define('P', HexcraftItems.POPPET.get())
+				.define('B', Items.BLAZE_POWDER)
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VAMPIRIC_POPPET.get())
+				.pattern(" S ")
+				.pattern("GPB")
+				.pattern(" V ")
+				.define('S', HexcraftBlocks.SPANISH_MOSS.get())
+				.define('G', Items.GHAST_TEAR)
+				.define('P', HexcraftItems.POPPET.get())
+				.define('B', HexcraftItems.BLOOD_BOTTLE.get())
+				.define('V', HexcraftItems.VAMPIRIC_GEM.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DEATH_PROTECTION_POPPET.get())
+				.pattern("LGD")
+				.pattern("GPG")
+				.pattern(" G ")
+				.define('L', HexcraftItems.DROP_OF_LUCK.get())
+				.define('G', Items.GOLD_NUGGET)
+				.define('P', HexcraftItems.POPPET.get())
+				.define('D', HexcraftItems.DIAMOND_VAPOUR.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.FIRE_PROTECTION_POPPET.get())
+				.pattern(" E ")
+				.pattern("WPW")
+				.pattern(" E ")
+				.define('E', HexcraftBlocks.EMBER_MOSS.get())
+				.define('W', HexcraftItems.WOOL_OF_BAT.get())
+				.define('P', HexcraftItems.POPPET.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.WITHER_PROTECTION_POPPET.get())
+				.pattern(" W ")
+				.pattern("IPI")
+				.pattern(" B ")
+				.define('W', Items.WITHER_ROSE)
+				.define('I', HexcraftItems.INFUSED_FABRIC.get())
+				.define('P', HexcraftItems.POPPET.get())
+				.define('B', HexcraftItems.WOOL_OF_BAT.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.ARMOR_PROTECTION_POPPET.get())
+				.pattern(" R ")
+				.pattern("LPL")
+				.pattern(" D ")
+				.define('R', HexcraftItems.REEK_OF_MISFORTUNE.get())
+				.define('L', HexcraftItems.DROP_OF_LUCK.get())
+				.define('P', HexcraftItems.POPPET.get())
+				.define('D', HexcraftItems.DIAMOND_VAPOUR.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.TOOL_PROTECTION_POPPET.get())
+				.pattern(" R ")
+				.pattern("LPL")
+				.pattern(" R ")
+				.define('R', HexcraftItems.REEK_OF_MISFORTUNE.get())
+				.define('L', HexcraftItems.DROP_OF_LUCK.get())
+				.define('P', HexcraftItems.POPPET.get())
+				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
+				.save(pWriter);
+
 
 		//Shapeless
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.BLOODY_NYKIUM_NUGGET.get(), 9)
@@ -1153,6 +1829,71 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_PLANKS.get(), 4)
 				.requires(HexcraftBlocks.ECHO_WOOD_LOG.get())
 				.unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_LOG.get()), has(HexcraftBlocks.ECHO_WOOD_LOG.get())).save(pWriter);
+
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.EBONY_BUTTON.get())
+				.requires(HexcraftBlocks.EBONY_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.EBONY_PLANKS.get()), has(HexcraftBlocks.EBONY_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.BLOOD_OAK_BUTTON.get())
+				.requires(HexcraftBlocks.BLOOD_OAK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.BLOOD_OAK_PLANKS.get()), has(HexcraftBlocks.BLOOD_OAK_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.HELL_BARK_BUTTON.get())
+				.requires(HexcraftBlocks.HELL_BARK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.HELL_BARK_PLANKS.get()), has(HexcraftBlocks.HELL_BARK_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.WHITE_OAK_BUTTON.get())
+				.requires(HexcraftBlocks.WHITE_OAK_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WHITE_OAK_PLANKS.get()), has(HexcraftBlocks.WHITE_OAK_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.ALDER_BUTTON.get())
+				.requires(HexcraftBlocks.ALDER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ALDER_PLANKS.get()), has(HexcraftBlocks.ALDER_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.WITCH_HAZEL_BUTTON.get())
+				.requires(HexcraftBlocks.WITCH_HAZEL_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()), has(HexcraftBlocks.WITCH_HAZEL_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.WILLOW_BUTTON.get())
+				.requires(HexcraftBlocks.WILLOW_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WILLOW_PLANKS.get()), has(HexcraftBlocks.WILLOW_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.HAWTHORN_BUTTON.get())
+				.requires(HexcraftBlocks.HAWTHORN_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.HAWTHORN_PLANKS.get()), has(HexcraftBlocks.HAWTHORN_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.CEDAR_BUTTON.get())
+				.requires(HexcraftBlocks.CEDAR_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.CEDAR_PLANKS.get()), has(HexcraftBlocks.CEDAR_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.DISTORTED_BUTTON.get())
+				.requires(HexcraftBlocks.DISTORTED_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.DISTORTED_PLANKS.get()), has(HexcraftBlocks.DISTORTED_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.ELDER_BUTTON.get())
+				.requires(HexcraftBlocks.ELDER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ELDER_PLANKS.get()), has(HexcraftBlocks.ELDER_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.JUNIPER_BUTTON.get())
+				.requires(HexcraftBlocks.JUNIPER_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.JUNIPER_PLANKS.get()), has(HexcraftBlocks.JUNIPER_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.ROWAN_BUTTON.get())
+				.requires(HexcraftBlocks.ROWAN_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ROWAN_PLANKS.get()), has(HexcraftBlocks.ROWAN_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.TWISTED_BUTTON.get())
+				.requires(HexcraftBlocks.TWISTED_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.TWISTED_PLANKS.get()), has(HexcraftBlocks.TWISTED_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.WITCH_WOOD_BUTTON.get())
+				.requires(HexcraftBlocks.WITCH_WOOD_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.WITCH_WOOD_PLANKS.get()), has(HexcraftBlocks.WITCH_WOOD_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_BUTTON.get())
+				.requires(HexcraftBlocks.ECHO_WOOD_PLANKS.get())
+				.unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_PLANKS.get()), has(HexcraftBlocks.ECHO_WOOD_PLANKS.get())).save(pWriter);
 
 		WitchesOvenRecipeBuilder
 				.buildOvenRecipe(HexcraftItems.WHITE_OAK_ASH.get(), HexcraftItems.WOOD_ASH.get(), 0.35f, 200)

@@ -69,6 +69,8 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropSelf(HexcraftBlocks.SPANISH_MOSS.get());
 
+		this.dropSelf(HexcraftBlocks.EMBER_MOSS.get());
+
 		this.dropSelf(HexcraftBlocks.VILEVINE.get());
 
 		this.dropSelf(HexcraftBlocks.DEMON_HEART.get());
@@ -389,6 +391,38 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropSelf(HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS.get());
 
+		this.dropSelf(HexcraftBlocks.EBONY_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.BLOOD_OAK_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.HELL_BARK_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.WHITE_OAK_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.ALDER_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_HAZEL_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.WILLOW_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.HAWTHORN_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.CEDAR_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.DISTORTED_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.ELDER_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.JUNIPER_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.ROWAN_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.TWISTED_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_WOOD_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.ECHO_WOOD_STAIRS.get());
+
 		this.dropSelf(HexcraftBlocks.PEARL_STONE_SLAB.get());
 
 		this.dropSelf(HexcraftBlocks.PEARL_COBBLESTONE_SLAB.get());
@@ -420,6 +454,172 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.dropSelf(HexcraftBlocks.CHARSTONE_BRICKS_SLAB.get());
 
 		this.dropSelf(HexcraftBlocks.POLISHED_CHARSTONE_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.EBONY_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.BLOOD_OAK_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.HELL_BARK_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.WHITE_OAK_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.ALDER_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_HAZEL_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.WILLOW_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.HAWTHORN_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.CEDAR_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.DISTORTED_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.ELDER_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.JUNIPER_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.ROWAN_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.TWISTED_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_WOOD_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.ECHO_WOOD_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.EBONY_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.BLOOD_OAK_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.HELL_BARK_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.WHITE_OAK_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.ALDER_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_HAZEL_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.WILLOW_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.HAWTHORN_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.CEDAR_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.DISTORTED_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.ELDER_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.JUNIPER_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.ROWAN_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.TWISTED_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_WOOD_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.ECHO_WOOD_BUTTON.get());
+
+
+
+
+
+
+
+		this.dropSelf(HexcraftBlocks.EBONY_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.BLOOD_OAK_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.HELL_BARK_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.WHITE_OAK_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.ALDER_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_HAZEL_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.WILLOW_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.HAWTHORN_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.CEDAR_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.DISTORTED_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.ELDER_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.JUNIPER_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.ROWAN_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.TWISTED_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_WOOD_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.ECHO_WOOD_FENCE.get());
+
+		this.dropSelf(HexcraftBlocks.EBONY_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.BLOOD_OAK_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.HELL_BARK_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.WHITE_OAK_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.ALDER_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_HAZEL_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.WILLOW_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.HAWTHORN_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.CEDAR_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.DISTORTED_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.ELDER_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.JUNIPER_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.ROWAN_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.TWISTED_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_WOOD_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.ECHO_WOOD_FENCE_GATE.get());
+
+		this.dropSelf(HexcraftBlocks.EBONY_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.BLOOD_OAK_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.HELL_BARK_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.WHITE_OAK_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.ALDER_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_HAZEL_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.WILLOW_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.HAWTHORN_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.CEDAR_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.DISTORTED_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.ELDER_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.JUNIPER_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.ROWAN_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.TWISTED_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_WOOD_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.ECHO_WOOD_PRESSURE_PLATE.get());
 
 		this.dropSelf(HexcraftBlocks.MAGIC_CRYSTAL_BLOCK.get());
 
