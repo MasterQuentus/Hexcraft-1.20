@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:crimson_stone"
+    }
+  },
+  "pattern": [
+    "CC "
+  ],
+  "result": {
+    "item": "hexcraftmod:crimson_stone_pressure_plate"
+  },
+  "show_notification": true
+}

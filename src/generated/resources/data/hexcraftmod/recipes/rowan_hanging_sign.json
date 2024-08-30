@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "R": {
+      "item": "hexcraftmod:rowan_planks"
+    }
+  },
+  "pattern": [
+    "C C",
+    "RRR",
+    "RRR"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:rowan_hanging_sign"
+  },
+  "show_notification": true
+}

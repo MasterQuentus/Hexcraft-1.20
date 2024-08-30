@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "H": {
+      "item": "hexcraftmod:hell_bark_planks"
+    }
+  },
+  "pattern": [
+    "HH ",
+    "HH ",
+    "HH "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:hell_bark_door"
+  },
+  "show_notification": true
+}

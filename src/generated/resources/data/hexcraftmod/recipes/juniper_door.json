@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "hexcraftmod:juniper_planks"
+    }
+  },
+  "pattern": [
+    "JJ ",
+    "JJ ",
+    "JJ "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:juniper_door"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "hexcraftmod:block/hawthorn_door_bottom",
+    "top": "hexcraftmod:block/hawthorn_door_top"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "hexcraftmod:hawthorn_planks"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "HHH"
+  ],
+  "result": {
+    "count": 2,
+    "item": "hexcraftmod:hawthorn_trapdoor"
+  },
+  "show_notification": true
+}

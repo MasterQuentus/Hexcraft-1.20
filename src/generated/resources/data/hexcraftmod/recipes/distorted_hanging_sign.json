@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "D": {
+      "item": "hexcraftmod:distorted_planks"
+    }
+  },
+  "pattern": [
+    "C C",
+    "DDD",
+    "DDD"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:distorted_hanging_sign"
+  },
+  "show_notification": true
+}

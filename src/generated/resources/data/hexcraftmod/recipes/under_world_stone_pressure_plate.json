@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "U": {
+      "item": "hexcraftmod:under_world_stone"
+    }
+  },
+  "pattern": [
+    "UU "
+  ],
+  "result": {
+    "item": "hexcraftmod:under_world_stone_pressure_plate"
+  },
+  "show_notification": true
+}

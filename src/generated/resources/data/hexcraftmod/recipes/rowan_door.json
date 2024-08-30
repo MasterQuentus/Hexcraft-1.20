@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "hexcraftmod:rowan_planks"
+    }
+  },
+  "pattern": [
+    "RR ",
+    "RR ",
+    "RR "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:rowan_door"
+  },
+  "show_notification": true
+}

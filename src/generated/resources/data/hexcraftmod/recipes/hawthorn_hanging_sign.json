@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "H": {
+      "item": "hexcraftmod:hawthorn_planks"
+    }
+  },
+  "pattern": [
+    "C C",
+    "HHH",
+    "HHH"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:hawthorn_hanging_sign"
+  },
+  "show_notification": true
+}

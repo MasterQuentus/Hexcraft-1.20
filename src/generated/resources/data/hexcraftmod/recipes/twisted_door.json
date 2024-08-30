@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "hexcraftmod:twisted_planks"
+    }
+  },
+  "pattern": [
+    "TT ",
+    "TT ",
+    "TT "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:twisted_door"
+  },
+  "show_notification": true
+}

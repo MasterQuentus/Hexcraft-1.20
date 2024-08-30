@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:blood_oak_planks"
+    }
+  },
+  "pattern": [
+    "BB ",
+    "BB ",
+    "BB "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:blood_oak_door"
+  },
+  "show_notification": true
+}

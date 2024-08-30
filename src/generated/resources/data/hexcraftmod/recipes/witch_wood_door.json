@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "hexcraftmod:witch_wood_planks"
+    }
+  },
+  "pattern": [
+    "WW ",
+    "WW ",
+    "WW "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:witch_wood_door"
+  },
+  "show_notification": true
+}

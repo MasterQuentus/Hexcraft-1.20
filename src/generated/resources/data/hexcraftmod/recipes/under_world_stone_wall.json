@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "U": {
+      "item": "hexcraftmod:under_world_stone"
+    }
+  },
+  "pattern": [
+    "UUU",
+    "UUU"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:under_world_stone_wall"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:elder_planks"
+    }
+  },
+  "pattern": [
+    "EE ",
+    "EE ",
+    "EE "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:elder_door"
+  },
+  "show_notification": true
+}

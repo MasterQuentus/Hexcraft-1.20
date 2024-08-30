@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:under_world_stone"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:under_world_stone_button"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "hexcraftmod:distorted_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DDD",
+    " S "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:distorted_sign"
+  },
+  "show_notification": true
+}

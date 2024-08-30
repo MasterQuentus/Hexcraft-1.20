@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "E": {
+      "item": "hexcraftmod:elder_planks"
+    }
+  },
+  "pattern": [
+    "C C",
+    "EEE",
+    "EEE"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:elder_hanging_sign"
+  },
+  "show_notification": true
+}

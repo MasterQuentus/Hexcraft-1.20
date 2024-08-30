@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:cedar_planks"
+    }
+  },
+  "pattern": [
+    "CC ",
+    "CC ",
+    "CC "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:cedar_door"
+  },
+  "show_notification": true
+}

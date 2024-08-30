@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:ebony_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EEE",
+    " S "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:ebony_sign"
+  },
+  "show_notification": true
+}

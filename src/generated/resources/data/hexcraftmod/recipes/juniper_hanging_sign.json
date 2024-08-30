@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "J": {
+      "item": "hexcraftmod:juniper_planks"
+    }
+  },
+  "pattern": [
+    "C C",
+    "JJJ",
+    "JJJ"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:juniper_hanging_sign"
+  },
+  "show_notification": true
+}

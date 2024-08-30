@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "hexcraftmod:alder_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    " S "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:alder_sign"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "hexcraftmod:distorted_planks"
+    }
+  },
+  "pattern": [
+    "DD ",
+    "DD ",
+    "DD "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:distorted_door"
+  },
+  "show_notification": true
+}

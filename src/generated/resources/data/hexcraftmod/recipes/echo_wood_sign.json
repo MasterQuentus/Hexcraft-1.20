@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:echo_wood_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EEE",
+    " S "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:echo_wood_sign"
+  },
+  "show_notification": true
+}

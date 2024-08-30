@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "hexcraftmod:block/alder_door_bottom",
+    "top": "hexcraftmod:block/alder_door_top"
+  }
+}

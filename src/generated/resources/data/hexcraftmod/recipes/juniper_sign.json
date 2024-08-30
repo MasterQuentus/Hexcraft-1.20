@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "hexcraftmod:juniper_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "JJJ",
+    "JJJ",
+    " S "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:juniper_sign"
+  },
+  "show_notification": true
+}

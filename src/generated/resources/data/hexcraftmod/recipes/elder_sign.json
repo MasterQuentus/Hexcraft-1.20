@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:elder_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EEE",
+    " S "
+  ],
+  "result": {
+    "count": 3,
+    "item": "hexcraftmod:elder_sign"
+  },
+  "show_notification": true
+}

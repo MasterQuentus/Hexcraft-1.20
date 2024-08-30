@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "H": {
+      "item": "hexcraftmod:hell_bark_planks"
+    }
+  },
+  "pattern": [
+    "C C",
+    "HHH",
+    "HHH"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:hell_bark_hanging_sign"
+  },
+  "show_notification": true
+}

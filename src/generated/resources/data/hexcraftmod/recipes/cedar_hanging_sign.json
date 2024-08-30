@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:cedar_planks"
+    },
+    "I": {
+      "item": "minecraft:chain"
+    }
+  },
+  "pattern": [
+    "I I",
+    "CCC",
+    "CCC"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:cedar_hanging_sign"
+  },
+  "show_notification": true
+}
