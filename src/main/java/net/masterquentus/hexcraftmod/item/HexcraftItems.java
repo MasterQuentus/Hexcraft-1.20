@@ -2,6 +2,7 @@ package net.masterquentus.hexcraftmod.item;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
+import net.masterquentus.hexcraftmod.block.entity.boats.HexcraftBoatEntity;
 import net.masterquentus.hexcraftmod.fluid.HexcraftFluids;
 import net.masterquentus.hexcraftmod.item.custom.*;
 import net.masterquentus.hexcraftmod.util.HexcraftTags;
@@ -415,6 +416,201 @@ public class HexcraftItems {
 
     public static final RegistryObject<Item> BLOOD_BUCKET = ITEMS.register("blood_bucket",
             () -> new BucketItem(HexcraftFluids.SOURCE_BLOOD, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+
+    //Signs
+    public static final RegistryObject<Item> EBONY_SIGN = ITEMS.register("ebony_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.EBONY_SIGN.get(), HexcraftBlocks.EBONY_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> BLOOD_OAK_SIGN = ITEMS.register("blood_oak_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.BLOOD_OAK_SIGN.get(), HexcraftBlocks.BLOOD_OAK_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> HELL_BARK_SIGN = ITEMS.register("hell_bark_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.HELL_BARK_SIGN.get(), HexcraftBlocks.HELL_BARK_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> WHITE_OAK_SIGN = ITEMS.register("white_oak_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.WHITE_OAK_SIGN.get(), HexcraftBlocks.WHITE_OAK_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> ALDER_SIGN = ITEMS.register("alder_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.ALDER_SIGN.get(), HexcraftBlocks.ALDER_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> WITCH_HAZEL_SIGN = ITEMS.register("witch_hazel_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.WITCH_HAZEL_SIGN.get(), HexcraftBlocks.WITCH_WOOD_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> WILLOW_SIGN = ITEMS.register("willow_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.WILLOW_SIGN.get(), HexcraftBlocks.WILLOW_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> HAWTHORN_SIGN = ITEMS.register("hawthorn_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.HAWTHORN_SIGN.get(), HexcraftBlocks.HAWTHORN_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> CEDAR_SIGN = ITEMS.register("cedar_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.CEDAR_SIGN.get(), HexcraftBlocks.CEDAR_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> DISTORTED_SIGN = ITEMS.register("distorted_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.DISTORTED_SIGN.get(), HexcraftBlocks.DISTORTED_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> ELDER_SIGN = ITEMS.register("elder_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.ELDER_SIGN.get(), HexcraftBlocks.ELDER_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> JUNIPER_SIGN = ITEMS.register("juniper_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.JUNIPER_SIGN.get(), HexcraftBlocks.JUNIPER_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> ROWAN_SIGN = ITEMS.register("rowan_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.ROWAN_SIGN.get(), HexcraftBlocks.ROWAN_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> TWISTED_SIGN = ITEMS.register("twisted_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.TWISTED_SIGN.get(), HexcraftBlocks.TWISTED_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> WITCH_WOOD_SIGN = ITEMS.register("witch_wood_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.WITCH_WOOD_SIGN.get(), HexcraftBlocks.WITCH_WOOD_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> ECHO_WOOD_SIGN = ITEMS.register("echo_wood_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), HexcraftBlocks.ECHO_WOOD_SIGN.get(), HexcraftBlocks.ECHO_WOOD_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> EBONY_HANGING_SIGN = ITEMS.register("ebony_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.EBONY_HANGING_SIGN.get(), HexcraftBlocks.EBONY_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> BLOOD_OAK_HANGING_SIGN = ITEMS.register("blood_oak_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.BLOOD_OAK_HANGING_SIGN.get(), HexcraftBlocks.BLOOD_OAK_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> HELL_BARK_HANGING_SIGN = ITEMS.register("hell_bark_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.HELL_BARK_HANGING_SIGN.get(), HexcraftBlocks.HELL_BARK_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> WHITE_OAK_HANGING_SIGN = ITEMS.register("white_oak_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.WHITE_OAK_HANGING_SIGN.get(), HexcraftBlocks.WHITE_OAK_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> ALDER_HANGING_SIGN = ITEMS.register("alder_hanging_ign",
+            () ->  new HangingSignItem(HexcraftBlocks.ALDER_HANGING_SIGN.get(), HexcraftBlocks.ALDER_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> WITCH_HAZEL_HANGING_SIGN = ITEMS.register("witch_hazel_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.WITCH_HAZEL_HANGING_SIGN.get(), HexcraftBlocks.WITCH_HAZEL_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> WILLOW_HANGING_SIGN = ITEMS.register("willow_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.WILLOW_HANGING_SIGN.get(), HexcraftBlocks.WILLOW_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> HAWTHORN_HANGING_SIGN = ITEMS.register("hawthorn_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.HAWTHORN_HANGING_SIGN.get(), HexcraftBlocks.HAWTHORN_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> CEDAR_HANGING_SIGN = ITEMS.register("cedar_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.CEDAR_HANGING_SIGN.get(), HexcraftBlocks.CEDAR_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> DISTORTED_HANGING_SIGN = ITEMS.register("distorted_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.DISTORTED_HANGING_SIGN.get(), HexcraftBlocks.DISTORTED_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> ELDER_HANGING_SIGN = ITEMS.register("elder_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.ELDER_HANGING_SIGN.get(), HexcraftBlocks.ELDER_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> JUNIPER_HANGING_SIGN = ITEMS.register("juniper_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.JUNIPER_HANGING_SIGN.get(), HexcraftBlocks.JUNIPER_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> ROWAN_HANGING_SIGN = ITEMS.register("rowan_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.ROWAN_HANGING_SIGN.get(), HexcraftBlocks.ROWAN_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> TWISTED_HANGING_SIGN = ITEMS.register("twisted_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.TWISTED_HANGING_SIGN.get(), HexcraftBlocks.TWISTED_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> WITCH_WOOD_HANGING_SIGN = ITEMS.register("witch_wood_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.WITCH_WOOD_HANGING_SIGN.get(), HexcraftBlocks.WITCH_WOOD_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> ECHO_WOOD_HANGING_SIGN = ITEMS.register("echo_wood_hanging_sign",
+            () ->  new HangingSignItem(HexcraftBlocks.ECHO_WOOD_HANGING_SIGN.get(), HexcraftBlocks.ECHO_WOOD_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    //Boats
+    public static final RegistryObject<Item> EBONY_BOAT = ITEMS.register("ebony_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.EBONY, new Item.Properties()));
+    
+    public static final RegistryObject<Item> EBONY_CHEST_BOAT = ITEMS.register("ebony_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.EBONY, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOOD_OAK_BOAT = ITEMS.register("blood_oak_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.BLOOD_OAK, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOOD_OAK_CHEST_BOAT = ITEMS.register("blood_oak_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.BLOOD_OAK, new Item.Properties()));
+
+    public static final RegistryObject<Item> HELL_BARK_BOAT = ITEMS.register("hell_bark_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.HELL_BARK, new Item.Properties()));
+
+    public static final RegistryObject<Item> HELL_BARK_CHEST_BOAT = ITEMS.register("hell_bark_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.HELL_BARK, new Item.Properties()));
+
+    public static final RegistryObject<Item> WHITE_OAK_BOAT = ITEMS.register("white_oak_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.WHITE_OAK, new Item.Properties()));
+
+    public static final RegistryObject<Item> WHITE_OAK_CHEST_BOAT = ITEMS.register("white_oak_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.WHITE_OAK, new Item.Properties()));
+
+    public static final RegistryObject<Item> ALDER_BOAT = ITEMS.register("alder_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.ALDER, new Item.Properties()));
+
+    public static final RegistryObject<Item> ALDER_CHEST_BOAT = ITEMS.register("alder_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.ALDER, new Item.Properties()));
+
+    public static final RegistryObject<Item> WITCH_HAZEL_BOAT = ITEMS.register("witch_hazel_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.WITCH_HAZEL, new Item.Properties()));
+
+    public static final RegistryObject<Item> WITCH_HAZEL_CHEST_BOAT = ITEMS.register("witch_hazel_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.WITCH_HAZEL, new Item.Properties()));
+
+    public static final RegistryObject<Item> WILLOW_BOAT = ITEMS.register("willow_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.WILLOW, new Item.Properties()));
+
+    public static final RegistryObject<Item>WILLOW_CHEST_BOAT = ITEMS.register("willow_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.WILLOW, new Item.Properties()));
+
+    public static final RegistryObject<Item> HAWTHORN_BOAT = ITEMS.register("hawthorn_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.HAWTHORN, new Item.Properties()));
+
+    public static final RegistryObject<Item> HAWTHORN_CHEST_BOAT = ITEMS.register("hawthorn_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.HAWTHORN, new Item.Properties()));
+
+    public static final RegistryObject<Item> CEDAR_BOAT = ITEMS.register("cedar_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.CEDAR, new Item.Properties()));
+
+    public static final RegistryObject<Item> CEDAR_CHEST_BOAT = ITEMS.register("cedar_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.CEDAR, new Item.Properties()));
+
+    public static final RegistryObject<Item> DISTORTED_BOAT = ITEMS.register("distorted_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.DISTORTED, new Item.Properties()));
+
+    public static final RegistryObject<Item> DISTORTED_CHEST_BOAT = ITEMS.register("distorted_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.DISTORTED, new Item.Properties()));
+
+    public static final RegistryObject<Item> ELDER_BOAT = ITEMS.register("elder_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.ELDER, new Item.Properties()));
+
+    public static final RegistryObject<Item> ELDER_CHEST_BOAT = ITEMS.register("elder_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.ELDER, new Item.Properties()));
+
+    public static final RegistryObject<Item> JUNIPER_BOAT = ITEMS.register("juniper_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.JUNIPER, new Item.Properties()));
+
+    public static final RegistryObject<Item> JUNIPER_CHEST_BOAT = ITEMS.register("juniper_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.JUNIPER, new Item.Properties()));
+
+    public static final RegistryObject<Item> ROWAN_BOAT = ITEMS.register("rowan_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.ROWAN, new Item.Properties()));
+
+    public static final RegistryObject<Item> ROWAN_CHEST_BOAT = ITEMS.register("rowan_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.ROWAN, new Item.Properties()));
+
+    public static final RegistryObject<Item> TWISTED_BOAT = ITEMS.register("twisted_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.TWISTED, new Item.Properties()));
+
+    public static final RegistryObject<Item> TWISTED_CHEST_BOAT = ITEMS.register("twisted_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.TWISTED, new Item.Properties()));
+
+    public static final RegistryObject<Item> WITCH_WOOD_BOAT = ITEMS.register("witch_wood_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.WITCH_WOOD, new Item.Properties()));
+
+    public static final RegistryObject<Item> WITCH_WOOD_CHEST_BOAT = ITEMS.register("witch_wood_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.WITCH_WOOD, new Item.Properties()));
+
+    public static final RegistryObject<Item> ECHO_WOOD_BOAT = ITEMS.register("echo_wood_boat",
+            () -> new HexcraftBoatItem(false, HexcraftBoatEntity.Type.ECHO_WOOD, new Item.Properties()));
+
+    public static final RegistryObject<Item> ECHO_WOOD_CHEST_BOAT = ITEMS.register("echo_wood_chest_boat",
+            () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.ECHO_WOOD, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

@@ -359,6 +359,14 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropSelf(HexcraftBlocks.CRACKED_CHARSTONE.get());
 
+		this.dropSelf(HexcraftBlocks.PEARL_STONE_WALL.get());
+
+		this.dropSelf(HexcraftBlocks.CRIMSON_STONE_WALL.get());
+
+		this.dropSelf(HexcraftBlocks.UNDER_WORLD_STONE_WALL.get());
+
+		this.dropSelf(HexcraftBlocks.CHARSTONE_WALL.get());
+
 		this.dropSelf(HexcraftBlocks.PEARL_STONE_STAIRS.get());
 
 		this.dropSelf(HexcraftBlocks.PEARL_COBBLESTONE_STAIRS.get());
@@ -487,6 +495,14 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropSelf(HexcraftBlocks.ECHO_WOOD_SLAB.get());
 
+		this.dropSelf(HexcraftBlocks.PEARL_STONE_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.CRIMSON_STONE_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.UNDER_WORLD_STONE_BUTTON.get());
+
+		this.dropSelf(HexcraftBlocks.CHARSTONE_BUTTON.get());
+
 		this.dropSelf(HexcraftBlocks.EBONY_BUTTON.get());
 
 		this.dropSelf(HexcraftBlocks.BLOOD_OAK_BUTTON.get());
@@ -518,12 +534,6 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.dropSelf(HexcraftBlocks.WITCH_WOOD_BUTTON.get());
 
 		this.dropSelf(HexcraftBlocks.ECHO_WOOD_BUTTON.get());
-
-
-
-
-
-
 
 		this.dropSelf(HexcraftBlocks.EBONY_FENCE.get());
 
@@ -588,6 +598,94 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.dropSelf(HexcraftBlocks.WITCH_WOOD_FENCE_GATE.get());
 
 		this.dropSelf(HexcraftBlocks.ECHO_WOOD_FENCE_GATE.get());
+
+		this.add(HexcraftBlocks.EBONY_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.EBONY_DOOR.get()));
+
+		this.add(HexcraftBlocks.BLOOD_OAK_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.BLOOD_OAK_DOOR.get()));
+
+		this.add(HexcraftBlocks.HELL_BARK_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.HELL_BARK_DOOR.get()));
+
+		this.add(HexcraftBlocks.WHITE_OAK_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.WHITE_OAK_DOOR.get()));
+
+		this.add(HexcraftBlocks.ALDER_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.ALDER_DOOR.get()));
+
+		this.add(HexcraftBlocks.WITCH_HAZEL_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.WITCH_HAZEL_DOOR.get()));
+
+		this.add(HexcraftBlocks.WILLOW_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.WILLOW_DOOR.get()));
+
+		this.add(HexcraftBlocks.HAWTHORN_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.HAWTHORN_DOOR.get()));
+
+		this.add(HexcraftBlocks.CEDAR_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.CEDAR_DOOR.get()));
+
+		this.add(HexcraftBlocks.DISTORTED_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.DISTORTED_DOOR.get()));
+
+		this.add(HexcraftBlocks.ELDER_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.ELDER_DOOR.get()));
+
+		this.add(HexcraftBlocks.JUNIPER_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.JUNIPER_DOOR.get()));
+
+		this.add(HexcraftBlocks.ROWAN_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.ROWAN_DOOR.get()));
+
+		this.add(HexcraftBlocks.TWISTED_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.TWISTED_DOOR.get()));
+
+		this.add(HexcraftBlocks.WITCH_WOOD_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.WITCH_WOOD_DOOR.get()));
+
+		this.add(HexcraftBlocks.ECHO_WOOD_DOOR.get(),
+				block -> createDoorTable(HexcraftBlocks.ECHO_WOOD_DOOR.get()));
+		
+		this.dropSelf(HexcraftBlocks.EBONY_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.BLOOD_OAK_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.HELL_BARK_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.WHITE_OAK_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.ALDER_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_HAZEL_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.WILLOW_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.HAWTHORN_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.CEDAR_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.DISTORTED_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.ELDER_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.JUNIPER_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.ROWAN_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.TWISTED_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.WITCH_WOOD_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.ECHO_WOOD_TRAPDOOR.get());
+
+		this.dropSelf(HexcraftBlocks.PEARL_STONE_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.CRIMSON_STONE_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.UNDER_WORLD_STONE_PRESSURE_PLATE.get());
+
+		this.dropSelf(HexcraftBlocks.CHARSTONE_PRESSURE_PLATE.get());
 
 		this.dropSelf(HexcraftBlocks.EBONY_PRESSURE_PLATE.get());
 
@@ -892,6 +990,151 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.add(HexcraftBlocks.XERIFAE_FLOWER.get(), createCropDrops(HexcraftBlocks.XERIFAE_FLOWER.get(), HexcraftItems.XERIFAE.get(),
 				HexcraftItems.XERIFAE_SEEDS.get(), lootitemcondition$builder15));
+
+
+		this.add(HexcraftBlocks.EBONY_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.EBONY_SIGN.get()));
+		this.add(HexcraftBlocks.EBONY_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.EBONY_SIGN.get()));
+		this.add(HexcraftBlocks.EBONY_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.EBONY_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.EBONY_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.EBONY_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.BLOOD_OAK_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.BLOOD_OAK_SIGN.get()));
+		this.add(HexcraftBlocks.BLOOD_OAK_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.BLOOD_OAK_SIGN.get()));
+		this.add(HexcraftBlocks.BLOOD_OAK_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.BLOOD_OAK_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.BLOOD_OAK_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.BLOOD_OAK_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.HELL_BARK_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.HELL_BARK_SIGN.get()));
+		this.add(HexcraftBlocks.HELL_BARK_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.HELL_BARK_SIGN.get()));
+		this.add(HexcraftBlocks.HELL_BARK_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.HELL_BARK_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.HELL_BARK_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.HELL_BARK_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.WHITE_OAK_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WHITE_OAK_SIGN.get()));
+		this.add(HexcraftBlocks.WHITE_OAK_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WHITE_OAK_SIGN.get()));
+		this.add(HexcraftBlocks.WHITE_OAK_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WHITE_OAK_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.WHITE_OAK_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WHITE_OAK_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.ALDER_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ALDER_SIGN.get()));
+		this.add(HexcraftBlocks.ALDER_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ALDER_SIGN.get()));
+		this.add(HexcraftBlocks.ALDER_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ALDER_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.ALDER_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ALDER_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.WITCH_HAZEL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WITCH_HAZEL_SIGN.get()));
+		this.add(HexcraftBlocks.WITCH_HAZEL_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WITCH_HAZEL_SIGN.get()));
+		this.add(HexcraftBlocks.WITCH_HAZEL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WITCH_HAZEL_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.WITCH_HAZEL_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WITCH_HAZEL_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.WILLOW_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WILLOW_SIGN.get()));
+		this.add(HexcraftBlocks.WILLOW_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WILLOW_SIGN.get()));
+		this.add(HexcraftBlocks.WILLOW_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WILLOW_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.WILLOW_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WILLOW_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.HAWTHORN_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.HAWTHORN_SIGN.get()));
+		this.add(HexcraftBlocks.HAWTHORN_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.HAWTHORN_SIGN.get()));
+		this.add(HexcraftBlocks.HAWTHORN_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.HAWTHORN_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.HAWTHORN_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.HAWTHORN_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.CEDAR_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.CEDAR_SIGN.get()));
+		this.add(HexcraftBlocks.CEDAR_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.CEDAR_SIGN.get()));
+		this.add(HexcraftBlocks.CEDAR_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.CEDAR_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.CEDAR_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.CEDAR_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.DISTORTED_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.DISTORTED_SIGN.get()));
+		this.add(HexcraftBlocks.DISTORTED_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.DISTORTED_SIGN.get()));
+		this.add(HexcraftBlocks.DISTORTED_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.DISTORTED_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.DISTORTED_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.DISTORTED_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.ELDER_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ELDER_SIGN.get()));
+		this.add(HexcraftBlocks.ELDER_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ELDER_SIGN.get()));
+		this.add(HexcraftBlocks.ELDER_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ELDER_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.ELDER_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ELDER_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.JUNIPER_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.JUNIPER_SIGN.get()));
+		this.add(HexcraftBlocks.JUNIPER_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.JUNIPER_SIGN.get()));
+		this.add(HexcraftBlocks.JUNIPER_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.JUNIPER_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.JUNIPER_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.JUNIPER_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.ROWAN_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ROWAN_SIGN.get()));
+		this.add(HexcraftBlocks.ROWAN_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ROWAN_SIGN.get()));
+		this.add(HexcraftBlocks.ROWAN_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ROWAN_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.ROWAN_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ROWAN_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.TWISTED_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.TWISTED_SIGN.get()));
+		this.add(HexcraftBlocks.TWISTED_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.TWISTED_SIGN.get()));
+		this.add(HexcraftBlocks.TWISTED_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.TWISTED_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.TWISTED_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.TWISTED_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.WITCH_WOOD_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WITCH_WOOD_SIGN.get()));
+		this.add(HexcraftBlocks.WITCH_WOOD_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WITCH_WOOD_SIGN.get()));
+		this.add(HexcraftBlocks.WITCH_WOOD_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WITCH_WOOD_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.WITCH_WOOD_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.WITCH_WOOD_HANGING_SIGN.get()));
+
+		this.add(HexcraftBlocks.ECHO_WOOD_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ECHO_WOOD_SIGN.get()));
+		this.add(HexcraftBlocks.ECHO_WOOD_WALL_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ECHO_WOOD_SIGN.get()));
+		this.add(HexcraftBlocks.ECHO_WOOD_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ECHO_WOOD_HANGING_SIGN.get()));
+		this.add(HexcraftBlocks.ECHO_WOOD_WALL_HANGING_SIGN.get(), block ->
+				createSingleItemTable(HexcraftItems.ECHO_WOOD_HANGING_SIGN.get()));
 
 	}
 

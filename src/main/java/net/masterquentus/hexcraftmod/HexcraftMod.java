@@ -2,13 +2,17 @@ package net.masterquentus.hexcraftmod;
 
 import java.util.Random;
 
-import net.masterquentus.hexcraftmod.entity.HexcraftEntityTypes;
+import net.masterquentus.hexcraftmod.block.entity.client.HexcraftBoatRenderer;
+import net.masterquentus.hexcraftmod.entity.custom.HexcraftEntities;
 import net.masterquentus.hexcraftmod.fluid.HexcraftFluidTypes;
 import net.masterquentus.hexcraftmod.fluid.HexcraftFluids;
+import net.masterquentus.hexcraftmod.util.HexcraftWoodTypes;
 import net.masterquentus.hexcraftmod.worldgen.biome.HexcraftTerraBlenderAPI;
 import net.masterquentus.hexcraftmod.worldgen.biome.suface.HexcraftSurfaceRules;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,7 +33,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -66,7 +69,7 @@ public class HexcraftMod {
 		HexcraftRecipes.register(modEventBus);
 		HexcraftRecipeTypes.register(modEventBus);
 		HexcraftLootModifier.register(modEventBus);
-		HexcraftEntityTypes.register(modEventBus);
+		HexcraftEntities.register(modEventBus);
 		HexcraftTerraBlenderAPI.registerRegions();
 		HexcraftFluidTypes.register(modEventBus);
 		HexcraftFluids.register(modEventBus);
@@ -117,9 +120,31 @@ public class HexcraftMod {
 	public static class ClientModEvents {
 		@SubscribeEvent
 		public static void onClientSetup(FMLClientSetupEvent event) {
-			MenuScreens.register(HexcraftMenuTypes.WITCHES_OVEN_MENU.get(), WitchesOvenScreen::new);
-			ItemBlockRenderTypes.setRenderLayer(HexcraftFluids.SOURCE_BLOOD.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(HexcraftFluids.FLOWING_BLOOD.get(), RenderType.translucent());
+			event.enqueueWork(() -> {
+				Sheets.addWoodType(HexcraftWoodTypes.EBONY);
+				Sheets.addWoodType(HexcraftWoodTypes.BLOOD_OAK);
+				Sheets.addWoodType(HexcraftWoodTypes.HELL_BARK);
+				Sheets.addWoodType(HexcraftWoodTypes.WHITE_OAK);
+				Sheets.addWoodType(HexcraftWoodTypes.ALDER);
+				Sheets.addWoodType(HexcraftWoodTypes.WITCH_HAZEL);
+				Sheets.addWoodType(HexcraftWoodTypes.WILLOW);
+				Sheets.addWoodType(HexcraftWoodTypes.HAWTHORN);
+				Sheets.addWoodType(HexcraftWoodTypes.CEDAR);
+				Sheets.addWoodType(HexcraftWoodTypes.DISTORTED);
+				Sheets.addWoodType(HexcraftWoodTypes.ELDER);
+				Sheets.addWoodType(HexcraftWoodTypes.JUNIPER);
+				Sheets.addWoodType(HexcraftWoodTypes.ROWAN);
+				Sheets.addWoodType(HexcraftWoodTypes.TWISTED);
+				Sheets.addWoodType(HexcraftWoodTypes.WITCH_WOOD);
+				Sheets.addWoodType(HexcraftWoodTypes.ECHO_WOOD);
+				MenuScreens.register(HexcraftMenuTypes.WITCHES_OVEN_MENU.get(), WitchesOvenScreen::new);
+				ItemBlockRenderTypes.setRenderLayer(HexcraftFluids.SOURCE_BLOOD.get(), RenderType.translucent());
+				ItemBlockRenderTypes.setRenderLayer(HexcraftFluids.FLOWING_BLOOD.get(), RenderType.translucent());
+
+
+				EntityRenderers.register(HexcraftEntities.HEXCRAFT_BOAT.get(), pContext -> new HexcraftBoatRenderer(pContext, false));
+				EntityRenderers.register(HexcraftEntities.HEXCRAFT_CHEST_BOAT.get(), pContext -> new HexcraftBoatRenderer(pContext, true));
+			});
 		}
 	}
 }

@@ -6,8 +6,13 @@ import java.util.function.ToIntFunction;
 import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.custom.*;
 import net.masterquentus.hexcraftmod.block.custom.plants.*;
+import net.masterquentus.hexcraftmod.block.custom.signs.HexcraftStadingSignBlock;
+import net.masterquentus.hexcraftmod.block.custom.signs.HexcraftWallHangingSignBlock;
+import net.masterquentus.hexcraftmod.block.custom.signs.HexcraftWallSignBlock;
+import net.masterquentus.hexcraftmod.block.custom.signs.HexcraftlHangingSignBlock;
 import net.masterquentus.hexcraftmod.fluid.HexcraftFluids;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
+import net.masterquentus.hexcraftmod.util.HexcraftWoodTypes;
 import net.masterquentus.hexcraftmod.worldgen.tree.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -24,6 +29,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -808,8 +815,6 @@ public class HexcraftBlocks {
 			() -> new HexcraftFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(2.0F)
 			));
 
-
-
 	//Planks
 	public static final RegistryObject<Block> EBONY_PLANKS = registerBlock("ebony_planks",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
@@ -1099,6 +1104,199 @@ public class HexcraftBlocks {
 			});
 
 
+	//Signs
+	public static final RegistryObject<Block> EBONY_SIGN = BLOCKS.register("ebony_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.EBONY));
+
+	public static final RegistryObject<Block> BLOOD_OAK_SIGN = BLOCKS.register("blood_oak_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.BLOOD_OAK));
+
+	public static final RegistryObject<Block> HELL_BARK_SIGN = BLOCKS.register("hell_bark_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.HELL_BARK));
+
+	public static final RegistryObject<Block> WHITE_OAK_SIGN = BLOCKS.register("white_oak_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.WHITE_OAK));
+
+	public static final RegistryObject<Block> ALDER_SIGN = BLOCKS.register("alder_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.ALDER));
+
+	public static final RegistryObject<Block> WITCH_HAZEL_SIGN = BLOCKS.register("witch_hazel_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.WITCH_HAZEL));
+
+	public static final RegistryObject<Block> WILLOW_SIGN = BLOCKS.register("willow_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.WILLOW));
+
+	public static final RegistryObject<Block> HAWTHORN_SIGN = BLOCKS.register("hawthorn_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.HAWTHORN));
+
+	public static final RegistryObject<Block> CEDAR_SIGN = BLOCKS.register("cedar_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.CEDAR));
+
+	public static final RegistryObject<Block> DISTORTED_SIGN = BLOCKS.register("distorted_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.DISTORTED));
+
+	public static final RegistryObject<Block> ELDER_SIGN = BLOCKS.register("elder_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.ELDER));
+
+	public static final RegistryObject<Block> JUNIPER_SIGN = BLOCKS.register("juniper_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.JUNIPER));
+
+	public static final RegistryObject<Block> ROWAN_SIGN = BLOCKS.register("rowan_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.ROWAN));
+
+	public static final RegistryObject<Block> TWISTED_SIGN = BLOCKS.register("twisted_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.TWISTED));
+
+	public static final RegistryObject<Block> WITCH_WOOD_SIGN = BLOCKS.register("witch_wood_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.WITCH_WOOD));
+
+	public static final RegistryObject<Block> ECHO_WOOD_SIGN = BLOCKS.register("echo_sign",
+			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.ECHO_WOOD));
+
+	public static final RegistryObject<Block> EBONY_WALL_SIGN = BLOCKS.register("ebony_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.EBONY));
+
+	public static final RegistryObject<Block> BLOOD_OAK_WALL_SIGN = BLOCKS.register("blood_oak_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.BLOOD_OAK));
+
+	public static final RegistryObject<Block> HELL_BARK_WALL_SIGN = BLOCKS.register("hell_bark_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.HELL_BARK));
+
+	public static final RegistryObject<Block> WHITE_OAK_WALL_SIGN = BLOCKS.register("white_oak_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.WHITE_OAK));
+
+	public static final RegistryObject<Block> ALDER_WALL_SIGN = BLOCKS.register("alder_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.ALDER));
+
+	public static final RegistryObject<Block> WITCH_HAZEL_WALL_SIGN = BLOCKS.register("witch_hazel_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.WITCH_HAZEL));
+
+	public static final RegistryObject<Block> WILLOW_WALL_SIGN = BLOCKS.register("willow_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.WILLOW));
+
+	public static final RegistryObject<Block> HAWTHORN_WALL_SIGN = BLOCKS.register("hawthorn_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.HAWTHORN));
+
+	public static final RegistryObject<Block> CEDAR_WALL_SIGN = BLOCKS.register("cedar_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.CEDAR));
+
+	public static final RegistryObject<Block> DISTORTED_WALL_SIGN = BLOCKS.register("distorted_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.DISTORTED));
+
+	public static final RegistryObject<Block> ELDER_WALL_SIGN = BLOCKS.register("elder_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.ELDER));
+
+	public static final RegistryObject<Block> JUNIPER_WALL_SIGN = BLOCKS.register("juniper_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.JUNIPER));
+
+	public static final RegistryObject<Block> ROWAN_WALL_SIGN = BLOCKS.register("rowan_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.ROWAN));
+
+	public static final RegistryObject<Block> TWISTED_WALL_SIGN = BLOCKS.register("twisted_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.TWISTED));
+
+	public static final RegistryObject<Block> WITCH_WOOD_WALL_SIGN = BLOCKS.register("witch_wood_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.WITCH_WOOD));
+
+	public static final RegistryObject<Block> ECHO_WOOD_WALL_SIGN = BLOCKS.register("echo_wall_sign",
+			() -> new HexcraftWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), HexcraftWoodTypes.ECHO_WOOD));
+
+	public static final RegistryObject<Block> EBONY_HANGING_SIGN = BLOCKS.register("ebony_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.EBONY));
+
+	public static final RegistryObject<Block> BLOOD_OAK_HANGING_SIGN = BLOCKS.register("blood_oak_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.BLOOD_OAK));
+
+	public static final RegistryObject<Block> HELL_BARK_HANGING_SIGN = BLOCKS.register("hell_bark_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.HELL_BARK));
+
+	public static final RegistryObject<Block> WHITE_OAK_HANGING_SIGN = BLOCKS.register("white_oak_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.WHITE_OAK));
+
+	public static final RegistryObject<Block> ALDER_HANGING_SIGN = BLOCKS.register("alder_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.ALDER));
+
+	public static final RegistryObject<Block> WITCH_HAZEL_HANGING_SIGN = BLOCKS.register("witch_hazel_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.WITCH_HAZEL));
+
+	public static final RegistryObject<Block> WILLOW_HANGING_SIGN = BLOCKS.register("willow_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.WILLOW));
+
+	public static final RegistryObject<Block> HAWTHORN_HANGING_SIGN = BLOCKS.register("hawthorn_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.HAWTHORN));
+
+	public static final RegistryObject<Block> CEDAR_HANGING_SIGN = BLOCKS.register("cedar_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.CEDAR));
+
+	public static final RegistryObject<Block> DISTORTED_HANGING_SIGN = BLOCKS.register("distorted_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.DISTORTED));
+
+	public static final RegistryObject<Block> ELDER_HANGING_SIGN = BLOCKS.register("elder_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.ELDER));
+
+	public static final RegistryObject<Block> JUNIPER_HANGING_SIGN = BLOCKS.register("juniper_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.JUNIPER));
+
+	public static final RegistryObject<Block> ROWAN_HANGING_SIGN = BLOCKS.register("rowan_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.ROWAN));
+
+	public static final RegistryObject<Block> TWISTED_HANGING_SIGN = BLOCKS.register("twisted_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.TWISTED));
+
+	public static final RegistryObject<Block> WITCH_WOOD_HANGING_SIGN = BLOCKS.register("witch_wood_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.WITCH_WOOD));
+
+	public static final RegistryObject<Block> ECHO_WOOD_HANGING_SIGN = BLOCKS.register("echo_hanging_sign",
+			() -> new HexcraftlHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), HexcraftWoodTypes.ECHO_WOOD));
+
+	public static final RegistryObject<Block> EBONY_WALL_HANGING_SIGN = BLOCKS.register("ebony_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.EBONY));
+
+	public static final RegistryObject<Block> BLOOD_OAK_WALL_HANGING_SIGN = BLOCKS.register("blood_oak_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.BLOOD_OAK));
+
+	public static final RegistryObject<Block> HELL_BARK_WALL_HANGING_SIGN = BLOCKS.register("hell_bark_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.HELL_BARK));
+
+	public static final RegistryObject<Block> WHITE_OAK_WALL_HANGING_SIGN = BLOCKS.register("white_oak_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.WHITE_OAK));
+
+	public static final RegistryObject<Block> ALDER_WALL_HANGING_SIGN = BLOCKS.register("alder_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.ALDER));
+
+	public static final RegistryObject<Block> WITCH_HAZEL_WALL_HANGING_SIGN = BLOCKS.register("witch_hazel_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.WITCH_HAZEL));
+
+	public static final RegistryObject<Block> WILLOW_WALL_HANGING_SIGN = BLOCKS.register("willow_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.WILLOW));
+
+	public static final RegistryObject<Block> HAWTHORN_WALL_HANGING_SIGN = BLOCKS.register("hawthorn_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.HAWTHORN));
+
+	public static final RegistryObject<Block> CEDAR_WALL_HANGING_SIGN = BLOCKS.register("cedar_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.CEDAR));
+
+	public static final RegistryObject<Block> DISTORTED_WALL_HANGING_SIGN = BLOCKS.register("distorted_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.DISTORTED));
+
+	public static final RegistryObject<Block> ELDER_WALL_HANGING_SIGN = BLOCKS.register("elder_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.ELDER));
+
+	public static final RegistryObject<Block> JUNIPER_WALL_HANGING_SIGN = BLOCKS.register("juniper_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.JUNIPER));
+
+	public static final RegistryObject<Block> ROWAN_WALL_HANGING_SIGN = BLOCKS.register("rowan_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.ROWAN));
+
+	public static final RegistryObject<Block> TWISTED_WALL_HANGING_SIGN = BLOCKS.register("twisted_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.TWISTED));
+
+	public static final RegistryObject<Block> WITCH_WOOD_WALL_HANGING_SIGN = BLOCKS.register("witch_wood_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.WITCH_WOOD));
+
+	public static final RegistryObject<Block> ECHO_WOOD_WALL_HANGING_SIGN = BLOCKS.register("echo_wall_hanging_sign",
+			() -> new HexcraftWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), HexcraftWoodTypes.ECHO_WOOD));
+
 	//Bookshelves
 	public static final RegistryObject<Block> EBONY_BOOKSHELF = registerBlock("ebony_bookshelf",
 			() -> new HexcraftBookshelf(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
@@ -1163,6 +1361,19 @@ public class HexcraftBlocks {
 	public static final RegistryObject<Block> ECHO_WOOD_BOOKSHELF = registerBlock("echo_wood_bookshelf",
 			() -> new HexcraftBookshelf(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
 					.strength(1.5F)));
+
+	//Walls
+	public static final RegistryObject<Block> PEARL_STONE_WALL = registerBlock("pearl_stone_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).forceSolidOn().requiresCorrectToolForDrops()));
+
+	public static final RegistryObject<Block> CRIMSON_STONE_WALL = registerBlock("crimson_stone_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).forceSolidOn().requiresCorrectToolForDrops()));
+
+	public static final RegistryObject<Block> UNDER_WORLD_STONE_WALL = registerBlock("under_world_stone_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).forceSolidOn().requiresCorrectToolForDrops()));
+
+	public static final RegistryObject<Block> CHARSTONE_WALL = registerBlock("charstone_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).forceSolidOn().requiresCorrectToolForDrops()));
 
 	//Stairs
 	public static final RegistryObject<Block> PEARL_STONE_STAIRS = registerBlock("pearl_stone_stairs",
@@ -1294,133 +1505,201 @@ public class HexcraftBlocks {
 			));
 
 	//Pressure Plates
+	public static final RegistryObject<Block> PEARL_STONE_PRESSURE_PLATE = registerBlock("pearl_stone_pressure_plate",
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.STONE).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM)
+					.requiresCorrectToolForDrops().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY), BlockSetType.STONE));
+
+	public static final RegistryObject<Block> CRIMSON_STONE_PRESSURE_PLATE = registerBlock("crimson_stone_pressure_plate",
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.STONE).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM)
+					.requiresCorrectToolForDrops().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY), BlockSetType.STONE));
+
+	public static final RegistryObject<Block> UNDER_WORLD_STONE_PRESSURE_PLATE = registerBlock("under_world_stone_pressure_plate",
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.STONE).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM)
+					.requiresCorrectToolForDrops().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY), BlockSetType.STONE));
+
+	public static final RegistryObject<Block> CHARSTONE_PRESSURE_PLATE = registerBlock("charstone_pressure_plate",
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.STONE).forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM)
+					.requiresCorrectToolForDrops().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY), BlockSetType.STONE));
+
 	public static final RegistryObject<Block> EBONY_PRESSURE_PLATE = registerBlock("ebony_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> BLOOD_OAK_PRESSURE_PLATE = registerBlock("blood_oak_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> HELL_BARK_PRESSURE_PLATE = registerBlock("hell_bark_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.CRIMSON_PRESSURE_PLATE), BlockSetType.CRIMSON
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> WHITE_OAK_PRESSURE_PLATE = registerBlock("white_oak_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> ALDER_PRESSURE_PLATE = registerBlock("alder_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> WITCH_HAZEL_PRESSURE_PLATE = registerBlock("witch_hazel_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> WILLOW_PRESSURE_PLATE = registerBlock("willow_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> HAWTHORN_PRESSURE_PLATE = registerBlock("hawthorn_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> CEDAR_PRESSURE_PLATE = registerBlock("cedar_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> DISTORTED_PRESSURE_PLATE = registerBlock("distorted_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> ELDER_PRESSURE_PLATE = registerBlock("elder_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> JUNIPER_PRESSURE_PLATE = registerBlock("juniper_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> ROWAN_PRESSURE_PLATE = registerBlock("rowan_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> TWISTED_PRESSURE_PLATE = registerBlock("twisted_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> WITCH_WOOD_PRESSURE_PLATE = registerBlock("witch_wood_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	public static final RegistryObject<Block> ECHO_WOOD_PRESSURE_PLATE = registerBlock("echo_wood_pressure_plate",
-			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK
+			() -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)
+					.mapColor(MapColor.WOOD).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK
 			));
 
 	//Buttons
+	public static final RegistryObject<Block> PEARL_STONE_BUTTON = registerBlock("pearl_stone_button",
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.STONE, 20, false
+			));
+
+	public static final RegistryObject<Block> CRIMSON_STONE_BUTTON = registerBlock("crimson_stone_button",
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.STONE, 20, false
+			));
+
+	public static final RegistryObject<Block> UNDER_WORLD_STONE_BUTTON = registerBlock("under_world_stone_button",
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.STONE, 20, false
+			));
+
+	public static final RegistryObject<Block> CHARSTONE_BUTTON = registerBlock("charstone_button",
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.STONE, 20, false
+			));
+
 	public static final RegistryObject<Block> EBONY_BUTTON = registerBlock("ebony_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> BLOOD_OAK_BUTTON = registerBlock("blood_oak_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> HELL_BARK_BUTTON = registerBlock("hell_bark_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> WHITE_OAK_BUTTON = registerBlock("white_oak_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> ALDER_BUTTON = registerBlock("alder_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> WITCH_HAZEL_BUTTON = registerBlock("witch_hazel_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> WILLOW_BUTTON = registerBlock("willow_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> HAWTHORN_BUTTON = registerBlock("hawthorn_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> CEDAR_BUTTON = registerBlock("cedar_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> DISTORTED_BUTTON = registerBlock("distorted_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> ELDER_BUTTON = registerBlock("elder_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> JUNIPER_BUTTON = registerBlock("juniper_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> ROWAN_BUTTON = registerBlock("rowan_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> TWISTED_BUTTON = registerBlock("twisted_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> WITCH_WOOD_BUTTON = registerBlock("witch_wood_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	public static final RegistryObject<Block> ECHO_WOOD_BUTTON = registerBlock("echo_wood_button",
-			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true
+			() -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission().strength(0.5F)
+					.pushReaction(PushReaction.DESTROY), BlockSetType.OAK, 10, true
 			));
 
 	//Fence
@@ -1555,8 +1834,135 @@ public class HexcraftBlocks {
 			));
 
 
+	//Doors
+	public static final RegistryObject<Block> EBONY_DOOR = registerBlock("ebony_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
 
+	public static final RegistryObject<Block> BLOOD_OAK_DOOR = registerBlock("blood_oak_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
 
+	public static final RegistryObject<Block> HELL_BARK_DOOR = registerBlock("hell_bark_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> WHITE_OAK_DOOR = registerBlock("white_oak_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> ALDER_DOOR = registerBlock("alder_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> WITCH_HAZEL_DOOR = registerBlock("witch_hazel_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> WILLOW_DOOR = registerBlock("willow_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> HAWTHORN_DOOR = registerBlock("hawthorn_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> CEDAR_DOOR = registerBlock("cedar_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> DISTORTED_DOOR = registerBlock("distorted_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> ELDER_DOOR = registerBlock("elder_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> JUNIPER_DOOR = registerBlock("juniper_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> ROWAN_DOOR = registerBlock("rowan_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> TWISTED_DOOR = registerBlock("twisted_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> WITCH_WOOD_DOOR = registerBlock("witch_wood_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> ECHO_WOOD_DOOR = registerBlock("echo_wood_door",
+			() -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK
+			));
+
+	//Trapdoor
+	public static final RegistryObject<Block> EBONY_TRAPDOOR = registerBlock("ebony_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> BLOOD_OAK_TRAPDOOR = registerBlock("blood_oak_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> HELL_BARK_TRAPDOOR = registerBlock("hell_bark_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> WHITE_OAK_TRAPDOOR = registerBlock("white_oak_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> ALDER_TRAPDOOR = registerBlock("alder_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> WITCH_HAZEL_TRAPDOOR = registerBlock("witch_hazel_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> WILLOW_TRAPDOOR = registerBlock("willow_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> HAWTHORN_TRAPDOOR = registerBlock("hawthorn_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> CEDAR_TRAPDOOR = registerBlock("cedar_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> DISTORTED_TRAPDOOR = registerBlock("distorted_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> ELDER_TRAPDOOR = registerBlock("elder_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> JUNIPER_TRAPDOOR = registerBlock("juniper_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> ROWAN_TRAPDOOR = registerBlock("rowan_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> TWISTED_TRAPDOOR = registerBlock("twisted_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> WITCH_WOOD_TRAPDOOR = registerBlock("witch_wood_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
+
+	public static final RegistryObject<Block> ECHO_WOOD_TRAPDOOR = registerBlock("echo_wood_trapdoor",
+			() -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK
+			));
 
 	public static final RegistryObject <Block> AMETHYST_CHIMES = registerBlock("amethyst_chimes",
 			() -> new AmethysChimesBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)

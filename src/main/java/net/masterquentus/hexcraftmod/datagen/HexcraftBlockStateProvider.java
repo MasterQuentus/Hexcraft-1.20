@@ -394,6 +394,7 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         saplingBlock(HexcraftBlocks.ECHO_WOOD_SAPLING);
 
 
+
         slabBlock(((SlabBlock) HexcraftBlocks.EBONY_SLAB.get()), blockTexture(HexcraftBlocks.EBONY_PLANKS.get()), blockTexture(HexcraftBlocks.EBONY_PLANKS.get()));
         slabBlock(((SlabBlock) HexcraftBlocks.BLOOD_OAK_SLAB.get()), blockTexture(HexcraftBlocks.BLOOD_OAK_PLANKS.get()), blockTexture(HexcraftBlocks.BLOOD_OAK_PLANKS.get()));
         slabBlock(((SlabBlock) HexcraftBlocks.HELL_BARK_SLAB.get()), blockTexture(HexcraftBlocks.HELL_BARK_PLANKS.get()), blockTexture(HexcraftBlocks.HELL_BARK_PLANKS.get()));
@@ -410,6 +411,10 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         slabBlock(((SlabBlock) HexcraftBlocks.TWISTED_SLAB.get()), blockTexture(HexcraftBlocks.TWISTED_PLANKS.get()), blockTexture(HexcraftBlocks.TWISTED_PLANKS.get()));
         slabBlock(((SlabBlock) HexcraftBlocks.WITCH_WOOD_SLAB.get()), blockTexture(HexcraftBlocks.WITCH_WOOD_PLANKS.get()), blockTexture(HexcraftBlocks.WITCH_WOOD_PLANKS.get()));
         slabBlock(((SlabBlock) HexcraftBlocks.ECHO_WOOD_SLAB.get()), blockTexture(HexcraftBlocks.ECHO_WOOD_PLANKS.get()), blockTexture(HexcraftBlocks.ECHO_WOOD_PLANKS.get()));
+        wallBlock((WallBlock) HexcraftBlocks.PEARL_STONE_WALL.get(), blockTexture(HexcraftBlocks.PEARL_STONE.get()));
+        wallBlock((WallBlock) HexcraftBlocks.CRIMSON_STONE_WALL.get(), blockTexture(HexcraftBlocks.CRIMSON_STONE.get()));
+        wallBlock((WallBlock) HexcraftBlocks.UNDER_WORLD_STONE_WALL.get(), blockTexture(HexcraftBlocks.UNDER_WORLD_STONE.get()));
+        wallBlock((WallBlock) HexcraftBlocks.CHARSTONE_WALL.get(), blockTexture(HexcraftBlocks.CHARSTONE.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.EBONY_STAIRS.get()), blockTexture(HexcraftBlocks.EBONY_PLANKS.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.BLOOD_OAK_STAIRS.get()), blockTexture(HexcraftBlocks.BLOOD_OAK_PLANKS.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.HELL_BARK_STAIRS.get()), blockTexture(HexcraftBlocks.HELL_BARK_PLANKS.get()));
@@ -426,6 +431,10 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         stairsBlock(((StairBlock) HexcraftBlocks.TWISTED_STAIRS.get()), blockTexture(HexcraftBlocks.TWISTED_PLANKS.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.WITCH_WOOD_STAIRS.get()), blockTexture(HexcraftBlocks.WITCH_WOOD_PLANKS.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.ECHO_WOOD_STAIRS.get()), blockTexture(HexcraftBlocks.ECHO_WOOD_PLANKS.get()));
+        buttonBlock((ButtonBlock) HexcraftBlocks.PEARL_STONE_BUTTON.get(), blockTexture(HexcraftBlocks.PEARL_STONE.get()));
+        buttonBlock((ButtonBlock) HexcraftBlocks.CRIMSON_STONE_BUTTON.get(), blockTexture(HexcraftBlocks.CRIMSON_STONE.get()));
+        buttonBlock((ButtonBlock) HexcraftBlocks.UNDER_WORLD_STONE_BUTTON.get(), blockTexture(HexcraftBlocks.UNDER_WORLD_STONE.get()));
+        buttonBlock((ButtonBlock) HexcraftBlocks.CHARSTONE_BUTTON.get(), blockTexture(HexcraftBlocks.CHARSTONE.get()));
         buttonBlock((ButtonBlock) HexcraftBlocks.EBONY_BUTTON.get(), blockTexture(HexcraftBlocks.EBONY_PLANKS.get()));
         buttonBlock((ButtonBlock) HexcraftBlocks.BLOOD_OAK_BUTTON.get(), blockTexture(HexcraftBlocks.BLOOD_OAK_PLANKS.get()));
         buttonBlock((ButtonBlock) HexcraftBlocks.HELL_BARK_BUTTON.get(), blockTexture(HexcraftBlocks.HELL_BARK_PLANKS.get()));
@@ -442,6 +451,10 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         buttonBlock((ButtonBlock) HexcraftBlocks.TWISTED_BUTTON.get(), blockTexture(HexcraftBlocks.TWISTED_PLANKS.get()));
         buttonBlock((ButtonBlock) HexcraftBlocks.WITCH_WOOD_BUTTON.get(), blockTexture(HexcraftBlocks.WITCH_WOOD_PLANKS.get()));
         buttonBlock((ButtonBlock) HexcraftBlocks.ECHO_WOOD_BUTTON.get(), blockTexture(HexcraftBlocks.ECHO_WOOD_PLANKS.get()));
+        pressurePlateBlock((PressurePlateBlock) HexcraftBlocks.PEARL_STONE_PRESSURE_PLATE.get(), blockTexture(HexcraftBlocks.PEARL_STONE.get()));
+        pressurePlateBlock((PressurePlateBlock) HexcraftBlocks.CRIMSON_STONE_PRESSURE_PLATE.get(), blockTexture(HexcraftBlocks.CRIMSON_STONE.get()));
+        pressurePlateBlock((PressurePlateBlock) HexcraftBlocks.UNDER_WORLD_STONE_PRESSURE_PLATE.get(), blockTexture(HexcraftBlocks.UNDER_WORLD_STONE.get()));
+        pressurePlateBlock((PressurePlateBlock) HexcraftBlocks.CHARSTONE_PRESSURE_PLATE.get(), blockTexture(HexcraftBlocks.CHARSTONE.get()));
         pressurePlateBlock((PressurePlateBlock) HexcraftBlocks.EBONY_PRESSURE_PLATE.get(), blockTexture(HexcraftBlocks.EBONY_PLANKS.get()));
         pressurePlateBlock((PressurePlateBlock) HexcraftBlocks.BLOOD_OAK_PRESSURE_PLATE.get(), blockTexture(HexcraftBlocks.BLOOD_OAK_PLANKS.get()));
         pressurePlateBlock((PressurePlateBlock) HexcraftBlocks.HELL_BARK_PRESSURE_PLATE.get(), blockTexture(HexcraftBlocks.HELL_BARK_PLANKS.get()));
@@ -490,6 +503,39 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         fenceGateBlock((FenceGateBlock) HexcraftBlocks.TWISTED_FENCE_GATE.get(), blockTexture(HexcraftBlocks.TWISTED_PLANKS.get()));
         fenceGateBlock((FenceGateBlock) HexcraftBlocks.WITCH_WOOD_FENCE_GATE.get(), blockTexture(HexcraftBlocks.WITCH_WOOD_PLANKS.get()));
         fenceGateBlock((FenceGateBlock) HexcraftBlocks.ECHO_WOOD_FENCE_GATE.get(), blockTexture(HexcraftBlocks.ECHO_WOOD_PLANKS.get()));
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.EBONY_DOOR.get(), modLoc("block/ebony_door_bottom"), modLoc("block/ebony_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.BLOOD_OAK_DOOR.get(), modLoc("block/blood_oak_door_bottom"), modLoc("block/blood_oak_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.HELL_BARK_DOOR.get(), modLoc("block/hell_bark_door_bottom"), modLoc("block/hell_bark_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.WHITE_OAK_DOOR.get(), modLoc("block/white_oak_door_bottom"), modLoc("block/white_oak_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.ALDER_DOOR.get(), modLoc("block/alder_door_bottom"), modLoc("block/alder_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.WITCH_HAZEL_DOOR.get(), modLoc("block/witch_hazel_door_bottom"), modLoc("block/witch_hazel_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.WILLOW_DOOR.get(), modLoc("block/willow_door_bottom"), modLoc("block/willow_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.HAWTHORN_DOOR.get(), modLoc("block/hawthorn_door_bottom"), modLoc("block/hawthorn_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.CEDAR_DOOR.get(), modLoc("block/cedar_door_bottom"), modLoc("block/cedar_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.DISTORTED_DOOR.get(), modLoc("block/distorted_door_bottom"), modLoc("block/distorted_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.ELDER_DOOR.get(), modLoc("block/elder_door_bottom"), modLoc("block/elder_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.JUNIPER_DOOR.get(), modLoc("block/juniper_door_bottom"), modLoc("block/juniper_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.ROWAN_DOOR.get(), modLoc("block/rowan_door_bottom"), modLoc("block/rowan_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.TWISTED_DOOR.get(), modLoc("block/twisted_door_bottom"), modLoc("block/twisted_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.WITCH_WOOD_DOOR.get(), modLoc("block/witch_wood_door_bottom"), modLoc("block/witch_wood_door_top"), "cutout");
+        doorBlockWithRenderType((DoorBlock)HexcraftBlocks.ECHO_WOOD_DOOR.get(), modLoc("block/echo_wood_door_bottom"), modLoc("block/echo_wood_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.EBONY_TRAPDOOR.get(), modLoc("block/ebony_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.BLOOD_OAK_TRAPDOOR.get(), modLoc("block/blood_oak_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.HELL_BARK_TRAPDOOR.get(), modLoc("block/hell_bark_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.WHITE_OAK_TRAPDOOR.get(), modLoc("block/white_oak_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.ALDER_TRAPDOOR.get(), modLoc("block/alder_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.WITCH_HAZEL_TRAPDOOR.get(), modLoc("block/witch_hazel_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.WILLOW_TRAPDOOR.get(), modLoc("block/willow_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.HAWTHORN_TRAPDOOR.get(), modLoc("block/hawthorn_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.CEDAR_TRAPDOOR.get(), modLoc("block/cedar_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.DISTORTED_TRAPDOOR.get(), modLoc("block/distorted_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.ELDER_TRAPDOOR.get(), modLoc("block/elder_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.JUNIPER_TRAPDOOR.get(), modLoc("block/juniper_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.ROWAN_TRAPDOOR.get(), modLoc("block/rowan_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.TWISTED_TRAPDOOR.get(), modLoc("block/twisted_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.WITCH_WOOD_TRAPDOOR.get(), modLoc("block/witch_wood_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) HexcraftBlocks.ECHO_WOOD_TRAPDOOR.get(), modLoc("block/echo_wood_trapdoor"), true, "cutout");
+
 
 
 
@@ -557,6 +603,10 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         blockItem(HexcraftBlocks.TWISTED_STAIRS);
         blockItem(HexcraftBlocks.WITCH_WOOD_STAIRS);
         blockItem(HexcraftBlocks.ECHO_WOOD_STAIRS);
+        blockItem(HexcraftBlocks.PEARL_STONE_PRESSURE_PLATE);
+        blockItem(HexcraftBlocks.CRIMSON_STONE_PRESSURE_PLATE);
+        blockItem(HexcraftBlocks.UNDER_WORLD_STONE_PRESSURE_PLATE);
+        blockItem(HexcraftBlocks.CHARSTONE_PRESSURE_PLATE);
         blockItem(HexcraftBlocks.EBONY_PRESSURE_PLATE);
         blockItem(HexcraftBlocks.BLOOD_OAK_PRESSURE_PLATE);
         blockItem(HexcraftBlocks.HELL_BARK_PRESSURE_PLATE);
@@ -589,7 +639,139 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         blockItem(HexcraftBlocks.TWISTED_FENCE_GATE);
         blockItem(HexcraftBlocks.WITCH_WOOD_FENCE_GATE);
         blockItem(HexcraftBlocks.ECHO_WOOD_FENCE_GATE);
+        blockItem(HexcraftBlocks.EBONY_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.BLOOD_OAK_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.HELL_BARK_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.WHITE_OAK_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.ALDER_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.WITCH_HAZEL_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.WILLOW_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.HAWTHORN_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.CEDAR_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.DISTORTED_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.ELDER_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.JUNIPER_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.ROWAN_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.TWISTED_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.WITCH_WOOD_TRAPDOOR, "_bottom");
+        blockItem(HexcraftBlocks.ECHO_WOOD_TRAPDOOR, "_bottom");
 
+        signBlock(((StandingSignBlock) HexcraftBlocks.EBONY_SIGN.get()), ((WallSignBlock) HexcraftBlocks.EBONY_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.EBONY_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.EBONY_HANGING_SIGN.get(), HexcraftBlocks.EBONY_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.EBONY_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.BLOOD_OAK_SIGN.get()), ((WallSignBlock) HexcraftBlocks.BLOOD_OAK_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.BLOOD_OAK_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.BLOOD_OAK_HANGING_SIGN.get(), HexcraftBlocks.BLOOD_OAK_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.BLOOD_OAK_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.HELL_BARK_SIGN.get()), ((WallSignBlock) HexcraftBlocks.HELL_BARK_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.HELL_BARK_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.HELL_BARK_HANGING_SIGN.get(), HexcraftBlocks.HELL_BARK_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.HELL_BARK_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.WHITE_OAK_SIGN.get()), ((WallSignBlock) HexcraftBlocks.WHITE_OAK_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.WHITE_OAK_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.WHITE_OAK_HANGING_SIGN.get(), HexcraftBlocks.WHITE_OAK_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.WHITE_OAK_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.ALDER_SIGN.get()), ((WallSignBlock) HexcraftBlocks.ALDER_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.ALDER_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.ALDER_HANGING_SIGN.get(), HexcraftBlocks.ALDER_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.ALDER_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.WITCH_HAZEL_SIGN.get()), ((WallSignBlock) HexcraftBlocks.WITCH_HAZEL_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.WITCH_HAZEL_HANGING_SIGN.get(), HexcraftBlocks.WITCH_HAZEL_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.WITCH_HAZEL_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.WILLOW_SIGN.get()), ((WallSignBlock) HexcraftBlocks.WILLOW_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.WILLOW_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.WILLOW_HANGING_SIGN.get(), HexcraftBlocks.WILLOW_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.WILLOW_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.HAWTHORN_SIGN.get()), ((WallSignBlock) HexcraftBlocks.HAWTHORN_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.HAWTHORN_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.HAWTHORN_HANGING_SIGN.get(), HexcraftBlocks.HAWTHORN_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.HAWTHORN_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.CEDAR_SIGN.get()), ((WallSignBlock) HexcraftBlocks.CEDAR_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.CEDAR_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.CEDAR_HANGING_SIGN.get(), HexcraftBlocks.CEDAR_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.CEDAR_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.DISTORTED_SIGN.get()), ((WallSignBlock) HexcraftBlocks.DISTORTED_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.DISTORTED_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.DISTORTED_HANGING_SIGN.get(), HexcraftBlocks.DISTORTED_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.DISTORTED_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.ELDER_SIGN.get()), ((WallSignBlock) HexcraftBlocks.ELDER_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.ELDER_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.ELDER_HANGING_SIGN.get(), HexcraftBlocks.ELDER_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.ELDER_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.JUNIPER_SIGN.get()), ((WallSignBlock) HexcraftBlocks.JUNIPER_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.JUNIPER_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.JUNIPER_HANGING_SIGN.get(), HexcraftBlocks.JUNIPER_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.JUNIPER_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.ROWAN_SIGN.get()), ((WallSignBlock) HexcraftBlocks.ROWAN_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.ROWAN_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.ROWAN_HANGING_SIGN.get(), HexcraftBlocks.ROWAN_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.ROWAN_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.TWISTED_SIGN.get()), ((WallSignBlock) HexcraftBlocks.TWISTED_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.TWISTED_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.TWISTED_HANGING_SIGN.get(), HexcraftBlocks.TWISTED_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.TWISTED_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.WITCH_WOOD_SIGN.get()), ((WallSignBlock) HexcraftBlocks.WITCH_WOOD_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.WITCH_WOOD_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.WITCH_WOOD_HANGING_SIGN.get(), HexcraftBlocks.WITCH_WOOD_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.WITCH_WOOD_PLANKS.get()));
+
+        signBlock(((StandingSignBlock) HexcraftBlocks.ECHO_WOOD_SIGN.get()), ((WallSignBlock) HexcraftBlocks.ECHO_WOOD_WALL_SIGN.get()),
+                blockTexture(HexcraftBlocks.ECHO_WOOD_PLANKS.get()));
+
+        hangingSignBlock(HexcraftBlocks.ECHO_WOOD_HANGING_SIGN.get(), HexcraftBlocks.ECHO_WOOD_WALL_HANGING_SIGN.get(),
+                blockTexture(HexcraftBlocks.ECHO_WOOD_PLANKS.get()));
+
+        
+
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+
+    private String name(Block block) {
+        return key(block).getPath();
+    }
+
+    private ResourceLocation key(Block block) {
+        return ForgeRegistries.BLOCKS.getKey(block);
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
@@ -603,10 +785,14 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
                         "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
-    private void blockItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(HexcraftMod.MOD_ID +
-                ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
+    private void blockItem(RegistryObject<Block> blockRegistryObject, String appendix) {
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("hexcraftmod:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + appendix));
     }
+
+    private void blockItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("hexcraftmod:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
+    }
+
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

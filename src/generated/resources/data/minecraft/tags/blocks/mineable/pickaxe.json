@@ -85,6 +85,18 @@
     "hexcraftmod:charstone_bricks_slab",
     "hexcraftmod:polished_charstone_slab",
     "hexcraftmod:witches_oven",
-    "hexcraftmod:witches_cauldron"
+    "hexcraftmod:witches_cauldron",
+    "hexcraftmod:pearl_stone_pressure_plate",
+    "hexcraftmod:crimson_stone_pressure_plate",
+    "hexcraftmod:under_world_stone_pressure_plate",
+    "hexcraftmod:charstone_pressure_plate",
+    "hexcraftmod:pearl_stone_button",
+    "hexcraftmod:crimson_stone_button",
+    "hexcraftmod:under_world_stone_button",
+    "hexcraftmod:charstone_button",
+    "hexcraftmod:pearl_stone_wall",
+    "hexcraftmod:crimson_stone_wall",
+    "hexcraftmod:under_world_stone_wall",
+    "hexcraftmod:charstone_wall"
   ]
 }

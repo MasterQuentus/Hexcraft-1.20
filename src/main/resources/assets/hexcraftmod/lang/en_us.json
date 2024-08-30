@@ -278,6 +278,74 @@
   "block.hexcraftmod.witch_wood_planks": "Witchwood Planks",
   "block.hexcraftmod.echo_wood_planks": "Echo Planks",
 
+  //Signs
+  "block.hexcraftmod.ebony_sign": "Ebony Sign",
+  "block.hexcraftmod.blood_oak_sign": "Blood Oak Sign",
+  "block.hexcraftmod.hell_bark_sign": "Hellbark Sign",
+  "block.hexcraftmod.white_oak_sign": "White Oak Sign",
+  "block.hexcraftmod.alder_sign": "Alder Sign",
+  "block.hexcraftmod.witch_hazel_sign": "Witch Hazel Sign",
+  "block.hexcraftmod.willow_sign": "Willow Sign",
+  "block.hexcraftmod.hawthorn_sign": "Hawthorn Sign",
+  "block.hexcraftmod.cedar_sign": "Cedar Sign",
+  "block.hexcraftmod.distorted_sign": "Distorted Sign",
+  "block.hexcraftmod.elder_sign": "Elder Sign",
+  "block.hexcraftmod.juniper_sign": "Juniper Sign",
+  "block.hexcraftmod.rowan_sign": "Rowan Sign",
+  "block.hexcraftmod.twisted_sign": "Twisted Sign",
+  "block.hexcraftmod.witch_wood_sign": "Witchwood Sign",
+  "block.hexcraftmod.echo_sign": "Echo Wood Sign",
+  "block.hexcraftmod.ebony_hanging_sign": "Ebony Hanging Sign",
+  "block.hexcraftmod.blood_oak_hanging_sign": "Blood Oak Hanging Sign",
+  "block.hexcraftmod.hell_bark_hanging_sign": "Hellbark Hanging Sign",
+  "block.hexcraftmod.white_oak_hanging_sign": "White Oak Hanging Sign",
+  "block.hexcraftmod.alder_hanging_sign": "Alder Hanging Sign",
+  "block.hexcraftmod.witch_hazel_hanging_sign": "Witch Hazel Hanging Sign",
+  "block.hexcraftmod.willow_hanging_sign": "Willow Hanging Sign",
+  "block.hexcraftmod.hawthorn_hanging_sign": "Hawthorn Hanging Sign",
+  "block.hexcraftmod.cedar_hanging_sign": "Cedar Hanging Sign",
+  "block.hexcraftmod.distorted_hanging_sign": "Distorted Hanging Sign",
+  "block.hexcraftmod.elder_hanging_sign": "Elder Hanging Sign",
+  "block.hexcraftmod.juniper_hanging_sign": "Juniper Hanging Sign",
+  "block.hexcraftmod.rowan_hanging_sign": "Rowan Hanging Sign",
+  "block.hexcraftmod.twisted_hanging_sign": "Twisted Hanging Sign",
+  "block.hexcraftmod.witch_wood_hanging_sign": "Witchwood Hanging Sign",
+  "block.hexcraftmod.echo_hanging_sign": "Echo Wood Hanging Sign",
+
+  //Boats
+  "item.hexcraftmod.ebony_boat": "Ebony Boat",
+  "item.hexcraftmod.blood_oak_boat": "Blood Oak Boat",
+  "item.hexcraftmod.hell_bark_boat": "Hellbark Boat",
+  "item.hexcraftmod.white_oak_boat": "White Oak Boat",
+  "item.hexcraftmod.alder_boat": "Alder Boat",
+  "item.hexcraftmod.witch_hazel_boat": "Witch Hazel Boat",
+  "item.hexcraftmod.willow_boat": "Willow Boat",
+  "item.hexcraftmod.hawthorn_boat": "Hawthorn Boat",
+  "item.hexcraftmod.cedar_boat": "Cedar Boat",
+  "item.hexcraftmod.distorted_boat": "Distorted Boat",
+  "item.hexcraftmod.elder_boat": "Elder Boat",
+  "item.hexcraftmod.juniper_boat": "Juniper Boat",
+  "item.hexcraftmod.rowan_boat": "Rowan Boat",
+  "item.hexcraftmod.twisted_boat": "Twisted Boat",
+  "item.hexcraftmod.witch_wood_boat": "Witchwood Boat",
+  "item.hexcraftmod.echo_boat": "Echo Wood Boat",
+  "item.hexcraftmod.ebony_chest_boat": "Ebony Chest Boat",
+  "item.hexcraftmod.blood_oak_chest_boat": "Blood Oak Chest Boat",
+  "item.hexcraftmod.hell_bark_chest_boat": "Hellbark Chest Boat",
+  "item.hexcraftmod.white_oak_chest_boat": "White Oak Chest Boat",
+  "item.hexcraftmod.alder_chest_boat": "Alder Chest Boat",
+  "item.hexcraftmod.witch_hazel_chest_boat": "Witch Hazel Chest Boat",
+  "item.hexcraftmod.willow_chest_boat": "Willow Chest Boat",
+  "item.hexcraftmod.hawthorn_chest_boat": "Hawthorn Chest Boat",
+  "item.hexcraftmod.cedar_chest_boat": "Cedar Chest Boat",
+  "item.hexcraftmod.distorted_chest_boat": "Distorted Chest Boat",
+  "item.hexcraftmod.elder_chest_boat": "Elder Chest Boat",
+  "item.hexcraftmod.juniper_chest_boat": "Juniper Chest Boat",
+  "item.hexcraftmod.rowan_chest_boat": "Rowan Chest Boat",
+  "item.hexcraftmod.twisted_chest_boat": "Twisted Chest Boat",
+  "item.hexcraftmod.witch_wood_chest_boat": "Witchwood Chest Boat",
+  "item.hexcraftmod.echo_chest_boat": "Echo Wood Chest Boat",
+
   //Saplings
   "block.hexcraftmod.potted_ebony_sapling": "Potted Ebony Sapling",
   "block.hexcraftmod.ebony_sapling": "Ebony Sapling",
@@ -365,6 +433,12 @@
   "block.hexcraftmod.witch_wood_bookshelf": "Witchwood Bookshelf",
   "block.hexcraftmod.echo_wood_bookshelf": "Echo Bookshelf",
 
+  //Walls
+  "block.hexcraftmod.pearl_stone_wall": "Pearlstone Wall",
+  "block.hexcraftmod.crimson_stone_wall": "Crimsonstone Wall",
+  "block.hexcraftmod.under_world_stone_wall": "Underworld Stone Stairs",
+  "block.hexcraftmod.charstone_wall": "Charstone Wall",
+
   //Stairs
   "block.hexcraftmod.pearl_stone_stairs": "Pearlstone Stairs",
   "block.hexcraftmod.pearl_cobblestone_stairs": "Pearl Cobblestone Stairs",
@@ -406,6 +480,10 @@
   "block.hexcraftmod.echo_wood_stairs": "Echo Stairs",
 
   //Pressure Plates
+  "block.hexcraftmod.pearl_stone_pressure_plate": "Pearl Stone Pressure Plate",
+  "block.hexcraftmod.crimson_stone_pressure_plate": "Crimson Stone Pressure Plate",
+  "block.hexcraftmod.under_world_stone_pressure_plate": "Underworld Stone Pressure Plate",
+  "block.hexcraftmod.charstone_pressure_plate": "Charstone Pressure Plate",
   "block.hexcraftmod.ebony_pressure_plate": "Ebony Pressure Plate",
   "block.hexcraftmod.blood_oak_pressure_plate": "Blood Oak Pressure Plate",
   "block.hexcraftmod.hell_bark_pressure_plate": "Hellbark Pressure Plate",
@@ -424,6 +502,10 @@
   "block.hexcraftmod.echo_wood_pressure_plate": "Echo Pressure Plate",
 
   //Buttons
+  "block.hexcraftmod.pearl_stone_button": "Pearl Stone Button",
+  "block.hexcraftmod.crimson_stone_button": "Crimson Stone Button",
+  "block.hexcraftmod.under_world_stone_button": "Underworld Button",
+  "block.hexcraftmod.charstone_button": "Charstone Button",
   "block.hexcraftmod.ebony_button": "Ebony Button",
   "block.hexcraftmod.blood_oak_button": "Blood Oak Button",
   "block.hexcraftmod.hell_bark_button": "Hellbark Button",
@@ -476,6 +558,43 @@
   "block.hexcraftmod.twisted_fence_gate": "Twisted Fence Gate",
   "block.hexcraftmod.witch_wood_fence_gate": "Witchwood Fence Gate",
   "block.hexcraftmod.echo_wood_fence_gate": "Echo Fence Gate",
+
+  //Doors
+  "block.hexcraftmod.ebony_door": "Ebony Door",
+  "block.hexcraftmod.blood_oak_door": "Blood Oak Door",
+  "block.hexcraftmod.hell_bark_door": "Hellbark Door",
+  "block.hexcraftmod.white_oak_door": "White Oak Door",
+  "block.hexcraftmod.alder_door": "Alder Door",
+  "block.hexcraftmod.witch_hazel_door": "Witch Hazel Door",
+  "block.hexcraftmod.willow_door": "Willow Door",
+  "block.hexcraftmod.hawthorn_door": "Hawthorn Door",
+  "block.hexcraftmod.cedar_door": "Cedar Door",
+  "block.hexcraftmod.distorted_door": "Distorted Door",
+  "block.hexcraftmod.elder_door": "Elder Door",
+  "block.hexcraftmod.juniper_door": "Juniper Door",
+  "block.hexcraftmod.rowan_door": "Rowan Door",
+  "block.hexcraftmod.twisted_door": "Twisted Door",
+  "block.hexcraftmod.witch_wood_door": "Witchwood Door",
+  "block.hexcraftmod.echo_wood_door": "Echo Door",
+
+  //Trapdoor
+  "block.hexcraftmod.ebony_trapdoor": "Ebony Trapdoor",
+  "block.hexcraftmod.blood_oak_trapdoor": "Blood Oak Trapdoor",
+  "block.hexcraftmod.hell_bark_trapdoor": "Hellbark Trapdoor",
+  "block.hexcraftmod.white_oak_trapdoor": "White Oak Trapdoor",
+  "block.hexcraftmod.alder_trapdoor": "Alder Trapdoor",
+  "block.hexcraftmod.witch_hazel_trapdoor": "Witch Hazel Trapdoor",
+  "block.hexcraftmod.willow_trapdoor": "Willow Trapdoor",
+  "block.hexcraftmod.hawthorn_trapdoor": "Hawthorn Trapdoor",
+  "block.hexcraftmod.cedar_trapdoor": "Cedar Trapdoor",
+  "block.hexcraftmod.distorted_trapdoor": "Distorted Trapdoor",
+  "block.hexcraftmod.elder_trapdoor": "Elder Trapdoor",
+  "block.hexcraftmod.juniper_trapdoor": "Juniper Trapdoor",
+  "block.hexcraftmod.rowan_trapdoor": "Rowan Trapdoor",
+  "block.hexcraftmod.twisted_trapdoor": "Twisted Trapdoor",
+  "block.hexcraftmod.witch_wood_trapdoor": "Witchwood Trapdoor",
+  "block.hexcraftmod.echo_wood_trapdoor": "Echo Trapdoor",
+
 
   //Slabs
   "block.hexcraftmod.pearl_stone_slab": "Pearlstone Slab",
@@ -536,6 +655,9 @@
 
   //Tooltips
   "tooltip.hexcraftmod.amethyst_chimes.tooltip": "Shows Nearby Hostile Mobs",
+
+  //Entities
+  "entity.hexcraftmod.hexcraft_chest_boat": "Chest Boat",
 
   //Creative Mod Tab
   "creativetab.hexcraft_tab": "Hexcraft Tab"
