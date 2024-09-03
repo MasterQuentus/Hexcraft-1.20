@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:crimson_ice"
+    }
+  },
+  "pattern": [
+    "CC ",
+    "CC "
+  ],
+  "result": {
+    "item": "hexcraftmod:crimson_packed_ice"
+  },
+  "show_notification": true
+}

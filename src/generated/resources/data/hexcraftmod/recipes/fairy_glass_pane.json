@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "hexcraftmod:fairy_glass"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "FFF"
+  ],
+  "result": {
+    "count": 16,
+    "item": "hexcraftmod:fairy_glass_pane"
+  },
+  "show_notification": true
+}

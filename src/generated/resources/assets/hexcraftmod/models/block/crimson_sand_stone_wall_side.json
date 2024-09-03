@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "hexcraftmod:block/crimson_sand_stone"
+  }
+}

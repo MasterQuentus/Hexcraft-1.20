@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "hexcraftmod:cut_fairy_sand_stone"
+    }
+  },
+  "pattern": [
+    "FFF"
+  ],
+  "result": {
+    "count": 6,
+    "item": "hexcraftmod:cut_fairy_sand_stone_slab"
+  },
+  "show_notification": true
+}

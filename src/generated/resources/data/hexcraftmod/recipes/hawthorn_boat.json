@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "hexcraftmod:hawthorn_planks"
+    }
+  },
+  "pattern": [
+    "H H",
+    "HHH"
+  ],
+  "result": {
+    "item": "hexcraftmod:hawthorn_boat"
+  },
+  "show_notification": true
+}

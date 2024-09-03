@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:elder_planks"
+    }
+  },
+  "pattern": [
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "item": "hexcraftmod:elder_boat"
+  },
+  "show_notification": true
+}

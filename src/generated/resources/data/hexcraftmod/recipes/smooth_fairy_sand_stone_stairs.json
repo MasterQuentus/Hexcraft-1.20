@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "hexcraftmod:smooth_fairy_sand_stone"
+    }
+  },
+  "pattern": [
+    "F  ",
+    "FF ",
+    "FFF"
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:smooth_fairy_sand_stone_stairs"
+  },
+  "show_notification": true
+}

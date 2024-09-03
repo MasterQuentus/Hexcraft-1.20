@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "F": {
+      "item": "hexcraftmod:fairy_sand_stone"
+    }
+  },
+  "pattern": [
+    "FF ",
+    "FF "
+  ],
+  "result": {
+    "count": 4,
+    "item": "hexcraftmod:cut_fairy_sand_stone"
+  },
+  "show_notification": true
+}

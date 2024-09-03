@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:crimson_glass"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CCC"
+  ],
+  "result": {
+    "count": 16,
+    "item": "hexcraftmod:crimson_glass_pane"
+  },
+  "show_notification": true
+}

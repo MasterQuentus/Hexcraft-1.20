@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:crimson_sand"
+    }
+  },
+  "pattern": [
+    "CC ",
+    "CC "
+  ],
+  "result": {
+    "item": "hexcraftmod:crimson_sand_stone"
+  },
+  "show_notification": true
+}

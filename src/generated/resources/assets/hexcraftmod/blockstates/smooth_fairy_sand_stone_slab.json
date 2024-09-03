@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hexcraftmod:block/smooth_fairy_sand_stone_slab"
+    },
+    "type=double": {
+      "model": "hexcraftmod:block/smooth_fairy_sand_stone"
+    },
+    "type=top": {
+      "model": "hexcraftmod:block/smooth_fairy_sand_stone_slab_top"
+    }
+  }
+}

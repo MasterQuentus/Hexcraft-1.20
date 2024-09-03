@@ -139,6 +139,16 @@ public class HexcraftBlocks {
 					.strength(1.0F).sound(SoundType.FROGLIGHT)
 					.lightLevel((state) -> 15)));
 
+	public static final RegistryObject<Block> VILESHROOM_LAMP = registerBlock("vileshroom_lamp",
+			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.VERDANT_FROGLIGHT)
+					.strength(1.0F).sound(SoundType.FROGLIGHT)
+					.lightLevel((state) -> 15)));
+
+	public static final RegistryObject<Block> GHOSTSHROOM_LAMP = registerBlock("ghostshroom_lamp",
+			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.VERDANT_FROGLIGHT)
+					.strength(1.0F).sound(SoundType.FROGLIGHT)
+					.lightLevel((state) -> 15)));
+
 	public static final RegistryObject<Block> PEARL_STONE = registerBlock("pearl_stone",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
 

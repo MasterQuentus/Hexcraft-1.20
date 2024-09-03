@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "fairy_glass",
+  "ingredient": {
+    "item": "hexcraftmod:fairy_sand"
+  },
+  "result": "hexcraftmod:fairy_glass"
+}

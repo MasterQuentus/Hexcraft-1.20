@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:echo_wood_planks"
+    }
+  },
+  "pattern": [
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "item": "hexcraftmod:echo_wood_boat"
+  },
+  "show_notification": true
+}

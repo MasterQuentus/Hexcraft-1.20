@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "E": {
+      "item": "hexcraftmod:ebony_planks"
+    }
+  },
+  "pattern": [
+    "E E",
+    "EEE"
+  ],
+  "result": {
+    "item": "hexcraftmod:ebony_boat"
+  },
+  "show_notification": true
+}

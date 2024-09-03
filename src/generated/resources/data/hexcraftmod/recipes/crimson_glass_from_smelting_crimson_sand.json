@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "crimson_glass",
+  "ingredient": {
+    "item": "hexcraftmod:crimson_sand"
+  },
+  "result": "hexcraftmod:crimson_glass"
+}

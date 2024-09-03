@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "hexcraftmod:block/fairy_sand_stone"
+  }
+}
