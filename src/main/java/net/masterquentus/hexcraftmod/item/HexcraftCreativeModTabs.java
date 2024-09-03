@@ -372,6 +372,11 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.WITCH_WOOD_BOOKSHELF.get());
                         output.accept(HexcraftBlocks.ECHO_WOOD_BOOKSHELF.get());
 
+
+                        //Tools
+                        output.accept(HexcraftItems.VAMPIRIC_STAFF.get());
+
+
                         //Plants
                         output.accept(HexcraftBlocks.DEMON_HEART.get());
                         output.accept(HexcraftItems.WITCHES_LADDER_ITEM.get());

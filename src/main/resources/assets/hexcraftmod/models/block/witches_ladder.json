@@ -1,13 +1,7 @@
 {
-  "variants": {
-    "thickness=base,vertical_direction=down": {
-      "model": "hexcraftmod:block/witches_ladder"
-    },
-    "thickness=middle,vertical_direction=down": {
-      "model": "hexcraftmod:block/witches_ladder_middle"
-    },
-    "thickness=tip_merge,vertical_direction=down": {
-      "model": "hexcraftmod:block/witches_ladder_bottom"
-    }
+  "parent": "minecraft:block/cross",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "hexcraftmod:block/witches_ladder"
   }
 }

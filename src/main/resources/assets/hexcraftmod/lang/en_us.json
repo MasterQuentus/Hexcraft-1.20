@@ -716,6 +716,10 @@
   "block.hexcraftmod.ghostshroom_block": "Ghostshroom Block",
   "block.hexcraftmod.ghostshroom_stem": "Ghostshroom Stem",
 
+  //Tools
+  "item.hexcraftmod.vampiric_staff": "Vampiric Staff",
+  "item.hexcraftmod.vampiric_staff_projectile": "Vampiric Staff Projectile",
+
   //Tooltips
   "tooltip.hexcraftmod.amethyst_chimes.tooltip": "Shows Nearby Hostile Mobs",
 

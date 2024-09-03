@@ -54,14 +54,15 @@ public class VampiricStaffProjectileEntity extends ThrowableItemProjectile {
      */
     protected void onHitEntity(EntityHitResult pResult) {
         super.onHitEntity(pResult);
-        Entity entity = pResult.getEntity();
-        if (entity instanceof LivingEntity living && living.getMobType() == MobType.UNDEAD)
-            return;
-
-        boolean entityHurt = entity.hurt(DamageSource.thrown(this, this.getOwner()), 3);
-        if (entityHurt && this.getOwner() instanceof LivingEntity) {
-            ((LivingEntity) this.getOwner()).heal(3);
+        if (!this.level().isClientSide) {
+            Entity entity = pResult.getEntity();
+            Entity entity1 = this.getOwner();
+            entity.hurt(this.damageSources().thrown(this, entity1), 6.0F);
+            if (entity1 instanceof LivingEntity) {
+                this.doEnchantDamageEffects((LivingEntity)entity1, entity);
+            }
         }
+
     }
 
     /**

@@ -1,5 +1,7 @@
 package net.masterquentus.hexcraftmod.block.custom.plants;
 
+import java.util.Random;
+
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.minecraft.core.BlockPos;
@@ -7,7 +9,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
@@ -16,23 +17,13 @@ import net.minecraft.world.level.block.GrowingPlantHeadBlock;
 import net.minecraft.world.level.block.NetherVines;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import java.util.Random;
-
-
 public class WitchesLadderBlock extends GrowingPlantHeadBlock implements BonemealableBlock {
-
-    public static final BooleanProperty LIT = BlockStateProperties.LIT;
-    public static final DirectionProperty FACING = BlockStateProperties.FACING;
     protected static final VoxelShape SHAPE = Block.box(4.0D, 9.0D, 4.0D, 12.0D, 16.0D, 12.0D);
 
-    public WitchesLadderBlock(BlockBehaviour.Properties p_154966_) {
-        super(p_154966_, Direction.DOWN, SHAPE, false, 0.1D);
+    public WitchesLadderBlock(BlockBehaviour.Properties properties) {
+        super(properties, Direction.DOWN, SHAPE, false, 0.1D);
     }
 
     /**
@@ -42,20 +33,8 @@ public class WitchesLadderBlock extends GrowingPlantHeadBlock implements Bonemea
         return NetherVines.getBlocksToGrowWhenBonemealed((RandomSource) p_154968_);
     }
 
-    @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        super.createBlockStateDefinition(pBuilder);
-        pBuilder.add(FACING, LIT);
-
-    }
-
     public ItemStack getCloneItemStack(BlockGetter getter, BlockPos pos, BlockState state) {
         return new ItemStack(HexcraftItems.WITCHES_LADDER_ITEM.get());
-    }
-
-    @Override
-    public BlockState getStateForPlacement(BlockPlaceContext pContext) {
-        return this.defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());
     }
 
     @Override
@@ -70,6 +49,7 @@ public class WitchesLadderBlock extends GrowingPlantHeadBlock implements Bonemea
     protected int getBlocksToGrowWhenBonemealed(RandomSource p_222680_) {
         return NetherVines.getBlocksToGrowWhenBonemealed(p_222680_);
     }
+
     protected boolean canGrowInto(BlockState p_154971_) {
         return NetherVines.isValidGrowthState(p_154971_);
     }

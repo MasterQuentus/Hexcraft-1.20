@@ -872,10 +872,6 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropOther(HexcraftBlocks.WITCHES_LADDER.get(), HexcraftItems.WITCHES_LADDER_ITEM.get());;
 
-		this.dropOther(HexcraftBlocks.WITCHES_LADDER_MIDDLE.get(), HexcraftItems.WITCHES_LADDER_ITEM.get());;
-
-		this.dropOther(HexcraftBlocks.WITCHES_LADDER_BOTTOM.get(), HexcraftItems.WITCHES_LADDER_ITEM.get());;
-
 		this.dropOther(HexcraftBlocks.LIVING_KELP.get(), HexcraftItems.LIVING_KELP_ITEM.get());;
 
 		this.dropOther(HexcraftBlocks.VILEVINE.get(), HexcraftItems.VILEVINE_ITEM.get());;

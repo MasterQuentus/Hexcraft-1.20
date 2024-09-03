@@ -123,14 +123,6 @@ public class HexcraftBlocks {
 			() -> new WitchesLadderBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
 					.instabreak().noOcclusion().randomTicks()));
 
-	public static final RegistryObject<Block> WITCHES_LADDER_MIDDLE = BLOCKS.register("witches_ladder_middle",
-			() -> new WitchesLadderBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
-					.instabreak().noOcclusion().randomTicks()));
-
-	public static final RegistryObject<Block> WITCHES_LADDER_BOTTOM = BLOCKS.register("witches_ladder_bottom",
-			() -> new WitchesLadderBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
-					.instabreak().noOcclusion().randomTicks()));
-
 	public static final RegistryObject<Block> WITCHES_LADDER_PLANT = BLOCKS.register("witches_ladder_plant",
 			() -> new WitchesLadderPlant(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
 					.instabreak().noOcclusion().noLootTable()));
