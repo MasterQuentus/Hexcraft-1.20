@@ -201,7 +201,12 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
 						HexcraftBlocks.CRIMSON_SAND_STONE_WALL.get(),
 						HexcraftBlocks.FAIRY_SAND_STONE_WALL.get(),
 						HexcraftBlocks.CRIMSON_ICE.get(),
-						HexcraftBlocks.CRIMSON_PACKED_ICE.get());
+						HexcraftBlocks.CRIMSON_PACKED_ICE.get(),
+						HexcraftBlocks.CRIMSON_MAGMA.get());
+
+		this.tag(BlockTags.MINEABLE_WITH_HOE)
+				.add(HexcraftBlocks.EMBER_MOSS_BLOCK.get(),
+				HexcraftBlocks.EMBER_MOSS_CARPET.get());
 
 
 
@@ -463,7 +468,8 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
 						HexcraftBlocks.UNDER_WORLD_STONE_BRICKS.get(), HexcraftBlocks.CHARSTONE_BRICKS.get());
 
 		this.tag(BlockTags.SMALL_FLOWERS)
-				.add(HexcraftBlocks.VAMPIRE_ORCHID.get(), HexcraftBlocks.BLOODY_ROSE.get());
+				.add(HexcraftBlocks.VAMPIRE_ORCHID.get(), HexcraftBlocks.BLOODY_ROSE.get(),
+				HexcraftBlocks.WISPY_COTTON.get(), HexcraftBlocks.SOUL_FLOWER.get());
 
 		this.tag(BlockTags.ANIMALS_SPAWNABLE_ON)
 				.add(HexcraftBlocks.VILE_GRASS_BLOCK.get());
@@ -876,6 +882,32 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
 		this.tag(BlockTags.ICE)
 				.add(HexcraftBlocks.CRIMSON_ICE.get())
 				.add(HexcraftBlocks.CRIMSON_PACKED_ICE.get());
+
+		this.tag(BlockTags.MOSS_REPLACEABLE)
+				.add(HexcraftBlocks.PEARL_STONE.get())
+				.add(HexcraftBlocks.PEARL_COBBLESTONE.get())
+				.add(HexcraftBlocks.PEARL_STONE_BRICKS.get())
+				.add(HexcraftBlocks.POLISHED_PEARL_STONE.get())
+				.add(HexcraftBlocks.CHISELED_PEARL_STONE.get())
+				.add(HexcraftBlocks.CRACKED_PEARL_STONE.get())
+				.add(HexcraftBlocks.CRIMSON_STONE.get())
+				.add(HexcraftBlocks.CRIMSON_COBBLESTONE.get())
+				.add(HexcraftBlocks.CRIMSON_STONE_BRICKS.get())
+				.add(HexcraftBlocks.POLISHED_CRIMSON_STONE.get())
+				.add(HexcraftBlocks.CHISELED_CRIMSON_STONE.get())
+				.add(HexcraftBlocks.CRACKED_CRIMSON_STONE.get())
+				.add(HexcraftBlocks.UNDER_WORLD_STONE.get())
+				.add(HexcraftBlocks.UNDER_WORLD_COBBLESTONE.get())
+				.add(HexcraftBlocks.UNDER_WORLD_STONE_BRICKS.get())
+				.add(HexcraftBlocks.POLISHED_UNDER_WORLD_STONE.get())
+				.add(HexcraftBlocks.CHISELED_UNDER_WORLD_STONE.get())
+				.add(HexcraftBlocks.CRACKED_UNDER_WORLD_STONE.get())
+				.add(HexcraftBlocks.CHARSTONE.get())
+				.add(HexcraftBlocks.CHARSTONE_COBBLESTONE.get())
+				.add(HexcraftBlocks.CHARSTONE_BRICKS.get())
+				.add(HexcraftBlocks.POLISHED_CHARSTONE.get())
+				.add(HexcraftBlocks.CHISELED_CHARSTONE.get())
+				.add(HexcraftBlocks.CRACKED_CHARSTONE.get());
 
 	}
 

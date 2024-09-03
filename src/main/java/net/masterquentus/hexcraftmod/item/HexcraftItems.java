@@ -39,7 +39,6 @@ public class HexcraftItems {
     public static final RegistryObject<Item> WITCHES_SATCHEL = ITEMS.register("witches_satchel",
             () -> new WitchesSatchelItem(new Item.Properties()));
 
-
     public static final RegistryObject<Item> UNFIRED_CLAY_POT = ITEMS.register("unfired_clay_pot",
             () -> new Item(new Item.Properties()));
 
@@ -293,6 +292,14 @@ public class HexcraftItems {
             () -> new Item(new Item.Properties()));
 
 
+    //Tools
+    public static final RegistryObject<Item> VAMPIRIC_STAFF = ITEMS.register("vampiric_staff",
+            () -> new VampiricStaffItem(new Item.Properties().durability(324)));
+
+    public static final RegistryObject<Item> VAMPIRIC_STAFF_PROJECTILE = ITEMS.register("vampiric_staff_projectile",
+            () -> new Item(new Item.Properties()));
+
+
     //Plants
     public static final RegistryObject<Item> WITCHES_LADDER_ITEM = ITEMS.register("witches_ladder_item",
             () -> new BlockItem(HexcraftBlocks.WITCHES_LADDER.get(),
@@ -300,6 +307,10 @@ public class HexcraftItems {
 
     public static final RegistryObject<Item> VILEVINE_ITEM = ITEMS.register("vilevine_item",
             () -> new BlockItem(HexcraftBlocks.VILEVINE.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> LIVING_KELP_ITEM = ITEMS.register("living_kelp_item",
+            () -> new BlockItem(HexcraftBlocks.LIVING_KELP_PLANT.get(),
                     new Item.Properties()));
 
     public static final RegistryObject<Item> MANDRAKE_SEEDS = ITEMS.register("mandrake_seeds",
@@ -415,6 +426,14 @@ public class HexcraftItems {
     public static final RegistryObject<Item> BLOOD_APPLE = ITEMS.register("blood_apple",
             () -> new Item(new Item.Properties().food(HexcraftFoods.BLOOD_APPLE)));
 
+    public static final RegistryObject<Item> FAIRY_DUST = ITEMS.register("fairy_dust",
+            () -> new Item(new Item.Properties().food(Foods.SUSPICIOUS_STEW)));
+
+    public static final RegistryObject<Item> PIXIE_DUST = ITEMS.register("pixie_dust",
+            () -> new Item(new Item.Properties().food(Foods.SUSPICIOUS_STEW)));
+
+
+    //Liquids
     public static final RegistryObject<Item> BLOOD_BUCKET = ITEMS.register("blood_bucket",
             () -> new BucketItem(HexcraftFluids.SOURCE_BLOOD, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 

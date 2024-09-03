@@ -19,6 +19,8 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(HexcraftBlocks.VILE_DIRT);
+        blockWithItem((RegistryObject<Block>) HexcraftBlocks.EMBER_MOSS_BLOCK);
+        blockWithItem(HexcraftBlocks.CRIMSON_MAGMA);
         blockWithItem(HexcraftBlocks.CURSED_SOIL);
         blockWithItem(HexcraftBlocks.CURED_SOIL);
         blockWithItem(HexcraftBlocks.FERTILIZED_DIRT);

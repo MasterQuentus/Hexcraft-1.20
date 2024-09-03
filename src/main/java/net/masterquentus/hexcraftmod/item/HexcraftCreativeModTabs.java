@@ -111,10 +111,22 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.BLOOD_BUCKET.get());
 
                         //Blocks
+                        output.accept(HexcraftBlocks.BLOOD_MUSHROOM_BLOCK.get());
+                        output.accept(HexcraftBlocks.BLOOD_MUSHROOM_STEM.get());
+                        output.accept(HexcraftBlocks.VILESHROOM_BLOCK.get());
+                        output.accept(HexcraftBlocks.VILESHROOM_STEM.get());
+                        output.accept(HexcraftBlocks.GHOSTSHROOM_BLOCK.get());
+                        output.accept(HexcraftBlocks.GHOSTSHROOM_STEM.get());
                         output.accept(HexcraftBlocks.VILE_GRASS_BLOCK.get());
                         output.accept(HexcraftBlocks.VILE_DIRT.get());
+                        output.accept(HexcraftBlocks.LIVING_KELP_BLOCK.get());
+                        output.accept(HexcraftBlocks.EMBER_MOSS_BLOCK.get());
+                        output.accept(HexcraftBlocks.EMBER_MOSS_CARPET.get());
+                        output.accept(HexcraftBlocks.CRIMSON_MAGMA.get());
                         output.accept(HexcraftBlocks.VAMPIRE_ORCHID.get());
                         output.accept(HexcraftBlocks.BLOODY_ROSE.get());
+                        output.accept(HexcraftBlocks.WISPY_COTTON.get());
+                        output.accept(HexcraftBlocks.SOUL_FLOWER.get());
                         output.accept(HexcraftBlocks.CURSED_SOIL.get());
                         output.accept(HexcraftBlocks.CURED_SOIL.get());
                         output.accept(HexcraftBlocks.FERTILIZED_DIRT.get());
@@ -125,6 +137,9 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.CHARSTONE.get());
 
                         //Saplings
+                        output.accept(HexcraftBlocks.BLOOD_MUSHROOM.get());
+                        output.accept(HexcraftBlocks.VILESHROOM.get());
+                        output.accept(HexcraftBlocks.GHOSTSHROOM.get());
                         output.accept(HexcraftBlocks.EBONY_SAPLING.get());
                         output.accept(HexcraftBlocks.BLOOD_OAK_SAPLING.get());
                         output.accept(HexcraftBlocks.HELL_BARK_SAPLING.get());
@@ -363,6 +378,7 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.VILEVINE_ITEM.get());
                         output.accept(HexcraftBlocks.WILD_BRAMBLE.get());
                         output.accept(HexcraftBlocks.ENDER_BRAMBLE.get());
+                        output.accept(HexcraftItems.LIVING_KELP_ITEM.get());
                         output.accept(HexcraftBlocks.GLINT_WEED.get());
                         output.accept(HexcraftBlocks.EMBER_MOSS.get());
                         output.accept(HexcraftBlocks.SPANISH_MOSS.get());
@@ -396,16 +412,18 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.WORMWOOD_SEEDS.get());
                         output.accept(HexcraftItems.XERIFAE_SEEDS.get());
 
-
-
                         //Foods
                         output.accept(HexcraftItems.JUNIPER_BERRIES.get());
                         output.accept(HexcraftItems.BLOOD_BERRIES.get());
                         output.accept(HexcraftItems.BLOOD_APPLE.get());
+                        output.accept(HexcraftItems.FAIRY_DUST.get());
+                        output.accept(HexcraftItems.PIXIE_DUST.get());
 
                         //Building Blocks
                         output.accept(HexcraftBlocks.HELL_FUNGAL_LAMP.get());
                         output.accept(HexcraftBlocks.ECHO_FUNGAL_LAMP.get());
+                        output.accept(HexcraftBlocks.VILESHROOM_LAMP.get());
+                        output.accept(HexcraftBlocks.GHOSTSHROOM_LAMP.get());
                         output.accept(HexcraftBlocks.AMETHYST_CHIMES.get());
                         output.accept(HexcraftBlocks.PURE_MAGIC_CRYSTAL.get());
                         output.accept(HexcraftBlocks.WITCHES_OVEN.get());

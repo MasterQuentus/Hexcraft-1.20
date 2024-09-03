@@ -13,6 +13,7 @@ import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.HugeMushroomBlock;
 import net.minecraft.world.level.levelgen.GeodeBlockSettings;
 import net.minecraft.world.level.levelgen.GeodeCrackSettings;
 import net.minecraft.world.level.levelgen.GeodeLayerSettings;
@@ -20,6 +21,7 @@ import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.HugeFungusConfiguration;
+import net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -99,6 +101,12 @@ public class HexcraftConfiguredFeatures {
 	public static final ResourceKey<ConfiguredFeature<?, ?>> WITCH_WOOD_KEY = registerKey("witch_wood");
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> ECHO_KEY = registerKey("echo");
+
+	public static final ResourceKey<ConfiguredFeature<?, ?>> BLOOD_MUSHROOM_KEY = registerKey("blood_mushroom");
+
+	public static final ResourceKey<ConfiguredFeature<?, ?>> VILESHROOM_KEY = registerKey("vileshroom");
+
+	public static final ResourceKey<ConfiguredFeature<?, ?>> GHOSTSHROOM_KEY = registerKey("ghostshroom");
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> VAMPIRE_ORCHID_KEY = registerKey("vampire_orchid");
 
@@ -192,6 +200,7 @@ public class HexcraftConfiguredFeatures {
 		register(context, EBONY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
 				BlockStateProvider.simple(HexcraftBlocks.EBONY_LOG.get()),
 				new StraightTrunkPlacer(5, 2, 1),
+
 
 				BlockStateProvider.simple(HexcraftBlocks.EBONY_LEAVES.get()),
 				new SpruceFoliagePlacer(UniformInt.of(3, 3), UniformInt.of(0, 0),
@@ -316,7 +325,20 @@ public class HexcraftConfiguredFeatures {
 		register(context, ECHO_KEY, Feature.HUGE_FUNGUS, new HugeFungusConfiguration(Blocks.DIRT.defaultBlockState(),
 				HexcraftBlocks.ECHO_WOOD_LOG.get().defaultBlockState(), HexcraftBlocks.ECHO_WOOD_LEAVES.get().defaultBlockState(), HexcraftBlocks.ECHO_FUNGAL_LAMP.get().defaultBlockState(), $$2, true));
 
+		register(context, BLOOD_MUSHROOM_KEY, Feature.HUGE_RED_MUSHROOM, new HugeMushroomFeatureConfiguration(BlockStateProvider.simple(HexcraftBlocks.BLOOD_MUSHROOM_BLOCK.get().defaultBlockState().setValue(HugeMushroomBlock.UP,
+				Boolean.valueOf(true)).setValue(HugeMushroomBlock.DOWN, Boolean.valueOf(false))), BlockStateProvider.simple
+				(HexcraftBlocks.BLOOD_MUSHROOM_STEM.get().defaultBlockState().setValue(HugeMushroomBlock.UP, Boolean.valueOf(false)).setValue
+						(HugeMushroomBlock.DOWN, Boolean.valueOf(false))), 3));
+
+		register(context, VILESHROOM_KEY, Feature.HUGE_FUNGUS, new HugeFungusConfiguration(Blocks.DIRT.defaultBlockState(),
+				HexcraftBlocks.VILESHROOM_STEM.get().defaultBlockState(), HexcraftBlocks.VILESHROOM_BLOCK.get().defaultBlockState(), HexcraftBlocks.VILESHROOM_LAMP.get().defaultBlockState(), $$2, true));
+
+		register(context, GHOSTSHROOM_KEY, Feature.HUGE_FUNGUS, new HugeFungusConfiguration(Blocks.DIRT.defaultBlockState(),
+				HexcraftBlocks.GHOSTSHROOM_STEM.get().defaultBlockState(), HexcraftBlocks.GHOSTSHROOM_BLOCK.get().defaultBlockState(), HexcraftBlocks.GHOSTSHROOM_LAMP.get().defaultBlockState(), $$2, true));
+
 	}
+
+
 
 	public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
 		return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(HexcraftMod.MOD_ID, name));

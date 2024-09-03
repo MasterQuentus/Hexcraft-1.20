@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-02T18:44:10.6996537	Item Models: hexcraftmod
+// 1.20.1	2024-09-03T01:50:58.858733	Item Models: hexcraftmod
 160560169bde8b9f291dac27ebe1acb35356e7dc assets/hexcraftmod/models/item/aerpine.json
 6151765f657d939571e60a8d06b660c885dfb9f9 assets/hexcraftmod/models/item/aerpine_seeds.json
 424491fc87e0fdf222fd40f43302af0b96667b38 assets/hexcraftmod/models/item/air_rune.json
@@ -118,6 +118,7 @@ f0b3aa0f5424a6a75ac99a58487db239bd4766f8 assets/hexcraftmod/models/item/elder_st
 8e9614fa9605d69b869c901b2a48ff4f17dbd1e5 assets/hexcraftmod/models/item/enhanced_jormium_ingot.json
 87c618e61fb00ee08bbe1751118ab5a1b06b0776 assets/hexcraftmod/models/item/exhale_of_the_horned_one.json
 03f0415ab71fe7830ee671281865745f3f094caf assets/hexcraftmod/models/item/explosion_protection_poppet.json
+d8e9119650e6ec01679385583ba23548f25ab2be assets/hexcraftmod/models/item/fairy_dust.json
 28a3b81640dea5323de1957ec7f171550826efa4 assets/hexcraftmod/models/item/fairy_sand_stone_wall.json
 08f95060aaf4dbe791c8107480d79dbe95c74103 assets/hexcraftmod/models/item/fall_protection_poppet.json
 33913aeeeee89de17ce3b879ee737956004a9a42 assets/hexcraftmod/models/item/fire_protection_poppet.json
@@ -179,6 +180,7 @@ cdb5ab3b9c9a459c0191138e0ffd8188d35bff1d assets/hexcraftmod/models/item/pearl_st
 813064a4068890fc119d3ad8a3c0e3be62b339b9 assets/hexcraftmod/models/item/pearl_stone_wall.json
 ed47966c4bc181ccc92202598365eb0c63516978 assets/hexcraftmod/models/item/perennia.json
 e5a6aa32b584d9ff6f0dd7b849126a40d07bc456 assets/hexcraftmod/models/item/perennia_seeds.json
+12aaf8b24ecb26df7fefe29940c806e229b92eb9 assets/hexcraftmod/models/item/pixie_dust.json
 7a7a7717cda8609c3f21e0e72d1dc5411eb11df7 assets/hexcraftmod/models/item/polished_charstone_slab.json
 fdc9af3e8b5157926b2eb4afc775de7615cc6f37 assets/hexcraftmod/models/item/polished_charstone_stairs.json
 ace1119059a8c4d4e4aaa6e59e2440aa561f8c02 assets/hexcraftmod/models/item/polished_crimson_stone_slab.json

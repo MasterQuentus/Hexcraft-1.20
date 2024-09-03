@@ -1,4 +1,4 @@
-package net.masterquentus.hexcraftmod.event;
+package net.masterquentus.hexcraftmod.events;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.entity.HexcraftBlockEntities;

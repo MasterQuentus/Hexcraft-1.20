@@ -111,6 +111,8 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 		saplingItem(HexcraftBlocks.ECHO_WOOD_SAPLING);
 		simpleItem(HexcraftItems.BLOOD_APPLE);
 		simpleItem(HexcraftItems.BLOOD_BERRIES);
+		simpleItem(HexcraftItems.FAIRY_DUST);
+		simpleItem(HexcraftItems.PIXIE_DUST);
 		simpleItem(HexcraftItems.WITCHES_LADDER_ITEM);
 		simpleItem(HexcraftItems.VILEVINE_ITEM);
 		simpleItem(HexcraftItems.WITCHES_SATCHEL);

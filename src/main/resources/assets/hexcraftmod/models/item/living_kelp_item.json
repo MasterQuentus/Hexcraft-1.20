@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hexcraftmod:item/living_kelp_item"
+  }
+}

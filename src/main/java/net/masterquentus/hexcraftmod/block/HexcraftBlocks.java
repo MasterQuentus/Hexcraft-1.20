@@ -13,6 +13,9 @@ import net.masterquentus.hexcraftmod.block.custom.signs.HexcraftlHangingSignBloc
 import net.masterquentus.hexcraftmod.fluid.HexcraftFluids;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.masterquentus.hexcraftmod.util.HexcraftWoodTypes;
+import net.masterquentus.hexcraftmod.worldgen.mushroom.BloodMushroomGrower;
+import net.masterquentus.hexcraftmod.worldgen.mushroom.GhostshroomGrower;
+import net.masterquentus.hexcraftmod.worldgen.mushroom.VileshroomGrower;
 import net.masterquentus.hexcraftmod.worldgen.tree.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -56,6 +59,10 @@ public class HexcraftBlocks {
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)
 					.strength(0.5F)));
 
+	public static final RegistryObject <Block> CRIMSON_MAGMA = registerBlock("crimson_magma",
+			() -> new MagmaBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+					.sound(SoundType.NETHER_BRICKS)));
+
 	public static final RegistryObject <Block> CURSED_SOIL = registerBlock("cursed_soil",
 			() -> new CursedSoilBlock(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK).strength(0.6F).sound(SoundType.SOUL_SAND)));
 
@@ -85,6 +92,28 @@ public class HexcraftBlocks {
 
 	public static final Supplier<Block> SPANISH_MOSS = registerBlock("spanish_moss",
 			SpanishMossBlock::new);
+
+	public static final RegistryObject<Block> WISPY_COTTON = registerBlock("wispy_cotton",
+			WispyCottenBlock::new);
+
+	public static final RegistryObject <Block> POTTED_WISPY_COTTON = BLOCKS.register("potted_wispy_cotton",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), WISPY_COTTON, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+
+	public static final RegistryObject<Block> SOUL_FLOWER = registerBlock("soul_flower",
+			() -> new FlowerBlock(MobEffects.HEAL, 2, BlockBehaviour.Properties.copy(Blocks.POPPY)
+					.instabreak().noOcclusion()));
+
+	public static final RegistryObject <Block> POTTED_SOUL_FLOWER = BLOCKS.register("potted_soul_flower",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), SOUL_FLOWER, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+
+
+	public static final Supplier<Block> EMBER_MOSS_BLOCK = registerBlock("ember_moss_block",
+			() -> new EmberMoss(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)
+					.instabreak().sound(SoundType.MOSS).strength(0.1f)));
+
+	public static final RegistryObject<Block> EMBER_MOSS_CARPET = registerBlock("ember_moss_carpet",
+			() -> new CarpetBlock(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)
+					.instabreak().sound(SoundType.MOSS_CARPET).strength(0.1f)));
 
 	public static final RegistryObject <Block> DEMON_HEART = registerBlock("demon_heart",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.SCULK)
@@ -122,6 +151,19 @@ public class HexcraftBlocks {
 			() -> new EnderBrambleBlock(BlockBehaviour.Properties.copy(Blocks.SUGAR_CANE)
 					.instabreak()));
 
+	public static final RegistryObject<Block> LIVING_KELP = BLOCKS.register("living_kelp",
+			() -> new LivingKelpBlock(BlockBehaviour.Properties.copy(Blocks.KELP)
+					.noCollission().randomTicks().instabreak().sound(SoundType.WET_GRASS)
+					.lightLevel((state) -> 15)));
+
+	public static final RegistryObject<Block> LIVING_KELP_PLANT = BLOCKS.register("living_kelp_plant",
+			() -> new LivingkelpPlant(BlockBehaviour.Properties.copy(Blocks.KELP_PLANT)
+					.instabreak().lightLevel((state) -> 15).noOcclusion().noLootTable()));
+
+	public static final RegistryObject<Block> LIVING_KELP_BLOCK = registerBlock("living_kelp_block",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIED_KELP_BLOCK).sound(SoundType.WET_GRASS)
+					.strength(0.5F, 2.5F)));
+
 	public static final RegistryObject<Block> BLOOD_BERRIES_PLANT = registerBlockWithoutBlockItem("blood_berries_plant",
 			() -> new BloodBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion().randomTicks().noLootTable()));
 
@@ -129,25 +171,73 @@ public class HexcraftBlocks {
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()
 					.strength(50.0F, 1200.0F).sound(SoundType.STONE)));
 
+	//Light Blocks
 	public static final RegistryObject<Block> ECHO_FUNGAL_LAMP = registerBlock("echo_fungal_lamp",
 			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.VERDANT_FROGLIGHT)
-					.strength(1.0F).sound(SoundType.FROGLIGHT)
+					.strength(0.3F).sound(SoundType.FROGLIGHT)
 					.lightLevel((state) -> 15)));
 
 	public static final RegistryObject<Block> HELL_FUNGAL_LAMP = registerBlock("hell_fungal_lamp",
 			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.VERDANT_FROGLIGHT)
-					.strength(1.0F).sound(SoundType.FROGLIGHT)
+					.strength(0.3F).sound(SoundType.FROGLIGHT)
 					.lightLevel((state) -> 15)));
 
 	public static final RegistryObject<Block> VILESHROOM_LAMP = registerBlock("vileshroom_lamp",
 			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.VERDANT_FROGLIGHT)
-					.strength(1.0F).sound(SoundType.FROGLIGHT)
+					.strength(0.3F).sound(SoundType.FROGLIGHT)
 					.lightLevel((state) -> 15)));
 
 	public static final RegistryObject<Block> GHOSTSHROOM_LAMP = registerBlock("ghostshroom_lamp",
 			() -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.VERDANT_FROGLIGHT)
-					.strength(1.0F).sound(SoundType.FROGLIGHT)
+					.strength(0.3F).sound(SoundType.FROGLIGHT)
 					.lightLevel((state) -> 15)));
+
+	//Mushrooms
+	public static final RegistryObject<Block> BLOOD_MUSHROOM = registerBlock("blood_mushroom",
+			() -> new SaplingBlock (new BloodMushroomGrower(),BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM)
+					.lightLevel((state) -> 1)));
+
+	public static final RegistryObject <Block> POTTED_BLOOD_MUSHROOM = BLOCKS.register("potted_blood_mushroom",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), BLOOD_MUSHROOM, BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM)));
+
+
+	public static final RegistryObject<Block> BLOOD_MUSHROOM_BLOCK = registerBlock("blood_mushroom_block",
+			() -> new HugeMushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM_BLOCK)
+					.strength(0.2F, 0F)));
+
+	public static final RegistryObject<Block> BLOOD_MUSHROOM_STEM = registerBlock("blood_mushroom_stem",
+			() -> new HugeMushroomBlock(BlockBehaviour.Properties.copy(Blocks.MUSHROOM_STEM)
+					.strength(0.2F, 0F)));
+
+	public static final RegistryObject<Block> VILESHROOM = registerBlock("vileshroom",
+			() -> new SaplingBlock (new VileshroomGrower(),BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM)
+					.lightLevel((state) -> 1)));
+
+	public static final RegistryObject <Block> POTTED_VILESHROOM = BLOCKS.register("potted_vileshroom",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), VILESHROOM, BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM)));
+
+	public static final RegistryObject<Block> VILESHROOM_BLOCK = registerBlock("vileshroom_block",
+			() -> new HugeMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM_BLOCK)
+					.strength(0.2F, 0F)));
+
+	public static final RegistryObject<Block> VILESHROOM_STEM = registerBlock("vileshroom_stem",
+			() -> new HugeMushroomBlock(BlockBehaviour.Properties.copy(Blocks.MUSHROOM_STEM)
+					.strength(0.2F, 0F)));
+
+	public static final RegistryObject<Block> GHOSTSHROOM = registerBlock("ghostshroom",
+			() -> new SaplingBlock (new GhostshroomGrower(),BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM)
+					.lightLevel((state) -> 1)));
+
+	public static final RegistryObject <Block> POTTED_GHOSTSHROOM = BLOCKS.register("potted_ghostshroom",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), GHOSTSHROOM, BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM)));
+
+	public static final RegistryObject<Block> GHOSTSHROOM_BLOCK = registerBlock("ghostshroom_block",
+			() -> new HugeMushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM_BLOCK)
+					.strength(0.2F, 0F)));
+
+	public static final RegistryObject<Block> GHOSTSHROOM_STEM = registerBlock("ghostshroom_stem",
+			() -> new HugeMushroomBlock(BlockBehaviour.Properties.copy(Blocks.MUSHROOM_STEM)
+					.strength(0.2F, 0F)));
 
 	public static final RegistryObject<Block> PEARL_STONE = registerBlock("pearl_stone",
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
@@ -286,50 +376,98 @@ public class HexcraftBlocks {
 	public static final RegistryObject<Block> EBONY_SAPLING = registerBlock("ebony_sapling",
 			() -> new SaplingBlock(new EbonyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+	public static final RegistryObject <Block> POTTED_EBONY_SAPLING = BLOCKS.register("potted_ebony_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), EBONY_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
+
 	public static final RegistryObject<Block> BLOOD_OAK_SAPLING = registerBlock("blood_oak_sapling",
 			() -> new SaplingBlock(new BloodOakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+	public static final RegistryObject <Block> POTTED_BLOOD_OAK_SAPLING = BLOCKS.register("potted_blood_oak_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), BLOOD_OAK_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
 	public static final RegistryObject<Block> HELL_BARK_SAPLING = registerBlock("hell_bark_sapling",
 			() -> new SaplingBlock(new HellBarkTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+	public static final RegistryObject <Block> POTTED_HELL_BARK_SAPLING = BLOCKS.register("potted_hell_bark_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), HELL_BARK_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
+
 	public static final RegistryObject<Block> WHITE_OAK_SAPLING = registerBlock("white_oak_sapling",
 			() -> new SaplingBlock(new WhiteOakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+	public static final RegistryObject <Block> POTTED_WHITE_OAK_SAPLING = BLOCKS.register("potted_white_oak_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), WHITE_OAK_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
 	public static final RegistryObject<Block> ALDER_SAPLING = registerBlock("alder_sapling",
 			() -> new SaplingBlock(new AlderTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+	public static final RegistryObject <Block> POTTED_ALDER_SAPLING = BLOCKS.register("potted_alder_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), ALDER_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
+
 	public static final RegistryObject<Block> WITCH_HAZEL_SAPLING = registerBlock("witch_hazel_sapling",
 			() -> new SaplingBlock(new WitchHazelTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+	public static final RegistryObject <Block> POTTED_WITCH_HAZEL_SAPLING = BLOCKS.register("potted_witch_hazel_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), WITCH_HAZEL_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
 	public static final RegistryObject<Block> WILLOW_SAPLING = registerBlock("willow_sapling",
 			() -> new SaplingBlock(new WillowTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+	public static final RegistryObject <Block> POTTED_WILLOW_SAPLING = BLOCKS.register("potted_willow_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), WILLOW_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
+
 	public static final RegistryObject<Block> HAWTHORN_SAPLING = registerBlock("hawthorn_sapling",
 			() -> new SaplingBlock(new HawthornTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+	public static final RegistryObject <Block> POTTED_HAWTHORN_SAPLING = BLOCKS.register("potted_hawthorn_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), HAWTHORN_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
 	public static final RegistryObject<Block> CEDAR_SAPLING = registerBlock("cedar_sapling",
 			() -> new SaplingBlock(new CedarTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+	public static final RegistryObject <Block> POTTED_CEDAR_SAPLING = BLOCKS.register("potted_cedar_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), CEDAR_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
+
 	public static final RegistryObject<Block> DISTORTED_SAPLING = registerBlock("distorted_sapling",
 			() -> new SaplingBlock(new DistortedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+	public static final RegistryObject <Block> POTTED_DISTORTED_SAPLING = BLOCKS.register("potted_distorted_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), DISTORTED_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
 	public static final RegistryObject<Block> ELDER_SAPLING = registerBlock("elder_sapling",
 			() -> new SaplingBlock(new ElderTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+	public static final RegistryObject <Block> POTTED_ELDER_SAPLING = BLOCKS.register("potted_elder_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), ELDER_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
+
 	public static final RegistryObject<Block> JUNIPER_SAPLING = registerBlock("juniper_sapling",
 			() -> new SaplingBlock(new JuniperTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+	public static final RegistryObject <Block> POTTED_JUNIPER_SAPLING = BLOCKS.register("potted_juniper_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), JUNIPER_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
 	public static final RegistryObject<Block> ROWAN_SAPLING = registerBlock("rowan_sapling",
 			() -> new SaplingBlock(new RowanTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+	public static final RegistryObject <Block> POTTED_ROWAN_SAPLING = BLOCKS.register("potted_rowan_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), ROWAN_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
+
 	public static final RegistryObject<Block> TWISTED_SAPLING = registerBlock("twisted_sapling",
 			() -> new SaplingBlock(new TwistedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+	public static final RegistryObject <Block> POTTED_TWISTED_SAPLING = BLOCKS.register("potted_twisted_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), TWISTED_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
 	public static final RegistryObject<Block> WITCH_WOOD_SAPLING = registerBlock("witch_wood_sapling",
 			() -> new SaplingBlock(new WitchWoodTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+	public static final RegistryObject <Block> POTTED_WITCH_WOOD_SAPLING = BLOCKS.register("potted_witch_wood_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), WITCH_WOOD_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
+
 	public static final RegistryObject<Block> ECHO_WOOD_SAPLING = registerBlock("echo_sapling",
 			() -> new SaplingBlock(new EchoTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+	public static final RegistryObject <Block> POTTED_ECHO_WOOD_SAPLING = BLOCKS.register("potted_echo_sapling",
+			() -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), ECHO_WOOD_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING)));
 
 	//Leaves
 	public static final RegistryObject<Block> EBONY_LEAVES = registerBlock("ebony_leaves",
@@ -1452,6 +1590,68 @@ public class HexcraftBlocks {
 	public static final RegistryObject<Block> ECHO_WOOD_BOOKSHELF = registerBlock("echo_wood_bookshelf",
 			() -> new HexcraftBookshelf(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
 					.strength(1.5F)));
+
+	//Crates
+	//public static final RegistryObject<Block> CRATE_EBONY = BLOCKS.register("crate_ebony", () -> new CrateEbonyBlock());
+	//public static final RegistryObject<Block> CRATE_BLOOD_OAK = BLOCKS.register("crate_blood_oak", () -> new CrateBloodOakBlock());
+	//public static final RegistryObject<Block> CRATE_HELLBARK = BLOCKS.register("crate_hellbark", () -> new CrateHellbarkBlock());
+	//public static final RegistryObject<Block> CRATE_WHITE_OAK = BLOCKS.register("crate_white_oak", () -> new CrateWhiteOakBlock());
+	//public static final RegistryObject<Block> CRATE_ALDER = BLOCKS.register("crate_alder", () -> new CrateAlderBlock());
+	//public static final RegistryObject<Block> CRATE_WITCH_HAZEL = BLOCKS.register("crate_witch_hazel", () -> new CrateWitchHazelBlock());
+	//public static final RegistryObject<Block> CRATE_WILLOW = BLOCKS.register("crate_willow", () -> new CrateWillowBlock());
+	//public static final RegistryObject<Block> CRATE_HAWTHORN = BLOCKS.register("crate_hawthorn", () -> new CrateHawthornBlock());
+	//public static final RegistryObject<Block> CRATE_CEDAR = BLOCKS.register("crate_cedar", () -> new CrateCedarBlock());
+	//public static final RegistryObject<Block> CRATE_DISTORTED = BLOCKS.register("crate_distorted", () -> new CrateDistortedBlock());
+	//public static final RegistryObject<Block> CRATE_ELDER = BLOCKS.register("crate_elder", () -> new CrateElderBlock());
+	//public static final RegistryObject<Block> CRATE_JUNIPER = BLOCKS.register("crate_juniper", () -> new CrateJuniperBlock());
+	//public static final RegistryObject<Block> CRATE_ROWAN = BLOCKS.register("crate_rowan", () -> new CrateRowanBlock());
+	//public static final RegistryObject<Block> CRATE_TWISTED = BLOCKS.register("crate_twisted", () -> new CrateTwistedBlock());
+	//public static final RegistryObject<Block> CRATE_WITCH_WOOD = BLOCKS.register("crate_witch_wood", () -> new CrateWitchWoodBlock());
+	//public static final RegistryObject<Block> CRATE_ECHO_WOOD = BLOCKS.register("crate_echo_wood", () -> new CrateEchoBlock());
+	//public static final RegistryObject<Block> CRATE_OAK = BLOCKS.register("crate_oak", () -> new CrateOakBlock());
+	//public static final RegistryObject<Block> CRATE_SPRUCE = BLOCKS.register("crate_spruce", () -> new CrateSpruceBlock());
+	//public static final RegistryObject<Block> CRATE_BIRCH = BLOCKS.register("crate_birch", () -> new CrateBirchBlock());
+	//public static final RegistryObject<Block> CRATE_JUNGLE = BLOCKS.register("crate_jungle", () -> new CrateJungleBlock());
+	//public static final RegistryObject<Block> CRATE_ACACIA = BLOCKS.register("crate_acacia", () -> new CrateAcaciaBlock());
+	//public static final RegistryObject<Block> CRATE_DARK_OAK = BLOCKS.register("crate_dark_oak", () -> new CrateDarkOakBlock());
+	//public static final RegistryObject<Block> CRATE_CRIMSON = BLOCKS.register("crate_crimson", () -> new CrateCrimsonBlock());
+	//public static final RegistryObject<Block> CRATE_WARPED = BLOCKS.register("crate_warped", () -> new CrateWarpedBlock());
+	//public static final RegistryObject<Block> CRATE_MANGROVE = BLOCKS.register("crate_mangrove", () -> new CrateMangroveBlock());
+
+
+	//Chests
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_ALDER = BLOCKS.register("chest_alder",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(ALDER_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_BLOOD_OAK = BLOCKS.register("chest_blood_oak",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(BLOOD_OAK_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_CEDAR = BLOCKS.register("chest_cedar",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(CEDAR_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_DISTORTED = BLOCKS.register("chest_distorted",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(DISTORTED_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_EBONY = BLOCKS.register("chest_ebony",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(EBONY_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_ECHO_WOOD = BLOCKS.register("chest_echo_wood",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(ECHO_WOOD_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_ELDER = BLOCKS.register("chest_elder",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(ELDER_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_HAWTHORN = BLOCKS.register("chest_hawthorn",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(HAWTHORN_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_HELL_BARK = BLOCKS.register("chest_hell_bark",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(HELL_BARK_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_JUNIPER = BLOCKS.register("chest_juniper",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(JUNIPER_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_ROWAN = BLOCKS.register("chest_rowan",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(ROWAN_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_TWISTED = BLOCKS.register("chest_twisted",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(TWISTED_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_WHITE_OAK = BLOCKS.register("chest_white_oak",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(WHITE_OAK_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_WILLOW = BLOCKS.register("chest_willow",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(WILLOW_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_WITCH_HAZEL = BLOCKS.register("chest_witch_hazel",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(WITCH_HAZEL_PLANKS.get()).strength(2.5f)));
+	//public static final RegistryObject<HexcraftChestBlock> CHEST_WITCH_WOOD = BLOCKS.register("chest_witch_wood",
+			//() -> new HexcraftChestBlock(BlockBehaviour.Properties.copy(WITCH_WOOD_PLANKS.get()).strength(2.5f)));
 
 	//Walls
 	public static final RegistryObject<Block> PEARL_STONE_WALL = registerBlock("pearl_stone_wall",

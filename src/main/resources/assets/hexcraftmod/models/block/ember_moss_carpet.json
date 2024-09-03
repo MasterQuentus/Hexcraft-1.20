@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "hexcraftmod:block/ember_moss_block"
+  }
+}

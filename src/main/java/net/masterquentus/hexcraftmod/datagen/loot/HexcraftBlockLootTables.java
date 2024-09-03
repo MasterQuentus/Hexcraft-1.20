@@ -60,18 +60,51 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.add(HexcraftBlocks.POTTED_VAMPIRE_ORCHID.get(),
 				createPotFlowerItemTable(HexcraftBlocks.POTTED_VAMPIRE_ORCHID.get()));
 
+		this.dropSelf(HexcraftBlocks.WISPY_COTTON.get());
+
+		this.add(HexcraftBlocks.POTTED_WISPY_COTTON.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_WISPY_COTTON.get()));
+
+		this.dropSelf(HexcraftBlocks.SOUL_FLOWER.get());
+
+		this.add(HexcraftBlocks.POTTED_SOUL_FLOWER.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_SOUL_FLOWER.get()));
+
 		this.dropSelf(HexcraftBlocks.BLOODY_ROSE.get());
 
 		this.add(HexcraftBlocks.POTTED_BLOODY_ROSE.get(),
 				createPotFlowerItemTable(HexcraftBlocks.POTTED_BLOODY_ROSE.get()));
 
+		this.dropSelf(HexcraftBlocks.BLOOD_MUSHROOM.get());
+
+		this.add(HexcraftBlocks.POTTED_BLOOD_MUSHROOM.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_BLOOD_MUSHROOM.get()));
+
+		this.dropSelf(HexcraftBlocks.VILESHROOM.get());
+
+		this.add(HexcraftBlocks.POTTED_VILESHROOM.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_VILESHROOM.get()));
+
+		this.dropSelf(HexcraftBlocks.GHOSTSHROOM.get());
+
+		this.add(HexcraftBlocks.POTTED_GHOSTSHROOM.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_GHOSTSHROOM.get()));
+
 		this.dropSelf(HexcraftBlocks.WILD_BRAMBLE.get());
 
 		this.dropSelf(HexcraftBlocks.ENDER_BRAMBLE.get());
 
+		this.dropSelf(HexcraftBlocks.CRIMSON_MAGMA.get());
+
 		this.dropSelf(HexcraftBlocks.GLINT_WEED.get());
 
 		this.dropSelf(HexcraftBlocks.SPANISH_MOSS.get());
+
+		this.dropSelf(HexcraftBlocks.EMBER_MOSS_BLOCK.get());
+
+		this.dropSelf(HexcraftBlocks.EMBER_MOSS_CARPET.get());
+
+		this.dropSelf(HexcraftBlocks.LIVING_KELP_BLOCK.get());
 
 		this.dropSelf(HexcraftBlocks.EMBER_MOSS.get());
 
@@ -241,41 +274,89 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropSelf(HexcraftBlocks.EBONY_SAPLING.get());
 
+		this.add(HexcraftBlocks.POTTED_EBONY_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_EBONY_SAPLING.get()));
+
 		this.dropSelf(HexcraftBlocks.BLOOD_OAK_SAPLING.get());
+
+		this.add(HexcraftBlocks.POTTED_BLOOD_OAK_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_BLOOD_OAK_SAPLING.get()));
 
 		this.dropSelf(HexcraftBlocks.HELL_BARK_SAPLING.get());
 
+		this.add(HexcraftBlocks.POTTED_HELL_BARK_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_HELL_BARK_SAPLING.get()));
+
 		this.dropSelf(HexcraftBlocks.WHITE_OAK_SAPLING.get());
+
+		this.add(HexcraftBlocks.POTTED_WHITE_OAK_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_WHITE_OAK_SAPLING.get()));
 
 		this.dropSelf(HexcraftBlocks.ALDER_SAPLING.get());
 
+		this.add(HexcraftBlocks.POTTED_ALDER_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_ALDER_SAPLING.get()));
+
 		this.dropSelf(HexcraftBlocks.WITCH_HAZEL_SAPLING.get());
+
+		this.add(HexcraftBlocks.POTTED_WITCH_HAZEL_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_WITCH_HAZEL_SAPLING.get()));
 
 		this.dropSelf(HexcraftBlocks.WILLOW_SAPLING.get());
 
+		this.add(HexcraftBlocks.POTTED_WILLOW_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_WILLOW_SAPLING.get()));
+
 		this.dropSelf(HexcraftBlocks.HAWTHORN_SAPLING.get());
+
+		this.add(HexcraftBlocks.POTTED_HAWTHORN_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_HAWTHORN_SAPLING.get()));
 
 		this.dropSelf(HexcraftBlocks.CEDAR_SAPLING.get());
 
+		this.add(HexcraftBlocks.POTTED_CEDAR_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_CEDAR_SAPLING.get()));
+
 		this.dropSelf(HexcraftBlocks.DISTORTED_SAPLING.get());
+
+		this.add(HexcraftBlocks.POTTED_DISTORTED_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_DISTORTED_SAPLING.get()));
 
 		this.dropSelf(HexcraftBlocks.ELDER_SAPLING.get());
 
+		this.add(HexcraftBlocks.POTTED_ELDER_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_ELDER_SAPLING.get()));
+
 		this.dropSelf(HexcraftBlocks.JUNIPER_SAPLING.get());
+
+		this.add(HexcraftBlocks.POTTED_JUNIPER_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_JUNIPER_SAPLING.get()));
 
 		this.dropSelf(HexcraftBlocks.ROWAN_SAPLING.get());
 
+		this.add(HexcraftBlocks.POTTED_ROWAN_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_ROWAN_SAPLING.get()));
+
 		this.dropSelf(HexcraftBlocks.TWISTED_SAPLING.get());
+
+		this.add(HexcraftBlocks.POTTED_TWISTED_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_TWISTED_SAPLING.get()));
 
 		this.dropSelf(HexcraftBlocks.WITCH_WOOD_SAPLING.get());
 
+		this.add(HexcraftBlocks.POTTED_WITCH_WOOD_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_WITCH_WOOD_SAPLING.get()));
+
 		this.dropSelf(HexcraftBlocks.ECHO_WOOD_SAPLING.get());
+
+		this.add(HexcraftBlocks.POTTED_ECHO_WOOD_SAPLING.get(),
+				createPotFlowerItemTable(HexcraftBlocks.POTTED_ECHO_WOOD_SAPLING.get()));
 
 		this.add(HexcraftBlocks.EBONY_LEAVES.get(), block ->
 				createLeavesDrops(block, HexcraftBlocks.EBONY_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
 		this.add(HexcraftBlocks.BLOOD_OAK_LEAVES.get(), block ->
-				createLeavesDrops(block, HexcraftBlocks.BLOOD_OAK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+				createOakLeavesDrops(block, HexcraftBlocks.BLOOD_OAK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
 		this.add(HexcraftBlocks.HELL_BARK_LEAVES.get(), block ->
 				createLeavesDrops(block, HexcraftBlocks.HELL_BARK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -322,6 +403,10 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.dropSelf(HexcraftBlocks.HELL_FUNGAL_LAMP.get());
 
 		this.dropSelf(HexcraftBlocks.ECHO_FUNGAL_LAMP.get());
+
+		this.dropSelf(HexcraftBlocks.VILESHROOM_LAMP.get());
+
+		this.dropSelf(HexcraftBlocks.GHOSTSHROOM_LAMP.get());
 
 		this.dropSelf(HexcraftBlocks.PEARL_COBBLESTONE.get());
 
@@ -706,7 +791,7 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.add(HexcraftBlocks.ECHO_WOOD_DOOR.get(),
 				block -> createDoorTable(HexcraftBlocks.ECHO_WOOD_DOOR.get()));
-		
+
 		this.dropSelf(HexcraftBlocks.EBONY_TRAPDOOR.get());
 
 		this.dropSelf(HexcraftBlocks.BLOOD_OAK_TRAPDOOR.get());
@@ -787,7 +872,25 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropOther(HexcraftBlocks.WITCHES_LADDER.get(), HexcraftItems.WITCHES_LADDER_ITEM.get());;
 
+		this.dropOther(HexcraftBlocks.WITCHES_LADDER_MIDDLE.get(), HexcraftItems.WITCHES_LADDER_ITEM.get());;
+
+		this.dropOther(HexcraftBlocks.WITCHES_LADDER_BOTTOM.get(), HexcraftItems.WITCHES_LADDER_ITEM.get());;
+
+		this.dropOther(HexcraftBlocks.LIVING_KELP.get(), HexcraftItems.LIVING_KELP_ITEM.get());;
+
 		this.dropOther(HexcraftBlocks.VILEVINE.get(), HexcraftItems.VILEVINE_ITEM.get());;
+
+		this.dropOther(HexcraftBlocks.BLOOD_MUSHROOM_BLOCK.get(), HexcraftBlocks.BLOOD_MUSHROOM.get());
+
+		this.dropOther(HexcraftBlocks.BLOOD_MUSHROOM_STEM.get(), HexcraftBlocks.BLOOD_MUSHROOM.get());
+
+		this.dropOther(HexcraftBlocks.VILESHROOM_BLOCK.get(), HexcraftBlocks.VILESHROOM.get());
+
+		this.dropOther(HexcraftBlocks.VILESHROOM_STEM.get(), HexcraftBlocks.VILESHROOM.get());
+
+		this.dropOther(HexcraftBlocks.GHOSTSHROOM_BLOCK.get(), HexcraftBlocks.GHOSTSHROOM.get());
+
+		this.dropOther(HexcraftBlocks.GHOSTSHROOM_STEM.get(), HexcraftBlocks.GHOSTSHROOM.get());
 
 		this.add(HexcraftBlocks.VILE_GRASS_BLOCK.get(),
 				block -> createCopperLikeOreDrops(HexcraftBlocks.VILE_GRASS_BLOCK.get(), Item.byBlock(HexcraftBlocks.VILE_DIRT.get())));

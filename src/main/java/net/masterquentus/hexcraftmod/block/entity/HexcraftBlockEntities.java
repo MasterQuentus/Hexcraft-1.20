@@ -66,6 +66,8 @@ public class HexcraftBlockEntities {
 							HexcraftBlocks.WITCH_WOOD_HANGING_SIGN.get(), HexcraftBlocks.WITCH_WOOD_WALL_HANGING_SIGN.get(),
 							HexcraftBlocks.ECHO_WOOD_HANGING_SIGN.get(), HexcraftBlocks.ECHO_WOOD_WALL_HANGING_SIGN.get()).build(null));
 
+	//Crates
+
 
 
 	public static void register(IEventBus eventBus) {

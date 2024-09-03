@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-02T19:13:36.0014316	Tags for minecraft:block mod id hexcraftmod
+// 1.20.1	2024-09-02T23:40:36.2450698	Tags for minecraft:block mod id hexcraftmod
 08655953849d65d9052bf4a2b5837f023777b9e4 data/hexcraftmod/tags/blocks/blight_decayable_plants.json
 05d15f92ba6dcd89533c1466fae5008bfd580360 data/hexcraftmod/tags/blocks/crops.json
 2c15ff666f9512e78d5142860eb8a5aa9e74913b data/hexcraftmod/tags/blocks/mutandis_blacklist_plants.json
@@ -15,8 +15,10 @@ a329f36fcd9efc009ce075f110db7546e7fbca8f data/minecraft/tags/blocks/enderman_hol
 73ef2a2378c015cedad36f910caebda54994a7a9 data/minecraft/tags/blocks/ice.json
 cda701b2e0548c81589b022eeeebe63a1b7c93ba data/minecraft/tags/blocks/logs_that_burn.json
 66e75abfed60105039659253c14c94a204aa7e3e data/minecraft/tags/blocks/mineable/axe.json
-6aa76a9c5770b61ac2b4d43834ea67144d083a4f data/minecraft/tags/blocks/mineable/pickaxe.json
+3df97da6b414faadb042ed77ea1931e5e47428a3 data/minecraft/tags/blocks/mineable/hoe.json
+d58cae7f593eae87f03c204165799928997a5bde data/minecraft/tags/blocks/mineable/pickaxe.json
 d9e7b4871f5f05caad74afa91352b246ece15813 data/minecraft/tags/blocks/mineable/shovel.json
+e3778329ab012b3462d89f36deb416b9f879b1f5 data/minecraft/tags/blocks/moss_replaceable.json
 fb39f443bcdf9663f1ba6e07177f5ad80b37f526 data/minecraft/tags/blocks/needs_diamond_tool.json
 0e50fb4a08a7b353b1ea789095bd8502385791dd data/minecraft/tags/blocks/needs_iron_tool.json
 305461604e810a351d978b77301c04bfbdc03f3a data/minecraft/tags/blocks/planks.json
@@ -24,7 +26,7 @@ b56df645e0771e4377be7116b859fae5b3662a07 data/minecraft/tags/blocks/pressure_pla
 51d0070d6db8096cc38c44fef95cd30c9ddf1510 data/minecraft/tags/blocks/sand.json
 7879d6f61e71fba4e44cdd7a421372f5c54943a9 data/minecraft/tags/blocks/signs.json
 ce61e70e45e3a8eb959016a3657249d23f90151b data/minecraft/tags/blocks/slabs.json
-bebfb75716f2303d2149abcf9f6392a351cc4c40 data/minecraft/tags/blocks/small_flowers.json
+827216ae1418e1adaa2b49a978b7193fcaebae13 data/minecraft/tags/blocks/small_flowers.json
 a412d178ea87774baa73af7331d57d6b7067c866 data/minecraft/tags/blocks/stairs.json
 7879d6f61e71fba4e44cdd7a421372f5c54943a9 data/minecraft/tags/blocks/standing_signs.json
 c4b4daf894fac59b7babadff44824827f4a00336 data/minecraft/tags/blocks/stone_bricks.json

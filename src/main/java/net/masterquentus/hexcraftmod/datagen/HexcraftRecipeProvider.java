@@ -236,6 +236,14 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 				.unlockedBy(getHasName(HexcraftItems.BLANK_RUNE.get()), has(HexcraftItems.BLANK_RUNE.get()))
 				.save(pWriter);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.LIVING_KELP_BLOCK.get())
+				.pattern("LLL")
+				.pattern("LLL")
+				.pattern("LLL")
+				.define('L', HexcraftItems.LIVING_KELP_ITEM.get())
+				.unlockedBy(getHasName(HexcraftItems.LIVING_KELP_ITEM.get()), has(HexcraftItems.LIVING_KELP_ITEM.get()))
+				.save(pWriter);
+
 		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftItems.BLOODY_NYKIUM.get())
 				.pattern("BBB")
 				.pattern("BBB")
@@ -1040,6 +1048,12 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 				.pattern("EEE")
 				.define('E', HexcraftBlocks.ECHO_WOOD_PLANKS.get())
 				.unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_PLANKS.get()), has(HexcraftBlocks.ECHO_WOOD_PLANKS.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HexcraftBlocks.EMBER_MOSS_CARPET.get(),3)
+				.pattern("EEE")
+				.define('E', HexcraftBlocks.EMBER_MOSS_BLOCK.get())
+				.unlockedBy(getHasName(HexcraftBlocks.EMBER_MOSS_BLOCK.get()), has(HexcraftBlocks.EMBER_MOSS_BLOCK.get()))
 				.save(pWriter);
 
 		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftBlocks.EBONY_FENCE.get(),3)
@@ -2835,6 +2849,11 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftBlocks.ECHO_WOOD_BUTTON.get())
 				.requires(HexcraftBlocks.ECHO_WOOD_PLANKS.get())
 				.unlockedBy(getHasName(HexcraftBlocks.ECHO_WOOD_PLANKS.get()), has(HexcraftBlocks.ECHO_WOOD_PLANKS.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.LIVING_KELP_ITEM.get(), 9)
+				.requires(HexcraftBlocks.LIVING_KELP_BLOCK.get())
+				.unlockedBy(getHasName(HexcraftBlocks.LIVING_KELP_BLOCK.get()), has(HexcraftBlocks.LIVING_KELP_BLOCK.get()))
+				.save(pWriter);
 
 		WitchesOvenRecipeBuilder
 				.buildOvenRecipe(HexcraftItems.WHITE_OAK_ASH.get(), HexcraftItems.WOOD_ASH.get(), 0.35f, 200)
