@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-03T01:08:37.8833955	Loot Tables
+// 1.20.1	2024-09-03T03:48:48.9699975	Loot Tables
 3731d114dca2f6ff9a29a1b2da30a1b10b3ade14 data/hexcraftmod/loot_tables/blocks/aerpine_flower.json
 a9ef5912431cbcde6516da39f898b95c7e583b41 data/hexcraftmod/loot_tables/blocks/alder_bookshelf.json
 f2c7c7f0be2ac6a16b29983059fce33282163f3c data/hexcraftmod/loot_tables/blocks/alder_button.json
@@ -475,8 +475,6 @@ d1165a555935c31f269c85a219d6303c551890df data/hexcraftmod/loot_tables/blocks/wil
 1cf543badecc995d4fc47b876b881d9df343af14 data/hexcraftmod/loot_tables/blocks/wispy_cotton.json
 6c3ddff7dc8cb2b4ff6d3d15cf9cb877bee5d8e4 data/hexcraftmod/loot_tables/blocks/witches_cauldron.json
 8dbe06db6450754b93b0c0e4025c54d851da9f44 data/hexcraftmod/loot_tables/blocks/witches_ladder.json
-5a4e5c958d95c9b7fbe878185d42e376e56fbb21 data/hexcraftmod/loot_tables/blocks/witches_ladder_bottom.json
-9872a2249933fd2a4623dc1992681084436494cd data/hexcraftmod/loot_tables/blocks/witches_ladder_middle.json
 2895ad765d046973654a7e6d8720826eb57a6a57 data/hexcraftmod/loot_tables/blocks/witches_oven.json
 ec8cfe06d31c3ba16d201a21c3440ebdbf7a60d7 data/hexcraftmod/loot_tables/blocks/witch_hazel_bookshelf.json
 55c375b2e391720e04fbf5d370ea5ba4a6654b1b data/hexcraftmod/loot_tables/blocks/witch_hazel_button.json

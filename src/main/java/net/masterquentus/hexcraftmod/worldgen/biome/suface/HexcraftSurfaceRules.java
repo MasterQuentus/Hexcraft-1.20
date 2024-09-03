@@ -27,7 +27,11 @@ public class HexcraftSurfaceRules {
 
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(HexcraftBiomes.CRIMSON_DESERT),
                                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, CRIMSON_SAND_BLOCK)),
-                        SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, UNDER_WORLD_STONE_BLOCK))
+                        SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, UNDER_WORLD_STONE_BLOCK)),
+
+
+                // Default to a grass and dirt surface
+                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, grassSurface)
         );
     }
 
