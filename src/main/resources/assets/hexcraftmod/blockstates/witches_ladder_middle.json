@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pointed_dripstone",
+  "textures": {
+    "cross": "hexcraftmod:block/witches_ladder_middle"
+  }
+}

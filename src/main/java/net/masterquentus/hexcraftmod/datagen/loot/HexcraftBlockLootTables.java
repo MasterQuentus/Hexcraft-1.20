@@ -65,6 +65,10 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.add(HexcraftBlocks.POTTED_BLOODY_ROSE.get(),
 				createPotFlowerItemTable(HexcraftBlocks.POTTED_BLOODY_ROSE.get()));
 
+		this.dropSelf(HexcraftBlocks.WILD_BRAMBLE.get());
+
+		this.dropSelf(HexcraftBlocks.ENDER_BRAMBLE.get());
+
 		this.dropSelf(HexcraftBlocks.GLINT_WEED.get());
 
 		this.dropSelf(HexcraftBlocks.SPANISH_MOSS.get());
@@ -359,6 +363,38 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropSelf(HexcraftBlocks.CRACKED_CHARSTONE.get());
 
+		this.dropSelf(HexcraftBlocks.CRIMSON_SAND.get());
+
+		this.dropSelf(HexcraftBlocks.CRIMSON_SAND_STONE.get());
+
+		this.dropSelf(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE.get());
+
+		this.dropSelf(HexcraftBlocks.CHISELED_CRIMSON_SAND_STONE.get());
+
+		this.dropSelf(HexcraftBlocks.CUT_CRIMSON_SAND_STONE.get());
+
+		this.dropSelf(HexcraftBlocks.FAIRY_SAND.get());
+
+		this.dropSelf(HexcraftBlocks.FAIRY_SAND_STONE.get());
+
+		this.dropSelf(HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE.get());
+
+		this.dropSelf(HexcraftBlocks.CHISELED_FAIRY_SAND_STONE.get());
+
+		this.dropSelf(HexcraftBlocks.CUT_FAIRY_SAND_STONE.get());
+
+		this.dropWhenSilkTouch(HexcraftBlocks.CRIMSON_GLASS.get());
+
+		this.dropWhenSilkTouch(HexcraftBlocks.CRIMSON_GLASS_PANE.get());
+
+		this.dropWhenSilkTouch(HexcraftBlocks.FAIRY_GLASS.get());
+
+		this.dropWhenSilkTouch(HexcraftBlocks.FAIRY_GLASS_PANE.get());
+
+		this.dropWhenSilkTouch(HexcraftBlocks.CRIMSON_ICE.get());
+
+		this.dropWhenSilkTouch(HexcraftBlocks.CRIMSON_PACKED_ICE.get());
+
 		this.dropSelf(HexcraftBlocks.PEARL_STONE_WALL.get());
 
 		this.dropSelf(HexcraftBlocks.CRIMSON_STONE_WALL.get());
@@ -366,6 +402,10 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.dropSelf(HexcraftBlocks.UNDER_WORLD_STONE_WALL.get());
 
 		this.dropSelf(HexcraftBlocks.CHARSTONE_WALL.get());
+
+		this.dropSelf(HexcraftBlocks.CRIMSON_SAND_STONE_WALL.get());
+
+		this.dropSelf(HexcraftBlocks.FAIRY_SAND_STONE_WALL.get());
 
 		this.dropSelf(HexcraftBlocks.PEARL_STONE_STAIRS.get());
 
@@ -398,6 +438,14 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.dropSelf(HexcraftBlocks.CHARSTONE_STONE_BRICKS_STAIRS.get());
 
 		this.dropSelf(HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.CRIMSON_SAND_STONE_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.FAIRY_SAND_STONE_STAIRS.get());
+
+		this.dropSelf(HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE_STAIRS.get());
 
 		this.dropSelf(HexcraftBlocks.EBONY_STAIRS.get());
 
@@ -462,6 +510,18 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.dropSelf(HexcraftBlocks.CHARSTONE_BRICKS_SLAB.get());
 
 		this.dropSelf(HexcraftBlocks.POLISHED_CHARSTONE_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.CRIMSON_SAND_STONE_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.CUT_CRIMSON_SAND_STONE_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.FAIRY_SAND_STONE_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE_SLAB.get());
+
+		this.dropSelf(HexcraftBlocks.CUT_FAIRY_SAND_STONE_SLAB.get());
 
 		this.dropSelf(HexcraftBlocks.EBONY_SLAB.get());
 
@@ -725,7 +785,9 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropOther(HexcraftBlocks.LARGE_MAGIC_CRYSTAL_BUD.get(), HexcraftItems.MAGIC_CRYSTAL.get());
 
-		this.dropOther(HexcraftBlocks.WITCHES_LADDER.get(), HexcraftItems.WITCHES_LADDER_ITEM.get());
+		this.dropOther(HexcraftBlocks.WITCHES_LADDER.get(), HexcraftItems.WITCHES_LADDER_ITEM.get());;
+
+		this.dropOther(HexcraftBlocks.VILEVINE.get(), HexcraftItems.VILEVINE_ITEM.get());;
 
 		this.add(HexcraftBlocks.VILE_GRASS_BLOCK.get(),
 				block -> createCopperLikeOreDrops(HexcraftBlocks.VILE_GRASS_BLOCK.get(), Item.byBlock(HexcraftBlocks.VILE_DIRT.get())));

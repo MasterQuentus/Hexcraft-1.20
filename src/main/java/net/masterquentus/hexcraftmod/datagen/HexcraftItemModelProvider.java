@@ -112,7 +112,7 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 		simpleItem(HexcraftItems.BLOOD_APPLE);
 		simpleItem(HexcraftItems.BLOOD_BERRIES);
 		simpleItem(HexcraftItems.WITCHES_LADDER_ITEM);
-		//simpleItem(HexcraftItems.VILEVINE_ITEM);
+		simpleItem(HexcraftItems.VILEVINE_ITEM);
 		simpleItem(HexcraftItems.WITCHES_SATCHEL);
 		simpleItem(HexcraftItems.MUTANDIS);
 		simpleItem(HexcraftItems.MUTANDIS_EXTREMIS);
@@ -131,6 +131,8 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 		simpleItem(HexcraftItems.FIRE_PROTECTION_POPPET);
 		simpleItem(HexcraftItems.WATER_PROTECTION_POPPET);
 		simpleItem(HexcraftItems.WITHER_PROTECTION_POPPET);
+		simpleItem(HexcraftItems.ARMOR_PROTECTION_POPPET);
+		simpleItem(HexcraftItems.TOOL_PROTECTION_POPPET);
 		simpleItem(HexcraftItems.MANDRAKE_SEEDS);
 		simpleItem(HexcraftItems.MANDRAKE_ROOT);
 		simpleItem(HexcraftItems.GARLIC);
@@ -164,6 +166,8 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 		wallItem(HexcraftBlocks.CRIMSON_STONE_WALL, HexcraftBlocks.CRIMSON_STONE);
 		wallItem(HexcraftBlocks.UNDER_WORLD_STONE_WALL, HexcraftBlocks.UNDER_WORLD_STONE);
 		wallItem(HexcraftBlocks.CHARSTONE_WALL, HexcraftBlocks.CHARSTONE);
+		wallItem(HexcraftBlocks.CRIMSON_SAND_STONE_WALL, HexcraftBlocks.CRIMSON_SAND_STONE);
+		wallItem(HexcraftBlocks.FAIRY_SAND_STONE_WALL, HexcraftBlocks.FAIRY_SAND_STONE);
 		evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_STAIRS);
 		evenSimplerBlockItem(HexcraftBlocks.PEARL_STONE_STAIRS);
 		evenSimplerBlockItem(HexcraftBlocks.PEARL_COBBLESTONE_STAIRS);
@@ -181,6 +185,8 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 		evenSimplerBlockItem(HexcraftBlocks.CHARSTONE_COBBLESTONE_STAIRS);
 		evenSimplerBlockItem(HexcraftBlocks.CHARSTONE_STONE_BRICKS_STAIRS);
 		evenSimplerBlockItem(HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS);
+		evenSimplerBlockItem(HexcraftBlocks.CRIMSON_SAND_STONE_STAIRS);
+		evenSimplerBlockItem(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE_STAIRS);
 		evenSimplerBlockItem(HexcraftBlocks.EBONY_STAIRS);
 		evenSimplerBlockItem(HexcraftBlocks.BLOOD_OAK_STAIRS);
 		evenSimplerBlockItem(HexcraftBlocks.HELL_BARK_STAIRS);
@@ -213,6 +219,9 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 		evenSimplerBlockItem(HexcraftBlocks.CHARSTONE_COBBLESTONE_SLAB);
 		evenSimplerBlockItem(HexcraftBlocks.CHARSTONE_BRICKS_SLAB);
 		evenSimplerBlockItem(HexcraftBlocks.POLISHED_CHARSTONE_SLAB);
+		evenSimplerBlockItem(HexcraftBlocks.CRIMSON_SAND_STONE_SLAB);
+		evenSimplerBlockItem(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE_SLAB);
+		evenSimplerBlockItem(HexcraftBlocks.CUT_CRIMSON_SAND_STONE_SLAB);
 		evenSimplerBlockItem(HexcraftBlocks.EBONY_SLAB);
 		evenSimplerBlockItem(HexcraftBlocks.BLOOD_OAK_SLAB);
 		evenSimplerBlockItem(HexcraftBlocks.HELL_BARK_SLAB);

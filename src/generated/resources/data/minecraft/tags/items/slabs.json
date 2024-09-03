@@ -15,6 +15,9 @@
     "hexcraftmod:charstone_slab",
     "hexcraftmod:charstone_cobblestone_slab",
     "hexcraftmod:charstone_bricks_slab",
-    "hexcraftmod:polished_charstone_slab"
+    "hexcraftmod:polished_charstone_slab",
+    "hexcraftmod:crimson_sand_stone_slab",
+    "hexcraftmod:smooth_crimson_sand_stone_slab",
+    "hexcraftmod:cut_crimson_sand_stone_slab"
   ]
 }

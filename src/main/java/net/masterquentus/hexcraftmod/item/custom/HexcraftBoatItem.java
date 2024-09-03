@@ -1,5 +1,8 @@
 package net.masterquentus.hexcraftmod.item.custom;
 
+import java.util.List;
+import java.util.function.Predicate;
+
 import net.masterquentus.hexcraftmod.block.entity.boats.HexcraftBoatEntity;
 import net.masterquentus.hexcraftmod.block.entity.boats.HexcraftChestBoatEntity;
 import net.minecraft.stats.Stats;
@@ -18,15 +21,12 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 
-import java.util.List;
-import java.util.function.Predicate;
-
 public class HexcraftBoatItem extends Item {
     private static final Predicate<Entity> ENTITY_PREDICATE = EntitySelector.NO_SPECTATORS.and(Entity::isPickable);
     private final HexcraftBoatEntity.Type type;
     private final boolean hasChest;
 
-    public HexcraftBoatItem(boolean pHasChest, HexcraftBoatEntity.Type pType, Item.Properties pProperties) {
+    public HexcraftBoatItem(boolean pHasChest, HexcraftBoatEntity.Type pType, Properties pProperties) {
         super(pProperties);
         this.hasChest = pHasChest;
         this.type = pType;
@@ -81,6 +81,6 @@ public class HexcraftBoatItem extends Item {
 
     private Boat getBoat(Level p_220017_, HitResult p_220018_) {
         return (this.hasChest ? new HexcraftChestBoatEntity(p_220017_, p_220018_.getLocation().x, p_220018_.getLocation().y, p_220018_.getLocation().z) :
-                new HexcraftChestBoatEntity(p_220017_, p_220018_.getLocation().x, p_220018_.getLocation().y, p_220018_.getLocation().z));
+                new HexcraftBoatEntity(p_220017_, p_220018_.getLocation().x, p_220018_.getLocation().y, p_220018_.getLocation().z));
     }
 }

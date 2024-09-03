@@ -3,6 +3,8 @@
     "#hexcraftmod:mutandis_plants",
     "#hexcraftmod:crops",
     "#minecraft:crops",
+    "hexcraftmod:wild_bramble",
+    "hexcraftmod:ender_bramble",
     "minecraft:sugar_cane",
     "minecraft:cactus",
     "hexcraftmod:bloody_rose"

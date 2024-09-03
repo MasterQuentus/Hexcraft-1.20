@@ -39,6 +39,7 @@ public class HexcraftItems {
     public static final RegistryObject<Item> WITCHES_SATCHEL = ITEMS.register("witches_satchel",
             () -> new WitchesSatchelItem(new Item.Properties()));
 
+
     public static final RegistryObject<Item> UNFIRED_CLAY_POT = ITEMS.register("unfired_clay_pot",
             () -> new Item(new Item.Properties()));
 
@@ -611,6 +612,9 @@ public class HexcraftItems {
 
     public static final RegistryObject<Item> ECHO_WOOD_CHEST_BOAT = ITEMS.register("echo_wood_chest_boat",
             () -> new HexcraftBoatItem(true, HexcraftBoatEntity.Type.ECHO_WOOD, new Item.Properties()));
+
+    //Chest
+
 
 
     public static void register(IEventBus eventBus) {

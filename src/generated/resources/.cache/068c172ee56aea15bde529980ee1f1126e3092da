@@ -1,8 +1,7 @@
-// 1.20.1	2024-08-30T00:51:12.0146715	Tags for minecraft:item mod id hexcraftmod
+// 1.20.1	2024-09-02T18:02:57.6650192	Tags for minecraft:item mod id hexcraftmod
 4d036b60f7bdf1cc6a8de8f4c30e835ebe1541f0 data/hexcraftmod/tags/items/fits_in_witches_satchel.json
 cc2c3ac0625546599b5f9fae3fb03a5641002d56 data/hexcraftmod/tags/items/witches_oven_blacklist.json
 052992c6a6c1b85dc4753f756003dbaf4b274e7c data/minecraft/tags/items/boats.json
-7e00f299f2f0502deff0da2d3a0ba0e9b892af33 data/minecraft/tags/items/chest_boats.json
 71738a1ed84f551a49436f62e5e5da265594e713 data/minecraft/tags/items/dirt.json
 1cf686084c9e7dd47c44b86a9da4d9d9d93fb8a9 data/minecraft/tags/items/fence_gates.json
 bebfb75716f2303d2149abcf9f6392a351cc4c40 data/minecraft/tags/items/flowers.json
@@ -11,13 +10,14 @@ bebfb75716f2303d2149abcf9f6392a351cc4c40 data/minecraft/tags/items/flowers.json
 cda701b2e0548c81589b022eeeebe63a1b7c93ba data/minecraft/tags/items/logs_that_burn.json
 a0f48298df1fc8f2eefbd404b01f303a1497de0e data/minecraft/tags/items/non_flammable_wood.json
 305461604e810a351d978b77301c04bfbdc03f3a data/minecraft/tags/items/planks.json
+51d0070d6db8096cc38c44fef95cd30c9ddf1510 data/minecraft/tags/items/sand.json
 0b6acc5fe00ebfeae74e03e9d15b3f2203715da7 data/minecraft/tags/items/saplings.json
 a7f41987e25ad0f13574edb315fe92c002b865e8 data/minecraft/tags/items/signs.json
-e730232b279f50a7c2d743eb29a6997ab53b5647 data/minecraft/tags/items/slabs.json
-d7aecadebca020f5c17897194d067370c44dab2d data/minecraft/tags/items/stairs.json
+31f302736aee65e5eb39b4e02ebb7540af357af5 data/minecraft/tags/items/slabs.json
+ad6c7e8174d840a5ea449c49886c7659d0712848 data/minecraft/tags/items/stairs.json
 5100cea3489a08877d9372cf85b423758f3a4376 data/minecraft/tags/items/stone_buttons.json
 ebcc77d1a3b3aa1e05d6a74a094fbe40ed656abf data/minecraft/tags/items/villager_plantable_seeds.json
-168563fa7fde20ff6fdf01c34e9666bf417db552 data/minecraft/tags/items/walls.json
+5dd854d83f9a8a3024b2c0195eec0169768487e2 data/minecraft/tags/items/walls.json
 7c51879c251f33b918642b9873c90bccde6205e3 data/minecraft/tags/items/wooden_buttons.json
 2656bde59c08d95d17813302121825f701ef60da data/minecraft/tags/items/wooden_doors.json
 c213e37964c68a822d8eb139e89e7d9c9d8cbb6f data/minecraft/tags/items/wooden_fences.json

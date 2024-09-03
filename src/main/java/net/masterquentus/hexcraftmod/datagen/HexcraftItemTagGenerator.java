@@ -171,7 +171,10 @@ public class HexcraftItemTagGenerator extends ItemTagsProvider {
 				.add(HexcraftBlocks.CHARSTONE_SLAB.get().asItem())
 				.add(HexcraftBlocks.CHARSTONE_COBBLESTONE_SLAB.get().asItem())
 				.add(HexcraftBlocks.CHARSTONE_BRICKS_SLAB.get().asItem())
-				.add(HexcraftBlocks.POLISHED_CHARSTONE_SLAB.get().asItem());
+				.add(HexcraftBlocks.POLISHED_CHARSTONE_SLAB.get().asItem())
+				.add(HexcraftBlocks.CRIMSON_SAND_STONE_SLAB.get().asItem())
+				.add(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE_SLAB.get().asItem())
+				.add(HexcraftBlocks.CUT_CRIMSON_SAND_STONE_SLAB.get().asItem());
 
 		this.tag(ItemTags.STAIRS)
 				.add(HexcraftBlocks.PEARL_STONE_STAIRS.get().asItem())
@@ -189,7 +192,9 @@ public class HexcraftItemTagGenerator extends ItemTagsProvider {
 				.add(HexcraftBlocks.CHARSTONE_STONE_STAIRS.get().asItem())
 				.add(HexcraftBlocks.CHARSTONE_COBBLESTONE_STAIRS.get().asItem())
 				.add(HexcraftBlocks.CHARSTONE_STONE_BRICKS_STAIRS.get().asItem())
-				.add(HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS.get().asItem());
+				.add(HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS.get().asItem())
+				.add(HexcraftBlocks.CRIMSON_SAND_STONE_STAIRS.get().asItem())
+				.add(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE_STAIRS.get().asItem());
 
 		this.tag(ItemTags.VILLAGER_PLANTABLE_SEEDS)
 				.add(HexcraftItems.MANDRAKE_SEEDS.get().asItem())
@@ -376,7 +381,8 @@ public class HexcraftItemTagGenerator extends ItemTagsProvider {
 				.add(HexcraftBlocks.PEARL_STONE_WALL.get().asItem())
 				.add(HexcraftBlocks.CRIMSON_STONE_WALL.get().asItem())
 				.add(HexcraftBlocks.UNDER_WORLD_STONE_WALL.get().asItem())
-				.add(HexcraftBlocks.CHARSTONE_WALL.get().asItem());
+				.add(HexcraftBlocks.CHARSTONE_WALL.get().asItem())
+				.add(HexcraftBlocks.CRIMSON_SAND_STONE_WALL.get().asItem());
 
 		this.tag(ItemTags.SIGNS)
 				.add(HexcraftBlocks.EBONY_SIGN.get().asItem())
@@ -432,23 +438,9 @@ public class HexcraftItemTagGenerator extends ItemTagsProvider {
 				.add(HexcraftItems.WITCH_WOOD_BOAT.get().asItem())
 				.add(HexcraftItems.ECHO_WOOD_BOAT.get().asItem());
 
-		this.tag(ItemTags.CHEST_BOATS)
-				.add(HexcraftItems.EBONY_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.BLOOD_OAK_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.HELL_BARK_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.WHITE_OAK_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.ALDER_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.WITCH_HAZEL_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.WILLOW_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.HAWTHORN_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.CEDAR_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.DISTORTED_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.ELDER_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.JUNIPER_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.ROWAN_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.TWISTED_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.WITCH_WOOD_CHEST_BOAT.get().asItem())
-				.add(HexcraftItems.ECHO_WOOD_CHEST_BOAT.get().asItem());
+		this.tag(ItemTags.SAND)
+				.add(HexcraftBlocks.CRIMSON_SAND.get().asItem())
+				.add(HexcraftBlocks.FAIRY_SAND.get().asItem());
 
 	}
 

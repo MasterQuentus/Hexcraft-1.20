@@ -47,6 +47,16 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         blockWithItem(HexcraftBlocks.POLISHED_CHARSTONE);
         blockWithItem(HexcraftBlocks.CHISELED_CHARSTONE);
         blockWithItem(HexcraftBlocks.CRACKED_CHARSTONE);
+        blockWithItem(HexcraftBlocks.CRIMSON_SAND);
+        blockWithItem(HexcraftBlocks.CRIMSON_SAND_STONE);
+        blockWithItem(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE);
+        blockWithItem(HexcraftBlocks.CHISELED_CRIMSON_SAND_STONE);
+        blockWithItem(HexcraftBlocks.CUT_CRIMSON_SAND_STONE);
+        blockWithItem(HexcraftBlocks.FAIRY_SAND);
+        blockWithItem(HexcraftBlocks.FAIRY_SAND_STONE);
+        blockWithItem(HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE);
+        blockWithItem(HexcraftBlocks.CHISELED_FAIRY_SAND_STONE);
+        blockWithItem(HexcraftBlocks.CUT_FAIRY_SAND_STONE);
         blockWithItem(HexcraftBlocks.MOONSTONE_ORE);
         blockWithItem(HexcraftBlocks.END_MOONSTONE_ORE);
         blockWithItem(HexcraftBlocks.NETHER_MOONSTONE_ORE);
@@ -83,6 +93,10 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         stairsBlock(((StairBlock) HexcraftBlocks.CHARSTONE_COBBLESTONE_STAIRS.get()), blockTexture(HexcraftBlocks.CHARSTONE_COBBLESTONE.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.CHARSTONE_STONE_BRICKS_STAIRS.get()), blockTexture(HexcraftBlocks.CHARSTONE_BRICKS.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS.get()), blockTexture(HexcraftBlocks.POLISHED_CHARSTONE.get()));
+        stairsBlock(((StairBlock) HexcraftBlocks.CRIMSON_SAND_STONE_STAIRS.get()), blockTexture(HexcraftBlocks.CRIMSON_SAND_STONE.get()));
+        stairsBlock(((StairBlock) HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE_STAIRS.get()), blockTexture(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE.get()));
+        stairsBlock(((StairBlock) HexcraftBlocks.FAIRY_SAND_STONE_STAIRS.get()), blockTexture(HexcraftBlocks.FAIRY_SAND_STONE.get()));
+        stairsBlock(((StairBlock) HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE_STAIRS.get()), blockTexture(HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE.get()));
         slabBlock(((SlabBlock) HexcraftBlocks.PEARL_STONE_SLAB.get()), blockTexture(HexcraftBlocks.PEARL_STONE.get()), blockTexture(HexcraftBlocks.PEARL_STONE.get()));
         slabBlock(((SlabBlock) HexcraftBlocks.PEARL_COBBLESTONE_SLAB.get()), blockTexture(HexcraftBlocks.PEARL_COBBLESTONE.get()), blockTexture(HexcraftBlocks.PEARL_COBBLESTONE.get()));
         slabBlock(((SlabBlock) HexcraftBlocks.PEARL_STONE_BRICKS_SLAB.get()), blockTexture(HexcraftBlocks.PEARL_STONE_BRICKS.get()), blockTexture(HexcraftBlocks.PEARL_STONE_BRICKS.get()));
@@ -99,6 +113,12 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         slabBlock(((SlabBlock) HexcraftBlocks.CHARSTONE_COBBLESTONE_SLAB.get()), blockTexture(HexcraftBlocks.CHARSTONE_COBBLESTONE.get()), blockTexture(HexcraftBlocks.CHARSTONE_COBBLESTONE.get()));
         slabBlock(((SlabBlock) HexcraftBlocks.CHARSTONE_BRICKS_SLAB.get()), blockTexture(HexcraftBlocks.CHARSTONE_BRICKS.get()), blockTexture(HexcraftBlocks.CHARSTONE_BRICKS.get()));
         slabBlock(((SlabBlock) HexcraftBlocks.POLISHED_CHARSTONE_SLAB.get()), blockTexture(HexcraftBlocks.POLISHED_CHARSTONE.get()), blockTexture(HexcraftBlocks.POLISHED_CHARSTONE.get()));
+        slabBlock(((SlabBlock) HexcraftBlocks.CRIMSON_SAND_STONE_SLAB.get()), blockTexture(HexcraftBlocks.CRIMSON_SAND_STONE.get()), blockTexture(HexcraftBlocks.CRIMSON_SAND_STONE.get()));
+        slabBlock(((SlabBlock) HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE_SLAB.get()), blockTexture(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE.get()), blockTexture(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE.get()));
+        slabBlock(((SlabBlock) HexcraftBlocks.CUT_CRIMSON_SAND_STONE_SLAB.get()), blockTexture(HexcraftBlocks.CUT_CRIMSON_SAND_STONE.get()), blockTexture(HexcraftBlocks.CUT_CRIMSON_SAND_STONE.get()));
+        slabBlock(((SlabBlock) HexcraftBlocks.FAIRY_SAND_STONE_SLAB.get()), blockTexture(HexcraftBlocks.FAIRY_SAND_STONE.get()), blockTexture(HexcraftBlocks.FAIRY_SAND_STONE.get()));
+        slabBlock(((SlabBlock) HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE_SLAB.get()), blockTexture(HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE.get()), blockTexture(HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE.get()));
+        slabBlock(((SlabBlock) HexcraftBlocks.CUT_FAIRY_SAND_STONE_SLAB.get()), blockTexture(HexcraftBlocks.CUT_FAIRY_SAND_STONE.get()), blockTexture(HexcraftBlocks.CUT_FAIRY_SAND_STONE.get()));
 
 
 
@@ -415,6 +435,8 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         wallBlock((WallBlock) HexcraftBlocks.CRIMSON_STONE_WALL.get(), blockTexture(HexcraftBlocks.CRIMSON_STONE.get()));
         wallBlock((WallBlock) HexcraftBlocks.UNDER_WORLD_STONE_WALL.get(), blockTexture(HexcraftBlocks.UNDER_WORLD_STONE.get()));
         wallBlock((WallBlock) HexcraftBlocks.CHARSTONE_WALL.get(), blockTexture(HexcraftBlocks.CHARSTONE.get()));
+        wallBlock((WallBlock) HexcraftBlocks.CRIMSON_SAND_STONE_WALL.get(), blockTexture(HexcraftBlocks.CRIMSON_SAND_STONE.get()));
+        wallBlock((WallBlock) HexcraftBlocks.FAIRY_SAND_STONE_WALL.get(), blockTexture(HexcraftBlocks.FAIRY_SAND_STONE.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.EBONY_STAIRS.get()), blockTexture(HexcraftBlocks.EBONY_PLANKS.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.BLOOD_OAK_STAIRS.get()), blockTexture(HexcraftBlocks.BLOOD_OAK_PLANKS.get()));
         stairsBlock(((StairBlock) HexcraftBlocks.HELL_BARK_STAIRS.get()), blockTexture(HexcraftBlocks.HELL_BARK_PLANKS.get()));
@@ -555,6 +577,10 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         blockItem(HexcraftBlocks.CHARSTONE_COBBLESTONE_STAIRS);
         blockItem(HexcraftBlocks.CHARSTONE_STONE_BRICKS_STAIRS);
         blockItem(HexcraftBlocks.POLISHED_CHARSTONE_STONE_STAIRS);
+        blockItem(HexcraftBlocks.CRIMSON_SAND_STONE_STAIRS);
+        blockItem(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE_STAIRS);
+        blockItem(HexcraftBlocks.FAIRY_SAND_STONE_STAIRS);
+        blockItem(HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE_STAIRS);
         blockItem(HexcraftBlocks.PEARL_STONE_SLAB);
         blockItem(HexcraftBlocks.PEARL_COBBLESTONE_SLAB);
         blockItem(HexcraftBlocks.PEARL_STONE_BRICKS_SLAB);
@@ -571,6 +597,12 @@ public class HexcraftBlockStateProvider extends BlockStateProvider {
         blockItem(HexcraftBlocks.CHARSTONE_COBBLESTONE_SLAB);
         blockItem(HexcraftBlocks.CHARSTONE_BRICKS_SLAB);
         blockItem(HexcraftBlocks.POLISHED_CHARSTONE_SLAB);
+        blockItem(HexcraftBlocks.CRIMSON_SAND_STONE_SLAB);
+        blockItem(HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE_SLAB);
+        blockItem(HexcraftBlocks.CUT_CRIMSON_SAND_STONE_SLAB);
+        blockItem(HexcraftBlocks.FAIRY_SAND_STONE_SLAB);
+        blockItem(HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE_SLAB);
+        blockItem(HexcraftBlocks.CUT_FAIRY_SAND_STONE_SLAB);
         blockItem(HexcraftBlocks.EBONY_SLAB);
         blockItem(HexcraftBlocks.BLOOD_OAK_SLAB);
         blockItem(HexcraftBlocks.HELL_BARK_SLAB);

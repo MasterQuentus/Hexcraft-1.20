@@ -8,6 +8,7 @@ import net.masterquentus.hexcraftmod.worldgen.HexcraftBiomeModifers;
 import net.masterquentus.hexcraftmod.worldgen.HexcraftConfiguredFeatures;
 import net.masterquentus.hexcraftmod.worldgen.HexcraftPlacedFeatures;
 import net.masterquentus.hexcraftmod.worldgen.biome.HexcraftBiomes;
+import net.masterquentus.hexcraftmod.worldgen.dimension.HexcraftDimensions;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -22,6 +23,8 @@ public class HexcraftWorldGenProvider extends DatapackBuiltinEntriesProvider {
 			.add(Registries.PLACED_FEATURE, HexcraftPlacedFeatures::bootstrap)
 			.add(ForgeRegistries.Keys.BIOME_MODIFIERS, HexcraftBiomeModifers::bootstrap)
 			.add(Registries.BIOME, HexcraftBiomes::boostrap)
+			.add(Registries.LEVEL_STEM, HexcraftDimensions::bootstrapStem)
+			.add(Registries.DIMENSION_TYPE, HexcraftDimensions::bootstrapType)
 			.add(Registries.DAMAGE_TYPE, HexcraftDamageTypes::bootstrap);
 
 	public HexcraftWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {

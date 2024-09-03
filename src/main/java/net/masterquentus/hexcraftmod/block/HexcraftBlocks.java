@@ -16,11 +16,11 @@ import net.masterquentus.hexcraftmod.util.HexcraftWoodTypes;
 import net.masterquentus.hexcraftmod.worldgen.tree.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
@@ -94,13 +94,33 @@ public class HexcraftBlocks {
 			() -> new WitchesLadderBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
 					.instabreak().noOcclusion().randomTicks()));
 
+	public static final RegistryObject<Block> WITCHES_LADDER_MIDDLE = BLOCKS.register("witches_ladder_middle",
+			() -> new WitchesLadderBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
+					.instabreak().noOcclusion().randomTicks()));
+
+	public static final RegistryObject<Block> WITCHES_LADDER_BOTTOM = BLOCKS.register("witches_ladder_bottom",
+			() -> new WitchesLadderBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
+					.instabreak().noOcclusion().randomTicks()));
+
 	public static final RegistryObject<Block> WITCHES_LADDER_PLANT = BLOCKS.register("witches_ladder_plant",
 			() -> new WitchesLadderPlant(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
 					.instabreak().noOcclusion().noLootTable()));
 
 	public static final RegistryObject<Block> VILEVINE = BLOCKS.register("vilevine",
-			() -> new VileVineBlock(BlockBehaviour.Properties.copy(Blocks.VINE)
+			() -> new VileVineBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
 					.instabreak().noOcclusion().randomTicks()));
+
+	public static final RegistryObject<Block> VILEVINE_PLANT = BLOCKS.register("vilevine_plant",
+			() -> new VleVinePlant(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES)
+					.instabreak().noOcclusion().noLootTable()));
+
+	public static final RegistryObject<Block> WILD_BRAMBLE = registerBlock("wild_bramble",
+			() -> new WildBrambleBlock(BlockBehaviour.Properties.copy(Blocks.SUGAR_CANE)
+					.instabreak()));
+
+	public static final RegistryObject<Block> ENDER_BRAMBLE = registerBlock("ender_bramble",
+			() -> new EnderBrambleBlock(BlockBehaviour.Properties.copy(Blocks.SUGAR_CANE)
+					.instabreak()));
 
 	public static final RegistryObject<Block> BLOOD_BERRIES_PLANT = registerBlockWithoutBlockItem("blood_berries_plant",
 			() -> new BloodBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion().randomTicks().noLootTable()));
@@ -193,6 +213,64 @@ public class HexcraftBlocks {
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
 					.strength(1.5F, 6.0F)));
 
+	public static final RegistryObject <Block> CRIMSON_SAND = registerBlock("crimson_sand",
+			() -> new SandBlock(14406560,BlockBehaviour.Properties.copy(Blocks.SAND)
+					.strength(0.5F).sound(SoundType.SAND)));
+
+	public static final RegistryObject <Block> CRIMSON_SAND_STONE = registerBlock("crimson_sand_stone",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(0.8F).sound(SoundType.STONE)));
+
+	public static final RegistryObject <Block> SMOOTH_CRIMSON_SAND_STONE = registerBlock("smooth_crimson_sand_stone",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.SMOOTH_SANDSTONE).strength(2.0F, 6.0F).sound(SoundType.STONE)));
+
+	public static final RegistryObject <Block> CHISELED_CRIMSON_SAND_STONE = registerBlock("chiseled_crimson_sand_stone",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_SANDSTONE).strength(0.8F).sound(SoundType.STONE)));
+
+	public static final RegistryObject <Block> CUT_CRIMSON_SAND_STONE = registerBlock("cut_crimson_sand_stone",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_SANDSTONE).strength(0.8F).sound(SoundType.STONE)));
+
+	public static final RegistryObject <Block> FAIRY_SAND = registerBlock("fairy_sand",
+			() -> new SandBlock(14406560,BlockBehaviour.Properties.copy(Blocks.SAND)
+					.strength(0.5F).sound(SoundType.SAND)));
+
+	public static final RegistryObject <Block> FAIRY_SAND_STONE = registerBlock("fairy_sand_stone",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).strength(0.8F).sound(SoundType.STONE)));
+
+	public static final RegistryObject <Block> SMOOTH_FAIRY_SAND_STONE = registerBlock("smooth_fairy_sand_stone",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.SMOOTH_SANDSTONE)
+					.strength(2.0F, 6.0F).sound(SoundType.STONE)));
+
+	public static final RegistryObject <Block> CHISELED_FAIRY_SAND_STONE = registerBlock("chiseled_fairy_sand_stone",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_SANDSTONE).strength(0.8F).sound(SoundType.STONE)));
+
+	public static final RegistryObject <Block> CUT_FAIRY_SAND_STONE = registerBlock("cut_fairy_sand_stone",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.CUT_SANDSTONE).strength(0.8F).sound(SoundType.STONE)));
+
+	//Glass Blocks
+	public static final RegistryObject <Block> CRIMSON_GLASS = registerBlock("crimson_glass",
+			() -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).instrument(NoteBlockInstrument.HAT)
+					.strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
+
+	public static final RegistryObject <Block> CRIMSON_GLASS_PANE = registerBlock("crimson_glass_pane",
+			() -> new StainedGlassPaneBlock(DyeColor.RED, BlockBehaviour.Properties.copy(Blocks.GLASS)
+					.strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
+
+	public static final RegistryObject <Block> FAIRY_GLASS = registerBlock("fairy_glass",
+			() -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).instrument(NoteBlockInstrument.HAT)
+					.strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
+
+	public static final RegistryObject <Block> FAIRY_GLASS_PANE = registerBlock("fairy_glass_pane",
+			() -> new StainedGlassPaneBlock(DyeColor.RED, BlockBehaviour.Properties.copy(Blocks.GLASS).instrument(NoteBlockInstrument.HAT)
+					.strength(0.3F).sound(SoundType.GLASS).noOcclusion()));
+
+	//Ice Blocks
+	public static final RegistryObject <Block> CRIMSON_ICE = registerBlock("crimson_ice",
+			() -> new IceBlock(BlockBehaviour.Properties.copy(Blocks.ICE).friction(0.98F).randomTicks().strength(0.5F)
+					.sound(SoundType.GLASS).noOcclusion()));
+
+	public static final RegistryObject <Block> CRIMSON_PACKED_ICE = registerBlock("crimson_packed_ice",
+			() -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE).friction(0.98F)
+					.strength(0.5F).sound(SoundType.GLASS)));
 
 	//Saplings
 	public static final RegistryObject<Block> EBONY_SAPLING = registerBlock("ebony_sapling",
@@ -1104,6 +1182,9 @@ public class HexcraftBlocks {
 			});
 
 
+	//Chests
+
+
 	//Signs
 	public static final RegistryObject<Block> EBONY_SIGN = BLOCKS.register("ebony_sign",
 			() -> new HexcraftStadingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), HexcraftWoodTypes.EBONY));
@@ -1375,6 +1456,13 @@ public class HexcraftBlocks {
 	public static final RegistryObject<Block> CHARSTONE_WALL = registerBlock("charstone_wall",
 			() -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL).forceSolidOn().requiresCorrectToolForDrops()));
 
+	public static final RegistryObject<Block> CRIMSON_SAND_STONE_WALL = registerBlock("crimson_sand_stone_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE_WALL).forceSolidOn().requiresCorrectToolForDrops()));
+
+	public static final RegistryObject<Block> FAIRY_SAND_STONE_WALL = registerBlock("fairy_sand_stone_wall",
+			() -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE_WALL).forceSolidOn().requiresCorrectToolForDrops()));
+
+
 	//Stairs
 	public static final RegistryObject<Block> PEARL_STONE_STAIRS = registerBlock("pearl_stone_stairs",
 			() -> new StairBlock(() -> HexcraftBlocks.PEARL_STONE.get().defaultBlockState(),
@@ -1439,6 +1527,22 @@ public class HexcraftBlocks {
 	public static final RegistryObject<Block> POLISHED_CHARSTONE_STONE_STAIRS = registerBlock("polished_charstone_stairs",
 			() -> new StairBlock(() -> HexcraftBlocks.POLISHED_CHARSTONE.get().defaultBlockState(),
 					BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F, 6.0F)));
+
+	public static final RegistryObject<Block> CRIMSON_SAND_STONE_STAIRS = registerBlock("crimson_sand_stone_stairs",
+			() -> new StairBlock(() -> HexcraftBlocks.CRIMSON_SAND_STONE.get().defaultBlockState(),
+					BlockBehaviour.Properties.copy(Blocks.SANDSTONE_STAIRS).strength(1.5F, 6.0F)));
+
+	public static final RegistryObject<Block> SMOOTH_CRIMSON_SAND_STONE_STAIRS = registerBlock("smooth_crimson_sand_stone_stairs",
+			() -> new StairBlock(() -> HexcraftBlocks.SMOOTH_CRIMSON_SAND_STONE.get().defaultBlockState(),
+					BlockBehaviour.Properties.copy(Blocks.SMOOTH_SANDSTONE_STAIRS).strength(1.5F, 6.0F)));
+
+	public static final RegistryObject<Block> FAIRY_SAND_STONE_STAIRS = registerBlock("fairy_sand_stone_stairs",
+			() -> new StairBlock(() -> HexcraftBlocks.FAIRY_SAND_STONE.get().defaultBlockState(),
+					BlockBehaviour.Properties.copy(Blocks.SANDSTONE_STAIRS).strength(1.5F, 6.0F)));
+
+	public static final RegistryObject<Block> SMOOTH_FAIRY_SAND_STONE_STAIRS = registerBlock("smooth_fairy_sand_stone_stairs",
+			() -> new StairBlock(() -> HexcraftBlocks.SMOOTH_FAIRY_SAND_STONE.get().defaultBlockState(),
+					BlockBehaviour.Properties.copy(Blocks.SMOOTH_SANDSTONE_STAIRS).strength(1.5F, 6.0F)));
 
 	public static final RegistryObject<Block> EBONY_STAIRS = registerBlock("ebony_stairs",
 			() -> new StairBlock(() -> HexcraftBlocks.EBONY_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)
@@ -2030,6 +2134,24 @@ public class HexcraftBlocks {
 
 	public static final RegistryObject<Block> POLISHED_CHARSTONE_SLAB = registerBlock("polished_charstone_slab",
 			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+	public static final RegistryObject<Block> CRIMSON_SAND_STONE_SLAB = registerBlock("crimson_sand_stone_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE_SLAB).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+	public static final RegistryObject<Block> CUT_CRIMSON_SAND_STONE_SLAB = registerBlock("cut_crimson_sand_stone_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CUT_SANDSTONE_SLAB).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+	public static final RegistryObject<Block> SMOOTH_CRIMSON_SAND_STONE_SLAB = registerBlock("smooth_crimson_sand_stone_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SMOOTH_SANDSTONE_SLAB).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+	public static final RegistryObject<Block> FAIRY_SAND_STONE_SLAB = registerBlock("fairy_sand_stone_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE_SLAB).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+	public static final RegistryObject<Block> CUT_FAIRY_SAND_STONE_SLAB = registerBlock("cut_fairy_sand_stone_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CUT_SANDSTONE_SLAB).sound(SoundType.STONE).strength(1.5F, 6.0F)));
+
+	public static final RegistryObject<Block> SMOOTH_FAIRY_SAND_STONE_SLAB = registerBlock("smooth_fairy_sand_stone_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SMOOTH_SANDSTONE_SLAB).sound(SoundType.STONE).strength(1.5F, 6.0F)));
 
 	public static final RegistryObject<Block> EBONY_SLAB = registerBlock("ebony_slab",
 			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).strength(2.0F, 3.0F)

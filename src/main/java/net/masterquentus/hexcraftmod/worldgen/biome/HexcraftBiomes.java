@@ -15,9 +15,11 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 
 public class HexcraftBiomes {
     public static final ResourceKey<Biome> VAMPIRE_FOREST = register("vampire_forest");
+    public static final ResourceKey<Biome> CRIMSON_DESERT = register("crimson_desert");
 
     public static void boostrap(BootstapContext<Biome> context) {
         context.register(VAMPIRE_FOREST, vampireBiome(context));
+        context.register(CRIMSON_DESERT, crimsondesertBiome(context));
 
     }
 
@@ -56,12 +58,46 @@ public class HexcraftBiomes {
                 .generationSettings(biomeBuilder.build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(0xe82e3b)
-                        .waterFogColor(0xbf1b26)
-                        .skyColor(0x30c918)
-                        .grassColorOverride(0x7f03fc)
-                        .foliageColorOverride(0xd203fc)
+                        .waterColor(0xe0000FF)
+                        .waterFogColor(0x0051FF)
+                        .skyColor(0x2400A6)
+                        .grassColorOverride(0x006100)
+                        .foliageColorOverride(0xd009300)
                         .fogColor(0x22a1e6)
+                        .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                .build();
+    }
+
+    public static Biome crimsondesertBiome(BootstapContext<Biome> context) {
+        MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
+
+        BiomeDefaultFeatures.farmAnimals(spawnBuilder);
+        BiomeDefaultFeatures.commonSpawns(spawnBuilder);
+
+        BiomeGenerationSettings.Builder biomeBuilder =
+                new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+
+        globalOverworldGeneration(biomeBuilder);
+        BiomeDefaultFeatures.addMossyStoneBlock(biomeBuilder);
+        BiomeDefaultFeatures.addForestFlowers(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
+
+        BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_DEAD_BUSH);
+        return new Biome.BiomeBuilder()
+                .hasPrecipitation(true)
+                .downfall(0.0f)
+                .temperature(0.7f)
+                .generationSettings(biomeBuilder.build())
+                .mobSpawnSettings(spawnBuilder.build())
+                .specialEffects((new BiomeSpecialEffects.Builder())
+                        .waterColor(0x8D8300)
+                        .waterFogColor(0x8D7100)
+                        .skyColor(0x8D71B3)
+                        .grassColorOverride(0xC6A93E)
+                        .foliageColorOverride(0xE5A93E)
+                        .fogColor(0xAC8700)
                         .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
                 .build();
     }
