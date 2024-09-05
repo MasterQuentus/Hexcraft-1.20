@@ -2288,6 +2288,10 @@ public class HexcraftBlocks {
 			() -> new WitchesCauldron(BlockBehaviour.Properties.copy(Blocks.CAULDRON).requiresCorrectToolForDrops()
 					.strength(3.5F).noOcclusion()));
 
+	public static final RegistryObject <Block> POPPET_TABLE = registerBlock("poppet_table",
+			() -> new PoppetTableBlock(BlockBehaviour.Properties.copy(Blocks.LAPIS_BLOCK)
+					.strength(2.5F, 2.0F).sound(SoundType.WOOD)));
+
 	//Slabs
 	public static final RegistryObject<Block> PEARL_STONE_SLAB = registerBlock("pearl_stone_slab",
 			() -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE).strength(1.5F, 6.0F)));

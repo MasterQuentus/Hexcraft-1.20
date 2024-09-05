@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-03T03:48:48.9699975	Loot Tables
+// 1.20.1	2024-09-04T00:13:29.6855238	Loot Tables
 3731d114dca2f6ff9a29a1b2da30a1b10b3ade14 data/hexcraftmod/loot_tables/blocks/aerpine_flower.json
 a9ef5912431cbcde6516da39f898b95c7e583b41 data/hexcraftmod/loot_tables/blocks/alder_bookshelf.json
 f2c7c7f0be2ac6a16b29983059fce33282163f3c data/hexcraftmod/loot_tables/blocks/alder_button.json
@@ -306,6 +306,7 @@ d48e03f4c44ab3d928eda13c1c1badd5ab8e6630 data/hexcraftmod/loot_tables/blocks/pol
 f1d360c30b5abd633d2f780892e39062a4983da3 data/hexcraftmod/loot_tables/blocks/polished_under_world_stone.json
 a9118e689767693b38d2212dc538aad3880a51fe data/hexcraftmod/loot_tables/blocks/polished_under_world_stone_slab.json
 99003aff00ffd30e92056d6210926b624e7cfb89 data/hexcraftmod/loot_tables/blocks/polished_under_world_stone_stairs.json
+4f8c57fc18d218f4b04c42a6332b67b3cfa4ba03 data/hexcraftmod/loot_tables/blocks/poppet_table.json
 64a2a8b66898d17f53651565105aed91d89c82d7 data/hexcraftmod/loot_tables/blocks/potted_alder_sapling.json
 95299e3d7545eab8e6ca40b3b9fa4f891fb6390d data/hexcraftmod/loot_tables/blocks/potted_bloody_rose.json
 0e3b51237355df575af402de14993bf438c53fab data/hexcraftmod/loot_tables/blocks/potted_blood_mushroom.json

@@ -357,6 +357,43 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 		//simpleItem(HexcraftItems.WITCH_WOOD_CHEST_BOAT);
 		//simpleItem(HexcraftItems.ECHO_WOOD_BOAT);
 		//simpleItem(HexcraftItems.ECHO_WOOD_CHEST_BOAT);
+		//handheldItem(HexcraftItems.STEEL_SWORD);
+		//handheldItem(HexcraftItems.STEEL_PICKAXE);
+		//handheldItem(HexcraftItems.STEEL_SHOVEL);
+		//handheldItem(HexcraftItems.STEEL_AXE);
+		//handheldItem(HexcraftItems.STEEL_HOE);
+		//handheldItem(HexcraftItems.DARK_STEEL_SWORD);
+		//handheldItem(HexcraftItems.DARK_STEEL_PICKAXE);
+		//handheldItem(HexcraftItems.DARK_STEEL_SHOVEL);
+		//handheldItem(HexcraftItems.DARK_STEEL_AXE);
+		//handheldItem(HexcraftItems.DARK_STEEL_HOE);
+		//handheldItem(HexcraftItems.BLOODY_NYKIUM_SWORD);
+		//handheldItem(HexcraftItems.BLOODY_NYKIUM_PICKAXE);
+		//handheldItem(HexcraftItems.BLOODY_NYKIUM_SHOVEL);
+		//handheldItem(HexcraftItems.BLOODY_NYKIUM_AXE);
+		//handheldItem(HexcraftItems.BLOODY_NYKIUM_HOE);
+		//handheldItem(HexcraftItems.JORMIUM_SWORD);
+		//handheldItem(HexcraftItems.JORMIUM_PICKAXE);
+		//handheldItem(HexcraftItems.JORMIUM_SHOVEL);
+		//handheldItem(HexcraftItems.JORMIUM_AXE);
+		//handheldItem(HexcraftItems.JORMIUM_HOE);
+		//handheldItem(HexcraftItems.CUROGEN_SWORD);
+		//handheldItem(HexcraftItems.CUROGEN_PICKAXE);
+		//handheldItem(HexcraftItems.CUROGEN_SHOVEL);
+		//handheldItem(HexcraftItems.CUROGEN_AXE);
+		//handheldItem(HexcraftItems.CUROGEN_HOE);
+		//handheldItem(HexcraftItems.SILVER_SWORD);
+		//handheldItem(HexcraftItems.SILVER_PICKAXE);
+		//handheldItem(HexcraftItems.SILVER_SHOVEL);
+		//handheldItem(HexcraftItems.SILVER_AXE);
+		//handheldItem(HexcraftItems.SILVER_HOE);
+		//handheldItem(HexcraftItems.VAMPIRIC_SWORD);
+		//handheldItem(HexcraftItems.VAMPIRIC_PICKAXE);
+		//handheldItem(HexcraftItems.VAMPIRIC_SHOVEL);
+		//handheldItem(HexcraftItems.VAMPIRIC_AXE);
+		//handheldItem(HexcraftItems.VAMPIRIC_HOE);
+
+
 
 	}
 
@@ -369,6 +406,12 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 	public void evenSimplerBlockItem(RegistryObject<Block> block) {
 		this.withExistingParent(HexcraftMod.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
 				modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+	}
+
+	private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+		return withExistingParent(item.getId().getPath(),
+				new ResourceLocation("item/handheld")).texture("layer0",
+				new ResourceLocation(HexcraftMod.MOD_ID,"item/" + item.getId().getPath()));
 	}
 
 	private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

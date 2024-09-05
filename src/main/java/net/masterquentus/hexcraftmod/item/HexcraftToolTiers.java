@@ -19,4 +19,32 @@ public class HexcraftToolTiers {
             0.0F, 22, BlockTags.NEEDS_IRON_TOOL,
             () -> Ingredient.of(HexcraftItems.SILVER_INGOT.get()));
 
+    public static final ForgeTier STEEL = new ForgeTier(1, 1763, 7.0F,
+            0.0F, 24, BlockTags.NEEDS_IRON_TOOL,
+            () -> Ingredient.of(HexcraftItems.STEEL_INGOT.get()));
+
+    public static final ForgeTier DARKSTEEL = new ForgeTier(1, 1561, 12.0F,
+            0.0F, 24, BlockTags.NEEDS_DIAMOND_TOOL,
+            () -> Ingredient.of(HexcraftItems.STEEL_INGOT.get()));
+
+    public static final ForgeTier BLOODYNYKIUM = new ForgeTier(1, 2031, 12.0F,
+            0.0F, 15, BlockTags.NEEDS_DIAMOND_TOOL,
+            () -> Ingredient.of(HexcraftItems.BLOODY_NYKIUM.get()));
+
+    public static final ForgeTier JORMIUM = new ForgeTier(1, 250, 12.0F,
+            0.0F, 15, BlockTags.NEEDS_IRON_TOOL,
+            () -> Ingredient.of(HexcraftItems.JORMIUM_INGOT.get()));
+
+    public static final ForgeTier CUROGEN = new ForgeTier(1, 2031, 12.0F,
+            0.0F, 15, BlockTags.NEEDS_IRON_TOOL,
+            () -> Ingredient.of(HexcraftItems.CUROGEN.get()));
+
+    public static final ForgeTier SILVER = new ForgeTier(1, 250, 7.0F,
+            0.0F, 24, BlockTags.NEEDS_IRON_TOOL,
+            () -> Ingredient.of(HexcraftItems.SILVER_INGOT.get()));
+
+    public static final ForgeTier VAMPIRIC = new ForgeTier(1, 250, 7.0F,
+            0.0F, 24, BlockTags.NEEDS_IRON_TOOL,
+            () -> Ingredient.of(HexcraftItems.VAMPIRIC_GEM.get()));
+
 }

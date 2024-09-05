@@ -299,6 +299,184 @@ public class HexcraftItems {
     public static final RegistryObject<Item> VAMPIRIC_STAFF_PROJECTILE = ITEMS.register("vampiric_staff_projectile",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
+            () -> new SwordItem(HexcraftToolTiers.STEEL, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
+            () -> new PickaxeItem(HexcraftToolTiers.STEEL, 1, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
+            () -> new ShovelItem(HexcraftToolTiers.STEEL, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe",
+            () -> new AxeItem(HexcraftToolTiers.STEEL, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
+            () -> new HoeItem(HexcraftToolTiers.STEEL, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> DARK_STEEL_SWORD = ITEMS.register("dark_steel_sword",
+            () -> new SwordItem(HexcraftToolTiers.DARKSTEEL, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> DARK_STEEL_PICKAXE = ITEMS.register("dark_steel_pickaxe",
+            () -> new PickaxeItem(HexcraftToolTiers.DARKSTEEL, 1, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> DARK_STEEL_SHOVEL = ITEMS.register("dark_steel_shovel",
+            () -> new ShovelItem(HexcraftToolTiers.DARKSTEEL, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> DARK_STEEL_AXE = ITEMS.register("dark_steel_axe",
+            () -> new AxeItem(HexcraftToolTiers.DARKSTEEL, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> DARK_STEEL_HOE = ITEMS.register("dark_steel_hoe",
+            () -> new HoeItem(HexcraftToolTiers.DARKSTEEL, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOODY_NYKIUM_SWORD = ITEMS.register("bloody_nykium_sword",
+            () -> new SwordItem(HexcraftToolTiers.BLOODYNYKIUM, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOODY_NYKIUM_PICKAXE = ITEMS.register("bloody_nykium_pickaxe",
+            () -> new PickaxeItem(HexcraftToolTiers.BLOODYNYKIUM, 1, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOODY_NYKIUM_SHOVEL = ITEMS.register("bloody_nykium_shovel",
+            () -> new ShovelItem(HexcraftToolTiers.BLOODYNYKIUM, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOODY_NYKIUM_AXE = ITEMS.register("bloody_nykium_axe",
+            () -> new AxeItem(HexcraftToolTiers.BLOODYNYKIUM, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOODY_NYKIUM_HOE = ITEMS.register("bloody_nykium_hoe",
+            () -> new HoeItem(HexcraftToolTiers.BLOODYNYKIUM, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> JORMIUM_SWORD = ITEMS.register("jormuim_sword",
+            () -> new SwordItem(HexcraftToolTiers.JORMIUM, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> JORMIUM_PICKAXE = ITEMS.register("jormuim_pickaxe",
+            () -> new PickaxeItem(HexcraftToolTiers.JORMIUM, 1, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> JORMIUM_SHOVEL = ITEMS.register("jormuim_shovel",
+            () -> new ShovelItem(HexcraftToolTiers.JORMIUM, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> JORMIUM_AXE = ITEMS.register("jormuim_axe",
+            () -> new AxeItem(HexcraftToolTiers.JORMIUM, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> JORMIUM_HOE = ITEMS.register("jormuim_hoe",
+            () -> new HoeItem(HexcraftToolTiers.JORMIUM, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> CUROGEN_SWORD = ITEMS.register("curogen_sword",
+            () -> new SwordItem(HexcraftToolTiers.CUROGEN, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> CUROGEN_PICKAXE = ITEMS.register("curogen_pickaxe",
+            () -> new PickaxeItem(HexcraftToolTiers.CUROGEN, 1, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> CUROGEN_SHOVEL = ITEMS.register("curogen_shovel",
+            () -> new ShovelItem(HexcraftToolTiers.CUROGEN, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> CUROGEN_AXE = ITEMS.register("curogen_axe",
+            () -> new AxeItem(HexcraftToolTiers.CUROGEN, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> CUROGEN_HOE = ITEMS.register("curogen_hoe",
+            () -> new HoeItem(HexcraftToolTiers.CUROGEN, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
+            () -> new SwordItem(HexcraftToolTiers.SILVER, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> SILVER_PICKAXE = ITEMS.register("silver_pickaxe",
+            () -> new PickaxeItem(HexcraftToolTiers.SILVER, 1, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> SILVER_SHOVEL = ITEMS.register("silver_shovel",
+            () -> new ShovelItem(HexcraftToolTiers.SILVER, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> SILVER_AXE = ITEMS.register("silver_axe",
+            () -> new AxeItem(HexcraftToolTiers.SILVER, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> SILVER_HOE = ITEMS.register("silver_hoe",
+            () -> new HoeItem(HexcraftToolTiers.SILVER, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_SWORD = ITEMS.register("vampiric_sword",
+            () -> new SwordItem(HexcraftToolTiers.VAMPIRIC, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_PICKAXE = ITEMS.register("vampiric_pickaxe",
+            () -> new PickaxeItem(HexcraftToolTiers.VAMPIRIC, 1, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_SHOVEL = ITEMS.register("vampiric_shovel",
+            () -> new ShovelItem(HexcraftToolTiers.VAMPIRIC, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_AXE = ITEMS.register("vampiric_axe",
+            () -> new AxeItem(HexcraftToolTiers.VAMPIRIC, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_HOE = ITEMS.register("vampiric_hoe",
+            () -> new HoeItem(HexcraftToolTiers.VAMPIRIC, 2, 3, new Item.Properties()));
+
+    //Armor
+    public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
+            () -> new ArmorItem(HexcraftArmorMaterials.STEEL, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",
+            () -> new ArmorItem(HexcraftArmorMaterials.STEEL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_LEGGING = ITEMS.register("steel_leggings",
+            () -> new ArmorItem(HexcraftArmorMaterials.STEEL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
+            () -> new ArmorItem(HexcraftArmorMaterials.STEEL, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> DARK_STEEL_HELMET = ITEMS.register("dark_steel_helmet",
+            () -> new ArmorItem(HexcraftArmorMaterials.DARKSTEEL, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> DARK_STEEL_CHESTPLATE = ITEMS.register("dark_steel_chestplate",
+            () -> new ArmorItem(HexcraftArmorMaterials.DARKSTEEL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> DARK_STEEL_LEGGING = ITEMS.register("dark_steel_leggings",
+            () -> new ArmorItem(HexcraftArmorMaterials.DARKSTEEL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> DARK_STEEL_BOOTS = ITEMS.register("dark_steel_boots",
+            () -> new ArmorItem(HexcraftArmorMaterials.DARKSTEEL, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOODY_NYKIUM_HELMET = ITEMS.register("bloody_nykium_helmet",
+            () -> new ArmorItem(HexcraftArmorMaterials.BLOODYNYKIUM, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOODY_NYKIUM_CHESTPLATE = ITEMS.register("bloody_nykium_chestplate",
+            () -> new ArmorItem(HexcraftArmorMaterials.BLOODYNYKIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOODY_NYKIUM_LEGGING = ITEMS.register("bloody_nykium_leggings",
+            () -> new ArmorItem(HexcraftArmorMaterials.BLOODYNYKIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOODY_NYKIUM_BOOTS = ITEMS.register("bloody_nykium_boots",
+            () -> new ArmorItem(HexcraftArmorMaterials.BLOODYNYKIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> JORMIUM_HELMET = ITEMS.register("jormium_helmet",
+            () -> new ArmorItem(HexcraftArmorMaterials.JORMIUM, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> JORMIUM_CHESTPLATE = ITEMS.register("jormium_chestplate",
+            () -> new ArmorItem(HexcraftArmorMaterials.JORMIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> JORMIUM_LEGGING = ITEMS.register("jormium_leggings",
+            () -> new ArmorItem(HexcraftArmorMaterials.JORMIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> JORMIUM_BOOTS = ITEMS.register("jormium_boots",
+            () -> new ArmorItem(HexcraftArmorMaterials.JORMIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> CUROGEN_HELMET = ITEMS.register("curogen_helmet",
+            () -> new ArmorItem(HexcraftArmorMaterials.CUROGEN, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> CUROGEN_CHESTPLATE = ITEMS.register("curogen_chestplate",
+            () -> new ArmorItem(HexcraftArmorMaterials.CUROGEN, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> CUROGEN_LEGGING = ITEMS.register("curogen_leggings",
+            () -> new ArmorItem(HexcraftArmorMaterials.CUROGEN, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> CUROGEN_BOOTS = ITEMS.register("curogen_boots",
+            () -> new ArmorItem(HexcraftArmorMaterials.CUROGEN, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> SILVER_HELMET = ITEMS.register("silver_helmet",
+            () -> new ArmorItem(HexcraftArmorMaterials.SILVER, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> SILVER_CHESTPLATE = ITEMS.register("silver_chestplate",
+            () -> new ArmorItem(HexcraftArmorMaterials.SILVER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> SILVER_LEGGING = ITEMS.register("silver_leggings",
+            () -> new ArmorItem(HexcraftArmorMaterials.SILVER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> SILVER_BOOTS = ITEMS.register("silver_boots",
+            () -> new ArmorItem(HexcraftArmorMaterials.SILVER, ArmorItem.Type.BOOTS, new Item.Properties()));
+
 
     //Plants
     public static final RegistryObject<Item> WITCHES_LADDER_ITEM = ITEMS.register("witches_ladder_item",
