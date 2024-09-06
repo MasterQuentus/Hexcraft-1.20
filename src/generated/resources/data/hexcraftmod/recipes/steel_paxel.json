@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:steel_axe"
+    },
+    {
+      "item": "hexcraftmod:steel_pickaxe"
+    },
+    {
+      "item": "hexcraftmod:steel_shovel"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:steel_paxel"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:bloody_nykium_axe"
+    },
+    {
+      "item": "hexcraftmod:bloody_nykium_pickaxe"
+    },
+    {
+      "item": "hexcraftmod:bloody_nykium_shovel"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:bloody_nykium_paxel"
+  }
+}

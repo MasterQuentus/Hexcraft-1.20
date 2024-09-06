@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "J": {
+      "item": "hexcraftmod:jormium_ingot"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "JJJ",
+    " W ",
+    " W "
+  ],
+  "result": {
+    "item": "hexcraftmod:jormuim_pickaxe"
+  },
+  "show_notification": true
+}

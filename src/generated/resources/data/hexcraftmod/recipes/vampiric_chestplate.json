@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "V": {
+      "item": "hexcraftmod:vampiric_gem"
+    }
+  },
+  "pattern": [
+    "V V",
+    "VVV",
+    "VVV"
+  ],
+  "result": {
+    "item": "hexcraftmod:vampiric_chestplate"
+  },
+  "show_notification": true
+}

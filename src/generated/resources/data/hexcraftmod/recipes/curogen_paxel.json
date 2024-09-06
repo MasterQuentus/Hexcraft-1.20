@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:curogen_axe"
+    },
+    {
+      "item": "hexcraftmod:curogen_pickaxe"
+    },
+    {
+      "item": "hexcraftmod:curogen_shovel"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:curogen_paxel"
+  }
+}

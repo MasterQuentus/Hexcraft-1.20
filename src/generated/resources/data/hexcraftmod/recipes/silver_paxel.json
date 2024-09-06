@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:silver_axe"
+    },
+    {
+      "item": "hexcraftmod:silver_pickaxe"
+    },
+    {
+      "item": "hexcraftmod:silver_shovel"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:silver_paxel"
+  }
+}

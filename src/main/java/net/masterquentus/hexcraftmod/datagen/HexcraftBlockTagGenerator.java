@@ -55,6 +55,10 @@ public class HexcraftBlockTagGenerator extends BlockTagsProvider {
 				.add(Blocks.GRASS, Blocks.FERN, Blocks.SWEET_BERRY_BUSH)
 				.add(HexcraftBlocks.GLINT_WEED.get(), HexcraftBlocks.BLOOD_BERRIES_PLANT.get(),HexcraftBlocks.EMBER_MOSS.get());
 
+		this.tag(HexcraftTags.Blocks.PAXEL_MINEABLE)
+				.addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+				.addTag(BlockTags.MINEABLE_WITH_SHOVEL)
+				.addTag(BlockTags.MINEABLE_WITH_AXE);
 
 		this.tag(BlockTags.NEEDS_IRON_TOOL)
 				.add(HexcraftBlocks.AMETHYST_CHIMES.get(),

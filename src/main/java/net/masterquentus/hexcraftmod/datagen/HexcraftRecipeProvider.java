@@ -2545,6 +2545,581 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 				.unlockedBy(getHasName(HexcraftItems.POPPET.get()), has(HexcraftItems.POPPET.get()))
 				.save(pWriter);
 
+		//Armor
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.STEEL_HELMET.get())
+				.pattern("SSS")
+				.pattern("S S")
+				.define('S', HexcraftItems.STEEL_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.STEEL_CHESTPLATE.get())
+				.pattern("S S")
+				.pattern("SSS")
+				.pattern("SSS")
+				.define('S', HexcraftItems.STEEL_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.STEEL_LEGGING.get())
+				.pattern("SSS")
+				.pattern("S S")
+				.pattern("S S")
+				.define('S', HexcraftItems.STEEL_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.STEEL_BOOTS.get())
+				.pattern("S S")
+				.pattern("S S")
+				.define('S', HexcraftItems.STEEL_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DARK_STEEL_HELMET.get())
+				.pattern("SSS")
+				.pattern("S S")
+				.define('S', HexcraftItems.DARK_STEEL.get())
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DARK_STEEL_CHESTPLATE.get())
+				.pattern("S S")
+				.pattern("SSS")
+				.pattern("SSS")
+				.define('S', HexcraftItems.DARK_STEEL.get())
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DARK_STEEL_LEGGING.get())
+				.pattern("SSS")
+				.pattern("S S")
+				.pattern("S S")
+				.define('S', HexcraftItems.DARK_STEEL.get())
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DARK_STEEL_BOOTS.get())
+				.pattern("S S")
+				.pattern("S S")
+				.define('S', HexcraftItems.DARK_STEEL.get())
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.BLOODY_NYKIUM_HELMET.get())
+				.pattern("BBB")
+				.pattern("B B")
+				.define('B', HexcraftItems.DARK_STEEL.get())
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.BLOODY_NYKIUM_CHESTPLATE.get())
+				.pattern("B B")
+				.pattern("BBB")
+				.pattern("BBB")
+				.define('B', HexcraftItems.BLOODY_NYKIUM.get())
+				.unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.BLOODY_NYKIUM_LEGGING.get())
+				.pattern("BBB")
+				.pattern("B B")
+				.pattern("B B")
+				.define('B', HexcraftItems.BLOODY_NYKIUM.get())
+				.unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.BLOODY_NYKIUM_BOOTS.get())
+				.pattern("B B")
+				.pattern("B B")
+				.define('B', HexcraftItems.BLOODY_NYKIUM.get())
+				.unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.JORMIUM_HELMET.get())
+				.pattern("JJJ")
+				.pattern("J J")
+				.define('J', HexcraftItems.JORMIUM_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.JORMIUM_CHESTPLATE.get())
+				.pattern("J J")
+				.pattern("JJJ")
+				.pattern("JJJ")
+				.define('J', HexcraftItems.JORMIUM_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.JORMIUM_LEGGING.get())
+				.pattern("JJJ")
+				.pattern("J J")
+				.pattern("J J")
+				.define('J', HexcraftItems.JORMIUM_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.JORMIUM_BOOTS.get())
+				.pattern("J J")
+				.pattern("J J")
+				.define('J', HexcraftItems.JORMIUM_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CUROGEN_HELMET.get())
+				.pattern("CCC")
+				.pattern("C C")
+				.define('C', HexcraftItems.CUROGEN.get())
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CUROGEN_CHESTPLATE.get())
+				.pattern("C C")
+				.pattern("CCC")
+				.pattern("CCC")
+				.define('C', HexcraftItems.CUROGEN.get())
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CUROGEN_LEGGING.get())
+				.pattern("CCC")
+				.pattern("C C")
+				.pattern("C C")
+				.define('C', HexcraftItems.CUROGEN.get())
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CUROGEN_BOOTS.get())
+				.pattern("C C")
+				.pattern("C C")
+				.define('C', HexcraftItems.CUROGEN.get())
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.SILVER_HELMET.get())
+				.pattern("SSS")
+				.pattern("S S")
+				.define('S', HexcraftItems.SILVER_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.SILVER_INGOT.get()), has(HexcraftItems.SILVER_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.SILVER_CHESTPLATE.get())
+				.pattern("S S")
+				.pattern("SSS")
+				.pattern("SSS")
+				.define('S', HexcraftItems.SILVER_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.SILVER_INGOT.get()), has(HexcraftItems.SILVER_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.SILVER_LEGGING.get())
+				.pattern("SSS")
+				.pattern("S S")
+				.pattern("S S")
+				.define('S', HexcraftItems.SILVER_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.SILVER_INGOT.get()), has(HexcraftItems.SILVER_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.SILVER_BOOTS.get())
+				.pattern("S S")
+				.pattern("S S")
+				.define('S', HexcraftItems.SILVER_INGOT.get())
+				.unlockedBy(getHasName(HexcraftItems.SILVER_INGOT.get()), has(HexcraftItems.SILVER_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VAMPIRIC_HELMET.get())
+				.pattern("VVV")
+				.pattern("V V")
+				.define('V', HexcraftItems.VAMPIRIC_GEM.get())
+				.unlockedBy(getHasName(HexcraftItems.VAMPIRIC_GEM.get()), has(HexcraftItems.VAMPIRIC_GEM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VAMPIRIC_CHESTPLATE.get())
+				.pattern("V V")
+				.pattern("VVV")
+				.pattern("VVV")
+				.define('V', HexcraftItems.VAMPIRIC_GEM.get())
+				.unlockedBy(getHasName(HexcraftItems.VAMPIRIC_GEM.get()), has(HexcraftItems.VAMPIRIC_GEM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VAMPIRIC_LEGGING.get())
+				.pattern("VVV")
+				.pattern("V V")
+				.pattern("V V")
+				.define('V', HexcraftItems.VAMPIRIC_GEM.get())
+				.unlockedBy(getHasName(HexcraftItems.VAMPIRIC_GEM.get()), has(HexcraftItems.VAMPIRIC_GEM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VAMPIRIC_BOOTS.get())
+				.pattern("V V")
+				.pattern("V V")
+				.define('V', HexcraftItems.VAMPIRIC_GEM.get())
+				.unlockedBy(getHasName(HexcraftItems.VAMPIRIC_GEM.get()), has(HexcraftItems.VAMPIRIC_GEM.get()))
+				.save(pWriter);
+
+		//Bows
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.STEEL_BOW.get())
+				.pattern(" SL")
+				.pattern("S L")
+				.pattern(" SL")
+				.define('S', HexcraftItems.STEEL_INGOT.get())
+				.define('L', Items.STRING)
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DARK_STEEL_BOW.get())
+				.pattern(" SL")
+				.pattern("S L")
+				.pattern(" SL")
+				.define('S', HexcraftItems.DARK_STEEL.get())
+				.define('L', Items.STRING)
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.BLOODY_NYKIUM_BOW.get())
+				.pattern(" BL")
+				.pattern("B L")
+				.pattern(" BL")
+				.define('B', HexcraftItems.BLOODY_NYKIUM.get())
+				.define('L', Items.STRING)
+				.unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.JORMIUM_BOW.get())
+				.pattern(" JL")
+				.pattern("J L")
+				.pattern(" JL")
+				.define('J', HexcraftItems.JORMIUM_INGOT.get())
+				.define('L', Items.STRING)
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CUROGEN_BOW.get())
+				.pattern(" CL")
+				.pattern("C L")
+				.pattern(" CL")
+				.define('C', HexcraftItems.CUROGEN.get())
+				.define('L', Items.STRING)
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get()))
+				.save(pWriter);
+
+
+
+		//Tools
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.STEEL_SWORD.get())
+				.pattern(" S ")
+				.pattern(" S ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.STEEL_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.STEEL_PICKAXE.get())
+				.pattern("SSS")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.STEEL_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.STEEL_SHOVEL.get())
+				.pattern(" S ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.STEEL_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.STEEL_AXE.get())
+				.pattern("SS ")
+				.pattern("SW ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.STEEL_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.STEEL_HOE.get())
+				.pattern("SS ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.STEEL_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DARK_STEEL_SWORD.get())
+				.pattern(" S ")
+				.pattern(" S ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.DARK_STEEL.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DARK_STEEL_PICKAXE.get())
+				.pattern("SSS")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.DARK_STEEL.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DARK_STEEL_SHOVEL.get())
+				.pattern(" S ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.DARK_STEEL.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DARK_STEEL_AXE.get())
+				.pattern("SS ")
+				.pattern("SW ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.DARK_STEEL.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.DARK_STEEL_HOE.get())
+				.pattern("SS ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.DARK_STEEL.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.BLOODY_NYKIUM_SWORD.get())
+				.pattern(" B ")
+				.pattern(" B ")
+				.pattern(" W ")
+				.define('B', HexcraftItems.BLOODY_NYKIUM.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.BLOODY_NYKIUM_PICKAXE.get())
+				.pattern("BBB")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('B', HexcraftItems.BLOODY_NYKIUM.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.BLOODY_NYKIUM_SHOVEL.get())
+				.pattern(" B ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('B', HexcraftItems.BLOODY_NYKIUM.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.BLOODY_NYKIUM_AXE.get())
+				.pattern("BB ")
+				.pattern("BW ")
+				.pattern(" W ")
+				.define('B', HexcraftItems.BLOODY_NYKIUM.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.BLOODY_NYKIUM_HOE.get())
+				.pattern("BB ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('B', HexcraftItems.BLOODY_NYKIUM.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.JORMIUM_SWORD.get())
+				.pattern(" J ")
+				.pattern(" J ")
+				.pattern(" W ")
+				.define('J', HexcraftItems.JORMIUM_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.JORMIUM_PICKAXE.get())
+				.pattern("JJJ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('J', HexcraftItems.JORMIUM_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.JORMIUM_SHOVEL.get())
+				.pattern(" J ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('J', HexcraftItems.JORMIUM_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.JORMIUM_AXE.get())
+				.pattern("JJ ")
+				.pattern("JW ")
+				.pattern(" W ")
+				.define('J', HexcraftItems.JORMIUM_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.JORMIUM_HOE.get())
+				.pattern("JJ ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('J', HexcraftItems.JORMIUM_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CUROGEN_SWORD.get())
+				.pattern(" C ")
+				.pattern(" C ")
+				.pattern(" W ")
+				.define('C', HexcraftItems.CUROGEN.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CUROGEN_PICKAXE.get())
+				.pattern("CCC")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('C', HexcraftItems.CUROGEN.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CUROGEN_SHOVEL.get())
+				.pattern(" C ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('C', HexcraftItems.CUROGEN.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CUROGEN_AXE.get())
+				.pattern("CC ")
+				.pattern("CW ")
+				.pattern(" W ")
+				.define('C', HexcraftItems.CUROGEN.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.CUROGEN_HOE.get())
+				.pattern("CC ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('C', HexcraftItems.CUROGEN.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.SILVER_SWORD.get())
+				.pattern(" S ")
+				.pattern(" S ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.SILVER_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.SILVER_INGOT.get()), has(HexcraftItems.SILVER_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.SILVER_PICKAXE.get())
+				.pattern("SSS")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.SILVER_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.SILVER_INGOT.get()), has(HexcraftItems.SILVER_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.SILVER_SHOVEL.get())
+				.pattern(" S ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.SILVER_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.SILVER_INGOT.get()), has(HexcraftItems.SILVER_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.SILVER_AXE.get())
+				.pattern("SS ")
+				.pattern("SW ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.SILVER_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.SILVER_INGOT.get()), has(HexcraftItems.SILVER_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.SILVER_HOE.get())
+				.pattern("SS ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('S', HexcraftItems.SILVER_INGOT.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.SILVER_INGOT.get()), has(HexcraftItems.SILVER_INGOT.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VAMPIRIC_SWORD.get())
+				.pattern(" V ")
+				.pattern(" V ")
+				.pattern(" W ")
+				.define('V', HexcraftItems.VAMPIRIC_GEM.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.VAMPIRIC_GEM.get()), has(HexcraftItems.VAMPIRIC_GEM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VAMPIRIC_PICKAXE.get())
+				.pattern("VVV")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('V', HexcraftItems.VAMPIRIC_GEM.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.VAMPIRIC_GEM.get()), has(HexcraftItems.VAMPIRIC_GEM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VAMPIRIC_SHOVEL.get())
+				.pattern(" V ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('V', HexcraftItems.VAMPIRIC_GEM.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.VAMPIRIC_GEM.get()), has(HexcraftItems.VAMPIRIC_GEM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VAMPIRIC_AXE.get())
+				.pattern("VV ")
+				.pattern("VW ")
+				.pattern(" W ")
+				.define('V', HexcraftItems.VAMPIRIC_GEM.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.VAMPIRIC_GEM.get()), has(HexcraftItems.VAMPIRIC_GEM.get()))
+				.save(pWriter);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, HexcraftItems.VAMPIRIC_HOE.get())
+				.pattern("VV ")
+				.pattern(" W ")
+				.pattern(" W ")
+				.define('V', HexcraftItems.VAMPIRIC_GEM.get())
+				.define('W', Items.STICK)
+				.unlockedBy(getHasName(HexcraftItems.VAMPIRIC_GEM.get()), has(HexcraftItems.VAMPIRIC_GEM.get()))
+				.save(pWriter);
+
 
 		//Shapeless
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.BLOODY_NYKIUM_NUGGET.get(), 9)
@@ -2854,6 +3429,48 @@ public class HexcraftRecipeProvider extends RecipeProvider implements ICondition
 				.requires(HexcraftBlocks.LIVING_KELP_BLOCK.get())
 				.unlockedBy(getHasName(HexcraftBlocks.LIVING_KELP_BLOCK.get()), has(HexcraftBlocks.LIVING_KELP_BLOCK.get()))
 				.save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.STEEL_PAXEL.get())
+				.requires(HexcraftItems.STEEL_AXE.get())
+				.requires(HexcraftItems.STEEL_PICKAXE.get())
+				.requires(HexcraftItems.STEEL_SHOVEL.get())
+				.unlockedBy(getHasName(HexcraftItems.STEEL_INGOT.get()), has(HexcraftItems.STEEL_INGOT.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.DARK_STEEL_PAXEL.get())
+				.requires(HexcraftItems.DARK_STEEL_AXE.get())
+				.requires(HexcraftItems.DARK_STEEL_PICKAXE.get())
+				.requires(HexcraftItems.DARK_STEEL_SHOVEL.get())
+				.unlockedBy(getHasName(HexcraftItems.DARK_STEEL.get()), has(HexcraftItems.DARK_STEEL.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.BLOODY_NYKIUM_PAXEL.get())
+				.requires(HexcraftItems.BLOODY_NYKIUM_AXE.get())
+				.requires(HexcraftItems.BLOODY_NYKIUM_PICKAXE.get())
+				.requires(HexcraftItems.BLOODY_NYKIUM_SHOVEL.get())
+				.unlockedBy(getHasName(HexcraftItems.BLOODY_NYKIUM.get()), has(HexcraftItems.BLOODY_NYKIUM.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.JORMIUM_PAXEL.get())
+				.requires(HexcraftItems.JORMIUM_AXE.get())
+				.requires(HexcraftItems.JORMIUM_PICKAXE.get())
+				.requires(HexcraftItems.JORMIUM_SHOVEL.get())
+				.unlockedBy(getHasName(HexcraftItems.JORMIUM_INGOT.get()), has(HexcraftItems.JORMIUM_INGOT.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.CUROGEN_PAXEL.get())
+				.requires(HexcraftItems.CUROGEN_AXE.get())
+				.requires(HexcraftItems.CUROGEN_PICKAXE.get())
+				.requires(HexcraftItems.CUROGEN_SHOVEL.get())
+				.unlockedBy(getHasName(HexcraftItems.CUROGEN.get()), has(HexcraftItems.CUROGEN.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.SILVER_PAXEL.get())
+				.requires(HexcraftItems.SILVER_AXE.get())
+				.requires(HexcraftItems.SILVER_PICKAXE.get())
+				.requires(HexcraftItems.SILVER_SHOVEL.get())
+				.unlockedBy(getHasName(HexcraftItems.SILVER_INGOT.get()), has(HexcraftItems.SILVER_INGOT.get())).save(pWriter);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HexcraftItems.VAMPIRIC_PAXEL.get())
+				.requires(HexcraftItems.VAMPIRIC_AXE.get())
+				.requires(HexcraftItems.VAMPIRIC_PICKAXE.get())
+				.requires(HexcraftItems.VAMPIRIC_SHOVEL.get())
+				.unlockedBy(getHasName(HexcraftItems.VAMPIRIC_GEM.get()), has(HexcraftItems.VAMPIRIC_GEM.get())).save(pWriter);
 
 		WitchesOvenRecipeBuilder
 				.buildOvenRecipe(HexcraftItems.WHITE_OAK_ASH.get(), HexcraftItems.WOOD_ASH.get(), 0.35f, 200)

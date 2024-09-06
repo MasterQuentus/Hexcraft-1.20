@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "hexcraftmod:dark_steel"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " S ",
+    " W ",
+    " W "
+  ],
+  "result": {
+    "item": "hexcraftmod:dark_steel_shovel"
+  },
+  "show_notification": true
+}

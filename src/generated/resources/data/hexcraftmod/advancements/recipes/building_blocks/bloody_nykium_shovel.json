@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bloody_nykium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hexcraftmod:bloody_nykium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hexcraftmod:bloody_nykium_shovel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bloody_nykium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hexcraftmod:bloody_nykium_shovel"
+    ]
+  },
+  "sends_telemetry_event": false
+}

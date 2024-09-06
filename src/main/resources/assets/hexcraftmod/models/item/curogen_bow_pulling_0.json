@@ -1,0 +1,6 @@
+{
+    "parent": "hexcraftmod:item/curogen_bow",
+    "textures": {
+        "layer0": "hexcraftmod:item/curogen_bow_pulling_0"
+    }
+}

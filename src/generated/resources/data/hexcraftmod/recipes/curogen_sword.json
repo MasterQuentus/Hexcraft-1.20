@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:curogen"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " C ",
+    " C ",
+    " W "
+  ],
+  "result": {
+    "item": "hexcraftmod:curogen_sword"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "J": {
+      "item": "hexcraftmod:jormium_ingot"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " J ",
+    " W ",
+    " W "
+  ],
+  "result": {
+    "item": "hexcraftmod:jormuim_shovel"
+  },
+  "show_notification": true
+}

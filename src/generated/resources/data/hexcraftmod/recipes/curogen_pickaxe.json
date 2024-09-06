@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:curogen"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "CCC",
+    " W ",
+    " W "
+  ],
+  "result": {
+    "item": "hexcraftmod:curogen_pickaxe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:bloody_nykium"
+    },
+    "L": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " BL",
+    "B L",
+    " BL"
+  ],
+  "result": {
+    "item": "hexcraftmod:bloody_nykium_bow"
+  },
+  "show_notification": true
+}

@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-03T01:50:58.858733	Item Models: hexcraftmod
+// 1.20.1	2024-09-06T01:28:27.4655251	Item Models: hexcraftmod
 160560169bde8b9f291dac27ebe1acb35356e7dc assets/hexcraftmod/models/item/aerpine.json
 6151765f657d939571e60a8d06b660c885dfb9f9 assets/hexcraftmod/models/item/aerpine_seeds.json
 424491fc87e0fdf222fd40f43302af0b96667b38 assets/hexcraftmod/models/item/air_rune.json
@@ -213,8 +213,13 @@ dd456abe6e4b999cc2a3e5c032c87ba1d7fa0a54 assets/hexcraftmod/models/item/sage_see
 76cd336b21c3f6505768d0ac5541cdbed783a3db assets/hexcraftmod/models/item/salt.json
 7b023025fbe53eff10e95506784404f3262029e3 assets/hexcraftmod/models/item/senia.json
 ec33183c7b4c93b33d8d776e5f1337f73dc1231c assets/hexcraftmod/models/item/senia_seeds.json
+cc43455de46f3f5b2ae1d3169b44f0cbebc183da assets/hexcraftmod/models/item/silver_axe.json
+ba21c731475413e80fcca11b9d01ee2e4b98a2e0 assets/hexcraftmod/models/item/silver_hoe.json
 855b33cca4d6e95c5cebd4e2c05d6712df6eac79 assets/hexcraftmod/models/item/silver_ingot.json
 83a1bacd4de0bedd8ee3202e762a8cc0a1756855 assets/hexcraftmod/models/item/silver_nugget.json
+f6581e042519908414b40201285d64d30aa6e1e5 assets/hexcraftmod/models/item/silver_pickaxe.json
+1ea279b924cc1d259b225bac6b910a1f5f8ad17f assets/hexcraftmod/models/item/silver_shovel.json
+3d7b8011496b3489b485b3511f3515e14bee74a3 assets/hexcraftmod/models/item/silver_sword.json
 52fdeb0f71ec27722755f5ff5127fa7389b25ee2 assets/hexcraftmod/models/item/smooth_crimson_sand_stone_slab.json
 3788d9a0df2b3bd6c97fceb8756718568ff40ff6 assets/hexcraftmod/models/item/smooth_crimson_sand_stone_stairs.json
 cead644986acaddf979ef9ec36d9c79320567d74 assets/hexcraftmod/models/item/steel_ingot.json
@@ -240,8 +245,13 @@ e7ea4358b756a8993417754ff75a447024de12fb assets/hexcraftmod/models/item/under_wo
 4484c45f620c1a7085d0b06cb7367a0d53cf3e0f assets/hexcraftmod/models/item/under_world_stone_stairs.json
 57dfdac4d0006b2ab8abf8733d1ba0ef16aecc62 assets/hexcraftmod/models/item/under_world_stone_wall.json
 55f33d85b399e94f3d90e57d0b6264608860711f assets/hexcraftmod/models/item/unfired_clay_pot.json
+c9c7973c278ad9291f37c4c9aa06ab1ede0f7045 assets/hexcraftmod/models/item/vampiric_axe.json
 0394c25b3b398daa6171577de8d8c5b18011031b assets/hexcraftmod/models/item/vampiric_gem.json
+8a18fcd19aa9f2b7ca1322dd0c1117a707369171 assets/hexcraftmod/models/item/vampiric_hoe.json
+49a83e7bfa813092c733447ffd0fa21ff7069ddd assets/hexcraftmod/models/item/vampiric_pickaxe.json
 20298e09df93a90dca57d1666e9ca17d699d022e assets/hexcraftmod/models/item/vampiric_poppet.json
+790ca3019ebc16c652008d557d0f50d7e2a0f288 assets/hexcraftmod/models/item/vampiric_shovel.json
+4f3cdfc8cbc4b527ef2b5841c5cd62d0492fecb9 assets/hexcraftmod/models/item/vampiric_sword.json
 37a2cfce24a3621fd1d3116628fb117c1fe32a9d assets/hexcraftmod/models/item/vervain.json
 f6aef3672a334353aeeedcdc92fb938aa28202df assets/hexcraftmod/models/item/vervain_seeds.json
 7e035ef4913490be0ccfbc2b328c708a9d0dc47a assets/hexcraftmod/models/item/vilevine_item.json

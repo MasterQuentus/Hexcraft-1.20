@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:curogen"
+    }
+  },
+  "pattern": [
+    "C C",
+    "C C"
+  ],
+  "result": {
+    "item": "hexcraftmod:curogen_boots"
+  },
+  "show_notification": true
+}

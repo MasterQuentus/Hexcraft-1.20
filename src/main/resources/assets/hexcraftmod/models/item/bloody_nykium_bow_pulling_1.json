@@ -1,0 +1,6 @@
+{
+    "parent": "hexcraftmod:item/bloody_nykium_bow",
+    "textures": {
+        "layer0": "hexcraftmod:item/bloody_nykium_bow_pulling_1"
+    }
+}

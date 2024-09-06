@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "hexcraftmod:steel_ingot"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " W ",
+    " W "
+  ],
+  "result": {
+    "item": "hexcraftmod:steel_pickaxe"
+  },
+  "show_notification": true
+}

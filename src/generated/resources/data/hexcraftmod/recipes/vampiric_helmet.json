@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "V": {
+      "item": "hexcraftmod:vampiric_gem"
+    }
+  },
+  "pattern": [
+    "VVV",
+    "V V"
+  ],
+  "result": {
+    "item": "hexcraftmod:vampiric_helmet"
+  },
+  "show_notification": true
+}

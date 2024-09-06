@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "J": {
+      "item": "hexcraftmod:jormium_ingot"
+    },
+    "L": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " JL",
+    "J L",
+    " JL"
+  ],
+  "result": {
+    "item": "hexcraftmod:jormium_bow"
+  },
+  "show_notification": true
+}

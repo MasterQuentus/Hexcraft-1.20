@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:curogen"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "C C"
+  ],
+  "result": {
+    "item": "hexcraftmod:curogen_helmet"
+  },
+  "show_notification": true
+}

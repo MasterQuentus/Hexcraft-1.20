@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "hexcraftmod:silver_ingot"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SS ",
+    "SW ",
+    " W "
+  ],
+  "result": {
+    "item": "hexcraftmod:silver_axe"
+  },
+  "show_notification": true
+}
