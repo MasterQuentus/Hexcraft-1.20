@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "L": {
+      "item": "minecraft:string"
+    },
+    "S": {
+      "item": "hexcraftmod:dark_steel"
+    }
+  },
+  "pattern": [
+    " SL",
+    "S L",
+    " SL"
+  ],
+  "result": {
+    "item": "hexcraftmod:dark_steel_bow"
+  },
+  "show_notification": true
+}

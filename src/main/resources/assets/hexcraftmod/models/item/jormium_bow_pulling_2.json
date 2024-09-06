@@ -1,0 +1,6 @@
+{
+    "parent": "hexcraftmod:item/jormium_bow",
+    "textures": {
+        "layer0": "hexcraftmod:item/jormium_bow_pulling_2"
+    }
+}

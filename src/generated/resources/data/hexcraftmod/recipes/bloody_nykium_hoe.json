@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "hexcraftmod:bloody_nykium"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "BB ",
+    " W ",
+    " W "
+  ],
+  "result": {
+    "item": "hexcraftmod:bloody_nykium_hoe"
+  },
+  "show_notification": true
+}

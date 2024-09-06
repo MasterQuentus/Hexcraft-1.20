@@ -3,7 +3,7 @@ package net.masterquentus.hexcraftmod;
 import java.util.Random;
 
 import net.masterquentus.hexcraftmod.block.entity.client.HexcraftBoatRenderer;
-import net.masterquentus.hexcraftmod.entity.custom.HexcraftEntities;
+import net.masterquentus.hexcraftmod.entity.HexcraftEntities;
 import net.masterquentus.hexcraftmod.fluid.HexcraftFluidTypes;
 import net.masterquentus.hexcraftmod.fluid.HexcraftFluids;
 import net.masterquentus.hexcraftmod.util.HexcraftWoodTypes;

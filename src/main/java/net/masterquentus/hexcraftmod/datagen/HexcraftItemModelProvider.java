@@ -382,16 +382,16 @@ public class HexcraftItemModelProvider extends ItemModelProvider {
 		//handheldItem(HexcraftItems.CUROGEN_SHOVEL);
 		//handheldItem(HexcraftItems.CUROGEN_AXE);
 		//handheldItem(HexcraftItems.CUROGEN_HOE);
-		//handheldItem(HexcraftItems.SILVER_SWORD);
-		//handheldItem(HexcraftItems.SILVER_PICKAXE);
-		//handheldItem(HexcraftItems.SILVER_SHOVEL);
-		//handheldItem(HexcraftItems.SILVER_AXE);
-		//handheldItem(HexcraftItems.SILVER_HOE);
-		//handheldItem(HexcraftItems.VAMPIRIC_SWORD);
-		//handheldItem(HexcraftItems.VAMPIRIC_PICKAXE);
-		//handheldItem(HexcraftItems.VAMPIRIC_SHOVEL);
-		//handheldItem(HexcraftItems.VAMPIRIC_AXE);
-		//handheldItem(HexcraftItems.VAMPIRIC_HOE);
+		handheldItem(HexcraftItems.SILVER_SWORD);
+		handheldItem(HexcraftItems.SILVER_PICKAXE);
+		handheldItem(HexcraftItems.SILVER_SHOVEL);
+		handheldItem(HexcraftItems.SILVER_AXE);
+		handheldItem(HexcraftItems.SILVER_HOE);
+		handheldItem(HexcraftItems.VAMPIRIC_SWORD);
+		handheldItem(HexcraftItems.VAMPIRIC_PICKAXE);
+		handheldItem(HexcraftItems.VAMPIRIC_SHOVEL);
+		handheldItem(HexcraftItems.VAMPIRIC_AXE);
+		handheldItem(HexcraftItems.VAMPIRIC_HOE);
 
 
 

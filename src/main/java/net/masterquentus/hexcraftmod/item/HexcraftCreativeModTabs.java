@@ -116,36 +116,50 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.STEEL_SHOVEL.get());
                         output.accept(HexcraftItems.STEEL_AXE.get());
                         output.accept(HexcraftItems.STEEL_HOE.get());
+                        output.accept(HexcraftItems.STEEL_PAXEL.get());
                         output.accept(HexcraftItems.DARK_STEEL_SWORD.get());
                         output.accept(HexcraftItems.DARK_STEEL_PICKAXE.get());
                         output.accept(HexcraftItems.DARK_STEEL_SHOVEL.get());
                         output.accept(HexcraftItems.DARK_STEEL_AXE.get());
                         output.accept(HexcraftItems.DARK_STEEL_HOE.get());
+                        output.accept(HexcraftItems.DARK_STEEL_PAXEL.get());
                         output.accept(HexcraftItems.BLOODY_NYKIUM_SWORD.get());
                         output.accept(HexcraftItems.BLOODY_NYKIUM_PICKAXE.get());
                         output.accept(HexcraftItems.BLOODY_NYKIUM_SHOVEL.get());
                         output.accept(HexcraftItems.BLOODY_NYKIUM_AXE.get());
                         output.accept(HexcraftItems.BLOODY_NYKIUM_HOE.get());
+                        output.accept(HexcraftItems.BLOODY_NYKIUM_PAXEL.get());
                         output.accept(HexcraftItems.JORMIUM_SWORD.get());
                         output.accept(HexcraftItems.JORMIUM_PICKAXE.get());
                         output.accept(HexcraftItems.JORMIUM_SHOVEL.get());
                         output.accept(HexcraftItems.JORMIUM_AXE.get());
                         output.accept(HexcraftItems.JORMIUM_HOE.get());
+                        output.accept(HexcraftItems.JORMIUM_PAXEL.get());
                         output.accept(HexcraftItems.CUROGEN_SWORD.get());
                         output.accept(HexcraftItems.CUROGEN_PICKAXE.get());
                         output.accept(HexcraftItems.CUROGEN_SHOVEL.get());
                         output.accept(HexcraftItems.CUROGEN_AXE.get());
                         output.accept(HexcraftItems.CUROGEN_HOE.get());
+                        output.accept(HexcraftItems.CUROGEN_PAXEL.get());
                         output.accept(HexcraftItems.SILVER_SWORD.get());
                         output.accept(HexcraftItems.SILVER_PICKAXE.get());
                         output.accept(HexcraftItems.SILVER_SHOVEL.get());
                         output.accept(HexcraftItems.SILVER_AXE.get());
                         output.accept(HexcraftItems.SILVER_HOE.get());
+                        output.accept(HexcraftItems.SILVER_PAXEL.get());
                         output.accept(HexcraftItems.VAMPIRIC_SWORD.get());
                         output.accept(HexcraftItems.VAMPIRIC_PICKAXE.get());
                         output.accept(HexcraftItems.VAMPIRIC_SHOVEL.get());
                         output.accept(HexcraftItems.VAMPIRIC_AXE.get());
                         output.accept(HexcraftItems.VAMPIRIC_HOE.get());
+                        output.accept(HexcraftItems.VAMPIRIC_PAXEL.get());
+
+                        //Bows
+                        output.accept(HexcraftItems.STEEL_BOW.get());
+                        output.accept(HexcraftItems.DARK_STEEL_BOW.get());
+                        output.accept(HexcraftItems.BLOODY_NYKIUM_BOW.get());
+                        output.accept(HexcraftItems.JORMIUM_BOW.get());
+                        output.accept(HexcraftItems.CUROGEN_BOW.get());
 
                         //Armor
                         output.accept(HexcraftItems.STEEL_HELMET.get());
@@ -172,6 +186,11 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftItems.SILVER_CHESTPLATE.get());
                         output.accept(HexcraftItems.SILVER_LEGGING.get());
                         output.accept(HexcraftItems.SILVER_BOOTS.get());
+                        output.accept(HexcraftItems.VAMPIRIC_HELMET.get());
+                        output.accept(HexcraftItems.VAMPIRIC_CHESTPLATE.get());
+                        output.accept(HexcraftItems.VAMPIRIC_LEGGING.get());
+                        output.accept(HexcraftItems.VAMPIRIC_BOOTS.get());
+
 
                         //Blocks
                         output.accept(HexcraftBlocks.BLOOD_MUSHROOM_BLOCK.get());

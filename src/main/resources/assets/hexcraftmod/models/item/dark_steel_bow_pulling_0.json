@@ -1,0 +1,6 @@
+{
+    "parent": "hexcraftmod:item/dark_steel_bow",
+    "textures": {
+        "layer0": "hexcraftmod:item/dark_steel_bow_pulling_0"
+    }
+}

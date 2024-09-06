@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "J": {
+      "item": "hexcraftmod:jormium_ingot"
+    }
+  },
+  "pattern": [
+    "J J",
+    "J J"
+  ],
+  "result": {
+    "item": "hexcraftmod:jormium_boots"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "hexcraftmod:curogen"
+    },
+    "L": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " CL",
+    "C L",
+    " CL"
+  ],
+  "result": {
+    "item": "hexcraftmod:curogen_bow"
+  },
+  "show_notification": true
+}

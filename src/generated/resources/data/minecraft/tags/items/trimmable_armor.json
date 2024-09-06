@@ -1,0 +1,32 @@
+{
+  "values": [
+    "hexcraftmod:steel_helmet",
+    "hexcraftmod:steel_chestplate",
+    "hexcraftmod:steel_leggings",
+    "hexcraftmod:steel_boots",
+    "hexcraftmod:dark_steel_helmet",
+    "hexcraftmod:dark_steel_chestplate",
+    "hexcraftmod:dark_steel_leggings",
+    "hexcraftmod:dark_steel_boots",
+    "hexcraftmod:bloody_nykium_helmet",
+    "hexcraftmod:bloody_nykium_chestplate",
+    "hexcraftmod:bloody_nykium_leggings",
+    "hexcraftmod:bloody_nykium_boots",
+    "hexcraftmod:jormium_helmet",
+    "hexcraftmod:jormium_chestplate",
+    "hexcraftmod:jormium_leggings",
+    "hexcraftmod:jormium_boots",
+    "hexcraftmod:curogen_helmet",
+    "hexcraftmod:curogen_chestplate",
+    "hexcraftmod:curogen_leggings",
+    "hexcraftmod:curogen_boots",
+    "hexcraftmod:silver_helmet",
+    "hexcraftmod:silver_chestplate",
+    "hexcraftmod:silver_leggings",
+    "hexcraftmod:silver_boots",
+    "hexcraftmod:vampiric_helmet",
+    "hexcraftmod:vampiric_chestplate",
+    "hexcraftmod:vampiric_leggings",
+    "hexcraftmod:vampiric_boots"
+  ]
+}

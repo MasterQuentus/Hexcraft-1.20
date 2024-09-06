@@ -1,4 +1,4 @@
-package net.masterquentus.hexcraftmod.entity.custom;
+package net.masterquentus.hexcraftmod.entity;
 
 import net.masterquentus.hexcraftmod.HexcraftMod;
 import net.masterquentus.hexcraftmod.block.entity.boats.HexcraftBoatEntity;

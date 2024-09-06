@@ -3,7 +3,7 @@ package net.masterquentus.hexcraftmod.block.entity.boats;
 import java.util.function.IntFunction;
 
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
-import net.masterquentus.hexcraftmod.entity.custom.HexcraftEntities;
+import net.masterquentus.hexcraftmod.entity.HexcraftEntities;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "V": {
+      "item": "hexcraftmod:vampiric_gem"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " V ",
+    " V ",
+    " W "
+  ],
+  "result": {
+    "item": "hexcraftmod:vampiric_sword"
+  },
+  "show_notification": true
+}

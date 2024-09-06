@@ -21,14 +21,24 @@ public class HexcraftTags {
 
 		public static final TagKey<Block> MUTANDIS_BLACKLIST = createBlockTag(
 				HexcraftMod.id("mutandis_blacklist_plants"));
+
 		public static final TagKey<Block> MUTANDIS_EXTREMIS_BLACKLIST = createBlockTag(
 				HexcraftMod.id("mutandis_extremis_blacklist"));
-		public static final TagKey<Block> MUTANDIS_EXTREMIS_PLANTS = createBlockTag(
+
+		public static final TagKey<Block> MUTANDIS_EXTREMIS_PLANTS =
+				createBlockTag(
 				HexcraftMod.id("mutandis_extremis_plants"));
-		public static final TagKey<Block> MUTANDIS_PLANTS = createBlockTag(HexcraftMod.id("mutandis_plants"));
-		public static final TagKey<Block> CROPS = createBlockTag(HexcraftMod.id("crops"));
+		public static final TagKey<Block> MUTANDIS_PLANTS = createBlockTag(HexcraftMod.id
+				("mutandis_plants"));
+
+		public static final TagKey<Block> CROPS = createBlockTag
+				(HexcraftMod.id("crops"));
+
 		public static final TagKey<Block> BLIGHT_DECAYABLE_PLANTS = createBlockTag(
 				HexcraftMod.id("blight_decayable_plants"));
+
+		public static final TagKey<Block> PAXEL_MINEABLE = createBlockTag(
+				HexcraftMod.id("mineable/paxel"));
 
 		private static TagKey<Block> tag(String name) {
 			return BlockTags.create(new ResourceLocation(HexcraftMod.MOD_ID, name));

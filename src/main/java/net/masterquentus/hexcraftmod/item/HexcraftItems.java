@@ -255,8 +255,8 @@ public class HexcraftItems {
     public static final RegistryObject<Item> EXPLOSION_PROTECTION_POPPET = ITEMS.register("explosion_protection_poppet",
             () -> new Item(new Item.Properties().durability(256)));
 
-    public static final RegistryObject<Item> PROJECTILE_PROTECTION_POPPET = ITEMS
-            .register("projectile_protection_poppet", () -> new Item(new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> PROJECTILE_PROTECTION_POPPET = ITEMS.register("projectile_protection_poppet",
+            () -> new Item(new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> HUNGER_PROTECTION_POPPET = ITEMS.register("hunger_protection_poppet",
             () -> new Item(new Item.Properties().durability(256)));
@@ -314,6 +314,9 @@ public class HexcraftItems {
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
             () -> new HoeItem(HexcraftToolTiers.STEEL, 2, 3, new Item.Properties()));
 
+    public static final RegistryObject<Item> STEEL_PAXEL = ITEMS.register("steel_paxel",
+            () -> new PaxelItem(HexcraftToolTiers.STEEL, 2, 3, new Item.Properties()));
+
     public static final RegistryObject<Item> DARK_STEEL_SWORD = ITEMS.register("dark_steel_sword",
             () -> new SwordItem(HexcraftToolTiers.DARKSTEEL, 2, 3, new Item.Properties()));
 
@@ -328,6 +331,9 @@ public class HexcraftItems {
 
     public static final RegistryObject<Item> DARK_STEEL_HOE = ITEMS.register("dark_steel_hoe",
             () -> new HoeItem(HexcraftToolTiers.DARKSTEEL, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> DARK_STEEL_PAXEL = ITEMS.register("dark_steel_paxel",
+            () -> new PaxelItem(HexcraftToolTiers.DARKSTEEL, 2, 3, new Item.Properties()));
 
     public static final RegistryObject<Item> BLOODY_NYKIUM_SWORD = ITEMS.register("bloody_nykium_sword",
             () -> new SwordItem(HexcraftToolTiers.BLOODYNYKIUM, 2, 3, new Item.Properties()));
@@ -344,6 +350,9 @@ public class HexcraftItems {
     public static final RegistryObject<Item> BLOODY_NYKIUM_HOE = ITEMS.register("bloody_nykium_hoe",
             () -> new HoeItem(HexcraftToolTiers.BLOODYNYKIUM, 2, 3, new Item.Properties()));
 
+    public static final RegistryObject<Item> BLOODY_NYKIUM_PAXEL = ITEMS.register("bloody_nykium_paxel",
+            () -> new PaxelItem(HexcraftToolTiers.BLOODYNYKIUM, 2, 3, new Item.Properties()));
+
     public static final RegistryObject<Item> JORMIUM_SWORD = ITEMS.register("jormuim_sword",
             () -> new SwordItem(HexcraftToolTiers.JORMIUM, 2, 3, new Item.Properties()));
 
@@ -358,6 +367,9 @@ public class HexcraftItems {
 
     public static final RegistryObject<Item> JORMIUM_HOE = ITEMS.register("jormuim_hoe",
             () -> new HoeItem(HexcraftToolTiers.JORMIUM, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> JORMIUM_PAXEL = ITEMS.register("jormium_paxel",
+            () -> new PaxelItem(HexcraftToolTiers.JORMIUM, 2, 3, new Item.Properties()));
 
     public static final RegistryObject<Item> CUROGEN_SWORD = ITEMS.register("curogen_sword",
             () -> new SwordItem(HexcraftToolTiers.CUROGEN, 2, 3, new Item.Properties()));
@@ -374,6 +386,9 @@ public class HexcraftItems {
     public static final RegistryObject<Item> CUROGEN_HOE = ITEMS.register("curogen_hoe",
             () -> new HoeItem(HexcraftToolTiers.CUROGEN, 2, 3, new Item.Properties()));
 
+    public static final RegistryObject<Item> CUROGEN_PAXEL = ITEMS.register("curogen_paxel",
+            () -> new PaxelItem(HexcraftToolTiers.CUROGEN, 2, 3, new Item.Properties()));
+
     public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
             () -> new SwordItem(HexcraftToolTiers.SILVER, 2, 3, new Item.Properties()));
 
@@ -389,6 +404,9 @@ public class HexcraftItems {
     public static final RegistryObject<Item> SILVER_HOE = ITEMS.register("silver_hoe",
             () -> new HoeItem(HexcraftToolTiers.SILVER, 2, 3, new Item.Properties()));
 
+    public static final RegistryObject<Item> SILVER_PAXEL = ITEMS.register("silver_paxel",
+            () -> new PaxelItem(HexcraftToolTiers.STEEL, 2, 3, new Item.Properties()));
+
     public static final RegistryObject<Item> VAMPIRIC_SWORD = ITEMS.register("vampiric_sword",
             () -> new SwordItem(HexcraftToolTiers.VAMPIRIC, 2, 3, new Item.Properties()));
 
@@ -403,6 +421,25 @@ public class HexcraftItems {
 
     public static final RegistryObject<Item> VAMPIRIC_HOE = ITEMS.register("vampiric_hoe",
             () -> new HoeItem(HexcraftToolTiers.VAMPIRIC, 2, 3, new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_PAXEL = ITEMS.register("vampiric_paxel",
+            () -> new PaxelItem(HexcraftToolTiers.STEEL, 2, 3, new Item.Properties()));
+
+    //Bows
+    public static final RegistryObject<Item> STEEL_BOW = ITEMS.register("steel_bow",
+            () -> new BowItem(new Item.Properties().durability(384)));
+
+    public static final RegistryObject<Item> DARK_STEEL_BOW = ITEMS.register("dark_steel_bow",
+            () -> new BowItem(new Item.Properties().durability(384)));
+
+    public static final RegistryObject<Item> BLOODY_NYKIUM_BOW = ITEMS.register("bloody_nykium_bow",
+            () -> new BowItem(new Item.Properties().durability(384)));
+
+    public static final RegistryObject<Item> JORMIUM_BOW = ITEMS.register("jormium_bow",
+            () -> new BowItem(new Item.Properties().durability(384)));
+
+    public static final RegistryObject<Item> CUROGEN_BOW = ITEMS.register("curogen_bow",
+            () -> new BowItem(new Item.Properties().durability(384)));
 
     //Armor
     public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
@@ -476,6 +513,18 @@ public class HexcraftItems {
 
     public static final RegistryObject<Item> SILVER_BOOTS = ITEMS.register("silver_boots",
             () -> new ArmorItem(HexcraftArmorMaterials.SILVER, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_HELMET = ITEMS.register("vampiric_helmet",
+            () -> new ArmorItem(HexcraftArmorMaterials.VAMPIRIC, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_CHESTPLATE = ITEMS.register("vampiric_chestplate",
+            () -> new ArmorItem(HexcraftArmorMaterials.VAMPIRIC, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_LEGGING = ITEMS.register("vampiric_leggings",
+            () -> new ArmorItem(HexcraftArmorMaterials.VAMPIRIC, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> VAMPIRIC_BOOTS = ITEMS.register("vampiric_boots",
+            () -> new ArmorItem(HexcraftArmorMaterials.VAMPIRIC, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
     //Plants

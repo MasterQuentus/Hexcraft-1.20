@@ -1,11 +1,10 @@
 package net.masterquentus.hexcraftmod.custom.projectile;
 
-import net.masterquentus.hexcraftmod.entity.custom.HexcraftEntities;
+import net.masterquentus.hexcraftmod.entity.HexcraftEntities;
 import net.masterquentus.hexcraftmod.item.HexcraftItems;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;

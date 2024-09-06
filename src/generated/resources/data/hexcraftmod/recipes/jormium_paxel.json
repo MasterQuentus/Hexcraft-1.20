@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:jormuim_axe"
+    },
+    {
+      "item": "hexcraftmod:jormuim_pickaxe"
+    },
+    {
+      "item": "hexcraftmod:jormuim_shovel"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:jormium_paxel"
+  }
+}

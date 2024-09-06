@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hexcraftmod:vampiric_axe"
+    },
+    {
+      "item": "hexcraftmod:vampiric_pickaxe"
+    },
+    {
+      "item": "hexcraftmod:vampiric_shovel"
+    }
+  ],
+  "result": {
+    "item": "hexcraftmod:vampiric_paxel"
+  }
+}
