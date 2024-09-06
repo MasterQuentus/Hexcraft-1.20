@@ -38,13 +38,19 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(),
                 new HexcraftItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
 
-        generator.addProvider(true, new EntityTypeTagProvider(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(true,
+                new EntityTypeTagProvider(packOutput, lookupProvider, existingFileHelper));
 
-        generator.addProvider(event.includeServer(), new HexcraftGlobalLootModifiersProvider(packOutput));
+        generator.addProvider(event.includeServer(),
+                new HexcraftGlobalLootModifiersProvider(packOutput));
 
-        generator.addProvider(event.includeClient(), new HexcraftFluidTagProvider(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(event.includeClient(),
+                new HexcraftFluidTagProvider(packOutput, lookupProvider, existingFileHelper));
 
         generator.addProvider(event.includeServer(),
                 new HexcraftWorldGenProvider(packOutput, lookupProvider));
+
+        generator.addProvider(event.includeServer(),
+                new HexcraftRegistrySets(packOutput, lookupProvider));
     }
 }
