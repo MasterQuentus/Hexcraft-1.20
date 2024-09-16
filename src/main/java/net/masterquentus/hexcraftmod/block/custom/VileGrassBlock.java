@@ -3,85 +3,112 @@ package net.masterquentus.hexcraftmod.block.custom;
 import java.util.List;
 import java.util.Optional;
 
+import net.masterquentus.hexcraftmod.block.HexcraftBlockStateProperties;
 import net.masterquentus.hexcraftmod.block.HexcraftBlocks;
+import net.masterquentus.hexcraftmod.mixin.mixins.common.accessor.SpreadingSnowyDirtBlockAccessor;
+import net.masterquentus.hexcraftmod.worldgen.HexcraftPlacedFeatures;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BonemealableBlock;
-import net.minecraft.world.level.block.SpreadingSnowyDirtBlock;
+import net.minecraft.world.level.block.GrassBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
-public class VileGrassBlock extends SpreadingSnowyDirtBlock implements BonemealableBlock {
-	public VileGrassBlock(Properties pProperties) {
-		super(pProperties);
+import java.util.List;
+import java.util.Optional;
+import java.util.function.BiConsumer;
+
+public class VileGrassBlock extends GrassBlock {
+	public VileGrassBlock(Properties properties) {
+		super(properties);
+		this.registerDefaultState(this.defaultBlockState().setValue(HexcraftBlockStateProperties.DOUBLE_DROPS, false));
 	}
 
 	@Override
-	public boolean isValidBonemealTarget(LevelReader levelReader, BlockPos blockPos, BlockState blockState, boolean b) {
-		return false;
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
+		builder.add(HexcraftBlockStateProperties.DOUBLE_DROPS);
 	}
 
 	@Override
-	public boolean isBonemealSuccess(Level level, RandomSource randomSource, BlockPos blockPos, BlockState blockState) {
-		return false;
+	public boolean onTreeGrow(BlockState state, LevelReader level, BiConsumer<BlockPos, BlockState> placeFunction, RandomSource randomSource, BlockPos pos, TreeConfiguration config) {
+		placeFunction.accept(pos, HexcraftBlocks.VILE_DIRT.get().defaultBlockState().setValue(HexcraftBlockStateProperties.DOUBLE_DROPS, state.getValue(HexcraftBlockStateProperties.DOUBLE_DROPS)));
+		return true;
 	}
 
+	/**
+	 * Based on {@link net.minecraft.world.level.block.SpreadingSnowyDirtBlock#randomTick(BlockState, ServerLevel, BlockPos, RandomSource)}.<br><br>
+	 * Warning for "deprecation" is suppressed due to being copied from what Forge does.
+	 */
 	@Override
-	public void performBonemeal(ServerLevel p_221270_, RandomSource p_221271_, BlockPos p_221272_,
-			BlockState p_221273_) {
-		BlockPos $$4 = p_221272_.above();
-		BlockState $$5 = HexcraftBlocks.VILE_GRASS_BLOCK.get().defaultBlockState();
-		Optional<Holder.Reference<PlacedFeature>> $$6 = p_221270_.registryAccess()
-				.registryOrThrow(Registries.PLACED_FEATURE).getHolder(VegetationPlacements.GRASS_BONEMEAL);
-
-		label49: for (int $$7 = 0; $$7 < 128; ++$$7) {
-			BlockPos $$8 = $$4;
-
-			for (int $$9 = 0; $$9 < $$7 / 16; ++$$9) {
-				$$8 = $$8.offset(p_221271_.nextInt(3) - 1, (p_221271_.nextInt(3) - 1) * p_221271_.nextInt(3) / 2,
-						p_221271_.nextInt(3) - 1);
-				if (!p_221270_.getBlockState($$8.below()).is(this)
-						|| p_221270_.getBlockState($$8).isCollisionShapeFullBlock(p_221270_, $$8)) {
-					continue label49;
-				}
-			}
-
-			BlockState $$10 = p_221270_.getBlockState($$8);
-			if ($$10.is($$5.getBlock()) && p_221271_.nextInt(10) == 0) {
-				((BonemealableBlock) $$5.getBlock()).performBonemeal(p_221270_, p_221271_, $$8, $$10);
-			}
-
-			if ($$10.isAir()) {
-				Holder<?> $$13;
-				if (p_221271_.nextInt(8) == 0) {
-					List<ConfiguredFeature<?, ?>> $$11 = ((Biome) p_221270_.getBiome($$8).value())
-							.getGenerationSettings().getFlowerFeatures();
-					if ($$11.isEmpty()) {
-						continue;
+	public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+		if (!SpreadingSnowyDirtBlockAccessor.callCanBeGrass(state, level, pos)) {
+			if (!level.isAreaLoaded(pos, 3))
+				return; // Forge: prevent loading unloaded chunks when checking neighbor's light and spreading
+			level.setBlockAndUpdate(pos, HexcraftBlocks.VILE_DIRT.get().defaultBlockState());
+		} else {
+			if (!level.isAreaLoaded(pos, 3))
+				return; // Forge: prevent loading unloaded chunks when checking neighbor's light and spreading
+			if (level.getMaxLocalRawBrightness(pos.above()) >= 9) {
+				BlockState blockstate = this.defaultBlockState();
+				for (int i = 0; i < 4; ++i) {
+					BlockPos blockpos = pos.offset(random.nextInt(3) - 1, random.nextInt(5) - 3, random.nextInt(3) - 1);
+					if (level.getBlockState(blockpos).is(HexcraftBlocks.VILE_DIRT.get()) && SpreadingSnowyDirtBlockAccessor.callCanPropagate(blockstate, level, blockpos)) {
+						level.setBlockAndUpdate(blockpos, blockstate.setValue(SNOWY, level.getBlockState(blockpos.above()).is(Blocks.SNOW)));
 					}
-
-					$$13 = ((RandomPatchConfiguration) ((ConfiguredFeature<?, ?>) $$11.get(0)).config()).feature();
-				} else {
-					if (!$$6.isPresent()) {
-						continue;
-					}
-
-					$$13 = (Holder<?>) $$6.get();
 				}
-
-				((PlacedFeature) $$13.value()).place(p_221270_, p_221270_.getChunkSource().getGenerator(), p_221271_,
-						$$8);
 			}
 		}
+	}
 
+	@Override
+	public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
+		BlockPos abovePos = pos.above();
+		Block grass = HexcraftBlocks.VILE_GRASS_BLOCK.get();
+		Optional<Holder.Reference<PlacedFeature>> grassFeatureOptional = level.registryAccess().registryOrThrow(Registries.PLACED_FEATURE).getHolder(HexcraftPlacedFeatures.VILE_GRASS_BONEMEAL);
+
+		start:
+		for (int i = 0; i < 128; ++i) {
+			BlockPos blockPos = abovePos;
+
+			for (int j = 0; j < i / 16; ++j) {
+				blockPos = blockPos.offset(random.nextInt(3) - 1, (random.nextInt(3) - 1) * random.nextInt(3) / 2, random.nextInt(3) - 1);
+				if (!level.getBlockState(blockPos.below()).is(this) || level.getBlockState(blockPos).isCollisionShapeFullBlock(level, blockPos)) {
+					continue start;
+				}
+			}
+
+			BlockState blockState = level.getBlockState(blockPos);
+			if (blockState.is(grass) && random.nextInt(10) == 0) {
+				((BonemealableBlock) grass).performBonemeal(level, random, blockPos, blockState);
+			}
+
+			if (blockState.isAir()) {
+				Holder<PlacedFeature> featureHolder;
+				if (random.nextInt(8) == 0) {
+					List<ConfiguredFeature<?, ?>> list = level.getBiome(blockPos).value().getGenerationSettings().getFlowerFeatures();
+					if (list.isEmpty()) {
+						continue;
+					}
+					featureHolder = ((RandomPatchConfiguration) list.get(random.nextInt(list.size())).config()).feature();
+				} else {
+					if (grassFeatureOptional.isEmpty()) {
+						continue;
+					}
+					featureHolder = grassFeatureOptional.get();
+				}
+				featureHolder.value().place(level, level.getChunkSource().getGenerator(), random, blockPos);
+			}
+		}
 	}
 }

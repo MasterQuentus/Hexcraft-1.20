@@ -11,6 +11,7 @@ import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -19,12 +20,14 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.MatchTool;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
 
 public class HexcraftBlockLootTables extends BlockLootSubProvider {
+	protected static final LootItemCondition.Builder HAS_SHEARS;
 	public HexcraftBlockLootTables() {
 		super(Set.of(), FeatureFlags.REGISTRY.allFlags());
 	}
@@ -54,6 +57,10 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.dropSelf(HexcraftBlocks.CURED_SOIL.get());
 
 		this.dropSelf(HexcraftBlocks.FERTILIZED_DIRT.get());
+
+		this.dropWhenSilkTouch(HexcraftBlocks.VILE_GRASS_BLOCK.get());
+
+		add(HexcraftBlocks.VILE_GRASS.get(), block -> createSilkTouchOrShearsDispatchTable(block, applyExplosionCondition(block, LootItem.lootTableItem(HexcraftBlocks.VILE_GRASS.get()))));
 
 		this.dropSelf(HexcraftBlocks.VILE_DIRT.get());
 
@@ -100,7 +107,7 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropSelf(HexcraftBlocks.GLINT_WEED.get());
 
-		this.dropSelf(HexcraftBlocks.SPANISH_MOSS.get());
+		add(HexcraftBlocks.SPANISH_MOSS.get(), block -> createSilkTouchOrShearsDispatchTable(block, applyExplosionCondition(block, LootItem.lootTableItem(HexcraftBlocks.SPANISH_MOSS.get()))));
 
 		this.dropSelf(HexcraftBlocks.EMBER_MOSS_BLOCK.get());
 
@@ -108,7 +115,7 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropSelf(HexcraftBlocks.LIVING_KELP_BLOCK.get());
 
-		this.dropSelf(HexcraftBlocks.EMBER_MOSS.get());
+		add(HexcraftBlocks.EMBER_MOSS.get(), block -> createSilkTouchOrShearsDispatchTable(block, applyExplosionCondition(block, LootItem.lootTableItem(HexcraftBlocks.EMBER_MOSS.get()))));
 
 		this.dropSelf(HexcraftBlocks.VILEVINE.get());
 
@@ -872,12 +879,12 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 		this.dropOther(HexcraftBlocks.LARGE_MAGIC_CRYSTAL_BUD.get(), HexcraftItems.MAGIC_CRYSTAL.get());
 
-		this.dropOther(HexcraftBlocks.WITCHES_LADDER.get(), HexcraftItems.WITCHES_LADDER_ITEM.get());;
-
-		this.dropOther(HexcraftBlocks.LIVING_KELP.get(), HexcraftItems.LIVING_KELP_ITEM.get());;
-
-		this.dropOther(HexcraftBlocks.VILEVINE.get(), HexcraftItems.VILEVINE_ITEM.get());;
-
+		add(HexcraftBlocks.WITCHES_LADDER.get(), block -> createSilkTouchOrShearsDispatchTable(block, applyExplosionCondition(block, LootItem.lootTableItem(HexcraftItems.WITCHES_LADDER_ITEM.get()))));
+		;
+		this.dropOther(HexcraftBlocks.LIVING_KELP.get(), HexcraftItems.LIVING_KELP_ITEM.get());
+		;
+		add(HexcraftBlocks.VILEVINE.get(), block -> createSilkTouchOrShearsDispatchTable(block, applyExplosionCondition(block, LootItem.lootTableItem(HexcraftItems.VILEVINE_ITEM.get()))));
+		;
 		this.dropOther(HexcraftBlocks.BLOOD_MUSHROOM_BLOCK.get(), HexcraftBlocks.BLOOD_MUSHROOM.get());
 
 		this.dropOther(HexcraftBlocks.BLOOD_MUSHROOM_STEM.get(), HexcraftBlocks.BLOOD_MUSHROOM.get());
@@ -889,9 +896,6 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 		this.dropOther(HexcraftBlocks.GHOSTSHROOM_BLOCK.get(), HexcraftBlocks.GHOSTSHROOM.get());
 
 		this.dropOther(HexcraftBlocks.GHOSTSHROOM_STEM.get(), HexcraftBlocks.GHOSTSHROOM.get());
-
-		this.add(HexcraftBlocks.VILE_GRASS_BLOCK.get(),
-				block -> createCopperLikeOreDrops(HexcraftBlocks.VILE_GRASS_BLOCK.get(), Item.byBlock(HexcraftBlocks.VILE_DIRT.get())));
 
 		this.add(HexcraftBlocks.EBONY_BOOKSHELF.get(),
 				block -> createCopperLikeOreDrops(HexcraftBlocks.EBONY_BOOKSHELF.get(), Item.byBlock(HexcraftBlocks.EBONY_PLANKS.get())));
@@ -1108,7 +1112,6 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 						.setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AerpinePlantBlock.AGE, 3)));
 
 
-
 		this.add(HexcraftBlocks.AERPINE_FLOWER.get(), createCropDrops(HexcraftBlocks.AERPINE_FLOWER.get(), HexcraftItems.AERPINE.get(),
 				HexcraftItems.AERPINE_SEEDS.get(), lootitemcondition$builder));
 
@@ -1313,9 +1316,24 @@ public class HexcraftBlockLootTables extends BlockLootSubProvider {
 
 	}
 
+	public void dropDoubleWithSilk(Block block, ItemLike drop) {
+		this.add(block, (result) -> this.droppingDoubleWithSilkTouch(result, drop));
+	}
+
+	public LootTable.Builder droppingDoubleWithSilkTouch(Block block, ItemLike noSilkTouch) {
+		return this.droppingDoubleWithSilkTouch(block, (ItemLike) this.applyExplosionCondition(block, LootItem.lootTableItem(noSilkTouch)));
+	}
 
 	@Override
 	protected Iterable<Block> getKnownBlocks() {
 		return HexcraftBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+	}
+
+	protected void add(Block pBlock, LootTable.Builder pBuilder) {
+		this.map.put(pBlock.getLootTable(), pBuilder);
+	}
+
+	static {
+		HAS_SHEARS = MatchTool.toolMatches(net.minecraft.advancements.critereon.ItemPredicate.Builder.item().of(new ItemLike[]{Items.SHEARS}));
 	}
 }

@@ -56,7 +56,7 @@ public class HexcraftBlocks {
 					.strength(0.6F).randomTicks().sound(SoundType.GRASS)));
 
 	public static final RegistryObject<Block> VILE_DIRT = registerBlock("vile_dirt",
-			() -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)
+			() -> new HexcraftDoubleDropBlock (BlockBehaviour.Properties.copy(Blocks.DIRT)
 					.strength(0.5F)));
 
 	public static final RegistryObject <Block> CRIMSON_MAGMA = registerBlock("crimson_magma",
@@ -142,6 +142,11 @@ public class HexcraftBlocks {
 	public static final RegistryObject<Block> ENDER_BRAMBLE = registerBlock("ender_bramble",
 			() -> new EnderBrambleBlock(BlockBehaviour.Properties.copy(Blocks.SUGAR_CANE)
 					.instabreak()));
+
+	public static final RegistryObject<Block> VILE_GRASS = registerBlock("vile_grass",
+			() -> new TallGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS)
+					.mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS)
+					.offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
 
 	public static final RegistryObject<Block> LIVING_KELP = BLOCKS.register("living_kelp",
 			() -> new LivingKelpBlock(BlockBehaviour.Properties.copy(Blocks.KELP)

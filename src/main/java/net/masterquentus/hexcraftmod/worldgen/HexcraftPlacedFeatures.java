@@ -6,14 +6,18 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 
+import java.util.Collections;
 import java.util.List;
 
 public class HexcraftPlacedFeatures {
@@ -38,6 +42,15 @@ public class HexcraftPlacedFeatures {
     public static final ResourceKey<PlacedFeature> VAMPIRE_ORCHID_PLACED_KEY = registerKey("vampire_orchid_placed");
 
     public static final ResourceKey<PlacedFeature> BLOOD_OAK_PLACED_KEY = registerKey("blood_oak_placed");
+
+    public static final ResourceKey<PlacedFeature> VILE_GRASS_BONEMEAL = createKey("vile_grass_bonemeal");
+
+    public static final ResourceKey<PlacedFeature> GRASS_PATCH_PLACEMENT = createKey("grass_patch");
+
+
+    private static ResourceKey<PlacedFeature> createKey(String name) {
+        return ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(HexcraftMod.MOD_ID, name));
+    }
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -108,6 +121,10 @@ public class HexcraftPlacedFeatures {
         register(context, BLOOD_OAK_PLACED_KEY, configuredFeatures.getOrThrow(HexcraftConfiguredFeatures.BLOOD_OAK_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         HexcraftBlocks.BLOOD_OAK_SAPLING.get()));
+
+        register(context, VILE_GRASS_BONEMEAL, configuredFeatures.getOrThrow(VegetationFeatures.SINGLE_PIECE_OF_GRASS),
+                Collections.singletonList(PlacementUtils.isEmpty()));
+
 
     }
 

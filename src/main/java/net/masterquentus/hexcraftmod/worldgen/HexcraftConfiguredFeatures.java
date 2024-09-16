@@ -110,8 +110,12 @@ public class HexcraftConfiguredFeatures {
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> VAMPIRE_ORCHID_KEY = registerKey("vampire_orchid");
 
+	public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_PATCH_CONFIGURATION = createKey("grass_patch");
 
 
+	private static ResourceKey<ConfiguredFeature<?, ?>> createKey(String name) {
+		return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(HexcraftMod.MOD_ID, name));
+	}
 
 	public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -335,6 +339,7 @@ public class HexcraftConfiguredFeatures {
 
 		register(context, GHOSTSHROOM_KEY, Feature.HUGE_FUNGUS, new HugeFungusConfiguration(Blocks.DIRT.defaultBlockState(),
 				HexcraftBlocks.GHOSTSHROOM_STEM.get().defaultBlockState(), HexcraftBlocks.GHOSTSHROOM_BLOCK.get().defaultBlockState(), HexcraftBlocks.GHOSTSHROOM_LAMP.get().defaultBlockState(), $$2, true));
+
 
 	}
 

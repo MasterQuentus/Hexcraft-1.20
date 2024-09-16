@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-03T01:08:37.888396	Registries
+// 1.20.1	2024-09-13T19:33:38.2089097	Registries
 9c3472a382f8f636c2d33eb37607db77575314b0 data/hexcraftmod/damage_type/sacrifice.json
 8612625cd5512a6c69d3c0d14754ed3d837f1dae data/hexcraftmod/damage_type/sound.json
 9950a8984c5c79cf384017a7e02343c6a28f1d77 data/hexcraftmod/damage_type/voodoo.json
@@ -73,3 +73,4 @@ ba556b25ad927b7f57514a76d086ce9d594eff20 data/hexcraftmod/worldgen/placed_featur
 7c7b48e3a1a508a03604188787c77512cc012d55 data/hexcraftmod/worldgen/placed_feature/trenogen_ore_placed.json
 757062bf2d655c4112ba794e1b7f1d26a08fd092 data/hexcraftmod/worldgen/placed_feature/vampire_orchid_placed.json
 038c01505f5d554f06194d2e3a8027d2b055dfab data/hexcraftmod/worldgen/placed_feature/vampiric_ore_placed.json
+28f1d57ec7fe32c1e8c66c57b1c107a8fcaacacd data/hexcraftmod/worldgen/placed_feature/vile_grass_bonemeal.json

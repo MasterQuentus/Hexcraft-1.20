@@ -469,6 +469,7 @@ public class HexcraftCreativeModTabs {
                         output.accept(HexcraftBlocks.GLINT_WEED.get());
                         output.accept(HexcraftBlocks.EMBER_MOSS.get());
                         output.accept(HexcraftBlocks.SPANISH_MOSS.get());
+                        output.accept(HexcraftBlocks.VILE_GRASS.get());
                         output.accept(HexcraftItems.AERPINE.get());
                         output.accept(HexcraftItems.XERIFAE.get());
                         output.accept(HexcraftItems.BELLADONNA.get());
