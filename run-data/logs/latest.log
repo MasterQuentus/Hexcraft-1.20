@@ -1,29 +1,29 @@
-[16Sep2024 00:25:48.556] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\MasterQuentus\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.1.3, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, hexcraftmod, --all, --output, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\generated\resources, --existing, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\main\resources]
-[16Sep2024 00:25:48.562] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
-[16Sep2024 00:25:48.681] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[16Sep2024 00:25:48.720] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/MasterQuentus/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[16Sep2024 00:25:48.949] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.1.3\9775dc3f284cdb3e0d33b372c328c6ef88e434b0\javafmllanguage-1.20.1-47.1.3.jar is missing mods.toml file
-[16Sep2024 00:25:48.951] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.1.3\d785f4087ec3be094fd5aed801f5366ca958a81b\lowcodelanguage-1.20.1-47.1.3.jar is missing mods.toml file
-[16Sep2024 00:25:48.952] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.1.3\be60c45f3578cdf944a669c6ea16fd91bec50f2e\mclanguage-1.20.1-47.1.3.jar is missing mods.toml file
-[16Sep2024 00:25:48.954] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.1.3\1aadc0201d8e97b107d9978c7fe066bb54bbb9dc\fmlcore-1.20.1-47.1.3.jar is missing mods.toml file
-[16Sep2024 00:25:49.037] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
-[16Sep2024 00:25:50.619] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[16Sep2024 00:25:50.624] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\MasterQuentus\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, hexcraftmod, --all, --output, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\generated\resources, --existing, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\main\resources]
-[16Sep2024 00:25:50.766] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\build\createSrgToMcp\output.srg
-[16Sep2024 00:25:50.767] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\build\createSrgToMcp\output.srg
-[16Sep2024 00:25:50.767] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\build\createSrgToMcp\output.srg
-[16Sep2024 00:25:51.035] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [hexcraftmod]
-[16Sep2024 00:25:53.979] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.3, for MC 1.20.1 with MCP 20230612.114412
-[16Sep2024 00:25:53.980] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.3 Initialized
-[16Sep2024 00:25:54.046] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
-[16Sep2024 00:25:54.191] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[16Sep2024 00:25:54.200] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 4.879 ms
-[16Sep2024 00:25:54.280] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
-[16Sep2024 00:25:54.280] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
-[16Sep2024 00:25:54.280] [modloading-worker-0/INFO] [terrablender/]: Registered region hexcraftmod:overworld to index 1 for type OVERWORLD
-[16Sep2024 00:25:54.728] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MasterQuentus/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.3_mapped_parchment_1.19.3-2023.03.12-1.20.1/forge-1.20.1-47.1.3_mapped_parchment_1.19.3-2023.03.12-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[16Sep2024 00:25:54.729] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MasterQuentus/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.3_mapped_parchment_1.19.3-2023.03.12-1.20.1/forge-1.20.1-47.1.3_mapped_parchment_1.19.3-2023.03.12-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[16Sep2024 00:25:54.841] [main/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/]: Exception caught during firing event: Duplicate provider: Registries
+[17Sep2024 00:23:44.119] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\MasterQuentus\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.1.3, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, hexcraftmod, --all, --output, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\generated\resources, --existing, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\main\resources]
+[17Sep2024 00:23:44.129] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
+[17Sep2024 00:23:44.294] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[17Sep2024 00:23:44.343] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/MasterQuentus/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[17Sep2024 00:23:44.685] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.1.3\9775dc3f284cdb3e0d33b372c328c6ef88e434b0\javafmllanguage-1.20.1-47.1.3.jar is missing mods.toml file
+[17Sep2024 00:23:44.687] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.1.3\d785f4087ec3be094fd5aed801f5366ca958a81b\lowcodelanguage-1.20.1-47.1.3.jar is missing mods.toml file
+[17Sep2024 00:23:44.688] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.1.3\be60c45f3578cdf944a669c6ea16fd91bec50f2e\mclanguage-1.20.1-47.1.3.jar is missing mods.toml file
+[17Sep2024 00:23:44.690] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\MasterQuentus\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.1.3\1aadc0201d8e97b107d9978c7fe066bb54bbb9dc\fmlcore-1.20.1-47.1.3.jar is missing mods.toml file
+[17Sep2024 00:23:44.804] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[17Sep2024 00:23:46.746] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[17Sep2024 00:23:46.750] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\MasterQuentus\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, hexcraftmod, --all, --output, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\generated\resources, --existing, C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\src\main\resources]
+[17Sep2024 00:23:46.948] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\build\createSrgToMcp\output.srg
+[17Sep2024 00:23:46.949] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\build\createSrgToMcp\output.srg
+[17Sep2024 00:23:46.950] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\MasterQuentus\Desktop\Hexcraft 1.20\build\createSrgToMcp\output.srg
+[17Sep2024 00:23:47.256] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [hexcraftmod]
+[17Sep2024 00:23:50.273] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.3, for MC 1.20.1 with MCP 20230612.114412
+[17Sep2024 00:23:50.274] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.3 Initialized
+[17Sep2024 00:23:50.335] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
+[17Sep2024 00:23:50.509] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[17Sep2024 00:23:50.518] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 4.154 ms
+[17Sep2024 00:23:50.589] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[17Sep2024 00:23:50.589] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[17Sep2024 00:23:50.589] [modloading-worker-0/INFO] [terrablender/]: Registered region hexcraftmod:overworld to index 1 for type OVERWORLD
+[17Sep2024 00:23:51.006] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MasterQuentus/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.3_mapped_parchment_1.19.3-2023.03.12-1.20.1/forge-1.20.1-47.1.3_mapped_parchment_1.19.3-2023.03.12-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[17Sep2024 00:23:51.006] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/MasterQuentus/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.3_mapped_parchment_1.19.3-2023.03.12-1.20.1/forge-1.20.1-47.1.3_mapped_parchment_1.19.3-2023.03.12-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[17Sep2024 00:23:51.176] [main/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/]: Exception caught during firing event: Duplicate provider: Registries
 	Index: 1
 	Listeners:
 		0: NORMAL
@@ -59,7 +59,7 @@ java.lang.IllegalStateException: Duplicate provider: Registries
 	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
 	at cpw.mods.bootstraplauncher@1.1.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141)
 
-[16Sep2024 00:25:54.842] [main/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Caught exception during event net.minecraftforge.data.event.GatherDataEvent@2f930be7 dispatch for modid hexcraftmod
+[17Sep2024 00:23:51.178] [main/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Caught exception during event net.minecraftforge.data.event.GatherDataEvent@2f930be7 dispatch for modid hexcraftmod
 java.lang.IllegalStateException: Duplicate provider: Registries
 	at net.minecraft.data.DataGenerator.addProvider(DataGenerator.java:83) ~[forge-1.20.1-47.1.3_mapped_parchment_1.19.3-2023.03.12-1.20.1.jar%23191!/:?]
 	at net.masterquentus.hexcraftmod.datagen.DataGenerators.gatherData(DataGenerators.java:53) ~[%23196!/:?]

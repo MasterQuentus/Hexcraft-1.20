@@ -15,7 +15,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class HexcraftRegistrySets extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-            .add(Registries.NOISE, HexcraftNoises::bootstrap)
+            .add(Registries.NOISE, ctx -> HexcraftNoises.bootstrap(ctx))
             .add(Registries.NOISE_SETTINGS, HexcraftNoiseSettings::bootstrap);
 
     public HexcraftRegistrySets(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
